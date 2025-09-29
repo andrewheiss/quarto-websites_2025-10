@@ -21,6 +21,20 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+        # I created this list of dependencies with {dockerfiler}, so it's 
+        # probably overly ambitious in installing stuff that might already be 
+        # in the runner image, but it works and it's better than playing 
+        # whack-a-mole with GHA to find any missing dependencies, so whatever 🤷‍♂️
+        #
+        # dock <- dockerfiler::dock_from_renv(
+        #   "renv.lock",
+        #   FROM = "rocker/r-ver", AS = "renv-base",
+        #   repos = c(
+        #     CRAN = "https://cran.rstudio.com/",
+        #     tinytable = "https://vincentarelbundock.r-universe.dev"
+        #   ),
+        #   use_pak = FALSE
+        # )
       - name: Install system dependencies
         run: |
           sudo apt-get update -y
