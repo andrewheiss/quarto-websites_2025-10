@@ -1,11 +1,20 @@
 project:
   type: website
+  preview: 
+    port: 3333
 
 execute:
   freeze: auto
 
 website:
   title: "Quarto websites"
+  description: "Materials for two-day short course on making Quarto websites"
+  site-url: "https://andrewheiss.github.io/quarto-websites_2025-10/"
+  # favion: 
+
+  repo-url: "https://github.com/andrewheiss/quarto-websites_2025-10"
+  repo-actions: [source, issue]
+
   navbar:
     left:
       - href: index.qmd
