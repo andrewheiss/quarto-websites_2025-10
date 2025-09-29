@@ -11,7 +11,7 @@ language:
 
 Creating and maintaining an online presence is essential for anyone who works with data. Whether you're a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter [Quarto](https://quarto.org/): an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!
 
-In this course, you'll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, [research compendiums](https://research-compendium.science/), and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations. 
+In this course, you'll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, [research compendiums](https://research-compendium.science/), and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.
 
 By the end of the course, you’ll be able to:
 
@@ -37,6 +37,9 @@ All times are US Eastern (New York) time:
 
 library(tinytable)
 library(dplyr)
+
+# To keep {tinytable} happy
+set.seed(1234)
 
 # fmt: skip
 schedule <- tribble(

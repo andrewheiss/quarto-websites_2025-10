@@ -1,0 +1,67 @@
+#
+# _brand.yml for Posit Conf
+#
+
+meta:
+  name: Quarto website course
+  link:
+    home: https://www.andrewheiss.com/
+
+color:
+  # Colors from MoMAColors::moma.colors("ustwo"), supplemented with CARTOColors (Prism)
+  palette:
+    blue: "#008d98"    # ustwo
+    indigo: "#5F4690"  # Prism
+    purple: "#994E95"  # Prism
+    pink: "#f06a63"    # ustwo
+    red: "#d7433b"     # ustwo
+    orange: "#ff8e5e"  # ustwo
+    yellow: "#ffcc3d"  # ustwo
+    green: "#0F8554"   # Prism
+    teal: "#38A6A5"    # Prism
+    cyan: "#95caa6"    # ustwo
+
+    off-white: "#F5F5F5"
+    black: "#111111"
+
+  background: off-white
+  foreground: black
+  primary: red
+  secondary: orange
+  tertiary: teal
+  dark: black
+
+typography:
+  fonts:
+    - family: Open Sans
+      source: google
+      weight: [400, 700]
+    - family: Alan Sans
+      source: google
+      weight: [400, 700]
+
+  base:
+    family: Open Sans
+    weight: 400
+
+  headings:
+    family: Alan Sans
+    weight: 700
+    color: teal
+
+  link:
+    weight: 700
+    color: secondary
+    decoration: none
+
+defaults:
+  bootstrap:
+    functions: # string with SCSS functions
+    defaults:  # list of Bootstrap Sass variables to override
+      link-hover-color: $brand-pink
+      font-family-headings: Alan Sans
+    mixins: # string with SCSS mixins
+    rules: |  # string with SCSS rules
+      .navbar-title {
+          font-family: $font-family-headings;
+      }
