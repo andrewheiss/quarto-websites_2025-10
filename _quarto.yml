@@ -1,0 +1,20 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+
+website:
+  title: "Quarto websites"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+      - brand
+    toc: true
