@@ -38,37 +38,24 @@ All times are US Eastern (New York) time:
 library(tinytable)
 library(dplyr)
 
+# fmt: skip
 schedule <- tribble(
-  ~Day,
-  ~Time,
-  ~Content,
-  "Day 1 (October 16)",
-  "10:30–12:30",
-  "Intro to Quarto",
-  "Day 1 (October 16)",
-  "12:30–13:00",
-  "*Break*",
-  "Day 1 (October 16)",
-  "13:00–15:00",
-  "Something",
-  "Day 2 (October 17)",
-  "10:30–12:30",
-  "Something",
-  "Day 2 (October 17)",
-  "12:30–13:00",
-  "*Break*",
-  "Day 2 (October 17)",
-  "13:00–15:00",
-  "Something",
+  ~Day,                 ~Time,         ~Content,
+  "Day 1 (October 16)", "10:30–12:30", "Intro to Quarto",
+  "Day 1 (October 16)", "12:30–13:00", "*Break*",
+  "Day 1 (October 16)", "13:00–15:00", "Something",
+  "Day 2 (October 17)", "10:30–12:30", "Something",
+  "Day 2 (October 17)", "12:30–13:00", "*Break*",
+  "Day 2 (October 17)", "13:00–15:00", "Something",
 )
 
 schedule |>
   subset(select = -Day) |>
   tt(width = c(0.2, 0.8), colnames = FALSE) |>
-  theme_empty() |> 
+  theme_empty() |>
   group_tt(i = schedule$Day) |>
   style_tt(i = "groupi", align = "l", bold = TRUE, background = "#f5f5f5") |>
-  style_tt(i = "~groupi", j = 1, indent = 1) |> 
+  style_tt(i = "~groupi", j = 1, indent = 1) |>
   format_tt(j = 2, markdown = TRUE) |>
   theme_html(engine = "bootstrap")
 ```
