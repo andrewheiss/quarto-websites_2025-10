@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.\nBy the end of the course, you’ll be able to:\nTODO\n\nBlah\nblah\nbloop\nCreate a fully functional website ready to publish (for free!) on platforms like GitHub Pages or Netlify\n\nThis course will give you the tools to share your work with the world—and make it look great!"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.\nBy the end of the course, you’ll be able to:\nTODO\n\nBlah\nblah\nbloop\nCreate a fully functional website ready to publish (for free!) on platforms like GitHub Pages or Netlify\n\nThis course will give you the tools to share your work with the world—and make it look great!"
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "Schedule",
+    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (October 16)\n                  Day 1 (October 16)\n                \n                \n                  10:30–12:30\n                  Intro to Quarto\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Something\n                \n                \n                  Day 2 (October 17)\n                  Day 2 (October 17)\n                \n                \n                  10:30–12:30\n                  Something\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Something"
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "Instructor",
+    "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions."
+  }
+]
