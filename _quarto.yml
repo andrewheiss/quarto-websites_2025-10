@@ -10,15 +10,41 @@ website:
   title: "Quarto websites"
   description: "Materials for two-day short course on making Quarto websites"
   site-url: "https://andrewheiss.github.io/quarto-websites_2025-10/"
-  # favion: 
+  # favicon: 
 
   repo-url: "https://github.com/andrewheiss/quarto-websites_2025-10"
   repo-actions: [source, issue]
 
-  navbar:
-    left:
+  sidebar:
+    contents:
       - href: index.qmd
         text: Home
+
+      - href: materials/00-setup/index.qmd
+        text: Setup
+
+      - href: materials/01-intro/index.qmd
+        text: Intro to Quarto
+
+      - href: materials/basic-websites/index.qmd
+        text: Creating basic websites
+
+      - href: materials/advanced-websites/index.qmd
+        text: Advanced website features
+
+      - href: materials/publishing/index.qmd
+        text: Publishing
+
+      - href: materials/brand/index.qmd
+        text: Customization and branding
+
+      - href: materials/interactivity/index.qmd
+        text: Interactivity
+
+  # navbar:
+  #   left:
+  #     - href: index.qmd
+  #       text: Home
 
 format:
   html:

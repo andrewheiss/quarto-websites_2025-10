@@ -37,23 +37,28 @@ All times are US Eastern (New York) time:
 
 library(tinytable)
 library(dplyr)
+library(glue)
 
 # To keep {tinytable} happy
 set.seed(1234)
 
 # fmt: skip
 schedule <- tribble(
-  ~Day,                 ~Time,         ~Content,
-  "Day 1 (October 16)", "10:30–12:30", "Intro to Quarto",
-  "Day 1 (October 16)", "12:30–13:00", "*Break*",
-  "Day 1 (October 16)", "13:00–15:00", "Something",
-  "Day 2 (October 17)", "10:30–12:30", "Something",
-  "Day 2 (October 17)", "12:30–13:00", "*Break*",
-  "Day 2 (October 17)", "13:00–15:00", "Something",
-)
+  ~Day,                 ~Time,         ~Title,                       ~Link,
+  "Day 1 (October 16)", "10:30–12:30", "Setup",                      "/materials/00-setup/",
+  "Day 1 (October 16)", "10:30–12:30", "Intro to Quarto",            "/materials/01-intro/",
+  "Day 1 (October 16)", "10:30–12:30", "Creating basic websites",    "/materials/basic-websites/",
+  "Day 1 (October 16)", "12:30–13:00", "*Break*",                    NA,
+  "Day 1 (October 16)", "13:00–15:00", "Advanced website features",  "/materials/advanced-websites/",
+  "Day 1 (October 16)", "13:00–15:00", "Publishing",                 "/materials/publishing/",
+  "Day 2 (October 17)", "10:30–12:30", "Customization and branding", "/materials/brand/",
+  "Day 2 (October 17)", "12:30–13:00", "*Break*",                    NA,
+  "Day 2 (October 17)", "13:00–15:00", "Interactivity",              "/materials/interactivity/"
+) |> 
+  mutate(Content = ifelse(is.na(Link), Title, glue('[{Title}]({Link}){{target="_blank"}}')))
 
 schedule |>
-  subset(select = -Day) |>
+  select(Time, Content) |>
   tt(width = c(0.2, 0.8), colnames = FALSE) |>
   theme_empty() |>
   group_tt(i = schedule$Day) |>
