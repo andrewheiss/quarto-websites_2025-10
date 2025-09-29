@@ -23,11 +23,12 @@ color:
 
     off-white: "#F5F5F5"
     black: "#111111"
+    light-gray: "#cdcdcd"
 
   background: off-white
   foreground: black
   primary: red
-  secondary: orange
+  secondary: blue
   tertiary: teal
   dark: black
 
@@ -47,11 +48,11 @@ typography:
   headings:
     family: Alan Sans
     weight: 700
-    color: teal
+    color: red
 
   link:
     weight: 700
-    color: secondary
+    color: orange
     decoration: none
 
 defaults:
@@ -60,8 +61,48 @@ defaults:
     defaults:  # list of Bootstrap Sass variables to override
       link-hover-color: $brand-pink
       font-family-headings: Alan Sans
-    mixins: # string with SCSS mixins
-    rules: |  # string with SCSS rules
+    mixins:    # string with SCSS mixins
+    rules: |   # string with SCSS rules
       .navbar-title {
           font-family: $font-family-headings;
+          font-size: 1.3em;
+      }
+
+      .sidebar.sidebar-navigation>* {
+          padding-top: 0em
+      }
+
+      .margin-sidebar {
+          padding-top: 2em !important;
+      }
+
+      // Active links in navbar and sidebar
+      .navbar-dark .navbar-nav .show>.nav-link,
+      .navbar-dark .navbar-nav .active>.nav-link,
+      .navbar-dark .navbar-nav .nav-link.active,
+      div.sidebar-item-container .active,
+      div.sidebar-item-container .show>.nav-link,
+      div.sidebar-item-container .sidebar-link>code{
+          color: $brand-yellow;
+      }
+
+      // Increase font size in sidebar
+      .sidebar-navigation .sidebar-section .sidebar-item,
+      .sidebar-navigation .sidebar-item {
+          line-height: 1.2;
+          padding-bottom: 0.1rem;
+
+          .depth1 a {
+              font-weight: normal;
+
+              &.active {
+                  font-weight: 700;
+              }
+          }
+      }
+
+      .sidebar-item .sidebar-item-toggle .bi {
+          // The dongle for opening and closing sections
+          font-size: 1rem;
+          text-align: center;
       }

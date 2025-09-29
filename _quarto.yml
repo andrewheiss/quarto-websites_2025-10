@@ -15,7 +15,17 @@ website:
   repo-url: "https://github.com/andrewheiss/quarto-websites_2025-10"
   repo-actions: [source, issue]
 
+  navbar:
+    background: primary
+    right:
+      - icon: github
+        href: https://github.com/andrewheiss/quarto-websites_2025-10
+
   sidebar:
+    title: "Quarto Websites"
+    style: docked
+    background: secondary
+
     contents:
       - href: index.qmd
         text: Home
@@ -23,28 +33,29 @@ website:
       - href: materials/00-setup/index.qmd
         text: Setup
 
-      - href: materials/01-intro/index.qmd
-        text: Intro to Quarto
+      - section: "Materials"
+        contents:
+        - href: materials/01-intro/index.qmd
+          text: Intro to Quarto
 
-      - href: materials/basic-websites/index.qmd
-        text: Creating basic websites
+        - href: materials/basic-websites/index.qmd
+          text: Creating basic websites
 
-      - href: materials/advanced-websites/index.qmd
-        text: Advanced website features
+        - href: materials/advanced-websites/index.qmd
+          text: Advanced website features
 
-      - href: materials/publishing/index.qmd
-        text: Publishing
+        - href: materials/publishing/index.qmd
+          text: Publishing
 
-      - href: materials/brand/index.qmd
-        text: Customization and branding
+        - href: materials/brand/index.qmd
+          text: Customization and branding
 
-      - href: materials/interactivity/index.qmd
-        text: Interactivity
+        - href: materials/interactivity/index.qmd
+          text: Interactivity
 
-  # navbar:
-  #   left:
-  #     - href: index.qmd
-  #       text: Home
+  page-footer:
+    border: false
+    background: "#cdcdcd"
 
 format:
   html:
