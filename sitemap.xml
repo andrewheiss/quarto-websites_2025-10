@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/index.html</loc>
-    <lastmod>2025-09-30T05:05:19.493Z</lastmod>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/01-intro/index.html</loc>
+    <lastmod>2025-09-30T05:18:19.246Z</lastmod>
   </url>
   <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/LICENSE.html</loc>
-    <lastmod>2025-09-30T05:05:19.485Z</lastmod>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/index.html</loc>
+    <lastmod>2025-09-30T05:18:19.246Z</lastmod>
   </url>
   <url>
     <loc>https://andrewheiss.github.io/quarto-websites_2025-10/colophon.html</loc>
-    <lastmod>2025-09-30T05:05:19.492Z</lastmod>
+    <lastmod>2025-09-30T05:18:19.245Z</lastmod>
   </url>
   <url>
     <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/00-setup/index.html</loc>
-    <lastmod>2025-09-30T05:05:19.494Z</lastmod>
+    <lastmod>2025-09-30T05:18:19.246Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/01-intro/slides.html</loc>
+    <lastmod>2025-09-30T05:18:19.246Z</lastmod>
   </url>
 </urlset>
