@@ -53,6 +53,8 @@ website:
         - href: materials/interactivity/index.qmd
           text: Interactivity
 
+      - colophon.qmd
+
   page-footer:
     border: false
     background: "#dddddd"
