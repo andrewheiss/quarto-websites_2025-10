@@ -56,6 +56,15 @@ website:
   page-footer:
     border: false
     background: "#dddddd"
+    left: |
+      Content {{< fa brands creative-commons >}} 2025 by [Andrew Heiss](https://www.andrewheiss.com) <br>
+      All content licensed under a {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}
+      [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](hhttps://creativecommons.org/licenses/by-sa/4.0/)
+    right: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+      [View the source at {{< fa brands github >}} GitHub](https://github.com/andrewheiss/quarto-websites_2025-10)
+
 
 format:
   html:
