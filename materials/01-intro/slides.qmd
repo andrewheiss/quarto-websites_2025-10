@@ -1,0 +1,20 @@
+---
+title: "Intro to\n\nQuarto"
+logo: ""
+format:
+  revealjs:
+    title-slide-attributes: 
+      # data-background-image: ../../images/title-slide-light.svg
+      data-background-color: "white"
+      style: "text-align: right; left: 10%"
+# filters:
+#   - reveal-auto-agenda
+---
+
+```{r}
+#| include: false
+
+library(countdown)
+```
+
+## **Create an Online Presence with Quarto Websites** 
