@@ -64,7 +64,7 @@ show_nice_pal <- function(pal, nrow = 1, show_text = TRUE) {
 
 time_updated <- format(
   lubridate::now(tzone = "America/New_York"),
-  "%B %e, %Y at %T US Eastern"
+  "%F at %T US Eastern"
 )
 ```
 
