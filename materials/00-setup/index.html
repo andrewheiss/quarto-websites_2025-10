@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -37,14 +72,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-adfd1b328c38e356ec8294ab69e1174c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-7fcd7611ea83ad6342f933c131e4351e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-adfd1b328c38e356ec8294ab69e1174c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-09a8dcd959e2c2e3db83531a57bb82be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-a3f896e61cb17c58b69774fcc885bb58.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-09a8dcd959e2c2e3db83531a57bb82be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -191,8 +228,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#recommended-setup-options" id="toc-recommended-setup-options" class="nav-link active" data-scroll-target="#recommended-setup-options">Recommended setup options</a>
+  <ul class="collapse">
+  <li><a href="#option-1-posit-cloud-rstudio-in-the-cloud" id="toc-option-1-posit-cloud-rstudio-in-the-cloud" class="nav-link" data-scroll-target="#option-1-posit-cloud-rstudio-in-the-cloud">Option 1: Posit Cloud (RStudio in the cloud)</a></li>
+  <li><a href="#option-2-local-installation" id="toc-option-2-local-installation" class="nav-link" data-scroll-target="#option-2-local-installation">Option 2: Local installation</a></li>
+  </ul></li>
+  <li><a href="#accessing-the-course-materials" id="toc-accessing-the-course-materials" class="nav-link" data-scroll-target="#accessing-the-course-materials">Accessing the course materials</a></li>
+  <li><a href="#install-the-necessary-r-packages" id="toc-install-the-necessary-r-packages" class="nav-link" data-scroll-target="#install-the-necessary-r-packages">Install the necessary R packages</a></li>
+  
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/materials/00-setup/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -216,10 +266,96 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>To follow along with the course exercises, you’ll need Quarto version 1.8+ and access to a code editor that supports R or Python.</p>
+<p>While Quarto itself doesn’t require a programming language, the exercises will include code chunks in R or Python. If you don’t already have R or Python set up locally, we recommend using a cloud-based option like Posit Cloud (for R) or GitHub Codespaces (for Python).</p>
+<section id="recommended-setup-options" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-setup-options">Recommended setup options</h2>
+<section id="option-1-posit-cloud-rstudio-in-the-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="option-1-posit-cloud-rstudio-in-the-cloud">Option 1: Posit Cloud (RStudio in the cloud)</h3>
+<ul>
+<li>Create a free account at <a href="https://posit.cloud/" class="uri">https://posit.cloud/</a></li>
+<li>Open the Posit Cloud project link: <a href="https://posit.cloud/spaces/679626/join?access_code=VwU0N2fEy5wwQ8qHayo8TrTZRKcT6sndAF13AHlx" class="uri">https://posit.cloud/spaces/679626/join?access_code=VwU0N2fEy5wwQ8qHayo8TrTZRKcT6sndAF13AHlx</a></li>
+<li>Click “Yes” to join the space.</li>
+<li>Click Content and select <code>quarto-brand-exercises</code> or go to <a href="https://posit.cloud/spaces/679626/content/10865885/" class="uri">https://posit.cloud/spaces/679626/content/10865885/</a></li>
+<li>To save a copy of the project to your workspace, click “Save a permanent copy”.</li>
+</ul>
+</section>
+<section id="option-2-local-installation" class="level3">
+<h3 class="anchored" data-anchor-id="option-2-local-installation">Option 2: Local installation</h3>
+<p>Choose one editor and follow the steps:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">RStudio</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Positron</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">VS Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li>Download and install RStudio: <a href="https://posit.co/downloads/" class="uri">https://posit.co/downloads/</a>
+<ul>
+<li>Make sure RStudio is version 2022.07+.</li>
+</ul></li>
+<li>Quarto comes pre-installed.
+<ul>
+<li>Make sure Quarto is version 1.8+.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li>Download and install Positron: <a href="https://positron.posit.co/download.html" class="uri">https://positron.posit.co/download.html</a></li>
+<li>Quarto comes pre-installed.
+<ul>
+<li>Make sure Quarto is version 1.8+.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<ul>
+<li>Download and install VS Code: <a href="https://code.visualstudio.com/download/" class="uri">https://code.visualstudio.com/download/</a></li>
+<li>Download and install Quarto: <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a></li>
+<li>Install the following extensions:
+<ul>
+<li>Quarto Extension: <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto/" class="uri">https://marketplace.visualstudio.com/items?itemName=quarto.quarto/</a></li>
+<li>Jupyter Extension: <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/" class="uri">https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="accessing-the-course-materials" class="level2">
+<h2 class="anchored" data-anchor-id="accessing-the-course-materials">Accessing the course materials</h2>
+<p>If you are using a cloud-based option, the files will be included in the project folder.</p>
+<p>If you are not using a cloud-based option:</p>
+<p><strong>If you use Git/GitHub:</strong></p>
+<ul>
+<li>Exercises are available at: <a href="https://github.com/posit-dev/quarto-brand-exercises/" class="uri">https://github.com/posit-dev/quarto-brand-exercises/</a></li>
+<li>Clone the repository with Git:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/posit-dev/quarto-brand-exercises.git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>If you don’t use Git/GitHub:</strong></p>
+<ul>
+<li>Go to the GitHub repo: <a href="https://github.com/posit-dev/quarto-brand-exercises/" class="uri">https://github.com/posit-dev/quarto-brand-exercises/</a></li>
+<li>Click the green “Code” button → “Download ZIP”.</li>
+<li>Unzip the folder and open it in your chosen editor.</li>
+</ul>
+</section>
+<section id="install-the-necessary-r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="install-the-necessary-r-packages">Install the necessary R packages</h2>
+<p>If you are using Posit Cloud, the packages will be pre-installed.</p>
+<p>If you are using RStudio or Positron locally, install the packages on a Mac by running:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"pak"</span>)) <span class="fu">install.packages</span>(<span class="st">"pak"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"quarto"</span>, <span class="st">"patchwork"</span>, <span class="st">"posit-dev/brand-yml/pkg-r"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you are using Windows, please run the below for the brand.yml package:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'brand.yml'</span>, <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">'https://posit-dev.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 
 
+<div id="quarto-appendix" class="default"><section id="credits" class="level2 appendix"><h2 class="anchored quarto-appendix-heading">Credits</h2><div class="quarto-appendix-contents">
 
-</main> <!-- /main -->
+<p>These instructions were adapted from Isabella Velásquez and Sara Altman’s <a href="https://posit-conf-2025.github.io/quarto-brand/">posit::conf(2025) workshop</a> on branded Quarto documents (<a href="https://github.com/posit-conf-2025/quarto-brand"><i class="fa-brands fa-github" aria-label="github"></i> GitHub repository</a>). They graciously licensed their content under <a href="https://github.com/posit-conf-2025/quarto-brand/blob/main/LICENSE.md"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> Creative Commons CC-BY-SA <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i></a>.</p>
+
+
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -621,8 +757,21 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Content <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 by <a href="https://www.andrewheiss.com">Andrew Heiss</a> <br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> <a href="hhttps://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/materials/00-setup/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/andrewheiss/quarto-websites_2025-10">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
+</div>
+  </div>
+</footer>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/materials/00-setup/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+</body></html>
