@@ -62,10 +62,10 @@ schedule |>
   tt(width = c(0.2, 0.8), colnames = FALSE) |>
   theme_empty() |>
   group_tt(i = schedule$Day) |>
-  style_tt(i = "groupi", align = "l", bold = TRUE, background = "#f5f5f5") |>
+  style_tt(i = "groupi", align = "l", bold = TRUE, background = "#dddddd") |>
   style_tt(i = "~groupi", j = 1, indent = 1) |>
   format_tt(j = 2, markdown = TRUE) |>
-  theme_html(engine = "bootstrap")
+  theme_html(engine = "bootstrap", class = "table table-sm")
 ```
 
 ## Instructor

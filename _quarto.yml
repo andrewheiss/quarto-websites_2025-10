@@ -55,7 +55,7 @@ website:
 
   page-footer:
     border: false
-    background: "#cdcdcd"
+    background: "#dddddd"
 
 format:
   html:
