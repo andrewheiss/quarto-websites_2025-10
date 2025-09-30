@@ -1,8 +1,8 @@
 {
-  "hash": "08b4f3692f698379f52685891d68d2ef",
+  "hash": "9be3db0e87f5a86f56240bcabb45b8cd",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Intro to\\n\\nQuarto\"\nlogo: \"\"\nformat:\n  revealjs:\n    title-slide-attributes: \n      # data-background-image: ../../images/title-slide-light.svg\n      data-background-color: \"white\"\n      style: \"text-align: right; left: 10%\"\n# filters:\n#   - reveal-auto-agenda\n---\n\n\n\n## **Create an Online Presence with Quarto Websites** \n",
+    "markdown": "---\ntitle: \"Intro to\\n\\nQuarto\"\nlogo: \"\"\nformat:\n  revealjs:\n    title-slide-attributes: \n      # data-background-image: ../../images/title-slide-light.svg\n      data-background-color: \"{{< brand color primary >}}\"\n      style: \"text-align: right; left: 10%\"\n# filters:\n#   - reveal-auto-agenda\n---\n\n\n\n## **Create an Online Presence with Quarto Websites** \n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
