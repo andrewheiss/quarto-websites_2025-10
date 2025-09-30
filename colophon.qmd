@@ -65,7 +65,7 @@ show_nice_pal <- function(pal, nrow = 1, show_text = TRUE) {
 
 ## Technology
 
-This site is built with [Quarto](https://quarto.org/) v{{< version >}} and `{r} R.version$version.string`. It is hosted at [GitHub Pages](https://andrewheiss.github.io/quarto-websites_2025-10/) and built and deployed using [GitHub Actions](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/.github/workflows/publish.yml).
+This site is built with [Quarto](https://quarto.org/) v{{< version >}} and {{< fa brands r-project >}} `{r} R.version$version.string`. It is hosted at [{{< fa brands github >}} GitHub Pages](https://andrewheiss.github.io/quarto-websites_2025-10/) and built and deployed using [{{< fa brands github >}} GitHub Actions](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/.github/workflows/publish.yml).
 
 ## Design
 
@@ -73,7 +73,7 @@ The typography, colors, and custom CSS settings are all controlled with [this `_
 
 ### Typefaces
 
-I use [Open Sans](https://en.wikipedia.org/wiki/Open_Sans) [([Google Fonts](https://fonts.google.com/specimen/Open+Sans))]{.small} as the main body font throughout the site, and I use [Alan Sans](https://github.com/alan-eu/Alan-Sans) [([Google Fonts](https://fonts.google.com/specimen/Alan+Sans))]{.small} for all headings.
+I use [Open Sans](https://en.wikipedia.org/wiki/Open_Sans) [([Google Fonts](https://fonts.google.com/specimen/Open+Sans))]{.small} as the main body font throughout the site, and I use [Alan Sans](https://github.com/alan-eu/Alan-Sans){style="font-family: 'Alan Sans'"} [([Google Fonts](https://fonts.google.com/specimen/Alan+Sans))]{.small} for all headings.
 
 ::: {.font-example}
 [A heading]{.fake-heading}
@@ -115,5 +115,8 @@ rcartocolor::carto_pal(name = "Prism")[c(1, 3, 4, 11)] |>
 ```
 
 
+## License and credits
 
-## Credits
+All the materials and content for this course are licensed under [{{< fa brands creative-commons >}} Creative Commons CC-BY-SA {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://github.com/posit-conf-2025/quarto-brand/blob/main/LICENSE.md).
+
+Some of the materials in the course were adapted from Isabella Velásquez and Sara Altman's [posit::conf(2025) workshop](https://posit-conf-2025.github.io/quarto-brand/) on branded Quarto documents ([{{< fa brands github >}} GitHub repository](https://github.com/posit-conf-2025/quarto-brand)). They graciously licensed their content under [{{< fa brands creative-commons >}} Creative Commons CC-BY-SA {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://github.com/posit-conf-2025/quarto-brand/blob/main/LICENSE.md).
