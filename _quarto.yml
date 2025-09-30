@@ -3,6 +3,13 @@ project:
   preview: 
     port: 3333
 
+  render:
+    # Render all .qmd files
+    - "**/*.qmd"
+
+    # Don't render any exercise files because they're partials
+    - "!exercise*.qmd"
+
 execute:
   freeze: auto
 
