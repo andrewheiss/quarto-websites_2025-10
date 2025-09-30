@@ -61,11 +61,19 @@ show_nice_pal <- function(pal, nrow = 1, show_text = TRUE) {
 
   return(out)
 }
+
+time_updated <- format(
+  lubridate::now(tzone = "America/New_York"),
+  "%B %e, %Y at %T US Eastern"
+)
 ```
 
 ## Technology
 
-This site is built with [Quarto](https://quarto.org/) v{{< version >}} and {{< fa brands r-project >}} `{r} R.version$version.string`. It is hosted at [{{< fa brands github >}} GitHub Pages](https://andrewheiss.github.io/quarto-websites_2025-10/) and built and deployed using [{{< fa brands github >}} GitHub Actions](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/.github/workflows/publish.yml).
+- **Last built**: `{r} time_updated`
+- **Software**: Quarto version {{< version >}} and {{< fa brands r-project >}} `{r} R.version$version.string`
+- **Hosting**: Hosted at [{{< fa brands github >}} GitHub Pages](https://andrewheiss.github.io/quarto-websites_2025-10/) and built and deployed using [{{< fa brands github >}} GitHub Actions](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/.github/workflows/publish.yml)
+
 
 ## Design
 
@@ -80,7 +88,6 @@ I use [Open Sans](https://en.wikipedia.org/wiki/Open_Sans) [([Google Fonts](http
 
 Whereas recognition of the *inherent dignity* and of the ***equal and inalienable*** rights of all members of the human family is the foundation of freedom, justice and peace in the world…
 :::
-
 
 ### Colors
 
