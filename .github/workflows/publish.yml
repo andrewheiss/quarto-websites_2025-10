@@ -39,8 +39,23 @@ jobs:
         run: |
           sudo apt-get update -y
           sudo apt-get install -y \
+            pandoc \
             make \
-            pandoc
+            cmake\
+            libicu-dev \
+            libx11-dev \
+            libcurl4-openssl-dev \
+            libssl-dev \
+            zlib1g-dev \
+            libfontconfig1-dev \
+            libfreetype6-dev \
+            libfribidi-dev \
+            libharfbuzz-dev \
+            libjpeg-dev \
+            libpng-dev \
+            libtiff-dev \
+            libwebp-dev \
+            libxml2-dev
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
