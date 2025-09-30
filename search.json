@@ -40,6 +40,46 @@
     ]
   },
   {
+    "objectID": "colophon.html",
+    "href": "colophon.html",
+    "title": "Colophon",
+    "section": "",
+    "text": "This site is built with Quarto v1.8.25 and R version 4.5.1 (2025-06-13). It is hosted at GitHub Pages and built and deployed using GitHub Actions.",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#technology",
+    "href": "colophon.html#technology",
+    "title": "Colophon",
+    "section": "",
+    "text": "This site is built with Quarto v1.8.25 and R version 4.5.1 (2025-06-13). It is hosted at GitHub Pages and built and deployed using GitHub Actions.",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#design",
+    "href": "colophon.html#design",
+    "title": "Colophon",
+    "section": "Design",
+    "text": "Design\nThe typography, colors, and custom CSS settings are all controlled with this _brand.yml file. (See more about brand.yml here).\n\nTypefaces\nI use Open Sans (Google Fonts) as the main body font throughout the site, and I use Alan Sans (Google Fonts) for all headings.\n\nA heading\nWhereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world…\n\n\n\nColors\nThe colors for this course website come primarily from the “ustwo” palette from the {MoMAColors} R package. The colors come from the video game Monument Valley, developed and produced by ustwo, and is one of only a few pieces of software-based art in the MoMA (see its MoMA page).\n\n\n\n\n\nMonument Valley, 2014, ustwo, video game software, MoMA link.\n\n\n\n\n\n\n\n\n\n\n\nSince this palette only has 6 colors, I supplement it with a few colors from the qualitative Prism palette from CARTOColors:",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#credits",
+    "href": "colophon.html#credits",
+    "title": "Colophon",
+    "section": "Credits",
+    "text": "Credits",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
     "objectID": "materials/00-setup/index.html",
     "href": "materials/00-setup/index.html",
     "title": "Setup",
