@@ -1,0 +1,98 @@
+# Special pages {background-color='{{< brand color yellow >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## YAML-based page settings
+
+Some page types are based on special templates that use information from the YAML metadata.
+
+Two main built-in special page types:
+
+- Listing pages
+- About pages
+
+::: {style="font-size: 75%;"}
+(you can make your own special templates too!)
+:::
+
+## Listing pages
+
+::::: {.columns}
+::: {.column width="40%"}
+
+More about these in the advanced section!
+
+```` {.markdown filename="research.qmd" code-line-numbers="3-5"}
+---
+title: "Research"
+listing:
+  contents: "*.qmd"
+  type: table
+---
+````
+
+:::
+
+::: {.column width="60%"}
+
+![](img/listing-example.png){width="100%"}
+
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-listings.html>{target="_blank"}
+:::
+
+
+## About pages
+
+::::: {.columns}
+::: {.column width="40%"}
+
+```` {.markdown filename="about.qmd" code-line-numbers="3-9"}
+---
+title: "Ada Lovelace"
+about:
+  template: solana
+  image: img/ada-lovelace.jpg
+  links: 
+    - icon: wikipedia
+      text: Wikipedia
+      href: https://en.wikipedia.org/wiki/Ada_Lovelace
+toc: false
+---
+
+## Background
+
+Augusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852), also known as Ada Lovelace, was an English mathematician and writer chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. Ada Lovelace is sometimes considered to be the first computer programmer.
+````
+
+:::
+
+::: {.column width="60%"}
+
+![](img/about-lovelace.png){width="100%"}
+
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-about.html>{target="_blank"}
+:::
+
+## Don't memorize this stuff!
+
+![](img/about-documentation.png){fig-align="center"}
+
+::: {style="font-size: 75%; text-align: center;"}
+[Quarto.org \> Guide \> Websites \> About Pages](https://quarto.org/docs/websites/website-about.html)
+:::
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+{{< include _your-turn_special1.qmd >}}
+
+```{r}
+#| label: clock-quarto-about-page
+#| #| echo: false
+countdown::countdown(minutes = 7)
+```

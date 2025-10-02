@@ -1,0 +1,25 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+
+#title-slide .title {
+    color: #ffffff;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.reveal .title-slide h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2.5em !important;
+}
+
+kbd {
+    font-size: 0.8em;
+}
+
+kbd.kbd.mac {
+    /* When rendering keyboard icons on macOS, we revert the font family to the 
+    system font to ensure the icons render with the same X-height as upper case letters. */
+    font-family: inherit;
+}

@@ -1,0 +1,152 @@
+# `_quarto.yml` {background-color='{{< brand color yellow >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+
+## `_quarto.yml`
+
+Configure all site-level settings with `_quarto.yml`:
+
+```{.yaml filename="_quarto.yml"}
+project:
+  type: website
+
+website:
+  title: "My site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    toc: true
+```
+
+## Project settings
+
+```{.yaml filename="_quarto.yml" code-line-numbers="3|4-5"}
+project:
+  type: website
+  output-dir: _output
+  preview:
+    port: 5555
+```
+
+## Project settings
+
+```{.yaml filename="_quarto.yml" code-line-numbers="4-5"}
+project:
+  type: website
+  output-dir: _output
+  preview:
+    port: 5555
+```
+
+![](img/preview-port.png){fig-align="center"}
+
+## Site settings
+
+```{.yaml filename="_quarto.yml" code-line-numbers="6-8"}
+project:
+  type: website
+
+website:
+  title: "My site"
+  description: "Some neat stuff"
+  cookie-consent: true
+  search: false
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    toc: true
+```
+
+## Navigation settings
+
+More on this in a bit!
+
+```{.yaml filename="_quarto.yml" code-line-numbers="6-13"}
+project:
+  type: website
+
+website:
+  title: "My site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+  sidebar: 
+    style: "docked"
+    contents: 
+      - about.qmd
+
+format:
+  html:
+    toc: true
+```
+
+## Format settings
+
+```{.yaml filename="_quarto.yml" code-line-numbers="11-15"}
+project:
+  type: website
+
+website:
+  title: "My site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    toc: true
+    number-sections: true
+    cap-location: margin
+```
+
+## Don't memorize this stuff!
+
+![](img/website-documentation.png){fig-align="center"}
+
+::: {style="font-size: 75%; text-align: center;"}
+[Quarto.org \> Reference \> Websites](https://quarto.org/docs/reference/projects/websites.html)
+:::
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_quarto-yml1.qmd >}}
+
+```{r}
+#| label: clock-quarto-yml
+#| echo: false
+countdown::countdown(minutes = 7)
+```
+
+## Answer {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+```{.yaml filename="_quarto.yml" code-line-numbers="3-4,8-12"}
+project:
+  type: website
+  preview:
+    port: 5555
+
+website:
+  title: "My site"
+  description: "Something"
+  cookie-consent: true
+  page-footer: "© 2025, Myself"
+  announcement:
+    content: "**Fun!** This is my playground site."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+```
+
+## Answer {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+![](img/quarto-yaml-settings-answers.png){fig-align="center"}

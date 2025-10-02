@@ -1,0 +1,6 @@
+1. Create a basic About page for either yourself or some fictional person.
+
+   - Find an image on your computer or from the internet and add it to your project, either in the root of project, or (better!) in a folder just for images, like `img/`
+   - Add links to different websites (with icons!)
+   - Try different `template` options
+   - Try different `image-shape` options

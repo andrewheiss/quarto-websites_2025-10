@@ -1,0 +1,30 @@
+---
+title: "Creating<br>basic websites"
+format:
+  revealjs:
+    theme: [simple, ../../css/slide-styles.scss, brand]
+    title-slide-attributes: 
+      data-background-image: ../../img/background-hex-shapes.svg
+      data-background-opacity: "0.5"
+      data-background-gradient: "linear-gradient(30deg, {{< brand color yellow >}}, {{< brand color red >}})"
+      style: "text-align: left; right: 10%"
+      # data-background-color: "{{< brand color blue >}}"
+---
+
+```{r}
+#| include: false
+
+library(countdown)
+```
+
+{{< include _sec_anatomy.qmd >}}
+
+{{< include _sec_workflow.qmd >}}
+
+{{< include _sec_quarto_yml.qmd >}}
+
+{{< include _sec_navigation.qmd >}}
+
+{{< include _sec_special.qmd >}}
+
+{{< include _sec_next.qmd >}}

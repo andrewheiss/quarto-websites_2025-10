@@ -1,3 +1,61 @@
 ---
 title: "Creating basic websites"
 ---
+
+## Slides
+
+[View slides in full screen](slides.html)
+
+```{=html}
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+
+## Exercises
+
+### Anatomy of a Quarto website
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_anatomy1.qmd >}}
+:::
+
+
+### Workflow
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_workflow1.qmd >}}
+:::
+
+
+### _quarto.yml
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_quarto-yml1.qmd >}}
+:::
+
+### Navigation
+
+::: {.callout-tip collapse="true"}
+#### Your turn 1
+
+{{< include _your-turn_navigation1.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### Your turn 2
+
+{{< include _your-turn_navigation2.qmd >}}
+:::
+
+### Special pages
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_special1.qmd >}}
+:::

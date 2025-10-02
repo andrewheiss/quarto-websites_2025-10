@@ -1,0 +1,5 @@
+1. Create a new website project somewhere on your computer. 
+
+   We'll use this as a playground throughout the course.
+
+2. Open the project in RStudio and explore what the different files look like.

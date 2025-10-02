@@ -1,0 +1,9 @@
+1. Open your playground website.
+
+2. Open `index.qmd` and click Render/Preview.
+
+3. Edit the `title` entry in `index.qmd`'s YAML metadata to something different and add a `subtitle` entry. Preview.
+
+4. Add some text to `index.qmd`. Preview.
+
+5. Add an R code chunk to `about.qmd`. Preview.

@@ -1,0 +1,12 @@
+1. Create a new file named `contact.qmd` and paste the content from `about.qmd` into it. Then change it to something else.
+
+2. Add `contact.qmd` to the left section of your top navigation bar.
+
+3. Add a right section to the navigation bar with icon-based links to a few other websites.
+
+4. *Bonus task!* Create a dropdown menu in the top navigation bar, either with links to other websites or links to some new `.qmd` pages that you create.
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at [Quarto.org \> Guide \> Websites \> Website Navigation](https://quarto.org/docs/websites/website-navigation.html)

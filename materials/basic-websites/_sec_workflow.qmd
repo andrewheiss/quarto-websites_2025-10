@@ -1,0 +1,96 @@
+# Workflow {background-color='{{< brand color yellow >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+##
+
+![](img/cycle-1.png)
+
+##
+
+![](img/cycle-2.png)
+
+##
+
+![](img/cycle-3.png)
+
+
+## Preview
+
+:::::::::::: panel-tabset
+## RStudio
+
+::::: columns
+::: column
+### Current page
+
+![](img/basics-rstudio-render.png){style="margin-bottom: 0px"}
+
+{{< fa brands apple >}}&ensp; <kbd title="Command-Shift-K" aria-hidden="true" class="kbd mac">⌘⇧K</kbd>
+
+{{< fa brands windows >}}&ensp;<kbd title="Ctrl-Shift-K" aria-hidden="true" class="kbd">Ctrl + Shift + K</kbd>
+:::
+
+::: column
+### Whole site
+
+**Build** \> **Render Website**
+
+![](img/basics-rstudio-render-website.png)
+:::
+:::::
+
+## Positron&thinsp;/&thinsp;VS Code
+
+::::: columns
+::: column
+### Current page
+
+![](img/basics-vscode-preview.png){style="margin-bottom: 0px"}
+
+{{< fa brands apple >}}&ensp; <kbd>⌘⇧K</kbd>  
+{{< fa brands windows >}}&ensp;<kbd>ctrl + shift + K</kbd>
+:::
+
+::: column
+### Whole site
+
+Use Terminal:
+
+``` {.default filename="Terminal"}
+quarto preview 
+```
+
+:::
+:::::
+
+Requires [Quarto Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+
+## Terminal
+
+::::: columns
+::: column
+### Current page
+
+``` {.default filename="Terminal"}
+quarto preview index.qmd
+```
+:::
+
+::: column
+### Whole site
+
+``` {.default filename="Terminal"}
+quarto preview 
+```
+:::
+:::::
+::::::::::::
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+{{< include _your-turn_workflow1.qmd >}}
+
+```{r}
+#| label: clock-preview
+#| echo: false
+countdown::countdown(minutes = 5)
+```

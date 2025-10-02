@@ -1,0 +1,12 @@
+# What's next? {background-color='{{< brand color yellow >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Course outline
+
+- ✅ ~~Intro to Quarto~~
+- ✅ ~~Creating basic websites~~
+- Advanced website features
+- Publishing
+- Customization and branding
+- Interactivity
+
+# Break! {background-color='{{< brand color pink >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}

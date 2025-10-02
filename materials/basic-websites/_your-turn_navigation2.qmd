@@ -1,0 +1,10 @@
+1. Create a folder named `research` and create these files in there: `index.qmd`, `project1.qmd`, `project2.qmd`, and `project3.qmd`
+
+2. Add an entry for `research.qmd` in your top navigation bar
+
+3. Make a sidebar that only appears on the research page that contains links to `index.qmd`, `project1.qmd`, `project2.qmd`, and `project3.qmd`
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at [Quarto.org \> Guide \> Websites \> Website Navigation](https://quarto.org/docs/websites/website-navigation.html)

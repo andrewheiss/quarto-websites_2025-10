@@ -1,0 +1,15 @@
+1. Edit your `_quarto.yml` to make the following changes:
+
+   - Change the preview port to 5555
+   - Enable a cookie consent dialog
+   - Add a site description
+
+2. *Bonus tasks!*
+
+   - Add a footer that says "© 2025, Myself"
+   - Add an announcement bar that says something
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at [Quarto.org \> Reference \> Websites](https://quarto.org/docs/reference/projects/websites.html)

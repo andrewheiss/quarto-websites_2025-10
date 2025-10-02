@@ -1,0 +1,211 @@
+# Anatomy of a<br>Quarto website {background-color='{{< brand color yellow >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Page Structure
+
+:::: {.columns}
+::: {.column width="50%"}
+```` {.yaml filename="index.qmd"}
+---
+title: "Global Happiness"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+Data from: [World Happiness Report](https://www.worldhappiness.report/).
+
+```{{r}}
+#| label: setup
+library(tidyverse)
+library(quarto)
+library(brand.yml)
+
+whr <- read_csv(here::here("data/whr.csv"))
+
+brand <- read_brand_yml("_brand.yml")
+
+theme_whr <-
+  theme_brand_ggplot2("_brand.yml") +
+  theme(
+    plot.title = element_text(size = 14, face = "bold"),
+    plot.subtitle = element_text(size = 12)
+  ) 
+```
+````
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="47%"}
+Webpages are like any other Quarto document:
+
+1.  Start with a YAML header
+2.  Can include code cells
+3.  Everything else is markdown content
+
+:::
+:::::
+
+## Website Structure
+
+A minimal website has two files: `index.qmd` and `_quarto.yml`
+
+- `index.qmd`: Renders to `index.html`, your home page.
+
+- `_quarto.yml`: Controls project and website properties.
+
+When rendered you will get a  `_site/` folder. This contains everything needed to serve the site.
+
+## `_quarto.yml` {.scrollable}
+
+```{.yaml filename="_quarto.yml" code-line-numbers="|1-2|4-10|11-15"}
+project:
+  type: website
+
+website:
+  title: "My site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    toc: true
+
+```
+
+## Quarto projects
+
+::::: {.incremental}
+
+Websites are **Quarto projects**.
+
+All Quarto projects include a `_quarto.yml` file. 
+
+:::: {.columns}
+::: {.column .fragment .fade-right width="50%"}
+This is a Quarto Project.
+
+```{.default code-line-numbers="false"}
+my-folder/
+├── _quarto.yml
+└── my-document.qmd
+```
+:::
+
+::: {.column .fragment .fade-left width="50%"}
+This is not.
+
+```{.default code-line-numbers="false"}
+my-folder/
+└── my-document.qmd
+```
+:::
+::::
+
+:::::
+
+## Quarto projects
+
+A Quarto project is a *directory* that provides:
+
+::: {.incremental}
+- A way to render all or some of the files in a directory with a single command (e.g. `quarto render myproject`).
+- A way to share YAML configuration across multiple documents.
+:::
+
+## Quarto projects
+
+Not all Quarto projects are websites (though they're typically website-like).
+
+``` {.bash filename="Terminal" code-line-numbers="false"}
+❯ quarto create project
+# ? Type
+#   default
+# ❯ website
+#   blog
+#   manuscript
+#   book
+#   confluence
+```
+
+## Creating a project skeleton
+
+:::::::::::: {.panel-tabset}
+
+## RStudio
+
+::: {style="font-size: 75%;"}
+File \> New Project \> New Directory \> Quarto Website
+:::
+
+:::: {.columns}
+
+::: {.column}
+![](img/rstudio-new-website-1.png)
+:::
+
+::: {.column}
+![](img/rstudio-new-website-2.png)
+:::
+
+::::
+
+## Positron&thinsp;/&thinsp;VS Code
+
+::: {style="font-size: 75%;"}
+Open the Command Palette ({{< fa brands apple >}}&nbsp;<kbd title="Command-Shift-P" aria-hidden="true" class="kbd mac">⌘⇧P</kbd> | {{< fa brands windows >}}&nbsp;<kbd title="Ctrl-Shift-P" aria-hidden="true" class="kbd">Ctrl + Shift + P</kbd>)<br>and start typing "create project"
+:::
+
+:::: {.columns}
+
+::: {.column}
+![](img/positron-new-website-1.png)
+:::
+
+::: {.column}
+![](img/positron-new-website-2.png)
+:::
+
+::::
+
+## Terminal
+
+``` {.bash filename="Terminal" code-line-numbers="false"}
+❯ quarto create project website my-site
+# ? Title (my-site) › My site
+# Creating project at /Users/andrew/Desktop/my-site:
+#   - Created _quarto.yml
+#   - Created index.qmd
+#   - Created about.qmd
+#   - Created styles.css
+# ? Open With › (don't open)
+```
+
+::::::::::::
+
+## Creating a project skeleton
+
+```{.default code-line-numbers="false"}
+my-site/
+├── _quarto.yml
+├── about.qmd
+├── index.qmd
+├── styles.css
+└── testing.Rproj  ← if made with RStudio
+```
+
+![](img/skeleton-rstudio.png){fig-align="center"}
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+{{< include _your-turn_anatomy1.qmd >}}
+
+```{r}
+#| label: clock-create-project
+#| echo: false
+countdown::countdown(minutes = 3)
+```

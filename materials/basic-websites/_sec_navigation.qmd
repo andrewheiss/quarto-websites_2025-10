@@ -1,0 +1,392 @@
+# Navigation {background-color='{{< brand color yellow >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Top navigation
+
+::::: {.columns}
+::: {.column width="40%"}
+```` {.yaml filename="_quarto.yml" code-line-numbers="6-9"}
+project:
+  type: website
+
+website:
+  title: "My site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    toc: true
+````
+:::
+
+::: {.column width="60%"}
+![](img/navbar-1.png){width="100%"}
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#top-navigation>{target="_blank"}
+:::
+
+## Add new page
+
+::::: {.columns}
+::: {.column width="40%"}
+```` {.yaml filename="_quarto.yml" code-line-numbers="10"}
+project:
+  type: website
+
+website:
+  title: "My site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    toc: true
+````
+:::
+
+::: {.column width="60%"}
+![](img/navbar-2.png){width="100%"}
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#top-navigation>{target="_blank"}
+:::
+
+
+## Entry titles
+
+::::: {.columns}
+::: {.column width="40%"}
+
+```` {.yaml filename="_quarto.yml" code-line-numbers="4-6"}
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+````
+
+:::
+
+::: {.column width="60%"}
+
+- Use `href` + `text` to control the link title
+- Use the `.qmd` filename to use that page's title as the link title
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#top-navigation>{target="_blank"}
+:::
+
+## Icons
+
+::::: {.columns}
+::: {.column width="40%"}
+
+```` {.yaml filename="_quarto.yml" code-line-numbers="7-8"}
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: https://www.github.com
+        icon: github
+````
+
+:::
+
+::: {.column width="60%"}
+
+
+![](img/navbar-icon.png){width="100%"}
+
+::: {style="font-size: 75%; text-align: center;"}
+[icons.getbootstrap.com](https://icons.getbootstrap.com/)
+:::
+
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#top-navigation>{target="_blank"}
+:::
+
+## Dropdowns
+
+::::: {.columns}
+::: {.column width="50%"}
+
+```` {.yaml filename="_quarto.yml" code-line-numbers="9-16"}
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: https://www.github.com
+        icon: github
+      - icon: share
+        menu: 
+          - href: https://bsky.app/
+            icon: bluesky
+            text: Bluesky
+          - href: https://www.linkedin.com/
+            icon: linkedin
+            text: LinkedIn
+````
+
+:::
+
+::: {.column width="50%"}
+
+![](img/navbar-menu.png){width="100%"}
+
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#top-navigation>{target="_blank"}
+:::
+
+## Don't memorize this stuff!
+
+![](img/navigation-documentation.png){fig-align="center"}
+
+::: {style="font-size: 75%; text-align: center;"}
+[Quarto.org \> Guide \> Websites \> Website Navigation](https://quarto.org/docs/websites/website-navigation.html)
+:::
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_navigation1.qmd >}}
+
+```{r}
+#| label: clock-quarto-top-navigation
+#| #| echo: false
+countdown::countdown(minutes = 7)
+```
+
+## Answer {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+```{.yaml filename="_quarto.yml"}
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - contact.qmd
+    right:
+      - href: https://www.github.com
+        icon: github
+      - icon: share
+        text: Share!
+        menu: 
+          - href: https://bsky.app/
+            icon: bluesky
+            text: Bluesky
+          - href: https://www.linkedin.com/
+            icon: linkedin
+            text: LinkedIn
+```
+
+## Answer {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+![](img/top-navbar-answer.png){fig-align="center"}
+
+
+## Side navigation
+
+::::: {.columns}
+::: {.column width="40%"}
+```` {.yaml filename="_quarto.yml" code-line-numbers="2-7"}
+website:
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - contact.qmd
+````
+:::
+
+::: {.column width="60%"}
+![](img/sidebar-main.png){width="100%"}
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#side-navigation>{target="_blank"}
+:::
+
+## Side navigation and sections
+
+::::: {.columns}
+::: {.column width="40%"}
+```` {.yaml filename="_quarto.yml" code-line-numbers="6-9"}
+website:
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: About me
+        contents:
+          - about.qmd
+          - contact.qmd
+````
+:::
+
+::: {.column width="60%"}
+![](img/sidebar-sections.png){width="100%"}
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#side-navigation>{target="_blank"}
+:::
+
+## Side navigation and other settings
+
+::::: {.columns}
+::: {.column width="40%"}
+```` {.yaml filename="_quarto.yml" code-line-numbers="3-5"}
+website:
+  sidebar:
+    style: "docked"  # Default is "floating"
+    background: "#dddddd"
+    logo: img/logo.png
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: About me
+        contents:
+          - about.qmd
+          - contact.qmd
+````
+:::
+
+::: {.column width="60%"}
+![](img/sidebar-other-settings.png){width="100%"}
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#side-navigation>{target="_blank"}
+:::
+
+## Automatic sidebar
+
+::::: {.columns}
+::: {.column width="50%"}
+```` {.yaml filename="_quarto.yml" code-line-numbers="6-10"}
+website:
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: Research
+        contents:
+          - research/project1.qmd
+          - research/project2.qmd
+          - research/project3.qmd
+````
+:::
+
+::: {.column width="50%"}
+```` {.yaml filename="_quarto.yml" code-line-numbers="6-7"}
+website:
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: Research
+        contents: research/*
+````
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#auto-generation>{target="_blank"}
+:::
+
+
+## Hybrid navigation
+
+Have a different sidebar for different sections!
+
+```` {.yaml filename="_quarto.yml" code-line-numbers="7-8,10-15"}
+website:
+  navbar: 
+    left: 
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - text: "Research"
+        href: research/index.qmd
+  sidebar:
+    - title: "Research"
+      contents:
+        - research/index.qmd
+        - research/project1.qmd
+        - research/project2.qmd
+        - research/project3.qmd
+````
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation>{target="_blank"}
+:::
+
+## Don't memorize this stuff!
+
+![](img/navigation-documentation.png){fig-align="center"}
+
+::: {style="font-size: 75%; text-align: center;"}
+[Quarto.org \> Guide \> Websites \> Website Navigation](https://quarto.org/docs/websites/website-navigation.html)
+:::
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_navigation2.qmd >}}
+
+```{r}
+#| label: clock-quarto-sidebar
+#| #| echo: false
+countdown::countdown(minutes = 7)
+```
+
+## Answer {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+```{.yaml filename="_quarto.yml"}
+# Excerpt!
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "Research"
+        href: research/index.qmd
+
+  sidebar:
+    - title: "Research"
+      contents:
+        - research/index.qmd
+        - research/project1.qmd
+        - research/project2.qmd
+        - research/project3.qmd
+```
+
+## Answer {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+![](img/sidebar-answer.png){fig-align="center"}
