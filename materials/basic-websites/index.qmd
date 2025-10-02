@@ -7,7 +7,9 @@ title: "Creating basic websites"
 [View slides in full screen](slides.html)
 
 ```{=html}
-<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<div class="ratio ratio-16x9">
+<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
+</div>
 ```
 
 ## Exercises
