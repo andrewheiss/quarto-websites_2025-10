@@ -7,9 +7,6 @@ project:
     # Render all .qmd files
     - "**/*.qmd"
 
-    # Don't render any exercise files because they're partials
-    - "!exercise*.qmd"
-
 execute:
   freeze: auto
 
@@ -77,8 +74,9 @@ website:
 
 format:
   html:
+    highlight-style: github
     theme:
       - cosmo
-      - styles.scss
+      - css/site-styles.scss
       - brand
     toc: true
