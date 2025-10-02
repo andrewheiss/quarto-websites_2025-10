@@ -1,36 +1,50 @@
 [
   {
-    "objectID": "materials/01-intro/index.html",
-    "href": "materials/01-intro/index.html",
-    "title": "Introduction to Quarto",
+    "objectID": "materials/basic-websites/index.html",
+    "href": "materials/basic-websites/index.html",
+    "title": "Creating basic websites",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Materials",
-      "Intro to Quarto"
+      "Creating basic websites"
     ]
   },
   {
-    "objectID": "materials/01-intro/index.html#slides",
-    "href": "materials/01-intro/index.html#slides",
-    "title": "Introduction to Quarto",
+    "objectID": "materials/basic-websites/index.html#slides",
+    "href": "materials/basic-websites/index.html#slides",
+    "title": "Creating basic websites",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Materials",
-      "Intro to Quarto"
+      "Creating basic websites"
     ]
   },
   {
-    "objectID": "materials/01-intro/index.html#exercises",
-    "href": "materials/01-intro/index.html#exercises",
-    "title": "Introduction to Quarto",
+    "objectID": "materials/basic-websites/index.html#exercises",
+    "href": "materials/basic-websites/index.html#exercises",
+    "title": "Creating basic websites",
     "section": "Exercises",
-    "text": "Exercises\n\nExercise 1\n\nStuff goes here",
+    "text": "Exercises\n\nAnatomy of a Quarto website\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a new website project somewhere on your computer.\nWe’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen your playground website.\nOpen index.qmd and click Render/Preview.\nEdit the title entry in index.qmd’s YAML metadata to something different and add a subtitle entry. Preview.\nAdd some text to index.qmd. Preview.\nAdd an R code chunk to about.qmd. Preview.\n\n\n\n\n\n\n_quarto.yml\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nEdit your _quarto.yml to make the following changes:\n\nChange the preview port to 5555\nEnable a cookie consent dialog\nAdd a site description\n\nBonus tasks!\n\nAdd a footer that says “© 2025, Myself”\nAdd an announcement bar that says something\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Reference &gt; Websites\n\n\n\n\n\n\nNavigation\n\n\n\n\n\n\nTipYour turn 1\n\n\n\n\n\n\nCreate a new file named contact.qmd and paste the content from about.qmd into it. Then change it to something else.\nAdd contact.qmd to the left section of your top navigation bar.\nAdd a right section to the navigation bar with icon-based links to a few other websites.\nBonus task! Create a dropdown menu in the top navigation bar, either with links to other websites or links to some new .qmd pages that you create.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\n\n\n\n\nTipYour turn 2\n\n\n\n\n\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\nSpecial pages\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a basic About page for either yourself or some fictional person.\n\nFind an image on your computer or from the internet and add it to your project, either in the root of project, or (better!) in a folder just for images, like img/\nAdd links to different websites (with icons!)\nTry different template options\nTry different image-shape options",
     "crumbs": [
       "Materials",
-      "Intro to Quarto"
+      "Creating basic websites"
     ]
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#create-an-online-presence-with-quarto-websites",
+    "href": "materials/01-intro/slides.html#create-an-online-presence-with-quarto-websites",
+    "title": "Intro to\nQuarto",
+    "section": "Create an Online Presence with Quarto Websites",
+    "text": "Create an Online Presence with Quarto Websites"
+  },
+  {
+    "objectID": "materials/01-intro/exercise-01.html",
+    "href": "materials/01-intro/exercise-01.html",
+    "title": "Quarto websites",
+    "section": "",
+    "text": "Stuff goes here"
   },
   {
     "objectID": "index.html",
@@ -77,7 +91,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-09-30 at 11:35:43 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-02 at 00:19:59 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -87,7 +101,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-09-30 at 11:35:43 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-02 at 00:19:59 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -163,10 +177,351 @@
     ]
   },
   {
-    "objectID": "materials/01-intro/slides.html#create-an-online-presence-with-quarto-websites",
-    "href": "materials/01-intro/slides.html#create-an-online-presence-with-quarto-websites",
-    "title": "Intro to\nQuarto",
-    "section": "Create an Online Presence with Quarto Websites",
-    "text": "Create an Online Presence with Quarto Websites"
+    "objectID": "materials/01-intro/index.html",
+    "href": "materials/01-intro/index.html",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Materials",
+      "Intro to Quarto"
+    ]
+  },
+  {
+    "objectID": "materials/01-intro/index.html#slides",
+    "href": "materials/01-intro/index.html#slides",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Materials",
+      "Intro to Quarto"
+    ]
+  },
+  {
+    "objectID": "materials/01-intro/index.html#exercises",
+    "href": "materials/01-intro/index.html#exercises",
+    "title": "Introduction to Quarto",
+    "section": "Exercises",
+    "text": "Exercises\n\nExercise 1\n\nStuff goes here",
+    "crumbs": [
+      "Materials",
+      "Intro to Quarto"
+    ]
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#page-structure",
+    "href": "materials/basic-websites/slides.html#page-structure",
+    "title": "Creatingbasic websites",
+    "section": "Page Structure",
+    "text": "Page Structure\n\n\n\n\nindex.qmd\n\n---\ntitle: \"Global Happiness\"\nexecute:\n  echo: false\n  warning: false\n  message: false\n---\n\nData from: [World Happiness Report](https://www.worldhappiness.report/).\n\n```{r}\n#| label: setup\nlibrary(tidyverse)\nlibrary(quarto)\nlibrary(brand.yml)\n\nwhr &lt;- read_csv(here::here(\"data/whr.csv\"))\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\ntheme_whr &lt;-\n  theme_brand_ggplot2(\"_brand.yml\") +\n  theme(\n    plot.title = element_text(size = 14, face = \"bold\"),\n    plot.subtitle = element_text(size = 12)\n  ) \n```\n\n\n\n\nWebpages are like any other Quarto document:\n\nStart with a YAML header\nCan include code cells\nEverything else is markdown content"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#website-structure",
+    "href": "materials/basic-websites/slides.html#website-structure",
+    "title": "Creatingbasic websites",
+    "section": "Website Structure",
+    "text": "Website Structure\nA minimal website has two files: index.qmd and _quarto.yml\n\nindex.qmd: Renders to index.html, your home page.\n_quarto.yml: Controls project and website properties.\n\nWhen rendered you will get a _site/ folder. This contains everything needed to serve the site."
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto.yml",
+    "href": "materials/basic-websites/slides.html#quarto.yml",
+    "title": "Creatingbasic websites",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto-projects",
+    "href": "materials/basic-websites/slides.html#quarto-projects",
+    "title": "Creatingbasic websites",
+    "section": "Quarto projects",
+    "text": "Quarto projects\nWebsites are Quarto projects.\nAll Quarto projects include a _quarto.yml file.\n\n\nThis is a Quarto Project.\nmy-folder/\n├── _quarto.yml\n└── my-document.qmd\n\nThis is not.\nmy-folder/\n└── my-document.qmd"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto-projects-1",
+    "href": "materials/basic-websites/slides.html#quarto-projects-1",
+    "title": "Creatingbasic websites",
+    "section": "Quarto projects",
+    "text": "Quarto projects\nA Quarto project is a directory that provides:\n\nA way to render all or some of the files in a directory with a single command (e.g. quarto render myproject).\nA way to share YAML configuration across multiple documents."
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto-projects-2",
+    "href": "materials/basic-websites/slides.html#quarto-projects-2",
+    "title": "Creatingbasic websites",
+    "section": "Quarto projects",
+    "text": "Quarto projects\nNot all Quarto projects are websites (though they’re typically website-like).\n\n\nTerminal\n\n❯ quarto create project\n# ? Type\n#   default\n# ❯ website\n#   blog\n#   manuscript\n#   book\n#   confluence"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#creating-a-project-skeleton",
+    "href": "materials/basic-websites/slides.html#creating-a-project-skeleton",
+    "title": "Creatingbasic websites",
+    "section": "Creating a project skeleton",
+    "text": "Creating a project skeleton\n\nRStudioPositron / VS CodeTerminal\n\n\n\nFile &gt; New Project &gt; New Directory &gt; Quarto Website\n\n\n\n\n\n\n\n\n\n\nOpen the Command Palette ( ⌘⇧P |  Ctrl + Shift + P)and start typing “create project”\n\n\n\n\n\n\n\n\n\n\n\nTerminal\n\n❯ quarto create project website my-site\n# ? Title (my-site) › My site\n# Creating project at /Users/andrew/Desktop/my-site:\n#   - Created _quarto.yml\n#   - Created index.qmd\n#   - Created about.qmd\n#   - Created styles.css\n# ? Open With › (don't open)"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#creating-a-project-skeleton-1",
+    "href": "materials/basic-websites/slides.html#creating-a-project-skeleton-1",
+    "title": "Creatingbasic websites",
+    "section": "Creating a project skeleton",
+    "text": "Creating a project skeleton\nmy-site/\n├── _quarto.yml\n├── about.qmd\n├── index.qmd\n├── styles.css\n└── testing.Rproj  ← if made with RStudio"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn",
+    "href": "materials/basic-websites/slides.html#your-turn",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate a new website project somewhere on your computer.\nWe’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#preview",
+    "href": "materials/basic-websites/slides.html#preview",
+    "title": "Creatingbasic websites",
+    "section": "Preview",
+    "text": "Preview\n\nRStudioPositron / VS CodeTerminal\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n ctrl + shift + K\n\nWhole site\nUse Terminal:\n\n\nTerminal\n\nquarto preview \n\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-1",
+    "href": "materials/basic-websites/slides.html#your-turn-1",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nOpen your playground website.\nOpen index.qmd and click Render/Preview.\nEdit the title entry in index.qmd’s YAML metadata to something different and add a subtitle entry. Preview.\nAdd some text to index.qmd. Preview.\nAdd an R code chunk to about.qmd. Preview.\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto.yml-2",
+    "href": "materials/basic-websites/slides.html#quarto.yml-2",
+    "title": "Creatingbasic websites",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\nConfigure all site-level settings with _quarto.yml:\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#project-settings",
+    "href": "materials/basic-websites/slides.html#project-settings",
+    "title": "Creatingbasic websites",
+    "section": "Project settings",
+    "text": "Project settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: _output\n  preview:\n    port: 5555"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#project-settings-1",
+    "href": "materials/basic-websites/slides.html#project-settings-1",
+    "title": "Creatingbasic websites",
+    "section": "Project settings",
+    "text": "Project settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: _output\n  preview:\n    port: 5555"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#site-settings",
+    "href": "materials/basic-websites/slides.html#site-settings",
+    "title": "Creatingbasic websites",
+    "section": "Site settings",
+    "text": "Site settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  description: \"Some neat stuff\"\n  cookie-consent: true\n  search: false\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#navigation-settings",
+    "href": "materials/basic-websites/slides.html#navigation-settings",
+    "title": "Creatingbasic websites",
+    "section": "Navigation settings",
+    "text": "Navigation settings\nMore on this in a bit!\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n  sidebar: \n    style: \"docked\"\n    contents: \n      - about.qmd\n\nformat:\n  html:\n    toc: true"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#format-settings",
+    "href": "materials/basic-websites/slides.html#format-settings",
+    "title": "Creatingbasic websites",
+    "section": "Format settings",
+    "text": "Format settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true\n    number-sections: true\n    cap-location: margin"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff",
+    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff",
+    "title": "Creatingbasic websites",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Reference &gt; Websites"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-2",
+    "href": "materials/basic-websites/slides.html#your-turn-2",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nEdit your _quarto.yml to make the following changes:\n\nChange the preview port to 5555\nEnable a cookie consent dialog\nAdd a site description\n\nBonus tasks!\n\nAdd a footer that says “© 2025, Myself”\nAdd an announcement bar that says something\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Reference &gt; Websites\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer",
+    "href": "materials/basic-websites/slides.html#answer",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer\n\n\n_quarto.yml\n\nproject:\n  type: website\n  preview:\n    port: 5555\n\nwebsite:\n  title: \"My site\"\n  description: \"Something\"\n  cookie-consent: true\n  page-footer: \"© 2025, Myself\"\n  announcement:\n    content: \"**Fun!** This is my playground site.\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-1",
+    "href": "materials/basic-websites/slides.html#answer-1",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#top-navigation",
+    "href": "materials/basic-websites/slides.html#top-navigation",
+    "title": "Creatingbasic websites",
+    "section": "Top navigation",
+    "text": "Top navigation\n\n\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#add-new-page",
+    "href": "materials/basic-websites/slides.html#add-new-page",
+    "title": "Creatingbasic websites",
+    "section": "Add new page",
+    "text": "Add new page\n\n\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n\nformat:\n  html:\n    toc: true\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#entry-titles",
+    "href": "materials/basic-websites/slides.html#entry-titles",
+    "title": "Creatingbasic websites",
+    "section": "Entry titles",
+    "text": "Entry titles\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n\n\n\nUse href + text to control the link title\nUse the .qmd filename to use that page’s title as the link title\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#icons",
+    "href": "materials/basic-websites/slides.html#icons",
+    "title": "Creatingbasic websites",
+    "section": "Icons",
+    "text": "Icons\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - href: https://www.github.com\n        icon: github\n\n\n\n\nicons.getbootstrap.com\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dropdowns",
+    "href": "materials/basic-websites/slides.html#dropdowns",
+    "title": "Creatingbasic websites",
+    "section": "Dropdowns",
+    "text": "Dropdowns\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - href: https://www.github.com\n        icon: github\n      - icon: share\n        menu: \n          - href: https://bsky.app/\n            icon: bluesky\n            text: Bluesky\n          - href: https://www.linkedin.com/\n            icon: linkedin\n            text: LinkedIn\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff-1",
+    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff-1",
+    "title": "Creatingbasic websites",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Websites &gt; Website Navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-3",
+    "href": "materials/basic-websites/slides.html#your-turn-3",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate a new file named contact.qmd and paste the content from about.qmd into it. Then change it to something else.\nAdd contact.qmd to the left section of your top navigation bar.\nAdd a right section to the navigation bar with icon-based links to a few other websites.\nBonus task! Create a dropdown menu in the top navigation bar, either with links to other websites or links to some new .qmd pages that you create.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-2",
+    "href": "materials/basic-websites/slides.html#answer-2",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - contact.qmd\n    right:\n      - href: https://www.github.com\n        icon: github\n      - icon: share\n        text: Share!\n        menu: \n          - href: https://bsky.app/\n            icon: bluesky\n            text: Bluesky\n          - href: https://www.linkedin.com/\n            icon: linkedin\n            text: LinkedIn"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-3",
+    "href": "materials/basic-websites/slides.html#answer-3",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#side-navigation",
+    "href": "materials/basic-websites/slides.html#side-navigation",
+    "title": "Creatingbasic websites",
+    "section": "Side navigation",
+    "text": "Side navigation\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - contact.qmd\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#side-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#side-navigation-and-sections",
+    "href": "materials/basic-websites/slides.html#side-navigation-and-sections",
+    "title": "Creatingbasic websites",
+    "section": "Side navigation and sections",
+    "text": "Side navigation and sections\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: About me\n        contents:\n          - about.qmd\n          - contact.qmd\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#side-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#side-navigation-and-other-settings",
+    "href": "materials/basic-websites/slides.html#side-navigation-and-other-settings",
+    "title": "Creatingbasic websites",
+    "section": "Side navigation and other settings",
+    "text": "Side navigation and other settings\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    style: \"docked\"  # Default is \"floating\"\n    background: \"#dddddd\"\n    logo: img/logo.png\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: About me\n        contents:\n          - about.qmd\n          - contact.qmd\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#side-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#automatic-sidebar",
+    "href": "materials/basic-websites/slides.html#automatic-sidebar",
+    "title": "Creatingbasic websites",
+    "section": "Automatic sidebar",
+    "text": "Automatic sidebar\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents:\n          - research/project1.qmd\n          - research/project2.qmd\n          - research/project3.qmd\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents: research/*\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#auto-generation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#hybrid-navigation",
+    "href": "materials/basic-websites/slides.html#hybrid-navigation",
+    "title": "Creatingbasic websites",
+    "section": "Hybrid navigation",
+    "text": "Hybrid navigation\nHave a different sidebar for different sections!\n\n\n_quarto.yml\n\nwebsite:\n  navbar: \n    left: \n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - text: \"Research\"\n        href: research/index.qmd\n  sidebar:\n    - title: \"Research\"\n      contents:\n        - research/index.qmd\n        - research/project1.qmd\n        - research/project2.qmd\n        - research/project3.qmd\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff-2",
+    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff-2",
+    "title": "Creatingbasic websites",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Websites &gt; Website Navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-4",
+    "href": "materials/basic-websites/slides.html#your-turn-4",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-4",
+    "href": "materials/basic-websites/slides.html#answer-4",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer\n\n\n_quarto.yml\n\n# Excerpt!\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - text: \"Research\"\n        href: research/index.qmd\n\n  sidebar:\n    - title: \"Research\"\n      contents:\n        - research/index.qmd\n        - research/project1.qmd\n        - research/project2.qmd\n        - research/project3.qmd"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-5",
+    "href": "materials/basic-websites/slides.html#answer-5",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#yaml-based-page-settings",
+    "href": "materials/basic-websites/slides.html#yaml-based-page-settings",
+    "title": "Creatingbasic websites",
+    "section": "YAML-based page settings",
+    "text": "YAML-based page settings\nSome page types are based on special templates that use information from the YAML metadata.\nTwo main built-in special page types:\n\nListing pages\nAbout pages\n\n\n(you can make your own special templates too!)"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#listing-pages",
+    "href": "materials/basic-websites/slides.html#listing-pages",
+    "title": "Creatingbasic websites",
+    "section": "Listing pages",
+    "text": "Listing pages\n\n\nMore about these in the advanced section!\n\n\nresearch.qmd\n\n---\ntitle: \"Research\"\nlisting:\n  contents: \"*.qmd\"\n  type: table\n---\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-listings.html"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#about-pages",
+    "href": "materials/basic-websites/slides.html#about-pages",
+    "title": "Creatingbasic websites",
+    "section": "About pages",
+    "text": "About pages\n\n\n\n\nabout.qmd\n\n---\ntitle: \"Ada Lovelace\"\nabout:\n  template: solana\n  image: img/ada-lovelace.jpg\n  links: \n    - icon: wikipedia\n      text: Wikipedia\n      href: https://en.wikipedia.org/wiki/Ada_Lovelace\ntoc: false\n---\n\n## Background\n\nAugusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852), also known as Ada Lovelace, was an English mathematician and writer chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. Ada Lovelace is sometimes considered to be the first computer programmer.\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-about.html"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff-3",
+    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff-3",
+    "title": "Creatingbasic websites",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Websites &gt; About Pages"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-5",
+    "href": "materials/basic-websites/slides.html#your-turn-5",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate a basic About page for either yourself or some fictional person.\n\nFind an image on your computer or from the internet and add it to your project, either in the root of project, or (better!) in a folder just for images, like img/\nAdd links to different websites (with icons!)\nTry different template options\nTry different image-shape options\n\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#course-outline",
+    "href": "materials/basic-websites/slides.html#course-outline",
+    "title": "Creatingbasic websites",
+    "section": "Course outline",
+    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\nAdvanced website features\nPublishing\nCustomization and branding\nInteractivity"
   }
 ]

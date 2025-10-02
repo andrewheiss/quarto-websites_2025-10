@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/01-intro/index.html</loc>
-    <lastmod>2025-09-30T15:34:03.474Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/index.html</loc>
-    <lastmod>2025-09-30T15:34:03.474Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/colophon.html</loc>
-    <lastmod>2025-09-30T15:34:03.473Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/00-setup/index.html</loc>
-    <lastmod>2025-09-30T15:34:03.474Z</lastmod>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/basic-websites/index.html</loc>
+    <lastmod>2025-10-02T04:16:36.224Z</lastmod>
   </url>
   <url>
     <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/01-intro/slides.html</loc>
-    <lastmod>2025-09-30T15:34:03.474Z</lastmod>
+    <lastmod>2025-10-02T04:16:36.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/01-intro/exercise-01.html</loc>
+    <lastmod>2025-10-02T04:16:36.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/index.html</loc>
+    <lastmod>2025-10-02T04:16:36.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/colophon.html</loc>
+    <lastmod>2025-10-02T04:16:36.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/00-setup/index.html</loc>
+    <lastmod>2025-10-02T04:16:36.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/01-intro/index.html</loc>
+    <lastmod>2025-10-02T04:16:36.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/basic-websites/slides.html</loc>
+    <lastmod>2025-10-02T04:16:36.224Z</lastmod>
   </url>
 </urlset>
