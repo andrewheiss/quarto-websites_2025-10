@@ -77,22 +77,23 @@ jobs:
 
       - name: Convert slides to PDF with decktape
         run: |
-          # Install decktape
+          # Install decktape and playwright
           npm install -g decktape
-          npx playwright install chromium
-
+          npm install -g playwright
+          playwright install chromium
+          
           # Start local server in background
           cd _site
           python3 -m http.server 8000 &
           SERVER_PID=$!
           cd ..
-
+          
           # Wait for server to start
           sleep 3
-
+          
           # Convert single slide deck
-          decktape reveal "http://localhost:8000/materials/publishing/slides.html?decktape=true" "_site/materials/publishing/slides.pdf"
-
+          decktape --chrome-arg=--no-sandbox reveal "http://localhost:8000/materials/publishing/slides.html?decktape=true" "_site/materials/publishing/slides.pdf"
+          
           # Kill server
           kill $SERVER_PID
 
