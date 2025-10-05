@@ -33,98 +33,417 @@
     ]
   },
   {
-    "objectID": "materials/01-intro/slides.html#create-an-online-presence-with-quarto-websites",
-    "href": "materials/01-intro/slides.html#create-an-online-presence-with-quarto-websites",
-    "title": "Intro to\nQuarto",
-    "section": "Create an Online Presence with Quarto Websites",
-    "text": "Create an Online Presence with Quarto Websites"
+    "objectID": "materials/01-intro/slides.html#housekeeping",
+    "href": "materials/01-intro/slides.html#housekeeping",
+    "title": "Intro toQuarto",
+    "section": "Housekeeping!",
+    "text": "Housekeeping!\n\n\nBe kind and curious!\nSlack and Zoom chat\nAsk questions"
   },
   {
-    "objectID": "materials/01-intro/exercise-01.html",
-    "href": "materials/01-intro/exercise-01.html",
-    "title": "Quarto websites",
+    "objectID": "materials/01-intro/slides.html#schedule-day-1",
+    "href": "materials/01-intro/slides.html#schedule-day-1",
+    "title": "Intro toQuarto",
+    "section": "Schedule (Day 1)",
+    "text": "Schedule (Day 1)\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n9:00 - 10:30\nIntro to Quarto & brand.yml\n\n\n10:30 - 11:00\nCoffee break ☕️\n\n\n11:00 - 12:30\nPresentations & Dashboards\n\n\n12:30 - 1:30\nLunch break 🍽️\n\n\n1:30 - 3:00\nPDFs & Websites\n\n\n3:00 - 3:30\nCoffee break ☕️\n\n\n3:30 - 5:00\nCustomizing your brand"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#schedule-day-2",
+    "href": "materials/01-intro/slides.html#schedule-day-2",
+    "title": "Intro toQuarto",
+    "section": "Schedule (Day 2)",
+    "text": "Schedule (Day 2)\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n9:00 - 10:30\nIntro to Quarto & brand.yml\n\n\n10:30 - 11:00\nCoffee break ☕️\n\n\n11:00 - 12:30\nPresentations & Dashboards\n\n\n12:30 - 1:30\nLunch break 🍽️\n\n\n1:30 - 3:00\nPDFs & Websites\n\n\n3:00 - 3:30\nCoffee break ☕️\n\n\n3:30 - 5:00\nCustomizing your brand"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#about-me",
+    "href": "materials/01-intro/slides.html#about-me",
+    "title": "Intro toQuarto",
+    "section": "About me",
+    "text": "About me\n\n\nAndrew Heiss\n\n andrewheiss.com  @andrew.heiss.phd\n @andrewheiss   andrewheiss\n\n\nAssistant professor of public policy, Georgia State University\nData visualization, statistics, and causal inference"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#meeting-you-where-you-are",
+    "href": "materials/01-intro/slides.html#meeting-you-where-you-are",
+    "title": "Intro toQuarto",
+    "section": "Meeting you where you are",
+    "text": "Meeting you where you are\n\n\n\nThis course is designed for someone who:\n\nKnows some R or Python\nMaybe has an idea for a website\nIs relatively new to Quarto\nWants to customize Quarto output\n\n\n\n\n\n\nYou’ll learn:\n\nWhat Quarto is and how to use it\nHow to create and publish websites with Quarto\nHow to customize Quarto output"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#course-structure",
+    "href": "materials/01-intro/slides.html#course-structure",
+    "title": "Intro toQuarto",
+    "section": "Course structure",
+    "text": "Course structure\n\n\nMy turn\n\nLecture segments\nFeel free to just watch, take notes, browse docs, or tinker around with the code\n\n\nYour turn\n\nExercises for you to do\nWork on your own or with others"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#getting-help",
+    "href": "materials/01-intro/slides.html#getting-help",
+    "title": "Intro toQuarto",
+    "section": "Getting help",
+    "text": "Getting help\n\n\n\n\nUse Zoom reactions\n\n =“I’m stuck and need help!”\n =“I finished the exercise”\n\nAsk longer, more detailed questions in Slack"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#your-turn",
+    "href": "materials/01-intro/slides.html#your-turn",
+    "title": "Intro toQuarto",
+    "section": "Your turn",
+    "text": "Your turn\nIntroduce yourself:\n\nName\nProfessional affiliation\nOn a scale of 1–10, how well do you know…\n\nQuarto?\nR?\nPython?\nHTML and CSS?\n\nWhat do you hope to get out of this course?\n\n\n\n\n−+\n04:00"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#section",
+    "href": "materials/01-intro/slides.html#section",
+    "title": "Intro toQuarto",
     "section": "",
-    "text": "Stuff goes here"
+    "text": "Quarto is an…\n\nopen-source\n\n\nscientific and technical\n\n\npublishing system\n\n\nbuilt on Pandoc."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "",
-    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.\nBy the end of the course, you’ll be able to:\nTODO\n\nBlah\nblah\nbloop\nCreate a fully functional website ready to publish (for free!) on platforms like GitHub Pages or Netlify\n\nThis course will give you the tools to share your work with the world—and make it look great!",
-    "crumbs": [
-      "Home"
-    ]
+    "objectID": "materials/01-intro/slides.html#with-quarto",
+    "href": "materials/01-intro/slides.html#with-quarto",
+    "title": "Intro toQuarto",
+    "section": "With Quarto…",
+    "text": "With Quarto…\n…you can weave together narrative and code to produce elegantly formatted output such as documents, web pages, blog posts, books, dashboards, and more.\n\nCreate dynamic content with Python, R, Julia, and Observable\nEdit documents in your favorite editor\nPublish technical content in HTML, PDF, Microsoft Word, and more\nShare content by publishing to the internet"
   },
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "",
-    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.\nBy the end of the course, you’ll be able to:\nTODO\n\nBlah\nblah\nbloop\nCreate a fully functional website ready to publish (for free!) on platforms like GitHub Pages or Netlify\n\nThis course will give you the tools to share your work with the world—and make it look great!",
-    "crumbs": [
-      "Home"
-    ]
+    "objectID": "materials/01-intro/slides.html#display-data-and-results",
+    "href": "materials/01-intro/slides.html#display-data-and-results",
+    "title": "Intro toQuarto",
+    "section": "Display data and results",
+    "text": "Display data and results\n2024 Idaho election results, by Gabe Osterhout and Andrew Heiss"
   },
   {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "Schedule",
-    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (October 16)\n                  Day 1 (October 16)\n                \n                \n                  10:30–12:30\n                  Setup\n                \n                \n                  10:30–12:30\n                  Intro to Quarto\n                \n                \n                  10:30–12:30\n                  Creating basic websites\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Advanced website features\n                \n                \n                  13:00–15:00\n                  Publishing\n                \n                \n                  Day 2 (October 17)\n                  Day 2 (October 17)\n                \n                \n                  10:30–12:30\n                  Customization and branding\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Interactivity",
-    "crumbs": [
-      "Home"
-    ]
+    "objectID": "materials/01-intro/slides.html#walk-through-a-story",
+    "href": "materials/01-intro/slides.html#walk-through-a-story",
+    "title": "Intro toQuarto",
+    "section": "Walk through a story",
+    "text": "Walk through a story\nCouncil Housing & Neighborhood Income Inequality in Vienna by Tamara Premrov and Matthias Schnetzer (European Centre for Social Welfare Policy and Research, Austria)\n\n\n\n\n\n\n\nPosit recently held a Scrollytelling contest. You may have seen articles in newspapers like the New York Times that display visualizations as you scroll through the document. Quarto has an extension called Scrollytelling that lets you create these sorts of stories in Quarto. This one, from folks at the European Centre for Social Welfare Policy and Research which talked about Housing & Neighborhood Income Inequality in Vienna, was one of the winners."
   },
   {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "Instructor",
-    "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions.",
-    "crumbs": [
-      "Home"
-    ]
+    "objectID": "materials/01-intro/slides.html#publish-papers",
+    "href": "materials/01-intro/slides.html#publish-papers",
+    "title": "Intro toQuarto",
+    "section": "Publish papers",
+    "text": "Publish papers\n\n\nNavigating Hostility: The Effect of Nonprofit Transparency and Accountability on Donor Preferences in the Face of Shrinking Civic Space by Suparna Chaudhry, Marc Dotson, and Andrew Heiss\n\n\n\n\nHTMLPDFWord"
   },
   {
-    "objectID": "colophon.html",
-    "href": "colophon.html",
-    "title": "Colophon",
-    "section": "",
-    "text": "Last built: 2025-10-02 at 01:06:18 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
-    "crumbs": [
-      "Colophon"
-    ]
+    "objectID": "materials/01-intro/slides.html#share-research",
+    "href": "materials/01-intro/slides.html#share-research",
+    "title": "Intro toQuarto",
+    "section": "Share research",
+    "text": "Share research\nPandemic Pass? Treaty Derogations and Human Rights Practices During COVID-19 by Suparna Chaudhry, Audrey Comstock, and Andrew Heiss"
   },
   {
-    "objectID": "colophon.html#technology",
-    "href": "colophon.html#technology",
-    "title": "Colophon",
-    "section": "",
-    "text": "Last built: 2025-10-02 at 01:06:18 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
-    "crumbs": [
-      "Colophon"
-    ]
+    "objectID": "materials/01-intro/slides.html#teach-classes",
+    "href": "materials/01-intro/slides.html#teach-classes",
+    "title": "Intro toQuarto",
+    "section": "Teach classes",
+    "text": "Teach classes\nData Science for the Social Sciences, Gov 50, Harvard University, taught by Matt Blackwell"
   },
   {
-    "objectID": "colophon.html#design",
-    "href": "colophon.html#design",
-    "title": "Colophon",
-    "section": "Design",
-    "text": "Design\nThe typography, colors, and custom CSS settings are all controlled with this _brand.yml file. (See more about brand.yml here).\n\nTypefaces\nI use Open Sans (Google Fonts) as the main body font throughout the site, and I use Alan Sans (Google Fonts) for all headings.\n\nA heading\nWhereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world…\n\n\n\nColors\nThe colors for this course website come primarily from the “ustwo” palette from the {MoMAColors} R package. The colors come from the video game Monument Valley, developed and produced by ustwo, and is one of only a few pieces of software-based art in the MoMA (see its MoMA page).\n\n\n\n\n\nMonument Valley, 2014, ustwo, video game software, MoMA link.\n\n\n\n\n\n\n\n\n\n\n\nSince this palette only has 6 colors, I supplement it with a few colors from the qualitative Prism palette from CARTOColors:",
-    "crumbs": [
-      "Colophon"
-    ]
+    "objectID": "materials/01-intro/slides.html#automate-and-reproduce-your-output",
+    "href": "materials/01-intro/slides.html#automate-and-reproduce-your-output",
+    "title": "Intro toQuarto",
+    "section": "Automate and reproduce your output",
+    "text": "Automate and reproduce your output\nDuplicating Quarto elements with code templates to reduce copy and paste errors by Althea A. Archer (United States Geological Survey)\n\n\nWith Quarto, you can create reports or presentations that update automatically when data changes or when you change inputs because you are creating your report with code. Use variables (parameters) to dynamically change parts of your analysis or report like to generate the same report for different regions, departments, or time periods, write reusable functions to avoid repeating code and keeps work cleaner, more consistent, and easier to maintain. The folks at United States Geological Survey have great blog posts on how they are implementing these ideas in Quarto."
   },
   {
-    "objectID": "colophon.html#license-and-credits",
-    "href": "colophon.html#license-and-credits",
-    "title": "Colophon",
-    "section": "License and credits",
-    "text": "License and credits\nAll the materials and content for this course are licensed under  Creative Commons CC-BY-SA  .\nSome of the materials in the course were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
-    "crumbs": [
-      "Colophon"
-    ]
+    "objectID": "materials/01-intro/slides.html#get-your-team-on-the-same-page",
+    "href": "materials/01-intro/slides.html#get-your-team-on-the-same-page",
+    "title": "Intro toQuarto",
+    "section": "Get your team on the same page",
+    "text": "Get your team on the same page\nWe Converted Our Documentation to Quarto by Melissa Van Bussel (Statistics Canada)\n\n\n\n\n\n\nWebsite for R/Python User Group\nTraining resources\nPresentations\n\n\n\nAnd finally, Melissa van Bussel gave a talk on how the Statistics Canada team converted not just their documentation, but training resources, presentations, and more to Quarto to streamline efforts."
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#gapminder-report",
+    "href": "materials/01-intro/slides.html#gapminder-report",
+    "title": "Intro toQuarto",
+    "section": "Gapminder Report",
+    "text": "Gapminder Report\n\n\n\n\n\n\n\n\nThis is what you’ll work on today!"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#literate-programming",
+    "href": "materials/01-intro/slides.html#literate-programming",
+    "title": "Intro toQuarto",
+    "section": "“Literate programming”",
+    "text": "“Literate programming”"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#why-quarto",
+    "href": "materials/01-intro/slides.html#why-quarto",
+    "title": "Intro toQuarto",
+    "section": "Why Quarto?",
+    "text": "Why Quarto?\n\nMultilingual and independent of computational systems\nQuarto comes “batteries included” straight out of the box\nConsistent expression for core features\nExtension system\nEnable “single-source publishing”—create Word, PDFs, HTML, etc. from one source\nUse defaults that meet accessibility guidelines"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#quarto-formats",
+    "href": "materials/01-intro/slides.html#quarto-formats",
+    "title": "Intro toQuarto",
+    "section": "Quarto formats",
+    "text": "Quarto formats\n\n\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBasic formats\nhtml, pdf, docx, typst\n\n\nBeamer\nbeamer\n\n\nPowerPoint\npptx\n\n\nHTML slides\nrevealjs\n\n\nAdvanced layout\nQuarto Article Layout\n\n\nCross references\nQuarto Crossrefs\n\n\nWebsites & blogs\nQuarto Websites, Quarto Blogs\n\n\nBooks\nQuarto Books\n\n\nInteractivity\nQuarto Interactive Documents\n\n\nJournal articles\nJournal Articles\n\n\nDashboards\nQuarto Dashboards"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#how-it-works",
+    "href": "materials/01-intro/slides.html#how-it-works",
+    "title": "Intro toQuarto",
+    "section": "How it works",
+    "text": "How it works\nQuarto is a command line interface (CLI) that renders plain text formats (.qmd, .rmd, .md) OR mixed formats (.ipynb/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.\n\n\n  Usage:   quarto \n  Version: 1.8.24\n\n  Description:\n\n    Quarto CLI\n\n  Options:\n\n    -h, --help     - Show this help.                            \n    -V, --version  - Show the version number for this program.  \n\n  Commands:\n\n    render          [input] [args...]     - Render files or projects to various document types.\n    preview         [file] [args...]      - Render and preview a document or website project.  \n    serve           [input]               - Serve a Shiny interactive document.                \n    create          [type] [commands...]  - Create a Quarto project or extension               \n    create-project  [dir]                 - Create a project for rendering multiple documents  \n    convert         &lt;input&gt;               - Convert documents to alternate representations.    \n    pandoc          [args...]             - Run the version of Pandoc embedded within Quarto.  \n    typst           [args...]             - Run the version of Typst embedded within Quarto.   \n    run             [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        \n    add             &lt;extension&gt;           - Add an extension to this folder or project         \n    install         [target...]           - Installs an extension or global dependency.        \n    publish         [provider] [path]     - Publish a document or project to a provider.       \n    check           [target]              - Verify correct functioning of Quarto installation. \n    help            [command]             - Show this help or the help of a sub-command."
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#under-the-hood",
+    "href": "materials/01-intro/slides.html#under-the-hood",
+    "title": "Intro toQuarto",
+    "section": "Under the hood",
+    "text": "Under the hood\n\n\njupyter or knitr evaluates Python, Julia, R, or Observable code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format\n\n\nIllustration by Allison Horst"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#environment-options",
+    "href": "materials/01-intro/slides.html#environment-options",
+    "title": "Intro toQuarto",
+    "section": "Environment options",
+    "text": "Environment options\nYou have a couple options for following along today:\n\nPosit Cloud (RStudio in the cloud)\nLocal installation (RStudio, Positron, or VS Code on your computer)"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#your-turn-1",
+    "href": "materials/01-intro/slides.html#your-turn-1",
+    "title": "Intro toQuarto",
+    "section": "Your turn",
+    "text": "Your turn\nGo to the course website and click on Setup in the sidebar.\n\n\nandhs.co/quarto-websites-2025\n\n\nFollow the instructions for either Option 1 or Option 2.\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#quarto-workflow",
+    "href": "materials/01-intro/slides.html#quarto-workflow",
+    "title": "Intro toQuarto",
+    "section": "Quarto workflow",
+    "text": "Quarto workflow\n\n\n\nOpen a .qmd file.\nPreview/render the document.\nMake a change and preview/render again."
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#renderpreview",
+    "href": "materials/01-intro/slides.html#renderpreview",
+    "title": "Intro toQuarto",
+    "section": "Render/preview",
+    "text": "Render/preview\n\nRStudioPositron / VS CodeTerminal\n\n\n\n\n  ⌘⇧K\n Ctrl + Shift + K\n\n\n\n\n\n\n\n  ⌘⇧K\n Ctrl + Shift + K\n\n\n\nRequires Quarto Extension for VS Code\n\n\n\n\nTerminal\n\nquarto preview 01-exercise.qmd"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#your-turn-2",
+    "href": "materials/01-intro/slides.html#your-turn-2",
+    "title": "Intro toQuarto",
+    "section": "Your turn",
+    "text": "Your turn\n\nOpen 01-exercise.qmd\nPreview/render the document\n\nIf you’re using Posit Cloud, you might be asked to allow pop-ups\n\nEdit the title and preview the document again.\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\n.qmd file format with three components:\n\nYAML: Metadata\nText: Markdown\nCode: R, Python, Observable, and Julia\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-1",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-1",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nMetadata: YAML\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\n---\n\n\n\n“Yet another markup language”\nMetadata of your document\nStarts and ends with ---\nUses key-value pairs in the format key: value"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-2",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-2",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nmy-document.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\n---\n\nThis analysis explores data from the Gapminder foundation.\n\n\n\nMarkdown is a lightweight language for creating formatted text\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax\n\n\nMarkdown is a lightweight markup language for creating formatted text using a plain-text editor. Quarto uses markdown syntax for text."
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-3",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-3",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nmy-document.qmd\n\nThe `gapminder.csv` dataset contains data from \nthe [**Gapminder foundation**](https://www.gapminder.org/).\n\n\n\n↓\n\n\nThe gapminder.csv dataset contains data from the Gapminder foundation."
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-4",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-4",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\n\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code\n\n\n\n\nGeneral Markdown guide"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-5",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-5",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nCode\n\n\nmy-document.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\n---\n\nThe `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).\n\n```{r}\nlibrary(tidyverse)\n\ndf &lt;- read_csv(\"data/gapminder.csv\")\n\nggplot(df, aes(x = gdpPercap, y = lifeExp)) +\n  geom_point(aes(size = pop, color = continent)) +\n  scale_x_log10()\n```"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-6",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-6",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nCode\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\n---\n\nThe `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).\n\n```{r}\nlibrary(tidyverse)\n\ndf &lt;- read_csv(\"data/gapminder.csv\")\n\nggplot(df, aes(x = gdpPercap, y = lifeExp)) +\n  geom_point(aes(size = pop, color = continent)) +\n  scale_x_log10()\n```\n\n\n\nCode chunks begin and end with three backticks\nCode chunks are identified with a programming language in between {}"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-7",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-7",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nInline code executes code within Markdown\n\n\nmy-document.qmd\n\n```{r}\ncountries &lt;- 147\n```\n\nThere are `{r} countries` in the dataset.\n\n\n\n↓\n\n\nThere are 147 countries in the dataset."
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-8",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-8",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n\n\nmy-document.qmd\n\nThe `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).\n\n```{r}\n#| label: fig-neat-plot\n#| echo: false\n#| fig-width: 6\n#| fig-height: 3.8\n#| fig-cap: \"My neat plot\"\n\nlibrary(tidyverse)\n\ndf &lt;- read_csv(\"data/gapminder.csv\")\n\nggplot(df, aes(x = gdpPercap, y = lifeExp)) +\n  geom_point(aes(size = pop, color = continent)) +\n  scale_x_log10()\n```"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-9",
+    "href": "materials/01-intro/slides.html#anatomy-of-a-quarto-document-9",
+    "title": "Intro toQuarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n\n\n\n\n\n\n\nOption\nDescription\n\n\n\n\neval\nEvaluate the code chunk\n\n\necho\nInclude the source code\n\n\nwarning\nInclude warnings\n\n\ninclude\nInclude code and results\n\n\n\n\nOther chunk options"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#your-turn-3",
+    "href": "materials/01-intro/slides.html#your-turn-3",
+    "title": "Intro toQuarto",
+    "section": "Your turn",
+    "text": "Your turn\n\nOpen 01-exercise.qmd and run some of the code chunks (in order!).\nAdd #| include: false to the second chunk and preview again. Switch it back to true or remove it. Preview again.\nIn the YAML area, add an author field and add your name. Preview again.\nChange code-fold to be true. Preview again.\nEdit the first paragraph to:\n\nMake something bold\nMake “the Gapminder foundation” link to https://www.gapminder.org\nReplace XXXX and YYYY with inline code instead of hardcoded values. The first code chunk creates R objects named first_year and last_year—use those.\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#images-and-links",
+    "href": "materials/01-intro/slides.html#images-and-links",
+    "title": "Intro toQuarto",
+    "section": "Images and links",
+    "text": "Images and links\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n&lt;https://quarto.org&gt;\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![](earth.jpg)"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#tables",
+    "href": "materials/01-intro/slides.html#tables",
+    "title": "Intro toQuarto",
+    "section": "Tables",
+    "text": "Tables\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|    12 | 12   | 12      |   12   |\n|   123 | 123  | 123     |  123   |\n|     1 | 1    | 1       |   1    |\n\n\n↓\n\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#tables-1",
+    "href": "materials/01-intro/slides.html#tables-1",
+    "title": "Intro toQuarto",
+    "section": "Tables",
+    "text": "Tables\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|    12 | 12   | 12      |   12   |\n|   123 | 123  | 123     |  123   |\n|     1 | 1    | 1       |   1    |\n\n: Table Column Widths {tbl-colwidths=\"[10,30,30,30]\"}\n\n\n↓\n\n\nTable Column Widths\n\n\n\n\n\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#citations",
+    "href": "materials/01-intro/slides.html#citations",
+    "title": "Intro toQuarto",
+    "section": "Citations",
+    "text": "Citations\n\n\nmy-document.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\nbibliography: references.bib\n---\n\nComputers are neat [@Lovelace:1842].\n\n\n\n↓\n\n\n\nComputers are neat (Lovelace 1842).\nReferences\nLovelace, Ada Augusta. 1842. “Sketch of the Analytical Engine Invented by Charles Babbage, by LF Menabrea, Officer of the Military Engineers, with Notes Upon the Memoir by the Translator.” Taylor’s Scientific Memoirs 3: 666–731."
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#citations-1",
+    "href": "materials/01-intro/slides.html#citations-1",
+    "title": "Intro toQuarto",
+    "section": "Citations",
+    "text": "Citations\n\n\nmy-document.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\nbibliography: references.bib\ncsl: apa.csl\n---\n\nComputers are neat [@Lovelace:1842].\n\n\n\n↓\n\n\n\nComputers are neat (Lovelace, 1842).\nReferences\nLovelace, A. A. (1842). Sketch of the analytical engine invented by Charles Babbage, by LF Menabrea, officer of the military engineers, with notes upon the memoir by the translator. Taylor’s Scientific Memoirs, 3, 666–731."
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#citations-2",
+    "href": "materials/01-intro/slides.html#citations-2",
+    "title": "Intro toQuarto",
+    "section": "Citations",
+    "text": "Citations\n\n\nmy-document.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\nbibliography: references.bib\ncsl: chicago-notes-bibliography.csl\n---\n\nComputers are neat [@Lovelace:1842].\n\n\n\n↓\n\n\n\nComputers are neat1.\nFootnotes\n\nAda Augusta Lovelace, “Sketch of the Analytical Engine Invented by Charles Babbage, by LF Menabrea, Officer of the Military Engineers, with Notes Upon the Memoir by the Translator,” Taylor’s Scientific Memoirs 3 (1842): 666–731.↩︎"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#citations-3",
+    "href": "materials/01-intro/slides.html#citations-3",
+    "title": "Intro toQuarto",
+    "section": "Citations",
+    "text": "Citations\n\n\nZotero + Better BibTeX can manage references and export them for Quarto\n\n\n\n\n\n\n10,000 bibliographic styles are available at https://www.zotero.org/styles"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#dont-memorize-this-stuff",
+    "href": "materials/01-intro/slides.html#dont-memorize-this-stuff",
+    "title": "Intro toQuarto",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Authoring &gt; Scholarly Writing &gt; Citations"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#cross-references",
+    "href": "materials/01-intro/slides.html#cross-references",
+    "title": "Intro toQuarto",
+    "section": "Cross references",
+    "text": "Cross references\n\n\nmy-document.qmd\n\nSee @fig-neat-plot for more details.\n\n```{r}\n#| label: fig-neat-plot\n#| fig-cap: \"My neat plot\"\n\n# Plot code here\n```\n\n\n\n↓\n\n\n\nSee Figure 1 for more details.\n\n…\n\nFigure 1: My neat plot"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#dont-memorize-this-stuff-1",
+    "href": "materials/01-intro/slides.html#dont-memorize-this-stuff-1",
+    "title": "Intro toQuarto",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Authoring &gt; Scholarly Writing &gt; Cross-References"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#divs-and-spans",
+    "href": "materials/01-intro/slides.html#divs-and-spans",
+    "title": "Intro toQuarto",
+    "section": "Divs and Spans",
+    "text": "Divs and Spans\nFor further customization, you can add classes, attributes, and other identifiers to content using divs and spans.\nDivs\n::: {.border}\nThis adds the \"border\" class to some content. \n:::\nSpans\n[This is some text]{.class style=\"color: #cccccc;\"}\n\nLearn more: https://quarto.org/docs/authoring/markdown-basics.html#sec-divs-and-spans"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#divs",
+    "href": "materials/01-intro/slides.html#divs",
+    "title": "Intro toQuarto",
+    "section": "Divs",
+    "text": "Divs\nCallout blocks\n\n\nmy-document.qmd\n\n:::{.callout-tip}\n\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\n\nTip\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important.\n\n\n\n\nLearn more: https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks\n\n\nuse callout blocks to draw attention to some information. callouts use the div syntax"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#divs-1",
+    "href": "materials/01-intro/slides.html#divs-1",
+    "title": "Intro toQuarto",
+    "section": "Divs",
+    "text": "Divs\nMultiple columns\n\n\nmy-document.qmd\n\n::: {layout-ncol=2}\n\n![](earth.jpg)\n\nPhoto by [The New York Public Library](https://unsplash.com/@nypl) on [Unsplash](https://unsplash.com/photos/planet-earth-close-up-photography-yEauzeZU6xo)\n:::\n\n\n\n\n\n\n\n\nPhoto by The New York Public Library on Unsplash"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#divs-2",
+    "href": "materials/01-intro/slides.html#divs-2",
+    "title": "Intro toQuarto",
+    "section": "Divs",
+    "text": "Divs\nTabsets\n\n\nmy-document.qmd\n\n::: {.panel-tabset}\n## R\n\n`library(dplyr)`\n\n## Python\n\n`import pandas as pd`\n:::\n\n\nRPython\n\n\nlibrary(dplyr)\n\n\nimport pandas as pd"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#spans",
+    "href": "materials/01-intro/slides.html#spans",
+    "title": "Intro toQuarto",
+    "section": "Spans",
+    "text": "Spans\n\n\nmy-document.qmd\n\nThis is text that is [red]{style=\"color:red;\"}.\n\nThis is text that is red."
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#changing-formats",
+    "href": "materials/01-intro/slides.html#changing-formats",
+    "title": "Intro toQuarto",
+    "section": "Changing formats",
+    "text": "Changing formats\n\n\nmy-document.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\n---"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#changing-formats-1",
+    "href": "materials/01-intro/slides.html#changing-formats-1",
+    "title": "Intro toQuarto",
+    "section": "Changing formats",
+    "text": "Changing formats\n\n\nmy-document.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#dont-memorize-this-stuff-2",
+    "href": "materials/01-intro/slides.html#dont-memorize-this-stuff-2",
+    "title": "Intro toQuarto",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Authoring"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#your-turn-4",
+    "href": "materials/01-intro/slides.html#your-turn-4",
+    "title": "Intro toQuarto",
+    "section": "Your turn",
+    "text": "Your turn\n\nAdd an important callout box to the introduction summarizing the report’s findings. Preview the file.\nChange the caption for the first plot. Preview again.\nChange some text color to #ec008b. Preview again.\nEdit the “Average life expectancy increased…” paragraph to say “According to Figure 1, average life expectancy increased…”, BUT do it without typing “Figure 1”. Preview again.\nIn the first paragraph, add a citation to something in bib/references.bib. Preview again.\nChange the bibliography style to APA. Preview again.\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/01-intro/slides.html#course-outline",
+    "href": "materials/01-intro/slides.html#course-outline",
+    "title": "Intro toQuarto",
+    "section": "Course outline",
+    "text": "Course outline\n\n✅ Intro to Quarto\nCreating basic websites\nAdvanced website features\nPublishing\nCustomization and branding\nInteractivity"
   },
   {
     "objectID": "materials/00-setup/index.html",
@@ -177,6 +496,86 @@
     ]
   },
   {
+    "objectID": "colophon.html",
+    "href": "colophon.html",
+    "title": "Colophon",
+    "section": "",
+    "text": "Last built: 2025-10-05 at 01:36:57 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#technology",
+    "href": "colophon.html#technology",
+    "title": "Colophon",
+    "section": "",
+    "text": "Last built: 2025-10-05 at 01:36:57 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#design",
+    "href": "colophon.html#design",
+    "title": "Colophon",
+    "section": "Design",
+    "text": "Design\nThe typography, colors, and custom CSS settings are all controlled with this _brand.yml file. (See more about brand.yml here).\n\nTypefaces\nI use Open Sans (Google Fonts) as the main body font throughout the site, and I use Alan Sans (Google Fonts) for all headings.\n\nA heading\nWhereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world…\n\n\n\nColors\nThe colors for this course website come primarily from the “ustwo” palette from the {MoMAColors} R package. The colors come from the video game Monument Valley, developed and produced by ustwo, and is one of only a few pieces of software-based art in the MoMA (see its MoMA page).\n\n\n\n\n\nMonument Valley, 2014, ustwo, video game software, MoMA link.\n\n\n\n\n\n\n\n\n\n\n\nSince this palette only has 6 colors, I supplement it with a few colors from the qualitative Prism palette from CARTOColors:",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#license-and-credits",
+    "href": "colophon.html#license-and-credits",
+    "title": "Colophon",
+    "section": "License and credits",
+    "text": "License and credits\nAll the materials and content for this course are licensed under  Creative Commons CC-BY-SA  .\nSome of the materials in the course were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.\nBy the end of the course, you’ll be able to:\nTODO\n\nBlah\nblah\nbloop\nCreate a fully functional website ready to publish (for free!) on platforms like GitHub Pages or Netlify\n\nThis course will give you the tools to share your work with the world—and make it look great!",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.\nBy the end of the course, you’ll be able to:\nTODO\n\nBlah\nblah\nbloop\nCreate a fully functional website ready to publish (for free!) on platforms like GitHub Pages or Netlify\n\nThis course will give you the tools to share your work with the world—and make it look great!",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "Schedule",
+    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (October 16)\n                  Day 1 (October 16)\n                \n                \n                  10:30–12:30\n                  Setup\n                \n                \n                  10:30–12:30\n                  Intro to Quarto\n                \n                \n                  10:30–12:30\n                  Creating basic websites\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Advanced website features\n                \n                \n                  13:00–15:00\n                  Publishing\n                \n                \n                  Day 2 (October 17)\n                  Day 2 (October 17)\n                \n                \n                  10:30–12:30\n                  Customization and branding\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Interactivity",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "Instructor",
+    "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
     "objectID": "materials/01-intro/index.html",
     "href": "materials/01-intro/index.html",
     "title": "Introduction to Quarto",
@@ -203,7 +602,7 @@
     "href": "materials/01-intro/index.html#exercises",
     "title": "Introduction to Quarto",
     "section": "Exercises",
-    "text": "Exercises\n\nExercise 1\n\nStuff goes here",
+    "text": "Exercises\n\nWelcome\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\nIntroduce yourself:\n\nName\nProfessional affiliation\nOn a scale of 1–10, how well do you know…\n\nQuarto?\nR?\nPython?\nHTML and CSS?\n\nWhat do you hope to get out of this course?\n\n\n\n\n\n\nIntroduction to Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd\nPreview/render the document\n\nIf you’re using Posit Cloud, you might be asked to allow pop-ups\n\nEdit the title and preview the document again.\n\n\n\n\n\n\nQuarto documents\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd and run some of the code chunks (in order!).\nAdd #| include: false to the second chunk and preview again. Switch it back to true or remove it. Preview again.\nIn the YAML area, add an author field and add your name. Preview again.\nChange code-fold to be true. Preview again.\nEdit the first paragraph to:\n\nMake something bold\nMake “the Gapminder foundation” link to https://www.gapminder.org\nReplace XXXX and YYYY with inline code instead of hardcoded values. The first code chunk creates R objects named first_year and last_year—use those.\n\n\n\n\n\n\n\nAuthoring Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nAdd an important callout box to the introduction summarizing the report’s findings. Preview the file.\nChange the caption for the first plot. Preview again.\nChange some text color to #ec008b. Preview again.\nEdit the “Average life expectancy increased…” paragraph to say “According to Figure 1, average life expectancy increased…”, BUT do it without typing “Figure 1”. Preview again.\nIn the first paragraph, add a citation to something in bib/references.bib. Preview again.\nChange the bibliography style to APA. Preview again.",
     "crumbs": [
       "Materials",
       "Intro to Quarto"
@@ -277,7 +676,7 @@
     "href": "materials/basic-websites/slides.html#preview",
     "title": "Creatingbasic websites",
     "section": "Preview",
-    "text": "Preview\n\nRStudioPositron / VS CodeTerminal\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n ctrl + shift + K\n\nWhole site\nUse Terminal:\n\n\nTerminal\n\nquarto preview \n\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
+    "text": "Preview\n\nRStudioPositron / VS CodeTerminal\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n Ctrl + Shift + K\n\nWhole site\nUse Terminal:\n\n\nTerminal\n\nquarto preview \n\n\nRequires Quarto Extension for VS Code\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
   },
   {
     "objectID": "materials/basic-websites/slides.html#your-turn-1",
