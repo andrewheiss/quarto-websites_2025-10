@@ -319,7 +319,7 @@
     "href": "materials/01-intro/index.html",
     "title": "Introduction to Quarto",
     "section": "",
-    "text": "View slides in full screen",
+    "text": "Open slides in new window   Download PDF of slides",
     "crumbs": [
       "Materials",
       "Intro to Quarto"
@@ -330,7 +330,7 @@
     "href": "materials/01-intro/index.html#slides",
     "title": "Introduction to Quarto",
     "section": "",
-    "text": "View slides in full screen",
+    "text": "Open slides in new window   Download PDF of slides",
     "crumbs": [
       "Materials",
       "Intro to Quarto"
@@ -392,7 +392,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-05 at 15:25:18 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-05 at 15:44:01 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -402,7 +402,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-05 at 15:25:18 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-05 at 15:44:01 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -895,7 +895,7 @@
     "href": "materials/basic-websites/index.html",
     "title": "Creating basic websites",
     "section": "",
-    "text": "View slides in full screen",
+    "text": "Open slides in new window   Download PDF of slides",
     "crumbs": [
       "Materials",
       "Creating basic websites"
@@ -906,7 +906,7 @@
     "href": "materials/basic-websites/index.html#slides",
     "title": "Creating basic websites",
     "section": "",
-    "text": "View slides in full screen",
+    "text": "Open slides in new window   Download PDF of slides",
     "crumbs": [
       "Materials",
       "Creating basic websites"
