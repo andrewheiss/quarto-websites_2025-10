@@ -1,5 +1,5 @@
 ---
-title: "Intro to<br>Quarto"
+title: "Publishing"
 format:
   revealjs:
     theme: [simple, ../../css/slide-styles.scss, brand]
@@ -20,16 +20,8 @@ format:
 
 ```{r}
 #| include: false
-
+#| 
 library(countdown)
 ```
 
-{{< include _sec_welcome.qmd >}}
-
-{{< include _sec_intro-to-quarto.qmd >}}
-
-{{< include _sec_documents.qmd >}}
-
-{{< include _sec_authoring.qmd >}}
-
-{{< include _sec_next.qmd >}}
+# Web hosting<br>basics {background-color='{{< brand color blue >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}

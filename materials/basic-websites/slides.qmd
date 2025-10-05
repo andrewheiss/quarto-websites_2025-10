@@ -9,6 +9,13 @@ format:
       data-background-gradient: "linear-gradient(30deg, {{< brand color yellow >}}, {{< brand color red >}})"
       style: "text-align: left; right: 10%"
       # data-background-color: "{{< brand color blue >}}"
+    include-in-header: 
+      - text: |
+          <script>
+            if (window.location.search.includes('decktape=true')) {
+              document.documentElement.classList.add('decktape-export');
+            }
+          </script>
 ---
 
 ```{r}
@@ -16,6 +23,7 @@ format:
 
 library(countdown)
 ```
+
 
 {{< include _sec_anatomy.qmd >}}
 

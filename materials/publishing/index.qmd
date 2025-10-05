@@ -1,3 +1,10 @@
 ---
 title: "Publishing"
 ---
+
+_sec_welcome.qmd
+_sec_web-hosting-basics.qmd (stuff has to live on a server; when previewing, your computer creates a temporary server; domain names point at different servers)
+_sec_hosting-options.qmd (easiest = quartopub (free) and Posit Connect (\$\$\$) ; medium = gh-pages and netlify ; advanced = GitHub Actions and DIY - gh-pages and netlify are a good sweet spot - quarto pub doesn't let you use custom domain names)
+_sec_quarto-pub.qmd
+_sec_gh-pages.qmd
+_sec_next.qmd
