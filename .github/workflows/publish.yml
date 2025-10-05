@@ -76,6 +76,7 @@ jobs:
         run: quarto render
 
       - name: Convert slides to PDF with decktape
+        continue-on-error: true
         run: |
           # Install decktape and playwright
           npm install -g decktape
