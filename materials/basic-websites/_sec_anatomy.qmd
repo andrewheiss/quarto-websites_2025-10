@@ -1,5 +1,25 @@
 # Anatomy of a<br>Quarto website {background-color='{{< brand color yellow >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
 
+##
+
+![](img/website-flow-1.svg)
+
+##
+
+![](img/website-flow-2.svg)
+
+##
+
+![](img/website-flow-3.svg)
+
+##
+
+![](img/website-flow-4.svg)
+
+##
+
+![](img/website-flow-5.svg)
+
 ## Page Structure
 
 :::: {.columns}

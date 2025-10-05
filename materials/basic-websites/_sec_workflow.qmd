@@ -2,15 +2,15 @@
 
 ##
 
-![](img/cycle-1.png)
+![](img/cycle-1.svg)
 
 ##
 
-![](img/cycle-2.png)
+![](img/cycle-2.svg)
 
 ##
 
-![](img/cycle-3.png)
+![](img/cycle-3.svg)
 
 
 ## Preview
@@ -46,8 +46,9 @@
 
 ![](img/basics-vscode-preview.png){style="margin-bottom: 0px"}
 
-{{< fa brands apple >}}&ensp; <kbd>⌘⇧K</kbd>  
-{{< fa brands windows >}}&ensp;<kbd>ctrl + shift + K</kbd>
+{{< fa brands apple >}}&ensp; <kbd title="Command-Shift-K" aria-hidden="true" class="kbd mac">⌘⇧K</kbd>
+
+{{< fa brands windows >}}&ensp;<kbd title="Ctrl-Shift-K" aria-hidden="true" class="kbd">Ctrl + Shift + K</kbd>
 :::
 
 ::: column
@@ -62,7 +63,7 @@ quarto preview
 :::
 :::::
 
-Requires [Quarto Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+[Requires [Quarto Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto) for VS Code]{style="font-size: 0.7em"}
 
 ## Terminal
 
