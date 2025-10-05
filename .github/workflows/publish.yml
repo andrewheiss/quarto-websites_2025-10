@@ -72,9 +72,34 @@ jobs:
         with:
           cache-version: 1
 
+      - name: Render Quarto site
+        run: quarto render
+
+      - name: Convert slides to PDF with decktape
+        run: |
+          # Install decktape
+          npm install -g decktape
+          npx playwright install chromium
+
+          # Start local server in background
+          cd _site
+          python3 -m http.server 8000 &
+          SERVER_PID=$!
+          cd ..
+
+          # Wait for server to start
+          sleep 3
+
+          # Convert single slide deck
+          decktape reveal "http://localhost:8000/materials/publishing/slides.html?decktape=true" "_site/materials/publishing/slides.pdf"
+
+          # Kill server
+          kill $SERVER_PID
+
       - name: Render and publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
