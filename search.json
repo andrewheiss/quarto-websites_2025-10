@@ -500,7 +500,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-05 at 01:43:27 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-05 at 01:59:20 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -510,7 +510,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-05 at 01:43:27 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-05 at 01:59:20 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -613,7 +613,7 @@
     "href": "materials/basic-websites/slides.html#page-structure",
     "title": "Creatingbasic websites",
     "section": "Page Structure",
-    "text": "Page Structure\n\n\n\n\nindex.qmd\n\n---\ntitle: \"Global Happiness\"\nexecute:\n  echo: false\n  warning: false\n  message: false\n---\n\nData from: [World Happiness Report](https://www.worldhappiness.report/).\n\n```{r}\n#| label: setup\nlibrary(tidyverse)\nlibrary(quarto)\nlibrary(brand.yml)\n\nwhr &lt;- read_csv(here::here(\"data/whr.csv\"))\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\ntheme_whr &lt;-\n  theme_brand_ggplot2(\"_brand.yml\") +\n  theme(\n    plot.title = element_text(size = 14, face = \"bold\"),\n    plot.subtitle = element_text(size = 12)\n  ) \n```\n\n\n\n\nWebpages are like any other Quarto document:\n\nStart with a YAML header\nCan include code cells\nEverything else is markdown content"
+    "text": "Page Structure\n\n\n\n\nindex.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\n---\n\nThe `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).\n\n```{r}\n#| label: fig-neat-plot\nlibrary(tidyverse)\nlibrary(brand.yml)\n\ndf &lt;- read_csv(\"data/gapminder.csv\")\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nggplot(df, aes(x = gdpPercap, y = lifeExp)) +\n  geom_point(aes(size = pop, color = continent)) +\n  scale_x_log10() +\n  theme_brand_ggplot2(\"_brand.yml\")\n```\n\n\n\n\nWebpages are like any other Quarto document:\n\nStart with a YAML header\nCan include code cells\nEverything else is markdown content"
   },
   {
     "objectID": "materials/basic-websites/slides.html#website-structure",

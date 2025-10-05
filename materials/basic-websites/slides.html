@@ -235,33 +235,27 @@
 <div class="code-with-filename-file">
 <pre><strong>index.qmd</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="index.qmd"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="pp">---</span></span>
-<span id="cb1-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Global Happiness"</span></span>
-<span id="cb1-3"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
-<span id="cb1-4"><a></a><span class="at">  </span><span class="fu">echo</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb1-5"><a></a><span class="at">  </span><span class="fu">warning</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb1-6"><a></a><span class="at">  </span><span class="fu">message</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb1-7"><a></a><span class="pp">---</span></span>
-<span id="cb1-8"><a></a></span>
-<span id="cb1-9"><a></a><span class="fu">Data from</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">World Happiness Report</span><span class="kw">]</span><span class="at">(https://www.worldhappiness.report/).</span></span>
-<span id="cb1-10"><a></a></span>
-<span id="cb1-11"><a></a><span class="at">```{r}</span></span>
-<span id="cb1-12"><a></a><span class="co">#| label: setup</span></span>
-<span id="cb1-13"><a></a><span class="at">library(tidyverse)</span></span>
-<span id="cb1-14"><a></a><span class="at">library(quarto)</span></span>
-<span id="cb1-15"><a></a><span class="at">library(brand.yml)</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="index.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
+<span id="cb1-2"><a></a><span class="an">title:</span><span class="co"> "My Cool Document"</span></span>
+<span id="cb1-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb1-4"><a></a><span class="co">---</span></span>
+<span id="cb1-5"><a></a></span>
+<span id="cb1-6"><a></a>The <span class="in">`gapminder.csv`</span> dataset contains data from the <span class="co">[</span><span class="ot">**Gapminder foundation**</span><span class="co">](https://www.gapminder.org/)</span>.</span>
+<span id="cb1-7"><a></a></span>
+<span id="cb1-8"><a></a><span class="in">```{r}</span></span>
+<span id="cb1-9"><a></a><span class="co">#| label: fig-neat-plot</span></span>
+<span id="cb1-10"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-11"><a></a><span class="fu">library</span>(brand.yml)</span>
+<span id="cb1-12"><a></a></span>
+<span id="cb1-13"><a></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/gapminder.csv"</span>)</span>
+<span id="cb1-14"><a></a></span>
+<span id="cb1-15"><a></a>brand <span class="ot">&lt;-</span> <span class="fu">read_brand_yml</span>(<span class="st">"_brand.yml"</span>)</span>
 <span id="cb1-16"><a></a></span>
-<span id="cb1-17"><a></a><span class="at">whr &lt;- read_csv(here::here("data/whr.csv"))</span></span>
-<span id="cb1-18"><a></a></span>
-<span id="cb1-19"><a></a><span class="at">brand &lt;- read_brand_yml("_brand.yml")</span></span>
-<span id="cb1-20"><a></a></span>
-<span id="cb1-21"><a></a><span class="at">theme_whr &lt;-</span></span>
-<span id="cb1-22"><a></a><span class="at">  theme_brand_ggplot2("_brand.yml") +</span></span>
-<span id="cb1-23"><a></a><span class="at">  theme(</span></span>
-<span id="cb1-24"><a></a><span class="at">    plot.title = element_text(size = 14, face = "bold"),</span></span>
-<span id="cb1-25"><a></a><span class="at">    plot.subtitle = element_text(size = 12)</span></span>
-<span id="cb1-26"><a></a><span class="at">  ) </span></span>
-<span id="cb1-27"><a></a><span class="at">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-17"><a></a><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
+<span id="cb1-18"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">size =</span> pop, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb1-19"><a></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb1-20"><a></a>  <span class="fu">theme_brand_ggplot2</span>(<span class="st">"_brand.yml"</span>)</span>
+<span id="cb1-21"><a></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div><div class="column" style="width:3%;">
 
@@ -409,7 +403,7 @@
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_33e7a550" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_66df5c73" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -504,7 +498,7 @@
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_b0b5d3de" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_fe8787f7" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -667,7 +661,7 @@
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_3d4a5565" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_7c10b65f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">07</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -872,7 +866,7 @@
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_67f49f17" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_eb19762b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">07</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1071,7 +1065,7 @@
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_9e0f55c9" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_940eabce" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">07</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1197,7 +1191,7 @@
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_72aa72ec" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_4200716a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">07</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
