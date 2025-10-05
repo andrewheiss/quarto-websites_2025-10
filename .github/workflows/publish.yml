@@ -81,19 +81,29 @@ jobs:
           npm install -g decktape
           npm install -g playwright
           playwright install chromium
-          
+
           # Start local server in background
           cd _site
           python3 -m http.server 8000 &
           SERVER_PID=$!
           cd ..
-          
+
           # Wait for server to start
           sleep 3
-          
-          # Convert single slide deck
-          decktape --chrome-arg=--no-sandbox reveal "http://localhost:8000/materials/publishing/slides.html?decktape=true" "_site/materials/publishing/slides.pdf"
-          
+
+          # Find and convert all slides
+          find _site/materials -name "slides.html" -type f | while read html_file; do
+            rel_path="${html_file#_site/}"
+            pdf_file="${html_file%.html}.pdf"
+
+            echo "Converting $rel_path to PDF..."
+            if decktape --chrome-arg=--no-sandbox reveal "http://localhost:8000/${rel_path}?decktape=true" "$pdf_file" 2>&1; then
+              echo "✓ Successfully converted $rel_path"
+            else
+              echo "✗ Failed to convert $rel_path (continuing anyway)"
+            fi
+          done
+
           # Kill server
           kill $SERVER_PID
 
