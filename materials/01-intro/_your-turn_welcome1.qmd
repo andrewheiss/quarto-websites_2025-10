@@ -1,0 +1,10 @@
+Introduce yourself:
+
+- Name
+- Professional affiliation
+- On a scale of 1–10, how well do you know…
+  - Quarto?
+  - R?
+  - Python?
+  - HTML and CSS?
+- What do you hope to get out of this course?

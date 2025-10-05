@@ -1,0 +1,351 @@
+# Authoring Quarto {background-color='{{< brand color blue >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Images and links
+
++------------------------------------+---------------------------------+
+| Markdown syntax                    | Output                          |
++====================================+=================================+
+|     <https://quarto.org>           | <https://quarto.org>            |
++------------------------------------+---------------------------------+
+|     [Quarto](https://quarto.org)   | [Quarto](https://quarto.org)    |
++------------------------------------+---------------------------------+
+|     ![](earth.jpg)                 | ![](img/earth.jpg){width=300}   |
++------------------------------------+---------------------------------+
+
+## Tables  {.small auto-animate="true"}
+
+```{.markdown}
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+```
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+## Tables  {.small auto-animate="true"}
+
+```{.markdown}
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+: Table Column Widths {tbl-colwidths="[10,30,30,30]"}
+```
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+: Table Column Widths {tbl-colwidths="[10,30,30,30]"}
+
+## Citations
+
+````{.markdown filename="my-document.qmd" code-line-numbers=4,7}
+---
+title: "My Cool Document"
+format: html
+bibliography: references.bib
+---
+
+Computers are neat [@Lovelace:1842].
+````
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+::: {style="font-size: 0.65em"}
+> Computers are neat (Lovelace 1842).
+> 
+> **References**
+> 
+> Lovelace, Ada Augusta. 1842. “Sketch of the Analytical Engine Invented by Charles Babbage, by LF Menabrea, Officer of the Military Engineers, with Notes Upon the Memoir by the Translator.” *Taylor’s Scientific Memoirs* 3: 666–731.
+:::
+
+## Citations
+
+````{.markdown filename="my-document.qmd" code-line-numbers=5}
+---
+title: "My Cool Document"
+format: html
+bibliography: references.bib
+csl: apa.csl
+---
+
+Computers are neat [@Lovelace:1842].
+````
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+::: {style="font-size: 0.65em"}
+> Computers are neat (Lovelace, 1842).
+> 
+> **References**
+> 
+> Lovelace, A. A. (1842). Sketch of the analytical engine invented by Charles Babbage, by LF Menabrea, officer of the military engineers, with notes upon the memoir by the translator. *Taylor’s Scientific Memoirs*, 3, 666–731.
+:::
+
+## Citations
+
+````{.markdown filename="my-document.qmd" code-line-numbers=5}
+---
+title: "My Cool Document"
+format: html
+bibliography: references.bib
+csl: chicago-notes-bibliography.csl
+---
+
+Computers are neat [@Lovelace:1842].
+````
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+::: {style="font-size: 0.65em"}
+> Computers are neat^1^.
+> 
+> **Footnotes**
+> 
+> 1. Ada Augusta Lovelace, “Sketch of the Analytical Engine Invented by Charles Babbage, by LF Menabrea, Officer of the Military Engineers, with Notes Upon the Memoir by the Translator,” *Taylor’s Scientific Memoirs* 3 (1842): 666–731.↩︎
+:::
+
+## Citations
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[Zotero](https://www.zotero.org/) + [Better BibTeX](https://retorque.re/zotero-better-bibtex/) can manage references and export them for Quarto
+
+![](img/zotero_512x512x32.png){width="60%" fig-align="center"}
+:::
+
+::: {.column width="50%"}
+10,000 bibliographic styles are available at <https://www.zotero.org/styles>
+:::
+
+::::
+
+## Don't memorize this stuff!
+
+![](img/citation-documentation.png){fig-align="center"}
+
+::: {style="font-size: 75%; text-align: center;"}
+[Quarto.org \> Guide \> Authoring \> Scholarly Writing \> Citations](https://quarto.org/docs/authoring/citations.html)
+:::
+
+## Cross references
+
+````{.markdown filename="my-document.qmd" code-line-numbers=1,4-5}
+See @fig-neat-plot for more details.
+
+```{{r}}
+#| label: fig-neat-plot
+#| fig-cap: "My neat plot"
+
+# Plot code here
+```
+````
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+::: {style="font-size: 0.65em"}
+> See Figure 1 for more details.
+
+…
+
+> Figure 1: My neat plot
+:::
+
+## Don't memorize this stuff!
+
+![](img/cross-reference-documentation.png){fig-align="center"}
+
+::: {style="font-size: 75%; text-align: center;"}
+[Quarto.org \> Guide \> Authoring \> Scholarly Writing \> Cross-References](https://quarto.org/docs/authoring/cross-references.html)
+:::
+
+
+## Divs and Spans
+
+For further customization, you can add classes, attributes, and other identifiers to content using divs and spans.
+
+**Divs**
+
+```{.markdown}
+::: {.border}
+This adds the "border" class to some content. 
+:::
+```
+
+**Spans**
+
+````{.markdown}
+[This is some text]{.class style="color: #cccccc;"}
+````
+
+::: footer
+Learn more: <https://quarto.org/docs/authoring/markdown-basics.html#sec-divs-and-spans>
+:::
+
+## Divs
+
+**Callout blocks**
+
+```{.markdown filename="my-document.qmd"}
+:::{.callout-tip}
+
+Note that there are five types of callouts, including: 
+`note`, `tip`, `warning`, `caution`, and `important`.
+
+:::
+```
+
+. . .
+
+::: callout-tip
+Note that there are five types of callouts, including: `note`, `tip`, `warning`, `caution`, and `important`.
+:::
+
+::: footer
+Learn more: <https://quarto.org/docs/authoring/markdown-basics.html#callout-blocks>
+:::
+
+::: notes
+use callout blocks to draw attention to some information. callouts use the div syntax
+:::
+
+## Divs
+
+**Multiple columns**
+
+```{.markdown filename="my-document.qmd"}
+::: {layout-ncol=2}
+
+![](earth.jpg)
+
+Photo by [The New York Public Library](https://unsplash.com/@nypl) on [Unsplash](https://unsplash.com/photos/planet-earth-close-up-photography-yEauzeZU6xo)
+:::
+```
+
+. . .
+
+::: {layout-ncol="2"}
+![](img/earth.jpg)
+
+Photo by [The New York Public Library](https://unsplash.com/@nypl) on [Unsplash](https://unsplash.com/photos/planet-earth-close-up-photography-yEauzeZU6xo)
+:::
+
+
+## Divs
+
+**Tabsets**
+
+```{.markdown filename="my-document.qmd"}
+::: {.panel-tabset}
+## R
+
+`library(dplyr)`
+
+## Python
+
+`import pandas as pd`
+:::
+```
+
+::: {.panel-tabset}
+## R
+
+`library(dplyr)`
+
+## Python
+
+`import pandas as pd`
+:::
+
+## Spans
+
+```{.markdown filename="my-document.qmd"}
+This is text that is [red]{style="color:red;"}.
+```
+
+This is text that is [red]{style="color:red;"}.
+
+
+## Changing formats
+
+````{.markdown code-line-numbers=3 filename="my-document.qmd"}
+---
+title: "My Cool Document"
+format: html
+---
+````
+
+## Changing formats
+
+
+````{.markdown code-line-numbers=3 filename="my-document.qmd"}
+---
+title: "My Cool Document"
+format: revealjs
+---
+````
+
+. . . 
+
+![](img/format-revealjs.png){fig-align="center" width="80%" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+
+## Don't memorize this stuff!
+
+![](img/authoring-documentation.png){fig-align="center"}
+
+::: {style="font-size: 75%; text-align: center;"}
+[Quarto.org \> Guide \> Authoring](https://quarto.org/docs/authoring/markdown-basics.html)
+:::
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_qmd3.qmd >}}
+
+```{r}
+#| label: doc-clock-2
+#| echo: false
+# 5 minutes, warning at 1 minute
+countdown::countdown(minutes = 5, seconds = 0, play_sound = TRUE, warn_when = 1 * 60)
+```

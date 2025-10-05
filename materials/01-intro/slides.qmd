@@ -1,14 +1,14 @@
 ---
-title: "Intro to\n\nQuarto"
-logo: ""
+title: "Intro to<br>Quarto"
 format:
   revealjs:
+    theme: [simple, ../../css/slide-styles.scss, brand]
     title-slide-attributes: 
-      # data-background-image: ../../images/title-slide-light.svg
-      data-background-color: "{{< brand color primary >}}"
-      style: "text-align: right; left: 10%"
-# filters:
-#   - reveal-auto-agenda
+      data-background-image: ../../img/background-hex-shapes.svg
+      data-background-opacity: "0.5"
+      data-background-gradient: "linear-gradient(30deg, {{< brand color blue >}}, {{< brand color red >}})"
+      style: "text-align: left; right: 10%"
+      # data-background-color: "{{< brand color blue >}}"
 ---
 
 ```{r}
@@ -17,4 +17,12 @@ format:
 library(countdown)
 ```
 
-## **Create an Online Presence with Quarto Websites** 
+{{< include _sec_welcome.qmd >}}
+
+{{< include _sec_intro-to-quarto.qmd >}}
+
+{{< include _sec_documents.qmd >}}
+
+{{< include _sec_authoring.qmd >}}
+
+{{< include _sec_next.qmd >}}

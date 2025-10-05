@@ -1,0 +1,4 @@
+- Open `01-exercise.qmd`
+- Preview/render the document
+  - If you're using Posit Cloud, you might be asked to allow pop-ups
+- Edit the title and preview the document again.

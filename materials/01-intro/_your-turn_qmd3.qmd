@@ -1,0 +1,6 @@
+- Add an `important` callout box to the introduction summarizing the report's findings. Preview the file.
+- Change the caption for the first plot. Preview again.
+- Change some text color to `#ec008b`. Preview again.
+- Edit the "Average life expectancy increased…" paragraph to say "According to Figure 1, average life expectancy increased…", **BUT** do it without typing "Figure 1". Preview again.
+- In the first paragraph, add a citation to something in `bib/references.bib`. Preview again.
+- Change the bibliography style to APA. Preview again.

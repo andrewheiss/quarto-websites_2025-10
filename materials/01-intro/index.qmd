@@ -7,11 +7,44 @@ title: "Introduction to Quarto"
 [View slides in full screen](slides.html)
 
 ```{=html}
-<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<div class="ratio ratio-16x9">
+<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
+</div>
 ```
 
 ## Exercises
 
-### Exercise 1
+### Welcome
 
-{{< include exercise-01.qmd >}}
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_welcome1.qmd >}}
+:::
+
+
+### Introduction to Quarto
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_qmd1.qmd >}}
+:::
+
+
+### Quarto documents
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_qmd2.qmd >}}
+:::
+
+
+### Authoring Quarto
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_qmd3.qmd >}}
+:::

@@ -1,0 +1,144 @@
+# Welcome! {background-color='{{< brand color blue >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Housekeeping!
+
+::: {.incremental style="font-size: 1.3em;"}
+
+- Be kind and curious!
+
+- Slack and Zoom chat
+
+- Ask questions
+
+:::
+
+## Schedule (Day 1)
+
+| [Time]{style="font-size: 1.2em;"} |    [Activity]{style="font-size: 1.2em;"}    |
+| :------------ | :--------------- |
+| 9:00 - 10:30 | Intro to Quarto  & brand.yml     |
+| 10:30 - 11:00 | *Coffee break*  ☕️ |
+| 11:00 - 12:30 | Presentations & Dashboards        |
+| 12:30 - 1:30 | *Lunch break*  🍽️  |
+| 1:30 - 3:00 | PDFs & Websites        |
+| 3:00 - 3:30 | *Coffee break*  ☕️ |
+| 3:30 - 5:00 | Customizing your brand        |
+
+## Schedule (Day 2)
+
+| [Time]{style="font-size: 1.2em;"} |    [Activity]{style="font-size: 1.2em;"}    |
+| :------------ | :--------------- |
+| 9:00 - 10:30 | Intro to Quarto  & brand.yml     |
+| 10:30 - 11:00 | *Coffee break*  ☕️ |
+| 11:00 - 12:30 | Presentations & Dashboards        |
+| 12:30 - 1:30 | *Lunch break*  🍽️  |
+| 1:30 - 3:00 | PDFs & Websites        |
+| 3:00 - 3:30 | *Coffee break*  ☕️ |
+| 3:30 - 5:00 | Customizing your brand        |
+
+## About me
+
+::::: {.columns}
+:::: {.column width="50%"}
+**Andrew Heiss**
+
+::: {style="font-size: 50%"}
+[{{< fa link >}}&ensp;andrewheiss.com](https://www.andrewheiss.com/)&emsp;[{{< fa brands bluesky >}}&ensp;\@andrew.heiss.phd](https://www.linkedin.com/in/andrewheiss/)
+
+[{{< fa brands github >}}&ensp;\@andrewheiss](https://github.com/andrewheiss)&emsp;[{{< fa brands linkedin >}}&ensp; andrewheiss](https://www.linkedin.com/in/andrewheiss/)
+:::
+
+- Assistant professor of public policy, Georgia State University
+
+- Data visualization, statistics, and causal inference
+
+::::
+
+:::: {.column width="50%"}
+![](img/andrew-heiss-2022.jpg){fig-alt="Andrew's headshot" fig-align="center" width=350px}
+
+::::
+:::::
+
+## Meeting you where you are
+
+::::: {.columns}
+:::: {.column width="48%"}
+::: {.fragment .fade-in-then-semi-out}
+This course is designed for someone who:
+
+- Knows some R or Python
+
+- Maybe has an idea for a website
+
+- Is relatively new to Quarto
+
+- Wants to customize Quarto output
+:::
+::::
+
+:::: {.column width="4%"}
+::::
+
+:::: {.column width="48%"}
+::: {.fragment .fade-in}
+You'll learn:
+
+- What Quarto is and how to use it
+
+- How to create and publish websites with Quarto
+
+- How to customize Quarto output
+:::
+::::
+:::::
+
+
+## Course structure
+
+:::: {.columns}
+::: {.column .fragment}
+**My turn**
+
+- Lecture segments
+- Feel free to just watch, take notes, browse docs, or tinker around with the code
+:::
+
+::: {.column .fragment}
+**Your turn**
+
+- Exercises for you to do
+- Work on your own or with others
+:::
+::::
+
+## Getting help
+
+:::: {.columns}
+::: {.column}
+
+![](img/zoom-reactions.png)
+
+:::
+
+::: {.column}
+**Use Zoom reactions**
+
+- [{{< fa circle-xmark >}}]{style="color: #F04F4F"} =<br>"I'm stuck and need help!"
+
+- [{{< fa circle-check >}}]{style="color: #11BA48"} =<br>"I finished the exercise"
+
+Ask longer, more detailed questions in Slack
+
+:::
+::::
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+{{< include _your-turn_welcome1.qmd >}}
+
+```{r}
+#| echo: false
+
+countdown(minutes = 4)
+```

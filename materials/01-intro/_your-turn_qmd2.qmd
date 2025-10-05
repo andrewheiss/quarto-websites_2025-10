@@ -1,0 +1,8 @@
+- Open `01-exercise.qmd` and run some of the code chunks (in order!).
+- Add `#| include: false` to the second chunk and preview again. Switch it back to `true` or remove it. Preview again.
+- In the YAML area, add an `author` field and add your name. Preview again.
+- Change `code-fold` to be true. Preview again.
+- Edit the first paragraph to:
+  1. Make something bold
+  2. Make "the Gapminder foundation" link to `https://www.gapminder.org`
+  3. Replace `XXXX` and `YYYY` with inline code instead of hardcoded values. The first code chunk creates R objects named `first_year` and `last_year`—use those.

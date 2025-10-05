@@ -1,0 +1,236 @@
+# Quarto documents {background-color='{{< brand color blue >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Anatomy of a Quarto document
+
+`.qmd` file format with three components:
+
+1. **YAML**: Metadata
+
+2. **Text**: Markdown
+
+3. **Code**: R, Python, Observable, and Julia
+
+. . .
+
+**Weave it all together**, and you have beautiful, powerful, and useful outputs!
+
+
+## Anatomy of a Quarto document
+
+**Metadata: YAML**
+
+:::: {.columns}
+::: {.column .fragment}
+
+````{.markdown filename="my-document.qmd"}
+---
+title: "My Cool Document"
+format: html
+---
+````
+
+:::
+
+::: {.column .fragment}
+- "Yet another markup language”
+- Metadata of your document
+- Starts and ends with `---`
+- Uses key-value pairs in the format `key: value`
+:::
+
+::::
+
+
+## Anatomy of a Quarto document
+
+**Text: Markdown**
+
+````{.markdown filename="my-document.qmd"}
+---
+title: "My Cool Document"
+format: html
+---
+
+This analysis explores data from the Gapminder foundation.
+````
+
+. . .
+
+- Markdown is a lightweight language for creating formatted text
+- Quarto is based on Pandoc and uses its variation of markdown as its underlying document syntax
+
+::: notes
+Markdown is a lightweight markup language for creating formatted text using a plain-text editor. Quarto uses markdown syntax for text.
+:::
+
+## Anatomy of a Quarto document
+
+**Text: Markdown**
+
+```{.markdown filename="my-document.qmd"}
+The `gapminder.csv` dataset contains data from 
+the [**Gapminder foundation**](https://www.gapminder.org/).
+```
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+> The `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).
+
+## Anatomy of a Quarto document
+
+**Text: Markdown**
+
++-----------------------------------+-------------------------------+
+| Markdown syntax                   | Output                        |
++===================================+===============================+
+|     *italics* and **bold**        | *italics* and **bold**        |
++-----------------------------------+-------------------------------+
+|     superscript^2^ / subscript~2~ | superscript^2^ / subscript~2~ |
++-----------------------------------+-------------------------------+
+|     ~~strikethrough~~             | ~~strikethrough~~             |
++-----------------------------------+-------------------------------+
+|     `verbatim code`               | `verbatim code`               |
++-----------------------------------+-------------------------------+
+
+::: {style="text-align: center"}
+[General Markdown guide](https://quarto.org/docs/authoring/markdown-basics.html){target="_blank"}
+:::
+
+
+## Anatomy of a Quarto document
+
+**Code**
+
+````{.markdown filename="my-document.qmd" code-line-numbers=|8-16}
+---
+title: "My Cool Document"
+format: html
+---
+
+The `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).
+
+```{{r}}
+library(tidyverse)
+
+df <- read_csv("data/gapminder.csv")
+
+ggplot(df, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point(aes(size = pop, color = continent)) +
+  scale_x_log10()
+```
+````
+
+## Anatomy of a Quarto document
+
+**Code**
+
+:::: columns
+::: {.column}
+
+````{.markdown filename="my-document.qmd" code-line-numbers=8-16}
+---
+title: "My Cool Document"
+format: html
+---
+
+The `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).
+
+```{{r}}
+library(tidyverse)
+
+df <- read_csv("data/gapminder.csv")
+
+ggplot(df, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point(aes(size = pop, color = continent)) +
+  scale_x_log10()
+```
+````
+
+:::
+
+::: {.column}
+- Code chunks begin and end with three backticks
+- Code chunks are identified with a programming language in between `{}`
+:::
+
+::::
+
+## Anatomy of a Quarto document
+
+**Inline code** executes code *within Markdown*
+
+````{.markdown filename="my-document.qmd"}
+```{{r}}
+countries <- 147
+```
+
+There are `{{r}} countries` in the dataset.
+````
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+> There are 147 countries in the dataset.
+
+
+## Anatomy of a Quarto document
+
+**Code** can include optional chunk options, in YAML style, identified by `#|` at the beginning of the line
+
+````{.markdown filename="my-document.qmd" code-line-numbers=3-8}
+The `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).
+
+```{{r}}
+#| label: fig-neat-plot
+#| echo: false
+#| fig-width: 6
+#| fig-height: 3.8
+#| fig-cap: "My neat plot"
+
+library(tidyverse)
+
+df <- read_csv("data/gapminder.csv")
+
+ggplot(df, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point(aes(size = pop, color = continent)) +
+  scale_x_log10()
+```
+````
+
+
+## Anatomy of a Quarto document
+
+**Code** can include optional chunk options, in YAML style, identified by `#|` at the beginning of the line
+
++--------------+------------------------------------------------+
+| Option       | Description                                    |
++==============+================================================+
+| `eval`       | Evaluate the code chunk                        |
++--------------+------------------------------------------------+
+| `echo`       | Include the source code                        |
++--------------+------------------------------------------------+
+| `warning`    | Include warnings                               |
++--------------+------------------------------------------------+
+| `include`    | Include code and results                       |
++--------------+------------------------------------------------+
+
+::: {style="text-align: center"}
+[Other chunk options](https://quarto.org/docs/computations/execution-options.html){target="_blank"}
+:::
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_qmd2.qmd >}} 
+
+```{r}
+#| label: doc-clock-1
+#| echo: false
+# 5 minutes, warning at 1 minute
+countdown::countdown(minutes = 5)
+```
