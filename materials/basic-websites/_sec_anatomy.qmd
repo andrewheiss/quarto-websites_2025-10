@@ -24,33 +24,27 @@
 
 :::: {.columns}
 ::: {.column width="50%"}
-```` {.yaml filename="index.qmd"}
+````{.markdown filename="index.qmd"}
 ---
-title: "Global Happiness"
-execute:
-  echo: false
-  warning: false
-  message: false
+title: "My Cool Document"
+format: html
 ---
 
-Data from: [World Happiness Report](https://www.worldhappiness.report/).
+The `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).
 
 ```{{r}}
-#| label: setup
+#| label: fig-neat-plot
 library(tidyverse)
-library(quarto)
 library(brand.yml)
 
-whr <- read_csv(here::here("data/whr.csv"))
+df <- read_csv("data/gapminder.csv")
 
 brand <- read_brand_yml("_brand.yml")
 
-theme_whr <-
-  theme_brand_ggplot2("_brand.yml") +
-  theme(
-    plot.title = element_text(size = 14, face = "bold"),
-    plot.subtitle = element_text(size = 12)
-  ) 
+ggplot(df, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point(aes(size = pop, color = continent)) +
+  scale_x_log10() +
+  theme_brand_ggplot2("_brand.yml")
 ```
 ````
 :::
