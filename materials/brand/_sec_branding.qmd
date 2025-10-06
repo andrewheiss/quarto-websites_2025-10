@@ -1,0 +1,376 @@
+# Branding {background-color='{{< brand color red >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## CSS is a little inconvenient
+
+- Doesn't play well across HTML outputs - HTML, slides, and dashboards all use slighlty different underlying HTML
+- No easy way to reuse the colors and typography from your CSS customizations in R and Python plots or in PDF documents
+- Hard to share consistent, resusable themes with others in your organization (or with the world)
+
+## Style guides
+
+Organizations and projects generally have style guides for consistency
+
+Urban Institute
+
+This course! See the colophon
+
+## 
+
+![](img/brand-yml.png){fig-align="center" width="50%"}
+
+[Unified branding with a simple YAML file]{style="font-size: 1.2em;"} 
+
+. . .
+
+<br>
+
+Create reports, apps, dashboards, plots and more that match your company’s brand guidelines with a single `_brand.yml` file.
+
+::: notes
+brand.yml is a simple, portable YAML file that codifies your company’s brand guidelines into a format that can be used by Quarto, Python and R tooling to create branded outputs. Our goal is to support unified, branded theming for all of Posit’s open source tools—from web applications to printed reports to dashboards and presentations—with a consistent look and feel.
+:::
+
+::: footer
+Learn more: <https://posit-dev.github.io/brand-yml/>
+:::
+
+## 
+
+::: r-fit-text
+Branding can be frustrating
+:::
+
+. . .
+
+:::r-fit-text
+But brand.yml makes it easier
+:::
+
+## 
+
+::: {.fragment}
+[1. Define branding in a single `_brand.yml` file.]{style="font-size: 1.5em;"}
+
+[2. Apply that branding across almost all Quarto formats.]{style="font-size: 1.5em;"} 
+
+:::
+
+<br>
+
+::: {.fragment}
+
+`brand.yml` also works with Shiny!
+
+:::
+
+## 
+
+::: {style="--mermaid-max-height: 600px"}
+```{mermaid}
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+flowchart LR
+    by{brand.yml}
+    by-->quarto[Quarto]
+    quarto-->quarto-html
+    quarto-->quarto-pdf
+    quarto-html-->quarto-websites[Websites]
+    quarto-html-->quarto-presentations[Presentations]
+    quarto-html-->quarto-dashboards[Dashboards]
+    quarto-html-->quarto-emails[Emails]
+    quarto-pdf-->quarto-typst[Typst]
+
+    by-->R
+    R-->r-bslib["{bslib}"]
+    r-bslib-->r-thematic["{thematic}"]
+    r-bslib-->r-shiny["Shiny for R"]
+    r-bslib-->r-rmd["R Markdown"]
+    r-bslib-->r-pkgdown["pkgdown"]
+    %% r-thematic-->r-ggplot2["{ggplot2}"]
+    %% r-thematic-->r-plot["{plot}"]
+
+    by-->Python
+    Python-->py-brand_yml["brand_yml"]
+    py-brand_yml-->py-shiny[Shiny for Python]
+    py-brand_yml-->py-plots[seaborn, matplotlib, etc.]
+
+    classDef implemented fill:#8CE3A0,stroke:#0A2911,color:#0A2911;
+    classDef partial fill:#A8E5B9,stroke:#4B8A5D,color:#0A2911;
+    classDef in-progress fill:#B3D7FF,stroke:#00254D,color:#00254D;
+    classDef highlighted fill:#FFE8DB,stroke:#612200,color:#612200;
+
+    class quarto-websites,quarto-presentations,quarto-dashboards,quarto-typst,py-brand_yml,py-shiny,r-bslib,r-shiny,r-rmd,r-pkgdown implemented;
+    class r-thematic,py-plots partial;
+    class by highlighted;
+
+    click quarto href "https://prerelease.quarto.org/docs/authoring/brand.html"
+    click quarto-typst href "https://quarto.org/docs/output-formats/typst.html" "Typst in Quarto"
+    click quarto-presentations href "https://quarto.org/docs/presentations/revealjs/" "Reveal.js in Quarto"
+    click quarto-dashboards href "https://quarto.org/docs/dashboards/" "Dashboards in Quarto"
+    click r-shiny href "https://shiny.posit.co/"
+    click r-bslib href "https://rstudio.github.io/bslib/"
+    click r-thematic href "https://rstudio.github.io/thematic/"
+    click r-ggplot2 href "https://ggplot2.tidyverse.org/"
+    click r-rmd href "https://rmarkdown.rstudio.com/"
+    click py-shiny href "https://shiny.posit.co/py/"
+    click py-brand_yml href "pkg/py/"
+```
+:::
+
+<style>
+.mermaid-js {
+  max-height: var(--mermaid-max-height);
+}
+.mermaid-js .nodeLabel {
+  color: var(--bs-black) !important;
+  font-weight: 500;
+}
+.implemented {
+  background-color: #8CE3A0;
+  border-color: #0A2911;
+  color: #0A2911;
+  padding-inline: 0.2rem
+}
+
+.in-progress {
+  background-color: #B3D7FF;
+  border-color: #00254D;
+  color: #00254D;
+  padding-inline: 0.2rem
+}
+</style>
+
+::: footer
+Learn more: <https://posit-dev.github.io/brand-yml/>
+:::
+
+::: notes
+brand.yml works with a variety of open source projects, including all the Quarto outputs we'll talk about today. as well as Shiny for R and Shiny for Python. This means you can define your organization's branding in a brand.yml file once, and then apply it all over relatively effortlessly. 
+
+over the course of this workshop, we'll use the same brand file to apply to all our outputs
+:::
+
+## brand.yml elements
+
+::: incremental
+* `meta`: Identifying information, name of the company, URLs, etc.
+* `logo`: Files or links to the brand’s logos.
+* `color`: Colors in the brand's color palette. 
+* `typography`: Fonts for different elements. 
+* `defaults`: Additional context-specific settings.
+:::
+
+## `_brand.yml` structure
+
+```{.yaml code-line-numbers="1-4|6-11|13-27|29-42" filename="_brand.yml"}
+meta:
+  name: World Happiness Report
+  link:
+    home: https://www.worldhappiness.report/
+
+logo:
+  images:
+    icon:
+      path: images/whr_logo.png
+      alt: World Happiness Report icon.
+  small: images/whr_logo.png
+
+color:
+  palette:
+    dark-purple: "#93358c"
+    light-purple: "#f8f6fb"
+    teal: "#04afaf"
+    dark-blue: "#086992"
+    hot-pink: "#eb068c"
+    light-blue: "#1aade4"
+
+  background: light-purple
+  foreground: black
+  primary: dark-purple
+  secondary: hot-pink
+  tertiary: light-blue
+  dark: black
+
+typography:
+  fonts:
+    - family: Libre Franklin
+      source: google
+      weight: [400, 700]
+
+  base:
+    family: Libre Franklin
+    weight: 400
+
+  headings:
+    family: Libre Franklin
+    weight: 700
+    color: dark-purple
+
+  link:
+    color: primary
+    decoration: none
+```
+
+::: notes
+
+define your brand’s color palette and map your palette to the roles colors play. the semantic colors -- primary, foreground, etc
+
+if this seems like a lot of details, don't worry! we will show you how to make your own file later. for now, it's enough to just have a general understanding of the different parts
+:::
+
+## How to apply brand.yml to Quarto
+
+1. Define branding in ` _brand.yml`.
+2. Save in the root directory of your Quarto project.
+
+Quarto will detect the presence of `_brand.yml` and automatically apply the brand to all documents of the supported formats in the project.
+
+## 
+
+If your brand file has a different name or lives in a subdirectory, use the `brand` key.
+
+```{.yaml code-line-numbers="5" filename="my-document.qmd"}
+---
+title: "World Happiness Report"
+subtitle: "Happiness Trends and Contributing Factors (2011-2024)"
+format: html
+brand: org_theme.yml
+---
+```
+
+::: notes
+use this if you have a file named something other than brand.yml or it lives elsewhere. 
+:::
+
+## Disable brand.yml
+
+To turn off brand.yml for a document, use `brand: false`.
+
+```{.yaml code-line-numbers="5" filename="my-document.qmd"}
+---
+title: "World Happiness Report"
+subtitle: "Happiness Trends and Contributing Factors (2011-2024)"
+format: html
+brand: false
+---
+```
+
+
+## `brand` shortcode 
+
+Access some brand.yml values with a shortcode.
+
+``` {.markdown filename="my_document.qmd"}
+{{{< brand color primary >}}}
+```
+
+::: footer
+Learn more: <https://quarto.org/docs/authoring/brand.html#using-brand-values>
+:::
+
+
+
+## Your turn {background-color='{{< brand color yellow >}}'}
+
+
+```{r}
+#| label: brand-clock
+#| echo: false
+# 5 minutes, warning at 1 minute
+countdown::countdown(minutes = 5, seconds = 0, play_sound = TRUE, warn_when = 1 * 60)
+```
+
+## What about plots?
+
+
+::: notes
+The plots, at least for the R version, are unbranded. how can we apply brand.yml to plots too?
+:::
+
+
+## Theme helpers
+
+The quarto packages contain theme helpers that apply branding to plots. 
+
+::: {.panel-tabset}
+### R
+
+```{r}
+#| eval: false
+#| echo: true
+library(quarto)
+
+my_theme <- theme_brand_ggplot2("_brand.yml")
+```
+
+### Python
+
+```{.python}
+#| eval: false
+#| echo: true
+from quarto import theme_brand_plotnine
+
+my_theme = theme_brand_plotnine('_brand.yml')
+```
+
+:::
+
+::: aside
+R: [https://quarto-dev.github.io/quarto-r/articles/theme-helpers.html](https://quarto-dev.github.io/quarto-r/articles/theme-helpers.html)
+
+
+Python: [https://github.com/quarto-dev/quarto-python?tab=readme-ov-file#theme-helpers](https://github.com/quarto-dev/quarto-python?tab=readme-ov-file#theme-helpers)
+:::
+
+::: notes
+There are other theme helpers for other plotting libraries
+:::
+
+
+
+## Your turn {background-color='{{< brand color yellow >}}'}
+
+
+```{r}
+#| label: clock-5
+#| echo: false
+# 5 minutes, warning at 1 minute
+countdown::countdown(minutes = 5, seconds = 0, play_sound = TRUE, warn_when = 1 * 60)
+```
+
+::: notes
+The R function applies theme_minimal().
+:::
+
+## brand.yml packages
+
+Access and apply specific brand elements. 
+
+::: {.panel-tabset}
+### R
+
+```{r}
+#| eval: false
+#| echo: true
+library(brand.yml)
+
+brand <- read_brand_yml("_brand.yml")
+
+brand$color$primary
+```
+
+### Python
+
+```{.python}
+#| eval: false
+#| echo: true
+from brand_yml import Brand
+
+brand = Brand.from_yaml("_brand.yml")
+
+brand.color.primary
+```
+:::

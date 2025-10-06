@@ -19,6 +19,8 @@ website:
   repo-url: "https://github.com/andrewheiss/quarto-websites_2025-10"
   repo-actions: [source, issue]
 
+  draft-mode: visible
+
   navbar:
     background: primary
     right:

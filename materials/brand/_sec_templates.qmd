@@ -1,0 +1,1 @@
+# Templates {background-color='{{< brand color red >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}

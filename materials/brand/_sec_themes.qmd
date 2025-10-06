@@ -1,0 +1,94 @@
+# Themes {background-color='{{< brand color red >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Bootstrap
+
+Quarto uses the popular [Bootstrap](https://getbootstrap.com/) library for HTML structure and CSS styles.
+
+![](img/bootstrap-homepage.png){fig-align="center"}
+
+## Bootstrap {.nostretch}
+
+You can use [Bootstrap components and classes](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for special styling
+
+. . .
+
+\ 
+
+```{.markdown code-line-numbers="false"}
+[Here's a button](thing.pdf){.btn .btn-primary role="button"}
+
+[Here's another button](thing.pdf){.btn .btn-warning role="button"}
+```
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+![](img/buttons.png){fig-align="center" width="30%"}
+
+## Bootswatch themes {.scrollable}
+
+Quarto includes 25 themes from [Bootswatch](https://bootswatch.com/):
+
+:::: {.columns style="font-size: 0.85em;"}
+
+::: {.column width="33%"}
+- default
+- cerulean
+- cosmo
+- cyborg
+- darkly
+- flatly
+- journal
+- litera
+- lumen
+:::
+
+::: {.column width="33%"}
+- lux
+- materia
+- minty
+- morph
+- pulse
+- quartz
+- sandstone
+- simplex
+- sketchy
+:::
+
+::: {.column width="33%"}
+- slate
+- solar
+- spacelab
+- superhero
+- united
+- vapor
+- yeti
+- zephyr
+:::
+
+::::
+
+
+## Changing themes
+
+Specify the custom theme under `theme` in the YAML settings:
+
+````{.yaml filename="_quarto.yml"}
+format:
+  html:
+    theme:
+      - zephyr
+````
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+{{< include _your-turn_themes1.qmd >}}
+
+```{r}
+#| label: clock-bootswatch-themes
+#| echo: false
+countdown::countdown(minutes = 7)
+```

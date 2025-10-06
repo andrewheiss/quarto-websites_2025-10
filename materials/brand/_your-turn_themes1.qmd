@@ -1,0 +1,2 @@
+1. Go to [bootswatch.com](https://bootswatch.com/) and explore the different themes there (use the top navigation bar).
+2. Preview your site, then try changing different Bootswatch themes in `_quarto.yml`.

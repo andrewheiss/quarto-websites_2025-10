@@ -1,0 +1,35 @@
+---
+title: "Customization<br>and branding"
+format:
+  revealjs:
+    theme: [simple, ../../css/slide-styles.scss, brand]
+    title-slide-attributes: 
+      data-background-image: ../../img/background-hex-shapes.svg
+      data-background-opacity: "0.5"
+      data-background-gradient: "linear-gradient(30deg, {{< brand color red >}}, {{< brand color cyan >}})"
+      style: "text-align: left; right: 10%"
+      # data-background-color: "{{< brand color blue >}}"
+    include-in-header: 
+      - text: |
+          <script>
+            if (window.location.search.includes('decktape=true')) {
+              document.documentElement.classList.add('decktape-export');
+            }
+          </script>
+---
+
+```{r}
+#| include: false
+
+library(countdown)
+```
+
+{{< include _sec_themes.qmd >}}
+
+{{< include _sec_css.qmd >}}
+
+{{< include _sec_branding.qmd >}}
+
+{{< include _sec_templates.qmd >}}
+
+{{< include _sec_next.qmd >}}

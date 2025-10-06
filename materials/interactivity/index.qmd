@@ -1,3 +1,22 @@
 ---
 title: "Interactivity"
+draft: true
+language: 
+  draft: "This page is a draft"
 ---
+
+::: {.callout-warning}
+### Draft materials
+
+These slides and materials aren't *quite* ready yet! Anything you see here is subject to change—don't do anything here before the course.
+:::
+
+## Slides
+
+<p style="line-height: 2.5"><a class="btn btn-success btn-sm" target="_blank" href="slides.html">{{< fa arrow-up-right-from-square >}} &ensp;Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button">{{< fa file-pdf >}} &ensp;Download PDF of slides</a></p>
+
+```{=html}
+<div class="ratio ratio-16x9">
+<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
+</div>
+```

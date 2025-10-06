@@ -1,0 +1,41 @@
+# CSS and Sass {background-color='{{< brand color red >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Theme options
+
+Sometimes we want to change theme settings though
+
+Many common basic options: https://quarto.org/docs/output-formats/html-themes.html#basic-options
+
+## Total control with CSS
+
+## Crash course in CSS
+
+HTML elements can have IDs and classes
+
+HTML elements can be nested inside each other
+
+You can target HTML elements with different degrees of specificity:
+
+- All \<h3\> headings
+
+- H3 headings with the class `neato`
+
+- \<a>\ links that are inside a div with the id `quarto-sidebar`
+
+## Browser inpsector
+
+Explore and edit any HTML and CSS right from your browser.
+
+## Sass: CSS, but fancier
+
+variables
+
+rules that use variables
+
+## Combining CSS and themes
+
+asdf
+
+## Your turn
+
+Create a SCSS file and make a bunch of rules
