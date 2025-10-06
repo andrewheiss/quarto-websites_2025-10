@@ -14,27 +14,23 @@
 
 ## Schedule (Day 1)
 
-| [Time]{style="font-size: 1.2em;"} |    [Activity]{style="font-size: 1.2em;"}    |
+| [Time]{style="font-size: 1.2em;"} | [Activity]{style="font-size: 1.2em;"} |
 | :------------ | :--------------- |
-| 9:00 - 10:30 | Intro to Quarto  & brand.yml     |
-| 10:30 - 11:00 | *Coffee break*  ☕️ |
-| 11:00 - 12:30 | Presentations & Dashboards        |
-| 12:30 - 1:30 | *Lunch break*  🍽️  |
-| 1:30 - 3:00 | PDFs & Websites        |
-| 3:00 - 3:30 | *Coffee break*  ☕️ |
-| 3:30 - 5:00 | Customizing your brand        |
+| 10:30–11:30 | Welcome + Intro to Quarto |
+| 11:30–12:30 | Creating basic websites |
+| 12:30–13:30 | *Break* |
+| 13:00–15:00 | Advanced website features |
+
 
 ## Schedule (Day 2)
 
-| [Time]{style="font-size: 1.2em;"} |    [Activity]{style="font-size: 1.2em;"}    |
+| [Time]{style="font-size: 1.2em;"} | [Activity]{style="font-size: 1.2em;"} |
 | :------------ | :--------------- |
-| 9:00 - 10:30 | Intro to Quarto  & brand.yml     |
-| 10:30 - 11:00 | *Coffee break*  ☕️ |
-| 11:00 - 12:30 | Presentations & Dashboards        |
-| 12:30 - 1:30 | *Lunch break*  🍽️  |
-| 1:30 - 3:00 | PDFs & Websites        |
-| 3:00 - 3:30 | *Coffee break*  ☕️ |
-| 3:30 - 5:00 | Customizing your brand        |
+| 10:30–11:00 | Publishing |
+| 11:00–12:30 | Customization and branding |
+| 12:30–13:30 | *Break* |
+| 13:00–15:00 | Interactivity |
+
 
 ## About me
 
