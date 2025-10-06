@@ -618,7 +618,7 @@
     "href": "index.html",
     "title": "Create an Online Presence with Quarto Websites",
     "section": "",
-    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.\nBy the end of the course, you’ll be able to:\nTODO\n\nBlah\nblah\nbloop\nCreate a fully functional website ready to publish (for free!) on platforms like GitHub Pages or Netlify\n\nThis course will give you the tools to share your work with the world—and make it look great!",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
     "crumbs": [
       "Home"
     ]
@@ -628,7 +628,7 @@
     "href": "index.html#overview",
     "title": "Create an Online Presence with Quarto Websites",
     "section": "",
-    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.\nBy the end of the course, you’ll be able to:\nTODO\n\nBlah\nblah\nbloop\nCreate a fully functional website ready to publish (for free!) on platforms like GitHub Pages or Netlify\n\nThis course will give you the tools to share your work with the world—and make it look great!",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
     "crumbs": [
       "Home"
     ]
@@ -638,7 +638,7 @@
     "href": "index.html#schedule",
     "title": "Create an Online Presence with Quarto Websites",
     "section": "Schedule",
-    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (October 16)\n                  Day 1 (October 16)\n                \n                \n                  10:30–12:30\n                  Setup\n                \n                \n                  10:30–12:30\n                  Intro to Quarto\n                \n                \n                  10:30–12:30\n                  Creating basic websites\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Advanced website features\n                \n                \n                  13:00–15:00\n                  Publishing\n                \n                \n                  Day 2 (October 17)\n                  Day 2 (October 17)\n                \n                \n                  10:30–12:30\n                  Customization and branding\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Interactivity",
+    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (October 16)\n                  Day 1 (October 16)\n                \n                \n                  10:30–11:30\n                  Welcome + Intro to Quarto\n                \n                \n                  11:30–12:30\n                  Creating basic websites\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Advanced website features\n                \n                \n                  Day 2 (October 17)\n                  Day 2 (October 17)\n                \n                \n                  10:30–11:00\n                  Publishing\n                \n                \n                  11:00–12:30\n                  Customization and branding\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Interactivity",
     "crumbs": [
       "Home"
     ]
@@ -658,7 +658,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-06 at 00:56:25 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-06 at 11:08:20 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -668,7 +668,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-06 at 00:56:25 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-06 at 11:08:20 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
