@@ -1,3 +1,71 @@
 ---
 title: "Advanced website features"
 ---
+
+## Slides
+
+<p style="line-height: 2.5"><a class="btn btn-success btn-sm" target="_blank" href="slides.html">{{< fa arrow-up-right-from-square >}} &ensp;Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button">{{< fa file-pdf >}} &ensp;Download PDF of slides</a></p>
+
+```{=html}
+<div class="ratio ratio-16x9">
+<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
+</div>
+```
+
+## Exercises
+
+### Other common features
+
+::: {.callout-tip collapse="true"}
+#### Your turn: URLs
+
+{{< include _your-turn_other-urls.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### Your turn: Page layout
+
+{{< include _your-turn_other-page-layout.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### Your turn: Article layout
+
+{{< include _your-turn_other-article-layout.qmd >}}
+:::
+
+
+### Listings
+
+::: {.callout-tip collapse="true"}
+#### Your turn: Listings
+
+{{< include _your-turn_listings1.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### Your turn: Metadata
+
+{{< include _your-turn_listings2.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### Your turn: Categories
+
+{{< include _your-turn_listings3.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### Your turn: Make a blog
+
+{{< include _your-turn_listings4.qmd >}}
+:::
+
+
+### Extensions
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_extensions1.qmd >}}
+:::

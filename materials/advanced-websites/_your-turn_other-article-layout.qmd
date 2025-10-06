@@ -1,0 +1,8 @@
+1. Add an image that spans across the whole page
+
+2. Add some text to the margin
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at [Quarto.org \> Guide \> Authoring \> Article Layout](https://quarto.org/docs/authoring/article-layout.html).

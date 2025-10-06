@@ -1,0 +1,35 @@
+---
+title: "Advanced<br>website features"
+format:
+  revealjs:
+    theme: [simple, ../../css/slide-styles.scss, brand]
+    title-slide-attributes: 
+      data-background-image: ../../img/background-hex-shapes.svg
+      data-background-opacity: "0.5"
+      data-background-gradient: "linear-gradient(30deg, {{< brand color pink >}}, {{< brand color yellow >}})"
+      style: "text-align: left; right: 10%"
+      # data-background-color: "{{< brand color blue >}}"
+    include-in-header: 
+      - text: |
+          <script>
+            if (window.location.search.includes('decktape=true')) {
+              document.documentElement.classList.add('decktape-export');
+            }
+          </script>
+---
+
+```{r}
+#| include: false
+
+library(countdown)
+```
+
+{{< include _sec_other.qmd >}}
+
+{{< include _sec_freezing.qmd >}}
+
+{{< include _sec_listings.qmd >}}
+
+{{< include _sec_extensions.qmd >}}
+
+{{< include _sec_next.qmd >}}

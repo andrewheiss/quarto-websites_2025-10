@@ -1,0 +1,7 @@
+1. Edit `research/index.qmd` to be a listing page, showing all the pages in the `research` folder.
+2. Experiment with changing the listing type to `default`, then `table`, then `grid`.
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at [Quarto.org \> Guide \> Websites \> Listing Pages](https://quarto.org/docs/websites/website-listings.html).

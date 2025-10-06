@@ -1,0 +1,188 @@
+# Listings {background-color='{{< brand color pink >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Automatic content
+
+We can automatically add all the pages in a folder to a sidebar:
+
+::::: {.columns}
+::: {.column width="50%"}
+```` {.yaml filename="_quarto.yml" code-line-numbers="6-10"}
+website:
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: Research
+        contents:
+          - research/project1.qmd
+          - research/project2.qmd
+          - research/project3.qmd
+````
+:::
+
+::: {.column width="50%"}
+```` {.yaml filename="_quarto.yml" code-line-numbers="6-7"}
+website:
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: Research
+        contents: research/*
+````
+:::
+:::::
+
+. . .
+
+**What if we want fancier automatic pages?**
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-navigation.html#auto-generation>{target="_blank"}
+:::
+
+## Listing pages
+
+::::: {.columns}
+::: {.column width="40%"}
+
+\ 
+
+```` {.markdown filename="research.qmd" code-line-numbers="3-5"}
+---
+title: "Research"
+listing:
+  contents: "*.qmd"
+  type: table
+---
+````
+
+:::
+
+::: {.column width="60%"}
+
+![](img/listing-example.png){width="100%"}
+
+:::
+:::::
+
+::: footer
+Documentation: <https://quarto.org/docs/websites/website-listings.html>{target="_blank"}
+:::
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_listings1.qmd >}}
+
+```{r}
+#| label: clock-listings1
+#| echo: false
+countdown::countdown(minutes = 10)
+```
+
+## Metadata in listings
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](img/listing-metadata.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+:::
+
+::: {.column width="40%"}
+```` {.markdown filename="post.qmd"}
+---
+title: "Research"
+author: "Your name"
+description: "Something"
+date: 2025-10-06
+image: "img/thing.jpg"
+---
+````
+:::
+
+::::
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_listings2.qmd >}}
+
+```{r}
+#| label: clock-listings2
+#| echo: false
+countdown::countdown(minutes = 10)
+```
+
+
+## Categories
+
+![](img/listing-categories.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+**Enable categories in the listing settings**
+
+```` {.yaml filename="listing-page.qmd"}
+listing:
+  categories: true
+````
+:::
+
+::: {.column width="50%" .fragment}
+**Specify categories in the document**
+
+```` {.markdown filename="post.qmd" code-line-numbers="3-6"}
+---
+title: "Research"
+categories:
+  - statistics
+  - r
+  - tidyverse
+---
+````
+:::
+
+::::
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_listings3.qmd >}}
+
+```{r}
+#| label: clock-listings3
+#| echo: false
+countdown::countdown(minutes = 10)
+```
+
+
+## Extra advanced bonus stuff
+
+**Multiple listings**
+
+Include lists of different document types on the same page ([example](https://www.andrewheiss.com/research/) + [code](https://github.com/andrewheiss/ath-quarto/blob/main/research/index.qmd))
+
+. . .
+
+**Custom listings**
+
+Go beyond `default`, `table`, and `grid` and make your own template ([example](https://www.andrewheiss.com/research/) + [code](https://github.com/andrewheiss/ath-quarto/blob/main/html/research/listing.ejs))
+
+. . .
+
+**YAML lists**
+
+Generate listings of items in a YAML file isntead of `.qmd` files ([example](https://www.andrewheiss.com/teaching/ + [code](https://github.com/andrewheiss/ath-quarto/blob/main/teaching/index.qmd) + [custom listing code](https://github.com/andrewheiss/ath-quarto/blob/main/html/teaching/listing.ejs)))
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_listings4.qmd >}}
+
+```{r}
+#| label: clock-listings4
+#| echo: false
+countdown::countdown(minutes = 20)
+```

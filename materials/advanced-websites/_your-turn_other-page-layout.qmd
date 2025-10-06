@@ -1,0 +1,11 @@
+1. Change the page layout settings for one of your page
+
+2. *Bonus task!* Try using the Bootstrap CSS Grid layout system with `page-layout: custom`. 
+
+   - [See the documentation here](https://quarto.org/docs/output-formats/page-layout.html#custom)
+   - [See an IRL example here](https://bayesf22.classes.andrewheiss.com/#main-readings) ([and code here](https://github.com/andrewheiss/bayesf22.classes.andrewheiss.com/blob/8e994b538dc7c4f334a898f1475e6edada4ec6d5/index.qmd#L95))
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at [Quarto.org \> Guide \> Advanced \> Page Layout](https://quarto.org/docs/output-formats/page-layout.html).

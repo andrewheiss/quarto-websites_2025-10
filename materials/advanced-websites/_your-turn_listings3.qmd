@@ -1,0 +1,10 @@
+1. Add categories to your different research `.qmd` files. See how those are reflected in the listing page after rendering.
+
+2. *Bonus task!* Change the category lisit on the listing page to appear as a word cloud. 
+
+   - [See the documentation here](https://quarto.org/docs/websites/website-listings.html#categories)
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at [Quarto.org \> Guide \> Websites \> Document Listings \> Categories](https://quarto.org/docs/websites/website-listings.html#categories).

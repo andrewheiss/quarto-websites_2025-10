@@ -1,0 +1,113 @@
+# Freezing {background-color='{{< brand color pink >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Re-running code
+
+:::: {.columns}
+::: {.column width="50%"}
+````{.markdown filename="your-document.qmd"}
+---
+title: "My Complex Document"
+format: html
+---
+
+Here we run all our models and then plot them:
+
+```{{r}}
+# Intensive code!
+```
+
+```{{r}}
+# Intensive code!
+```
+
+```{{r}}
+# Intensive code!
+```
+````
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="47%"}
+::: {.incremental}
+- Sometimes you'll have a lot of code chunks that take a long time to run.
+
+- Quarto will re-run these chunks each time you render the site.
+
+- Good for reproducibility! Bad for speed!
+:::
+:::
+:::::
+
+## Freeze computational output
+
+:::: {.columns}
+::: {.column width="50%"}
+````{.markdown filename="your-document.qmd" code-line-numbers="4-5"}
+---
+title: "My Complex Document"
+format: html
+execute:
+  freeze: auto
+---
+
+Here we run all our models and then plot them:
+
+```{{r}}
+# Intensive code!
+```
+
+```{{r}}
+# Intensive code!
+```
+
+```{{r}}
+# Intensive code!
+```
+````
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="47%"}
+Use `freeze: auto` to only re-run the code if the source file changes.
+
+← Individual files<br>or site-wide ↓
+
+````{.yaml filename="_quarto.yml" code-line-numbers="4-5"}
+project:
+  type: website
+
+execute: 
+  freeze: auto
+
+website:
+  title: "Example site"
+````
+:::
+:::::
+
+## Freeze computational output
+
+Code output is stored in `_freeze`
+
+![](img/freeze-output.png){fig-align="center"}
+
+## Freezing ≠ caching
+
+::: {.incremental}
+
+- Freezing *only* stores the text of the code output.
+
+- Changing the file will force a re-run.
+
+- Consider caching if you don't want the code to re-run (see [documentation](https://quarto.org/docs/projects/code-execution.html#cache)):
+
+  ```{.yaml code-line-numbers="false"}
+  execute:
+    cache: true
+  ```
+
+:::

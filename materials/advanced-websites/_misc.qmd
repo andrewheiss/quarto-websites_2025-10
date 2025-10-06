@@ -1,0 +1,67 @@
+
+## <span style="color:white; text-shadow:2px 2px 5px rgba(0,0,0,0.7); font-weight:bold; font-size:90px;">Theming</span> {.center background-image="images/themes.jpg" background="#43464B"}
+
+::: footer
+Photo by <a href="https://unsplash.com/@yogidan2012?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daniele Levis Pelusi</a> on <a href="https://unsplash.com/photos/green-white-and-pink-heart-illustration-ESNNeoUOnvI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+:::
+
+## Built-in theme
+
+Like regular HTML documents and dashboards, you can use a built-in Bootswatch theme. 
+
+``` {.yaml filename="_quarto.yml" code-line-numbers="|14"}
+project:
+  type: website
+
+website:
+  title: "My site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    toc: true
+    theme: cerulean
+```
+
+::: footer
+Learn more: https://quarto.org/docs/output-formats/html-themes.html
+:::
+
+## Style in `_quarto.yml`
+
+Control basic options like colors and fonts in `_quarto.yml`.
+
+``` {.yaml filename="_quarto.yml" code-line-numbers="|14-15"}
+project:
+  type: website
+
+website:
+  title: "My site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    toc: true
+    fontcolor: "blue"
+    backgroundcolor: "white"
+```
+
+::: footer
+Learn more: [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html)
+:::
+
+## Or...
+
+![](images/brand-yml.png)
+
+## <span style="color:white; font-weight:bold; font-size:90px; text-shadow:3px 3px 6px rgba(230,115,0,0.9);">Deployment</span> {.center background-image="images/cloud.jpg"}
+
+::: footer
+Photo by <a href="https://unsplash.com/@enginakyurt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">engin akyurt</a> on <a href="https://unsplash.com/photos/white-clouds-and-blue-sky-during-daytime-A9_IsUtjHm4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+:::
