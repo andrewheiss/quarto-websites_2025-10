@@ -155,11 +155,21 @@ Domain names map IP addresses to memorable, human-readable names
 
 ![](img/remote-server-dns.svg){fig-align="center"}
 
+::: {.notes}
+These icons all come from The Noun Project
+
+- [Laptop by Sunardi](https://thenounproject.com/icon/laptop-5595817/)
+- [Server by Sunardi](https://thenounproject.com/icon/database-5595810/)
+- [Cloud server by Sunardi](https://thenounproject.com/icon/cloud-server-5595809/)
+- [Global website by Yoyon Pujiyono](https://thenounproject.com/icon/global-website-3190998/)
+- [Document folder by Ifanicon](https://thenounproject.com/icon/document-folder-4919991/)
+:::
+
 ## Costs
 
 :::: {.columns}
 
-::: {.column width=50%}
+::: {.column width=50% .fragment}
 
 **Server space**
 
@@ -169,7 +179,7 @@ Typically \$5+/month
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" .fragment}
 
 **Domain name**
 
