@@ -2,38 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/publishing/slides.html</loc>
-    <lastmod>2025-10-06T15:29:51.696Z</lastmod>
+    <lastmod>2025-10-06T18:24:58.225Z</lastmod>
   </url>
   <url>
     <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/basic-websites/slides.html</loc>
-    <lastmod>2025-10-06T15:29:51.683Z</lastmod>
+    <lastmod>2025-10-06T18:24:58.212Z</lastmod>
   </url>
   <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/01-intro/index.html</loc>
-    <lastmod>2025-10-06T15:29:51.667Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/index.html</loc>
-    <lastmod>2025-10-06T15:29:51.647Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/colophon.html</loc>
-    <lastmod>2025-10-06T15:29:51.645Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/00-setup/index.html</loc>
-    <lastmod>2025-10-06T15:29:51.647Z</lastmod>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/advanced-websites/slides.html</loc>
+    <lastmod>2025-10-06T18:24:58.196Z</lastmod>
   </url>
   <url>
     <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/01-intro/slides.html</loc>
-    <lastmod>2025-10-06T15:29:51.667Z</lastmod>
+    <lastmod>2025-10-06T18:24:58.191Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/00-setup/index.html</loc>
+    <lastmod>2025-10-06T18:24:58.170Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/colophon.html</loc>
+    <lastmod>2025-10-06T18:24:58.169Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/index.html</loc>
+    <lastmod>2025-10-06T18:24:58.170Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/01-intro/index.html</loc>
+    <lastmod>2025-10-06T18:24:58.191Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/advanced-websites/index.html</loc>
+    <lastmod>2025-10-06T18:24:58.195Z</lastmod>
   </url>
   <url>
     <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/basic-websites/index.html</loc>
-    <lastmod>2025-10-06T15:29:51.683Z</lastmod>
+    <lastmod>2025-10-06T18:24:58.212Z</lastmod>
   </url>
   <url>
     <loc>https://andrewheiss.github.io/quarto-websites_2025-10/materials/publishing/index.html</loc>
-    <lastmod>2025-10-06T15:29:51.696Z</lastmod>
+    <lastmod>2025-10-06T18:24:58.225Z</lastmod>
   </url>
 </urlset>

@@ -199,8 +199,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
+  <ul class="collapse">
+  <li><a href="#other-common-features" id="toc-other-common-features" class="nav-link" data-scroll-target="#other-common-features">Other common features</a></li>
+  <li><a href="#listings" id="toc-listings" class="nav-link" data-scroll-target="#listings">Listings</a></li>
+  <li><a href="#extensions" id="toc-extensions" class="nav-link" data-scroll-target="#extensions">Extensions</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/materials/advanced-websites/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -224,8 +236,238 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p style="line-height: 2.5">
+<a class="btn btn-success btn-sm" target="_blank" href="slides.html"><i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i>  Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button"><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i>  Download PDF of slides</a>
+</p>
+<div class="ratio ratio-16x9">
+<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
+</div>
+</section>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<section id="other-common-features" class="level3">
+<h3 class="anchored" data-anchor-id="other-common-features">Other common features</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Your turn: URLs
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Make your <code>about.qmd</code> page appear at <code>about/</code></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Your turn: Page layout
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Change the page layout settings for one of your page</p></li>
+<li><p><em>Bonus task!</em> Try using the Bootstrap CSS Grid layout system with <code>page-layout: custom</code>.</p>
+<ul>
+<li><a href="https://quarto.org/docs/output-formats/page-layout.html#custom">See the documentation here</a></li>
+<li><a href="https://bayesf22.classes.andrewheiss.com/#main-readings">See an IRL example here</a> (<a href="https://github.com/andrewheiss/bayesf22.classes.andrewheiss.com/blob/8e994b538dc7c4f334a898f1475e6edada4ec6d5/index.qmd#L95">and code here</a>)</li>
+</ul></li>
+</ol>
+<p><strong>Advice</strong>:</p>
+<ul>
+<li>Don’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.</li>
+<li>Use the documentation at <a href="https://quarto.org/docs/output-formats/page-layout.html">Quarto.org &gt; Guide &gt; Advanced &gt; Page Layout</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Your turn: Article layout
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Add an image that spans across the whole page</p></li>
+<li><p>Add some text to the margin</p></li>
+</ol>
+<p><strong>Advice</strong>:</p>
+<ul>
+<li>Don’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.</li>
+<li>Use the documentation at <a href="https://quarto.org/docs/authoring/article-layout.html">Quarto.org &gt; Guide &gt; Authoring &gt; Article Layout</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="listings" class="level3">
+<h3 class="anchored" data-anchor-id="listings">Listings</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Your turn: Listings
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Edit <code>research/index.qmd</code> to be a listing page, showing all the pages in the <code>research</code> folder.</li>
+<li>Experiment with changing the listing type to <code>default</code>, then <code>table</code>, then <code>grid</code>.</li>
+</ol>
+<p><strong>Advice</strong>:</p>
+<ul>
+<li>Don’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.</li>
+<li>Use the documentation at <a href="https://quarto.org/docs/websites/website-listings.html">Quarto.org &gt; Guide &gt; Websites &gt; Listing Pages</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Your turn: Metadata
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Add metadata to your different research <code>.qmd</code> files, including images. See how those are reflected in the listing page after rendering.</p></li>
+<li><p><em>Bonus task!</em> Modify how the listing page is sorted. Sort it by descending title.</p>
+<ul>
+<li><a href="https://quarto.org/docs/websites/website-listings.html#sorting-items">See the documentation here</a></li>
+</ul></li>
+<li><p><em>Bonus task!</em> Change how the dates are shown in the listing page with the <code>date-format</code> option.</p>
+<ul>
+<li><a href="https://quarto.org/docs/websites/website-listings.html#advanced-options">See the documentation here</a></li>
+</ul></li>
+</ol>
+<p><strong>Advice</strong>:</p>
+<ul>
+<li>Don’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.</li>
+<li>Use the documentation at <a href="https://quarto.org/docs/websites/website-listings.html">Quarto.org &gt; Guide &gt; Websites &gt; Document Listings</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Your turn: Categories
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Add categories to your different research <code>.qmd</code> files. See how those are reflected in the listing page after rendering.</p></li>
+<li><p><em>Bonus task!</em> Change the category lisit on the listing page to appear as a word cloud.</p>
+<ul>
+<li><a href="https://quarto.org/docs/websites/website-listings.html#categories">See the documentation here</a></li>
+</ul></li>
+</ol>
+<p><strong>Advice</strong>:</p>
+<ul>
+<li>Don’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.</li>
+<li>Use the documentation at <a href="https://quarto.org/docs/websites/website-listings.html#categories">Quarto.org &gt; Guide &gt; Websites &gt; Document Listings &gt; Categories</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Your turn: Make a blog
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Make a blog!</strong></p>
+<ol type="1">
+<li>Create a new folder named <code>blog</code> with a file named <code>index.qmd</code> in it.</li>
+<li>Make a few folders and files named <code>blog/2025/10/16/thing/index.qmd</code>, etc.</li>
+<li>Add some fake content in the blog posts. Add images, titles, descriptions, etc.</li>
+<li>Make the blog posts appear as a listing page at <code>blog/index.qmd</code>.</li>
+<li>Add <code>blog/index.qmd</code> to your top navigation bar.</li>
+</ol>
+<p><strong>Advice</strong>:</p>
+<ul>
+<li>Don’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.</li>
+<li>Use the documentation at <a href="https://quarto.org/docs/websites/website-listings.html">Quarto.org &gt; Guide &gt; Websites &gt; Document Listings</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="extensions" class="level3">
+<h3 class="anchored" data-anchor-id="extensions">Extensions</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Your turn
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Install the <a href="https://github.com/quarto-ext/fontawesome">Font Awesome extension</a> in your website project.</p></li>
+<li><p>Use Font Awesome shortcodes:</p>
+<ul>
+<li>Include a Font Awesome icon in your navigation bar</li>
+<li>Include a Font Awesome icon in the text of one of your pages</li>
+</ul></li>
+<li><p>Install another Quarto extension and play around with it.</p></li>
+</ol>
+<p><strong>Advice</strong>:</p>
+<ul>
+<li>Don’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.</li>
+<li>Use the documentation at the <a href="https://github.com/quarto-ext/fontawesome">Font Awesome extension page</a> and <a href="https://quarto.org/docs/extensions/">Quarto.org &gt; Extensions</a>.</li>
+</ul>
+</div>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -636,7 +878,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/materials/advanced-websites/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/materials/advanced-websites/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/andrewheiss/quarto-websites_2025-10">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>

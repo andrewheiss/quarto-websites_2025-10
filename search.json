@@ -581,167 +581,221 @@
     "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\nAdvanced website features\nPublishing\nCustomization and branding\nInteractivity"
   },
   {
-    "objectID": "materials/01-intro/index.html",
-    "href": "materials/01-intro/index.html",
-    "title": "Introduction to Quarto",
+    "objectID": "materials/advanced-websites/slides.html#urls",
+    "href": "materials/advanced-websites/slides.html#urls",
+    "title": "Advancedwebsite features",
+    "section": "URLs",
+    "text": "URLs\nThe website will mirror your file structure, including subdirectories\n\n\n/about.qmd ↓ example.com/about.html\n\n\n\n \n\n/research/project1.qmd ↓ example.com/research/project1.html"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#custom-urls",
+    "href": "materials/advanced-websites/slides.html#custom-urls",
+    "title": "Advancedwebsite features",
+    "section": "Custom URLs",
+    "text": "Custom URLs\nWhat if you want nicer URLs?\n \n\nexample.com/about/\nexample.com/research/project1/"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#index.html",
+    "href": "materials/advanced-websites/slides.html#index.html",
+    "title": "Advancedwebsite features",
+    "section": "index.html",
+    "text": "index.html\nBy convention, web servers treat index.html files in a special way.\n \n\nexample.com/about/\nimplicitly means\nexample.com/about/index.html"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#index.qmd",
+    "href": "materials/advanced-websites/slides.html#index.qmd",
+    "title": "Advancedwebsite features",
+    "section": "index.qmd",
+    "text": "index.qmd\nIf you want example.com/about/, put your about page in a folder named about and rename it to index.qmd.\n \n\n/about.qmd ↓ /about/index.qmd ↓ example.com/about/"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#user-friendly-urls",
+    "href": "materials/advanced-websites/slides.html#user-friendly-urls",
+    "title": "Advancedwebsite features",
+    "section": "User-friendly URLs",
+    "text": "User-friendly URLs\nYou could have a blog post like this (ew):\n\n/2025-10-16_blog-post-title.qmd ↓ example.com/2025-10-16_blog-post-title.html\n\n \nOr like this (yay):\n\n/blog/2025/10/16/blog-post-title/index.qmd ↓ example.com/blog/2025/10/16/blog-post-title/"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn",
+    "href": "materials/advanced-websites/slides.html#your-turn",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nMake your about.qmd page appear at about/\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#page-layout",
+    "href": "materials/advanced-websites/slides.html#page-layout",
+    "title": "Advancedwebsite features",
+    "section": "Page layout",
+    "text": "Page layout\nPage layouts\n\narticle: Default layout with main text area between 600px–900px\nfull: Expand main text area into the sidebar and margin area if there’s no content there\ncustom: Provide your own HTML template for the main text area\n\n\n\nComponent widths\n\n\nYAML settings\nformat: \n  html:\n    page-layout: article  # or \"full\" or \"custom\"\n    grid:\n      sidebar-width: 300px\n      body-width: 900px\n      margin-width: 300px\n      gutter-width: 1.5rem"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-1",
+    "href": "materials/advanced-websites/slides.html#your-turn-1",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nChange the page layout settings for one of your page\nBonus task! Try using the Bootstrap CSS Grid layout system with page-layout: custom.\n\nSee the documentation here\nSee an IRL example here (and code here)\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Advanced &gt; Page Layout.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#article-layout",
+    "href": "materials/advanced-websites/slides.html#article-layout",
+    "title": "Advancedwebsite features",
+    "section": "Article layout",
+    "text": "Article layout\nQuarto offers a ton of article-specific layout options:\n\nMake content go into the margin\nMake content go across the whole page\nPut content in the margins"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-2",
+    "href": "materials/advanced-websites/slides.html#your-turn-2",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nAdd an image that spans across the whole page\nAdd some text to the margin\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Authoring &gt; Article Layout.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#re-running-code",
+    "href": "materials/advanced-websites/slides.html#re-running-code",
+    "title": "Advancedwebsite features",
+    "section": "Re-running code",
+    "text": "Re-running code\n\n\n\n\nyour-document.qmd\n\n---\ntitle: \"My Complex Document\"\nformat: html\n---\n\nHere we run all our models and then plot them:\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n\n\n\n\nSometimes you’ll have a lot of code chunks that take a long time to run.\nQuarto will re-run these chunks each time you render the site.\nGood for reproducibility! Bad for speed!"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#freeze-computational-output",
+    "href": "materials/advanced-websites/slides.html#freeze-computational-output",
+    "title": "Advancedwebsite features",
+    "section": "Freeze computational output",
+    "text": "Freeze computational output\n\n\n\n\nyour-document.qmd\n\n---\ntitle: \"My Complex Document\"\nformat: html\nexecute:\n  freeze: auto\n---\n\nHere we run all our models and then plot them:\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n\n\n\nUse freeze: auto to only re-run the code if the source file changes.\n← Individual filesor site-wide ↓\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nexecute: \n  freeze: auto\n\nwebsite:\n  title: \"Example site\""
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#freeze-computational-output-1",
+    "href": "materials/advanced-websites/slides.html#freeze-computational-output-1",
+    "title": "Advancedwebsite features",
+    "section": "Freeze computational output",
+    "text": "Freeze computational output\nCode output is stored in _freeze"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#freezing-caching",
+    "href": "materials/advanced-websites/slides.html#freezing-caching",
+    "title": "Advancedwebsite features",
+    "section": "Freezing ≠ caching",
+    "text": "Freezing ≠ caching\n\nFreezing only stores the text of the code output.\nChanging the file will force a re-run.\nConsider caching if you don’t want the code to re-run (see documentation):\nexecute:\n  cache: true"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#automatic-content",
+    "href": "materials/advanced-websites/slides.html#automatic-content",
+    "title": "Advancedwebsite features",
+    "section": "Automatic content",
+    "text": "Automatic content\nWe can automatically add all the pages in a folder to a sidebar:\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents:\n          - research/project1.qmd\n          - research/project2.qmd\n          - research/project3.qmd\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents: research/*\n\n\n\nWhat if we want fancier automatic pages?\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#auto-generation"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#listing-pages",
+    "href": "materials/advanced-websites/slides.html#listing-pages",
+    "title": "Advancedwebsite features",
+    "section": "Listing pages",
+    "text": "Listing pages\n\n\n \n\n\nresearch.qmd\n\n---\ntitle: \"Research\"\nlisting:\n  contents: \"*.qmd\"\n  type: table\n---\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-listings.html"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-3",
+    "href": "materials/advanced-websites/slides.html#your-turn-3",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nEdit research/index.qmd to be a listing page, showing all the pages in the research folder.\nExperiment with changing the listing type to default, then table, then grid.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Listing Pages.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#metadata-in-listings",
+    "href": "materials/advanced-websites/slides.html#metadata-in-listings",
+    "title": "Advancedwebsite features",
+    "section": "Metadata in listings",
+    "text": "Metadata in listings\n\n\n\n\n\n\n\n\n\n\npost.qmd\n\n---\ntitle: \"Research\"\nauthor: \"Your name\"\ndescription: \"Something\"\ndate: 2025-10-06\nimage: \"img/thing.jpg\"\n---"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-4",
+    "href": "materials/advanced-websites/slides.html#your-turn-4",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nAdd metadata to your different research .qmd files, including images. See how those are reflected in the listing page after rendering.\nBonus task! Modify how the listing page is sorted. Sort it by descending title.\n\nSee the documentation here\n\nBonus task! Change how the dates are shown in the listing page with the date-format option.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#categories",
+    "href": "materials/advanced-websites/slides.html#categories",
+    "title": "Advancedwebsite features",
+    "section": "Categories",
+    "text": "Categories\n\n\n\nEnable categories in the listing settings\n\n\nlisting-page.qmd\n\nlisting:\n  categories: true\n\n\nSpecify categories in the document\n\n\npost.qmd\n\n---\ntitle: \"Research\"\ncategories:\n  - statistics\n  - r\n  - tidyverse\n---"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-5",
+    "href": "materials/advanced-websites/slides.html#your-turn-5",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nAdd categories to your different research .qmd files. See how those are reflected in the listing page after rendering.\nBonus task! Change the category lisit on the listing page to appear as a word cloud.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings &gt; Categories.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#extra-advanced-bonus-stuff",
+    "href": "materials/advanced-websites/slides.html#extra-advanced-bonus-stuff",
+    "title": "Advancedwebsite features",
+    "section": "Extra advanced bonus stuff",
+    "text": "Extra advanced bonus stuff\nMultiple listings\nInclude lists of different document types on the same page (example + code)\n\nCustom listings\nGo beyond default, table, and grid and make your own template (example + code)\n\n\nYAML lists\nGenerate listings of items in a YAML file isntead of .qmd files (example)"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-6",
+    "href": "materials/advanced-websites/slides.html#your-turn-6",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\nMake a blog!\n\nCreate a new folder named blog with a file named index.qmd in it.\nMake a few folders and files named blog/2025/10/16/thing/index.qmd, etc.\nAdd some fake content in the blog posts. Add images, titles, descriptions, etc.\nMake the blog posts appear as a listing page at blog/index.qmd.\nAdd blog/index.qmd to your top navigation bar.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#extensions-1",
+    "href": "materials/advanced-websites/slides.html#extensions-1",
+    "title": "Advancedwebsite features",
+    "section": "Extensions",
+    "text": "Extensions\nQuarto has extensions that let you add custom…\n\nshortcodes\nfilters\ndocument formats and templates\nbrands"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#shortcode-extensions",
+    "href": "materials/advanced-websites/slides.html#shortcode-extensions",
+    "title": "Advancedwebsite features",
+    "section": "Shortcode extensions",
+    "text": "Shortcode extensions\nFont Awesome icons (site + extension)\n\n\nTerminal\n\nquarto add quarto-ext/fontawesome\n\n \n\n\n\n\n\n\n\nText\nOutput\n\n\n\n\n{{&lt; fa home &gt;}}\n\n\n\n{{&lt; fa wand-magic-sparkles &gt;}}\n\n\n\n{{&lt; fa brands apple &gt;}}\n\n\n\n{{&lt; fa brands r-project &gt;}}\n\n\n\n{{&lt; fa globe &gt;}}"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#section",
+    "href": "materials/advanced-websites/slides.html#section",
+    "title": "Advancedwebsite features",
     "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Intro to Quarto"
-    ]
+    "text": "Use in Markdown:\n\n\nmy-document.qmd\n\n- {{&lt; fa book &gt;}} [Book page](https://www.bayesrulesbook.com/)\n- {{&lt; fa person-chalkboard &gt;}} [Teaching resources](https://bayes-rules.github.io/posts/resources/)\n- {{&lt; fa brands r-project &gt;}} [R package](https://github.com/bayes-rules/bayesrules) and [package documentation](https://bayes-rules.github.io/bayesrules/docs/)\n- {{&lt; fa brands youtube &gt;}} Alicia Johnson, [\"Bayes Rules! An Introduction to Bayesian Modeling with R with Alicia Johnson\"](https://www.youtube.com/watch?v=MgB1ihuEDN4), presentation for R-Ladies Philly on October 18, 2021\n\n\n\n↓\n\n\n\n\n\n Book page\n Project page\n R package and package documentation\n Alicia Johnson, “Bayes Rules! An Introduction to Bayesian Modeling with R with Alicia Johnson”, presentation for R-Ladies Philly on October 18, 2021"
   },
   {
-    "objectID": "materials/01-intro/index.html#slides",
-    "href": "materials/01-intro/index.html#slides",
-    "title": "Introduction to Quarto",
+    "objectID": "materials/advanced-websites/slides.html#section-1",
+    "href": "materials/advanced-websites/slides.html#section-1",
+    "title": "Advancedwebsite features",
     "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Intro to Quarto"
-    ]
+    "text": "Use in YAML:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - text: \"{{&lt; fa person-chalkboard &gt;}} Teaching\"\n        href: teaching.qmd\n      - text: \"{{&lt; fa flask &gt;}} Research\"\n        href: research.qmd\n    right:\n      - text: \"{{&lt; fa brands google-scholar &gt;}}\"\n        href: \"https://example.com\"\n\n\n\n↓"
   },
   {
-    "objectID": "materials/01-intro/index.html#exercises",
-    "href": "materials/01-intro/index.html#exercises",
-    "title": "Introduction to Quarto",
-    "section": "Exercises",
-    "text": "Exercises\n\nWelcome\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\nIntroduce yourself:\n\nName\nProfessional affiliation\nOn a scale of 1–10, how well do you know…\n\nQuarto?\nR?\nPython?\nHTML and CSS?\n\nWhat do you hope to get out of this course?\n\n\n\n\n\n\nIntroduction to Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd\nPreview/render the document\n\nIf you’re using Posit Cloud, you might be asked to allow pop-ups\n\nEdit the title and preview the document again.\n\n\n\n\n\n\nQuarto documents\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd and run some of the code chunks (in order!).\nAdd #| include: false to the second chunk and preview again. Switch it back to true or remove it. Preview again.\nIn the YAML area, add an author field and add your name. Preview again.\nChange code-fold to be true. Preview again.\nEdit the first paragraph to:\n\nMake something bold\nMake “the Gapminder foundation” link to https://www.gapminder.org\nReplace XXXX and YYYY with inline code instead of hardcoded values. The first code chunk creates R objects named first_year and last_year—use those.\n\n\n\n\n\n\n\nAuthoring Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nAdd an important callout box to the introduction summarizing the report’s findings. Preview the file.\nChange the caption for the first plot. Preview again.\nChange some text color to #ec008b. Preview again.\nEdit the “Average life expectancy increased…” paragraph to say “According to Figure 1, average life expectancy increased…”, BUT do it without typing “Figure 1”. Preview again.\nIn the first paragraph, add a citation to something in bib/references.bib. Preview again.\nChange the bibliography style to APA. Preview again.",
-    "crumbs": [
-      "Materials",
-      "Intro to Quarto"
-    ]
+    "objectID": "materials/advanced-websites/slides.html#filter-extensions",
+    "href": "materials/advanced-websites/slides.html#filter-extensions",
+    "title": "Advancedwebsite features",
+    "section": "Filter extensions",
+    "text": "Filter extensions\nPreview Color (extension)\n\n\nTerminal\n\nquarto add mcanouil/quarto-preview-colour\n\nEnable in YAML, either for one page or site-wide:\nfilters:\n  - preview-colour\n\n \n\nWe use #1696d2 for Democrats and and #db2b27 for Republicans.\n\n\n\n\n↓\n\n\nWe use #1696d2◉ for Democrats and and #db2b27◉ for Republicans."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "",
-    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
-    "crumbs": [
-      "Home"
-    ]
+    "objectID": "materials/advanced-websites/slides.html#lots-of-others",
+    "href": "materials/advanced-websites/slides.html#lots-of-others",
+    "title": "Advancedwebsite features",
+    "section": "Lots of others!",
+    "text": "Lots of others!\nThere are hundreds of extensions: find them all at Quarto.org &gt; Extensions or at the Quarto Extensions directory.\nHere are some common extensions for websites specifically:\n\n\n\n\n\n\n\nExtension\nDescription\n\n\n\n\nFont Awesome\nInclude Font Awesome icons\n\n\nAcademicons\nInclude academicons icons\n\n\nCustom Callouts\nGo beyond Quarto’s default note, warning, important, tip, and caution callouts\n\n\nPreview Color\nAdd little circles to show hex colors\n\n\nEmbed PDFs\nEasily embed PDF files in HTML documents\n\n\nDownloadthis\nCreate download buttons"
   },
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "",
-    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
-    "crumbs": [
-      "Home"
-    ]
+    "objectID": "materials/advanced-websites/slides.html#your-turn-7",
+    "href": "materials/advanced-websites/slides.html#your-turn-7",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nInstall the Font Awesome extension in your website project.\nUse Font Awesome shortcodes:\n\nInclude a Font Awesome icon in your navigation bar\nInclude a Font Awesome icon in the text of one of your pages\n\nInstall another Quarto extension and play around with it.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at the Font Awesome extension page and Quarto.org &gt; Extensions.\n\n\n\n\n−+\n10:00"
   },
   {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "Schedule",
-    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (October 16)\n                  Day 1 (October 16)\n                \n                \n                  10:30–11:30\n                  Welcome + Intro to Quarto\n                \n                \n                  11:30–12:30\n                  Creating basic websites\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Advanced website features\n                \n                \n                  Day 2 (October 17)\n                  Day 2 (October 17)\n                \n                \n                  10:30–11:00\n                  Publishing\n                \n                \n                  11:00–12:30\n                  Customization and branding\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Interactivity",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "Instructor",
-    "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "colophon.html",
-    "href": "colophon.html",
-    "title": "Colophon",
-    "section": "",
-    "text": "Last built: 2025-10-06 at 11:33:01 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
-    "crumbs": [
-      "Colophon"
-    ]
-  },
-  {
-    "objectID": "colophon.html#technology",
-    "href": "colophon.html#technology",
-    "title": "Colophon",
-    "section": "",
-    "text": "Last built: 2025-10-06 at 11:33:01 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
-    "crumbs": [
-      "Colophon"
-    ]
-  },
-  {
-    "objectID": "colophon.html#design",
-    "href": "colophon.html#design",
-    "title": "Colophon",
-    "section": "Design",
-    "text": "Design\nThe typography, colors, and custom CSS settings are all controlled with this _brand.yml file. (See more about brand.yml here).\n\nTypefaces\nI use Open Sans (Google Fonts) as the main body font throughout the site, and I use Alan Sans (Google Fonts) for all headings.\n\nA heading\nWhereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world…\n\n\n\nColors\nThe colors for this course website come primarily from the “ustwo” palette from the {MoMAColors} R package. The colors come from the video game Monument Valley, developed and produced by ustwo, and is one of only a few pieces of software-based art in the MoMA (see its MoMA page).\n\n\n\n\n\nMonument Valley, 2014, ustwo, video game software, MoMA link.\n\n\n\n\n\n\n\n\n\n\n\nSince this palette only has 6 colors, I supplement it with a few colors from the qualitative Prism palette from CARTOColors:",
-    "crumbs": [
-      "Colophon"
-    ]
-  },
-  {
-    "objectID": "colophon.html#license-and-credits",
-    "href": "colophon.html#license-and-credits",
-    "title": "Colophon",
-    "section": "License and credits",
-    "text": "License and credits\nAll the materials and content for this course are licensed under  Creative Commons CC-BY-SA  .\nSome of the materials in the course were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
-    "crumbs": [
-      "Colophon"
-    ]
-  },
-  {
-    "objectID": "materials/00-setup/index.html",
-    "href": "materials/00-setup/index.html",
-    "title": "Setup",
-    "section": "",
-    "text": "To follow along with the course exercises, you’ll need Quarto version 1.8+ and access to a code editor that supports R.\nWhile Quarto itself doesn’t require a programming language, the exercises will include code chunks in R. If you don’t already have R set up locally, I recommend using a cloud-based option like Posit Cloud.",
-    "crumbs": [
-      "Setup"
-    ]
-  },
-  {
-    "objectID": "materials/00-setup/index.html#recommended-setup-options",
-    "href": "materials/00-setup/index.html#recommended-setup-options",
-    "title": "Setup",
-    "section": "Recommended setup options",
-    "text": "Recommended setup options\n\nOption 1: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: https://posit.cloud/spaces/704423/join?access_code=fDGrujjY7mb1j-9bq-dlKl7JZw5XkLdq5sm3cFoE\nClick “Yes” to join the space.\nClick Content and select quarto-websites-exercises_2025-10 or go to LINK FORTHCOMING\nTo save a copy of the project to your workspace, click “Save a permanent copy”.\n\n\n\nOption 2: Local installation\nChoose one editor and follow the steps:\n\nRStudioPositronVS Code\n\n\n\nDownload and install RStudio: https://posit.co/downloads/\n\nMake sure RStudio is version 2022.07+.\n\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install Positron: https://positron.posit.co/download.html\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install VS Code: https://code.visualstudio.com/download/\nDownload and install Quarto: https://quarto.org/docs/get-started/\nInstall the following extensions:\n\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto/\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/",
-    "crumbs": [
-      "Setup"
-    ]
-  },
-  {
-    "objectID": "materials/00-setup/index.html#accessing-the-course-materials",
-    "href": "materials/00-setup/index.html#accessing-the-course-materials",
-    "title": "Setup",
-    "section": "Accessing the course materials",
-    "text": "Accessing the course materials\nIf you are using a cloud-based option, the files will be included in the project folder.\nIf you are not using a cloud-based option:\nIf you don’t use Git/GitHub:\n\nGo to the GitHub repo: LINK FORTHCOMING\nClick the green “Code” button → “Download ZIP”.\nUnzip the folder and open it in your chosen editor.\n\nIf you use Git/GitHub:\n\nExercises are available at: LINK FORTHCOMING\nClone the repository with Git:\n\ngit clone LINK FORTHCOMING",
-    "crumbs": [
-      "Setup"
-    ]
-  },
-  {
-    "objectID": "materials/00-setup/index.html#install-the-necessary-r-packages",
-    "href": "materials/00-setup/index.html#install-the-necessary-r-packages",
-    "title": "Setup",
-    "section": "Install the necessary R packages",
-    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed.\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(c(\"tidyverse\", \"quarto\", \"patchwork\", \"ggridges\", \"tinytable\"))\ninstall.packages('brand.yml', repos = c('https://posit-dev.r-universe.dev', 'https://cloud.r-project.org'))",
-    "crumbs": [
-      "Setup"
-    ]
-  },
-  {
-    "objectID": "materials/00-setup/index.html#credits",
-    "href": "materials/00-setup/index.html#credits",
-    "title": "Setup",
-    "section": "Credits",
-    "text": "Credits\n\nThese instructions were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
-    "crumbs": [
-      "Setup"
-    ]
+    "objectID": "materials/advanced-websites/slides.html#course-outline",
+    "href": "materials/advanced-websites/slides.html#course-outline",
+    "title": "Advancedwebsite features",
+    "section": "Course outline",
+    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\n✅ Advanced website features\nPublishing\nCustomization and branding\nInteractivity"
   },
   {
     "objectID": "materials/01-intro/slides.html#housekeeping",
@@ -1155,6 +1209,202 @@
     "title": "Intro toQuarto",
     "section": "Course outline",
     "text": "Course outline\n\n✅ Intro to Quarto\nCreating basic websites\nAdvanced website features\nPublishing\nCustomization and branding\nInteractivity"
+  },
+  {
+    "objectID": "materials/00-setup/index.html",
+    "href": "materials/00-setup/index.html",
+    "title": "Setup",
+    "section": "",
+    "text": "To follow along with the course exercises, you’ll need Quarto version 1.8+ and access to a code editor that supports R.\nWhile Quarto itself doesn’t require a programming language, the exercises will include code chunks in R. If you don’t already have R set up locally, I recommend using a cloud-based option like Posit Cloud.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html#recommended-setup-options",
+    "href": "materials/00-setup/index.html#recommended-setup-options",
+    "title": "Setup",
+    "section": "Recommended setup options",
+    "text": "Recommended setup options\n\nOption 1: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: https://posit.cloud/spaces/704423/join?access_code=fDGrujjY7mb1j-9bq-dlKl7JZw5XkLdq5sm3cFoE\nClick “Yes” to join the space.\nClick Content and select quarto-websites-exercises_2025-10 or go to LINK FORTHCOMING\nTo save a copy of the project to your workspace, click “Save a permanent copy”.\n\n\n\nOption 2: Local installation\nChoose one editor and follow the steps:\n\nRStudioPositronVS Code\n\n\n\nDownload and install RStudio: https://posit.co/downloads/\n\nMake sure RStudio is version 2022.07+.\n\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install Positron: https://positron.posit.co/download.html\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install VS Code: https://code.visualstudio.com/download/\nDownload and install Quarto: https://quarto.org/docs/get-started/\nInstall the following extensions:\n\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto/\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html#accessing-the-course-materials",
+    "href": "materials/00-setup/index.html#accessing-the-course-materials",
+    "title": "Setup",
+    "section": "Accessing the course materials",
+    "text": "Accessing the course materials\nIf you are using a cloud-based option, the files will be included in the project folder.\nIf you are not using a cloud-based option:\nIf you don’t use Git/GitHub:\n\nGo to the GitHub repo: LINK FORTHCOMING\nClick the green “Code” button → “Download ZIP”.\nUnzip the folder and open it in your chosen editor.\n\nIf you use Git/GitHub:\n\nExercises are available at: LINK FORTHCOMING\nClone the repository with Git:\n\ngit clone LINK FORTHCOMING",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html#install-the-necessary-r-packages",
+    "href": "materials/00-setup/index.html#install-the-necessary-r-packages",
+    "title": "Setup",
+    "section": "Install the necessary R packages",
+    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed.\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(c(\"tidyverse\", \"quarto\", \"patchwork\", \"ggridges\", \"tinytable\"))\ninstall.packages('brand.yml', repos = c('https://posit-dev.r-universe.dev', 'https://cloud.r-project.org'))",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html#credits",
+    "href": "materials/00-setup/index.html#credits",
+    "title": "Setup",
+    "section": "Credits",
+    "text": "Credits\n\nThese instructions were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "colophon.html",
+    "href": "colophon.html",
+    "title": "Colophon",
+    "section": "",
+    "text": "Last built: 2025-10-06 at 14:27:55 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#technology",
+    "href": "colophon.html#technology",
+    "title": "Colophon",
+    "section": "",
+    "text": "Last built: 2025-10-06 at 14:27:55 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#design",
+    "href": "colophon.html#design",
+    "title": "Colophon",
+    "section": "Design",
+    "text": "Design\nThe typography, colors, and custom CSS settings are all controlled with this _brand.yml file. (See more about brand.yml here).\n\nTypefaces\nI use Open Sans (Google Fonts) as the main body font throughout the site, and I use Alan Sans (Google Fonts) for all headings.\n\nA heading\nWhereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world…\n\n\n\nColors\nThe colors for this course website come primarily from the “ustwo” palette from the {MoMAColors} R package. The colors come from the video game Monument Valley, developed and produced by ustwo, and is one of only a few pieces of software-based art in the MoMA (see its MoMA page).\n\n\n\n\n\nMonument Valley, 2014, ustwo, video game software, MoMA link.\n\n\n\n\n\n\n\n\n\n\n\nSince this palette only has 6 colors, I supplement it with a few colors from the qualitative Prism palette from CARTOColors:",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#license-and-credits",
+    "href": "colophon.html#license-and-credits",
+    "title": "Colophon",
+    "section": "License and credits",
+    "text": "License and credits\nAll the materials and content for this course are licensed under  Creative Commons CC-BY-SA  .\nSome of the materials in the course were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "Schedule",
+    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (October 16)\n                  Day 1 (October 16)\n                \n                \n                  10:30–11:30\n                  Welcome + Intro to Quarto\n                \n                \n                  11:30–12:30\n                  Creating basic websites\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Advanced website features\n                \n                \n                  Day 2 (October 17)\n                  Day 2 (October 17)\n                \n                \n                  10:30–11:00\n                  Publishing\n                \n                \n                  11:00–12:30\n                  Customization and branding\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Interactivity",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "Instructor",
+    "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "materials/01-intro/index.html",
+    "href": "materials/01-intro/index.html",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Intro to Quarto"
+    ]
+  },
+  {
+    "objectID": "materials/01-intro/index.html#slides",
+    "href": "materials/01-intro/index.html#slides",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Intro to Quarto"
+    ]
+  },
+  {
+    "objectID": "materials/01-intro/index.html#exercises",
+    "href": "materials/01-intro/index.html#exercises",
+    "title": "Introduction to Quarto",
+    "section": "Exercises",
+    "text": "Exercises\n\nWelcome\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\nIntroduce yourself:\n\nName\nProfessional affiliation\nOn a scale of 1–10, how well do you know…\n\nQuarto?\nR?\nPython?\nHTML and CSS?\n\nWhat do you hope to get out of this course?\n\n\n\n\n\n\nIntroduction to Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd\nPreview/render the document\n\nIf you’re using Posit Cloud, you might be asked to allow pop-ups\n\nEdit the title and preview the document again.\n\n\n\n\n\n\nQuarto documents\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd and run some of the code chunks (in order!).\nAdd #| include: false to the second chunk and preview again. Switch it back to true or remove it. Preview again.\nIn the YAML area, add an author field and add your name. Preview again.\nChange code-fold to be true. Preview again.\nEdit the first paragraph to:\n\nMake something bold\nMake “the Gapminder foundation” link to https://www.gapminder.org\nReplace XXXX and YYYY with inline code instead of hardcoded values. The first code chunk creates R objects named first_year and last_year—use those.\n\n\n\n\n\n\n\nAuthoring Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nAdd an important callout box to the introduction summarizing the report’s findings. Preview the file.\nChange the caption for the first plot. Preview again.\nChange some text color to #ec008b. Preview again.\nEdit the “Average life expectancy increased…” paragraph to say “According to Figure 1, average life expectancy increased…”, BUT do it without typing “Figure 1”. Preview again.\nIn the first paragraph, add a citation to something in bib/references.bib. Preview again.\nChange the bibliography style to APA. Preview again.",
+    "crumbs": [
+      "Materials",
+      "Intro to Quarto"
+    ]
+  },
+  {
+    "objectID": "materials/advanced-websites/index.html",
+    "href": "materials/advanced-websites/index.html",
+    "title": "Advanced website features",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Advanced website features"
+    ]
+  },
+  {
+    "objectID": "materials/advanced-websites/index.html#slides",
+    "href": "materials/advanced-websites/index.html#slides",
+    "title": "Advanced website features",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Advanced website features"
+    ]
+  },
+  {
+    "objectID": "materials/advanced-websites/index.html#exercises",
+    "href": "materials/advanced-websites/index.html#exercises",
+    "title": "Advanced website features",
+    "section": "Exercises",
+    "text": "Exercises\n\nOther common features\n\n\n\n\n\n\nTipYour turn: URLs\n\n\n\n\n\n\nMake your about.qmd page appear at about/\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Page layout\n\n\n\n\n\n\nChange the page layout settings for one of your page\nBonus task! Try using the Bootstrap CSS Grid layout system with page-layout: custom.\n\nSee the documentation here\nSee an IRL example here (and code here)\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Advanced &gt; Page Layout.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Article layout\n\n\n\n\n\n\nAdd an image that spans across the whole page\nAdd some text to the margin\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Authoring &gt; Article Layout.\n\n\n\n\n\n\nListings\n\n\n\n\n\n\nTipYour turn: Listings\n\n\n\n\n\n\nEdit research/index.qmd to be a listing page, showing all the pages in the research folder.\nExperiment with changing the listing type to default, then table, then grid.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Listing Pages.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Metadata\n\n\n\n\n\n\nAdd metadata to your different research .qmd files, including images. See how those are reflected in the listing page after rendering.\nBonus task! Modify how the listing page is sorted. Sort it by descending title.\n\nSee the documentation here\n\nBonus task! Change how the dates are shown in the listing page with the date-format option.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Categories\n\n\n\n\n\n\nAdd categories to your different research .qmd files. See how those are reflected in the listing page after rendering.\nBonus task! Change the category lisit on the listing page to appear as a word cloud.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings &gt; Categories.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Make a blog\n\n\n\n\n\nMake a blog!\n\nCreate a new folder named blog with a file named index.qmd in it.\nMake a few folders and files named blog/2025/10/16/thing/index.qmd, etc.\nAdd some fake content in the blog posts. Add images, titles, descriptions, etc.\nMake the blog posts appear as a listing page at blog/index.qmd.\nAdd blog/index.qmd to your top navigation bar.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n\n\nExtensions\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nInstall the Font Awesome extension in your website project.\nUse Font Awesome shortcodes:\n\nInclude a Font Awesome icon in your navigation bar\nInclude a Font Awesome icon in the text of one of your pages\n\nInstall another Quarto extension and play around with it.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at the Font Awesome extension page and Quarto.org &gt; Extensions.",
+    "crumbs": [
+      "Materials",
+      "Advanced website features"
+    ]
   },
   {
     "objectID": "materials/basic-websites/index.html",
