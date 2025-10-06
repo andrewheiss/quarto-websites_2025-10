@@ -1,0 +1,12 @@
+1. Install the [Font Awesome extension](https://github.com/quarto-ext/fontawesome) in your website project.
+
+2. Use Font Awesome shortcodes:
+   - Include a Font Awesome icon in your navigation bar
+   - Include a Font Awesome icon in the text of one of your pages
+
+3. Install another Quarto extension and play around with it.
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at the [Font Awesome extension page](https://github.com/quarto-ext/fontawesome) and [Quarto.org \> Extensions](https://quarto.org/docs/extensions/).

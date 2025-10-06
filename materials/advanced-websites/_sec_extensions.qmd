@@ -1,0 +1,146 @@
+# Extensions {background-color='{{< brand color pink >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Extensions
+
+Quarto has [extensions](https://quarto.org/docs/extensions/) that let you add custom…
+
+- shortcodes
+- filters
+- document formats and templates
+- brands
+
+## Shortcode extensions {.smaller}
+
+**Font Awesome icons** ([site](https://fontawesome.com/) + [extension](https://github.com/quarto-ext/fontawesome))
+
+```{.bash filename="Terminal" code-line-numbers="false"}
+quarto add quarto-ext/fontawesome
+```
+
+\ 
+
+| Text | Output |
+|:-----|:------:|
+| `{{{< fa home >}}}` | {{< fa home >}} |
+| `{{{< fa wand-magic-sparkles >}}}` | {{< fa wand-magic-sparkles >}} |
+| `{{{< fa brands apple >}}}` | {{< fa brands apple >}} |
+| `{{{< fa brands r-project >}}}` | {{< fa brands r-project >}} |
+| `{{{< fa globe >}}}` | {{< fa globe >}} |
+
+: {tbl-colwidths="[75,25]"}
+
+
+##
+
+Use in Markdown: 
+
+````{.markdown filename="my-document.qmd" code-line-numbers="false"}
+- {{{< fa book >}}} [Book page](https://www.bayesrulesbook.com/)
+- {{{< fa person-chalkboard >}}} [Teaching resources](https://bayes-rules.github.io/posts/resources/)
+- {{{< fa brands r-project >}}} [R package](https://github.com/bayes-rules/bayesrules) and [package documentation](https://bayes-rules.github.io/bayesrules/docs/)
+- {{{< fa brands youtube >}}} Alicia Johnson, ["Bayes Rules! An Introduction to Bayesian Modeling with R with Alicia Johnson"](https://www.youtube.com/watch?v=MgB1ihuEDN4), presentation for R-Ladies Philly on October 18, 2021
+````
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+::: {style="font-size: 0.65em"}
+> - {{< fa book >}} [Book page](https://www.bayesrulesbook.com/)
+> - {{< fa house >}} [Project page](https://bayes-rules.github.io/)
+> - {{< fa brands r-project >}} [R package](https://github.com/bayes-rules/bayesrules) and [package documentation](https://bayes-rules.github.io/bayesrules/docs/)
+> - {{< fa brands youtube >}} Alicia Johnson, ["Bayes Rules! An Introduction to Bayesian Modeling with R with Alicia Johnson"](https://www.youtube.com/watch?v=MgB1ihuEDN4), presentation for R-Ladies Philly on October 18, 2021
+:::
+
+
+##
+
+Use in YAML: 
+
+````{.yaml filename="_quarto.yml" code-line-numbers="false"}
+website:
+  navbar:
+    left:
+      - text: "{{{< fa person-chalkboard >}}} Teaching"
+        href: teaching.qmd
+      - text: "{{{< fa flask >}}} Research"
+        href: research.qmd
+    right:
+      - text: "{{{< fa brands google-scholar >}}}"
+        href: "https://example.com"
+````
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+![](img/fa-navbar.png){fig-align="center"}
+
+
+## Filter extensions
+
+**Preview Color** ([extension](https://github.com/mcanouil/quarto-preview-colour))
+
+```{.bash filename="Terminal" code-line-numbers="false"}
+quarto add mcanouil/quarto-preview-colour
+```
+
+Enable in YAML, either for one page or site-wide:
+
+````{.yaml code-line-numbers="false"}
+filters:
+  - preview-colour
+````
+
+. . .
+
+\ 
+
+::: {style="font-size: 0.8em;"}
+We use `#1696d2` for Democrats and  and `#db2b27` for Republicans.
+:::
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+::: {style="font-size: 0.8em;"}
+
+```{=html}
+<p>We use <span><code>#1696d2</code><span style="display: inline-block; color: #1696d2; cursor: pointer; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; position: relative;" title="Colour preview: #1696d2 (click to copy)" aria-label="Colour preview: #1696d2 (click to copy)" onclick="navigator.clipboard.writeText('#1696d2').then(() =&gt; { const span = this; const originalTitle = span.title; span.title = 'Copied: #1696d2'; let tooltip = document.createElement('div'); tooltip.textContent = 'Copied!'; tooltip.style.cssText = 'position:absolute;top:-30px;left:50%;transform:translateX(-50%);background:#333;color:white;padding:4px 8px;border-radius:4px;font-size:12px;font-family:sans-serif;white-space:nowrap;z-index:9999;box-shadow:0 2px 4px rgba(0,0,0,0.3);pointer-events:none;'; span.appendChild(tooltip); setTimeout(() =&gt; { span.title = originalTitle; if (span.contains(tooltip)) span.removeChild(tooltip); }, 1500); }).catch(() =&gt; console.error('Failed to copy colour code'));">◉</span></span> for Democrats and and <span><code>#db2b27</code><span style="display: inline-block; color: #db2b27; cursor: pointer; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; position: relative;" title="Colour preview: #db2b27 (click to copy)" aria-label="Colour preview: #db2b27 (click to copy)" onclick="navigator.clipboard.writeText('#db2b27').then(() =&gt; { const span = this; const originalTitle = span.title; span.title = 'Copied: #db2b27'; let tooltip = document.createElement('div'); tooltip.textContent = 'Copied!'; tooltip.style.cssText = 'position:absolute;top:-30px;left:50%;transform:translateX(-50%);background:#333;color:white;padding:4px 8px;border-radius:4px;font-size:12px;font-family:sans-serif;white-space:nowrap;z-index:9999;box-shadow:0 2px 4px rgba(0,0,0,0.3);pointer-events:none;'; span.appendChild(tooltip); setTimeout(() =&gt; { span.title = originalTitle; if (span.contains(tooltip)) span.removeChild(tooltip); }, 1500); }).catch(() =&gt; console.error('Failed to copy colour code'));">◉</span></span> for Republicans.</p>
+```
+
+:::
+
+## Lots of others! {.smaller}
+
+There are hundreds of extensions: find them all at [Quarto.org \> Extensions](https://quarto.org/docs/extensions/) or at [the Quarto Extensions directory](https://m.canouil.dev/quarto-extensions/).
+
+Here are some common extensions for websites specifically:
+
+| Extension | Description |
+|--------------------------|----------------------------------------------|
+| [Font Awesome](https://github.com/quarto-ext/fontawesome) | Include [Font Awesome](https://fontawesome.com/) icons |
+| [Academicons](https://github.com/schochastics/academicons) | Include [academicons](https://jpswalsh.github.io/academicons/) icons |
+| [Custom Callouts](https://quarto.thecoatlessprofessor.com/custom-callout/) | Go beyond Quarto's default `note`, `warning`, `important`, `tip`, and `caution` callouts |
+| [Preview Color](https://github.com/mcanouil/quarto-preview-colour) | Add little circles to show hex colors |
+| [Embed PDFs](https://github.com/jmgirard/embedpdf) | Easily embed PDF files in HTML documents |
+| [Downloadthis](https://github.com/shafayetShafee/downloadthis) | Create download buttons |
+
+: {tbl-colwidths="[30,70]"}
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_extensions1.qmd >}}
+
+```{r}
+#| label: clock-extensions
+#| echo: false
+countdown::countdown(minutes = 10)
+```

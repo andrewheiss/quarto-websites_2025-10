@@ -1,0 +1,161 @@
+# Other<br>common features {background-color='{{< brand color pink >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## URLs
+
+The website will mirror your file structure, including subdirectories
+
+. . .
+
+::: {style="text-align: center"}
+[**/about.qmd**]{style='color: {{< brand color orange >}}'}<br>
+↓<br>
+[**example.com/about.html**]{style='color: {{< brand color blue >}}'}
+:::
+
+. . .
+
+\ 
+
+::: {style="text-align: center"}
+[**/research/project1.qmd**]{style='color: {{< brand color orange >}}'}<br>
+↓<br>
+[**example.com/research/project1.html**]{style='color: {{< brand color blue >}}'}
+:::
+
+## Custom URLs
+
+What if you want nicer URLs? 
+
+\ 
+
+::: {style="text-align: center"}
+
+[**example.com/about/**]{style='color: {{< brand color blue >}}'}
+
+[**example.com/research/project1/**]{style='color: {{< brand color blue >}}'}
+
+:::
+
+## `index.html`
+
+By convention, web servers treat `index.html` files in a special way.
+
+\ 
+
+::: {style="text-align: center"}
+[**example.com/about/**]{style='color: {{< brand color blue >}}'}
+
+implicitly means
+
+[**example.com/about/index.html**]{style='color: {{< brand color blue >}}'}
+:::
+
+## `index.qmd`
+
+If you want [**example.com/about/**]{style='color: {{< brand color blue >}}'}, put your about page in a folder named [**about**]{style='color: {{< brand color orange >}}'} and rename it to [**index.qmd**]{style='color: {{< brand color orange >}}'}.
+
+\ 
+
+::: {style="text-align: center"}
+[**/about.qmd**]{style='color: {{< brand color orange >}}'}<br>
+↓<br>
+[**/about/index.qmd**]{style='color: {{< brand color orange >}}'}<br>
+↓<br>
+[**example.com/about/**]{style='color: {{< brand color blue >}}'}
+:::
+
+## User-friendly URLs
+
+You could have a blog post like this (ew):
+
+::: {style="text-align: center"}
+[**/2025-10-16_blog-post-title.qmd**]{style='color: {{< brand color orange >}}'}<br>
+↓<br>
+[**example.com/2025-10-16_blog-post-title.html**]{style='color: {{< brand color blue >}}'}
+:::
+
+\ 
+
+Or like this (yay):
+
+::: {style="text-align: center"}
+[**/blog/2025/10/16/blog-post-title/index.qmd**]{style='color: {{< brand color orange >}}'}<br>
+↓<br>
+[**example.com/blog/2025/10/16/blog-post-title/**]{style='color: {{< brand color blue >}}'}
+:::
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+{{< include _your-turn_other-urls.qmd >}}
+
+```{r}
+#| label: clock-urls
+#| echo: false
+countdown::countdown(minutes = 5)
+```
+
+## Page layout {.smaller}
+
+**Page layouts**
+
+- `article`: Default layout with main text area between 600px–900px
+- `full`: Expand main text area into the sidebar and margin area if there's no content there
+- `custom`: Provide your own HTML template for the main text area
+
+:::: {.columns}
+
+::: {.column}
+**Component widths**
+
+![](img/grid.png)
+:::
+
+::: {.column}
+**YAML settings**
+
+```{.yaml code-line-numbers="false"}
+format: 
+  html:
+    page-layout: article  # or "full" or "custom"
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
+```
+:::
+
+::::
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_other-page-layout.qmd >}}
+
+```{r}
+#| label: clock-page-layout
+#| echo: false
+countdown::countdown(minutes = 10)
+```
+
+
+## Article layout
+
+Quarto offers *a ton* of article-specific layout options:
+
+- Make content go into the margin
+- Make content go across the whole page
+- Put content in the margins
+
+![](img/article-layout-documentation.png){fig-align="center"}
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_other-article-layout.qmd >}}
+
+```{r}
+#| label: clock-article-layout
+#| echo: false
+countdown::countdown(minutes = 10)
+```

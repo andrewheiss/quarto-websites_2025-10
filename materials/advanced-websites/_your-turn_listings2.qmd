@@ -1,0 +1,14 @@
+1. Add metadata to your different research `.qmd` files, including images. See how those are reflected in the listing page after rendering.
+
+2. *Bonus task!* Modify how the listing page is sorted. Sort it by descending title. 
+
+   - [See the documentation here](https://quarto.org/docs/websites/website-listings.html#sorting-items)
+
+3. *Bonus task!* Change how the dates are shown in the listing page with the `date-format` option. 
+
+   - [See the documentation here](https://quarto.org/docs/websites/website-listings.html#advanced-options)
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at [Quarto.org \> Guide \> Websites \> Document Listings](https://quarto.org/docs/websites/website-listings.html).

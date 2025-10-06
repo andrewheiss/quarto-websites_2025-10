@@ -1,0 +1,1 @@
+1. Make your `about.qmd` page appear at `about/`

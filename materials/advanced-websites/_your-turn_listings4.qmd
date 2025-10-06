@@ -1,0 +1,12 @@
+**Make a blog!**
+
+1. Create a new folder named `blog` with a file named `index.qmd` in it.
+2. Make a few folders and files named `blog/2025/10/16/thing/index.qmd`, etc.
+3. Add some fake content in the blog posts. Add images, titles, descriptions, etc.
+4. Make the blog posts appear as a listing page at `blog/index.qmd`.
+5. Add `blog/index.qmd` to your top navigation bar.
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.
+- Use the documentation at [Quarto.org \> Guide \> Websites \> Document Listings](https://quarto.org/docs/websites/website-listings.html).
