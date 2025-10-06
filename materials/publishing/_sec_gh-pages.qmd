@@ -1,0 +1,204 @@
+# Deploying with<br>GitHub Pages {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## GitHub Pages
+
+::: {.incremental}
+
+- **What**: Free hosting service for repositories hosted on GitHub
+
+- **When to use**: When you want a (free) longer term hosting solution (with a custom domain if you want) and you're already using GitHub for version control
+
+- **Difficulty level**: Medium
+
+:::
+
+. . .
+
+::: {style="text-align: center; font-size: 0.8em;"}
+[Complete documentation](https://quarto.org/docs/publishing/github-pages.html)
+:::
+
+## Three ways; three difficulties
+
+::: {.incremental}
+1. **Easy**: Render your site to `docs/` and include that folder in your git repository.
+
+2. **Medium**: Use the `quarto publish` terminal command to render the site and push it to a `gh-pages` branch.
+
+3. **Hard**: Use GitHub Actions to build an on-the-fly virtual computer that remotely rebuilds and publishes your site every time you commit to your repository.
+:::
+
+. . .
+
+**We're going to do Option 1!**
+
+## Some git knowledge required
+
+::::: {.columns}
+:::: {.column .fragment style="text-align: center;"}
+
+::: {style="font-size: 2em;"}
+{{< fa brands square-git >}}
+:::
+
+General version control
+
+::::
+
+:::: {.column .fragment style="text-align: center;"}
+
+::: {style="font-size: 2em;"}
+{{< fa brands github >}}
+:::
+
+Remote version control hosting + collaboration
+
+::::
+:::::
+
+. . .
+
+**Helpful resources:**
+
+- [GitHub's Hello World tutorial](https://docs.github.com/en/get-started/start-your-journey/hello-world)
+- [Happy Git with R](https://happygitwithr.com/)
+
+
+## Interacting with git {.smaller}
+
+::: {.panel-tabset}
+### GitHub Desktop
+
+![](img/github-desktop.png){fig-align="center" width="70%"}
+
+### RStudio
+
+![](img/rstudio-git.png){fig-align="center" width="90%" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+### Positron&thinsp;/&thinsp;VS Code
+
+![](img/positron-git.png){fig-align="center" width="90%"}
+
+### Terminal
+
+```{.bash filename="Terminal" code-line-numbers="false"}
+git add new-file.qmd
+git commit -m "New file added"
+git push origin main
+```
+
+:::
+
+## Basic workflow
+
+::: {.incremental}
+1. Make changes
+
+2. Commit changes to lock them in
+
+3. Push commits to remote server
+:::
+
+. . .
+
+::: {style="font-size: 0.8em;"}
+*Advanced stuff you don't have to worry about*: branches, collaboration, pull requests, etc.
+:::
+
+
+## `.gitignore`
+
+Use `.gitignore` to hide things from git.
+
+. . .
+
+::: {.callout-tip}
+### General rules
+
+**Commit things that make outputs; don't commit outputs themselves.**
+
+**Don't commit user-specific things (or passwords!)**
+:::
+
+. . .
+
+```{.default filename=".gitignore"}
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+data/private-data.csv
+output/*.png
+all_my_passwords.txt
+```
+
+## How to publish {.smaller}
+
+**Part 1: Get your project code on GitHub**
+
+::: {.incremental}
+{{< include _your-turn_gh-pages1.qmd >}}
+:::
+
+## How to publish {.smaller}
+
+**Part 2: Tell Quarto to use GitHub Pages**
+
+::: {.incremental}
+{{< include _your-turn_gh-pages2.qmd >}}
+:::
+
+## How to publish {.smaller}
+
+**Part 3: Tell GitHub Pages to serve your site**
+
+::: {.incremental}
+{{< include _your-turn_gh-pages3.qmd >}}
+:::
+
+
+## Other details
+
+- To update the site later, render the site, commit to GitHub, and wait for the site to rebuild.
+
+  Track the progress under the "Actions" section of your GitHub repository.
+
+- Add a custom domain at Settings \> Pages
+
+
+## Your turn, part 1 {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+**Get your project code on GitHub**
+
+{{< include _your-turn_gh-pages1.qmd >}}
+
+```{r}
+#| label: clock-gh-pages1
+#| echo: false
+countdown::countdown(minutes = 10)
+```
+
+## Your turn, part 2 {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+**Tell Quarto to use GitHub Pages**
+
+{{< include _your-turn_gh-pages2.qmd >}}
+
+```{r}
+#| label: clock-gh-pages2
+#| echo: false
+countdown::countdown(minutes = 10)
+```
+
+## Your turn, part 3 {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+**Tell GitHub Pages to serve your site**
+
+{{< include _your-turn_gh-pages3.qmd >}}
+
+```{r}
+#| label: clock-gh-pages3
+#| echo: false
+countdown::countdown(minutes = 10)
+```

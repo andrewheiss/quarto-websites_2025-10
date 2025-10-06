@@ -2,9 +2,49 @@
 title: "Publishing"
 ---
 
-_sec_welcome.qmd
-_sec_web-hosting-basics.qmd (stuff has to live on a server; when previewing, your computer creates a temporary server; domain names point at different servers)
-_sec_hosting-options.qmd (easiest = quartopub (free) and Posit Connect (\$\$\$) ; medium = gh-pages and netlify ; advanced = GitHub Actions and DIY - gh-pages and netlify are a good sweet spot - quarto pub doesn't let you use custom domain names)
-_sec_quarto-pub.qmd
-_sec_gh-pages.qmd
-_sec_next.qmd
+## Slides
+
+<p style="line-height: 2.5"><a class="btn btn-success btn-sm" target="_blank" href="slides.html">{{< fa arrow-up-right-from-square >}} &ensp;Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button">{{< fa file-pdf >}} &ensp;Download PDF of slides</a></p>
+
+```{=html}
+<div class="ratio ratio-16x9">
+<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
+</div>
+```
+
+## Exercises
+
+### Deploying with Quarto Pub
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_quarto-pub1.qmd >}}
+:::
+
+
+### Deploying with GitHub Pages
+
+**Get your project code on GitHub**
+
+::: {.callout-tip collapse="true"}
+#### Your turn, part 1
+
+{{< include _your-turn_gh-pages1.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### Your turn, part 2
+
+**Tell Quarto to use GitHub Pages**
+
+{{< include _your-turn_gh-pages2.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### Your turn, part 3
+
+**Tell GitHub Pages to serve your site**
+
+{{< include _your-turn_gh-pages3.qmd >}}
+:::

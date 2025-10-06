@@ -1,0 +1,40 @@
+# Quarto<br>hosting options {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Deployment services
+
+Quarto has built-in support for several different hosting services for publshing documents, presentations, dashboards, and websites
+
+![](img/quarto-publishing-documentation.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+::: {.footer}
+<https://quarto.org/docs/publishing/>
+:::
+
+## {style="font-size: 0.92em"}
+
+#### Easy
+
+- **Quarto Pub**: Free!; everything's public; no custom domains
+- **Posit Connect**: \$\$; public and private; custom domains
+
+#### Medium
+
+- **GitHub Pages**: Free!; everything's public; custom domains
+- **Netlify**: Free and paid; public and private; custom domains
+
+#### Advanced
+
+- **DIY**: Set up a server yourself and do whatever you want
+
+
+## What I use
+
+- **Quarto Pub**: [example](https://andrewheiss.quarto.pub/escaping-inline-r-chunks/) + [example](https://andrewheiss.quarto.pub/arnova-2025-proposal/)
+- **GitHub Pages**: [example](https://profmusgrave.github.io/qatarcars/) + [example](https://foreignassistance.andrewheiss.com/) + this very course website!
+- **DIY**: [example](https://www.andrewheiss.com/) + [example](https://stats.andrewheiss.com/silent-skywalk/)
+
+
+## What we'll do together
+
+- **Quarto Pub**
+- **GitHub Pages**

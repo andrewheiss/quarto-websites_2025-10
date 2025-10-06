@@ -1,0 +1,56 @@
+# Deploying with<br>Quarto Pub {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Quarto Pub
+
+::: {style="text-align: center; font-size: 1.4em; margin: 0.5em 0;"}
+<https://quartopub.com/>
+:::
+
+::: {.incremental}
+
+- **What**: Free hosting service for all types of Quarto documents, run by Posit
+
+- **When to use**: When you want to publish something on the internet quickly and you don't really care about (1) privacy or (2) the domain name
+
+- **Difficulty level**: The easiest!
+
+:::
+
+. . .
+
+::: {style="text-align: center; font-size: 0.8em;"}
+[Complete documentation](https://quarto.org/docs/publishing/quarto-pub.html)
+:::
+
+## {.center}
+
+![](img/quarto-pub-dashboard.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+## How to publish
+
+::: {.incremental}
+
+{{< include _your-turn_quarto-pub1.qmd >}}
+
+5. Done!
+
+:::
+
+## Other details
+
+- To update the site later, run `quarto publish` in the terminal again.
+
+- Manage other site settings at your [quartopub.com](https://quartopub.com/) dashboard.
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+Publish your playground website to Quarto Pub.
+
+{{< include _your-turn_quarto-pub1.qmd >}}
+
+```{r}
+#| label: clock-quarto-pub
+#| echo: false
+countdown::countdown(minutes = 7)
+```

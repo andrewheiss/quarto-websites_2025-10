@@ -1,0 +1,11 @@
+1. Go to [quartopub.com](https://quartopub.com/) and create a free account. Make sure you're logged in.
+
+2. In the terminal, run this:
+
+   ```{.bash filename="Terminal" code-line-numbers="false"}
+   quarto publish
+   ```
+
+3. Select `Quarto Pub` and press enter. Answer all the other questions.
+
+4. Wait for the site to render and upload.

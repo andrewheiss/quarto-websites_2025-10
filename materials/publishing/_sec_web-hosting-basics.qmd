@@ -1,0 +1,184 @@
+# The basics of<br>web hosting {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Files are real
+
+![](img/verge-file-not-found.png)
+
+::: {.footer}
+Monica Chin, ["File not found,"](https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z) *The Verge*, September 22, 2021
+:::
+
+## Files live on computers
+
+![](img/files-teaching.png)
+
+## Websites are files
+
+:::: {.columns}
+
+::: {.column width="50%"}
+{{< fa file-code >}} **HTML**
+
+```{.html code-line-numbers="false"}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page title</title>
+</head>
+<body>
+  <h1>A heading</h1>
+  <p>Some text</p>
+</body>
+</html>
+```
+
+{{< fa brands css3-alt >}} **CSS**
+
+```{.css code-line-numbers="false"}
+h1 {
+  color: "red";
+  text-align: center;
+  margin-bottom: 10px;
+}
+```
+
+:::
+
+::: {.column width="50%"}
+
+{{< fa file-image >}} {{< fa file-video >}} {{< fa file-zipper >}} {{< fa file-pdf >}} {{< fa file >}} **Other files**
+
+\ 
+
+{{< fa brands square-js >}} **Javascript**
+
+```{.js code-line-numbers="false"}
+const listItems = document.querySelectorAll("li");
+
+function toggleDone(e) {
+  if (!e.target.className) {
+    e.target.className = "done";
+  } else {
+    e.target.className = "";
+  }
+}
+
+listItems.forEach((item) => {
+  item.addEventListener("click", toggleDone);
+});
+```
+
+:::
+
+::::
+
+
+## (Some are databases + files)
+
+![](img/WordPress_6.4_Dashboard.png){fig-align="center"}
+
+::: {.footer}
+By WordPress Foundation - <span class="int-own-work" lang="en">Own work</span>, <a href="http://www.gnu.org/licenses/gpl.html" title="GNU General Public License">GPL</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=146718522">Link</a>
+:::
+
+## Quarto websites are *static*
+
+There's no need for fancy web servers—<br>Quarto puts the whole rendered website in `_site/`
+
+![](img/static-folder.png){fig-align="center"}
+
+. . . 
+
+**Your job is to put that `_site/` on a server.**
+
+## Servers {.nostretch}
+
+Web servers are computers that (1) store files and (2) show those files as websites to web browsers.
+
+. . .
+
+![](img/there-is-no-cloud.png){fig-align="center" width="45%"}
+
+## Local files {.nostretch}
+
+::: {style="text-align: center;"}
+`file:///Users/andrew/Desktop/example/index.html`
+:::
+
+![](img/file-server.svg){fig-align="center" width="70%"}
+
+## Local files
+
+![](img/preview-file.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 15px;"}
+
+## Local server {.nostretch}
+
+::: {style="text-align: center;"}
+`http://localhost:3333/`
+:::
+
+![](img/local-server.svg){fig-align="center" width="70%"}
+
+## Local server
+
+![](img/preview-server.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 15px;"}
+
+## {.nostretch .center}
+
+![](img/stephen-a-smith-take-a-look.jpg){fig-align="center" width="70%"}
+
+## Local server {.nostretch}
+
+![](img/local-server.svg){fig-align="center" width="70%"}
+
+## Remote server
+
+![](img/remote-server.svg){fig-align="center"}
+
+## Remote server
+
+![](img/preview-live.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 15px;"}
+
+## Domain names
+
+All computers on the internet have IP addresses
+
+::: {style="text-align: center; font-size: 1.4em; margin: 2em 0;"}
+<http://8.8.8.8>
+:::
+
+. . . 
+
+Domain names map IP addresses to memorable, human-readable names
+
+## Domain names
+
+![](img/remote-server-dns.svg){fig-align="center"}
+
+## Costs
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+**Server space**
+
+Can be free!
+
+Typically \$5+/month
+
+:::
+
+::: {.column width="50%"}
+
+**Domain name**
+
+Not free!
+
+\$10–20+/year
+
+![](img/iwantmyname.png){width="80%"}
+
+:::
+
+::::

@@ -6,7 +6,7 @@ format:
     title-slide-attributes: 
       data-background-image: ../../img/background-hex-shapes.svg
       data-background-opacity: "0.5"
-      data-background-gradient: "linear-gradient(30deg, {{< brand color blue >}}, {{< brand color red >}})"
+      data-background-gradient: "linear-gradient(30deg, {{< brand color orange >}}, {{< brand color blue >}})"
       style: "text-align: left; right: 10%"
       # data-background-color: "{{< brand color blue >}}"
     include-in-header: 
@@ -20,8 +20,16 @@ format:
 
 ```{r}
 #| include: false
-#| 
+
 library(countdown)
 ```
 
-# Web hosting<br>basics {background-color='{{< brand color blue >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+{{< include _sec_web-hosting-basics.qmd >}}
+
+{{< include _sec_hosting-options.qmd >}}
+
+{{< include _sec_quarto-pub.qmd >}}
+
+{{< include _sec_gh-pages.qmd >}}
+
+{{< include _sec_next.qmd >}}

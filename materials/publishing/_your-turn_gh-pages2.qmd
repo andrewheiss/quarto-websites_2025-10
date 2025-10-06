@@ -1,0 +1,13 @@
+5. Change the `output-dir` option in `_quarto.yml` to `docs`.
+
+   ```{.yaml code-line-numbers="false" filename="_quarto.yml"}
+   project:
+     type: website
+     output-dir: docs
+   ```
+
+6. Add an empty file named `.nojekyll` to the root of your website project (this tells GitHub to not run its own static site generator).
+
+7. Render your site.
+
+8. Commit the newly created `docs/` folder and `.nojekyll` file and push to GitHub.

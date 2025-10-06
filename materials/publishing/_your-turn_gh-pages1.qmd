@@ -1,0 +1,16 @@
+1. Go to [github.com](https://github.com/) and create a free account.
+
+2. Add a `.gitignore` file to your website project with this:
+
+   ```{.default filename=".gitignore"}
+   .Rproj.user
+   .Rhistory
+   .RData
+   .Ruserdata
+
+   /_site/
+   ```
+
+3. Initialize a git repository for your website project.
+
+4. Commit the files and push to GitHub.

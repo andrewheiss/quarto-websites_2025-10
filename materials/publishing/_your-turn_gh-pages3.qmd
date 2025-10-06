@@ -1,0 +1,5 @@
+9. From your GitHub repository, go to Settings \> Pages and configure the repository to publish from the `docs` directory of your `main` branch.
+
+   ![](img/gh-pages-docs.png){fig-align="center" width="60%"}
+
+10. Wait for GitHub to build and deploy the site.
