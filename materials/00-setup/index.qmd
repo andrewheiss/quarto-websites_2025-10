@@ -3,18 +3,18 @@ title: "Setup"
 format: html
 ---
 
-To follow along with the course exercises, you'll need Quarto version 1.8+ and access to a code editor that supports R or Python.
+To follow along with the course exercises, you'll need Quarto version 1.8+ and access to a code editor that supports R.
 
-While Quarto itself doesn't require a programming language, the exercises will include code chunks in R or Python. If you don’t already have R or Python set up locally, we recommend using a cloud-based option like Posit Cloud (for R) or GitHub Codespaces (for Python).
+While Quarto itself doesn't require a programming language, the exercises will include code chunks in R. If you don’t already have R set up locally, I recommend using a cloud-based option like Posit Cloud.
 
 ## Recommended setup options
 
 ### Option 1: Posit Cloud (RStudio in the cloud)
 
 - Create a free account at <https://posit.cloud/>
-- Open the Posit Cloud project link: <https://posit.cloud/spaces/679626/join?access_code=VwU0N2fEy5wwQ8qHayo8TrTZRKcT6sndAF13AHlx>
+- Join the Posit Cloud workspace: <https://posit.cloud/spaces/704423/join?access_code=fDGrujjY7mb1j-9bq-dlKl7JZw5XkLdq5sm3cFoE>
 - Click "Yes" to join the space.
-- Click Content and select `quarto-brand-exercises` or go to <https://posit.cloud/spaces/679626/content/10865885/>
+- Click Content and select `quarto-websites-exercises_2025-10` or go to `LINK FORTHCOMING`
 - To save a copy of the project to your workspace, click "Save a permanent copy".
 
 ### Option 2: Local installation
@@ -51,35 +51,29 @@ If you are using a cloud-based option, the files will be included in the project
 
 If you are not using a cloud-based option:
 
+**If you don’t use Git/GitHub:**
+
+- Go to the GitHub repo: `LINK FORTHCOMING`
+- Click the green "Code" button → "Download ZIP".
+- Unzip the folder and open it in your chosen editor.
+
 **If you use Git/GitHub:**
 
-- Exercises are available at: <https://github.com/posit-dev/quarto-brand-exercises/>
+- Exercises are available at: `LINK FORTHCOMING`
 - Clone the repository with Git:
 
 ```bash
-git clone https://github.com/posit-dev/quarto-brand-exercises.git
+git clone LINK FORTHCOMING
 ```
-
-**If you don’t use Git/GitHub:**
-
-- Go to the GitHub repo: <https://github.com/posit-dev/quarto-brand-exercises/>
-- Click the green "Code" button → "Download ZIP".
-- Unzip the folder and open it in your chosen editor.
 
 ## Install the necessary R packages
 
 If you are using Posit Cloud, the packages will be pre-installed. 
 
-If you are using RStudio or Positron locally, install the packages on a Mac by running:
+If you are using RStudio or Positron locally, install all the packages we'll use with:
 
-```r
-if (!require("pak")) install.packages("pak")
-pak::pak(c("tidyverse", "quarto", "patchwork", "posit-dev/brand-yml/pkg-r"))
-```
-
-If you are using Windows, please run the below for the brand.yml package:
-
-```r
+```{.r}
+install.packages(c("tidyverse", "quarto", "patchwork", "ggridges", "tinytable"))
 install.packages('brand.yml', repos = c('https://posit-dev.r-universe.dev', 'https://cloud.r-project.org'))
 ```
 
