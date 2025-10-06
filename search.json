@@ -658,7 +658,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-06 at 11:08:20 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-06 at 11:33:01 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -668,7 +668,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-06 at 11:08:20 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-06 at 11:33:01 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -698,7 +698,7 @@
     "href": "materials/00-setup/index.html",
     "title": "Setup",
     "section": "",
-    "text": "To follow along with the course exercises, you’ll need Quarto version 1.8+ and access to a code editor that supports R or Python.\nWhile Quarto itself doesn’t require a programming language, the exercises will include code chunks in R or Python. If you don’t already have R or Python set up locally, we recommend using a cloud-based option like Posit Cloud (for R) or GitHub Codespaces (for Python).",
+    "text": "To follow along with the course exercises, you’ll need Quarto version 1.8+ and access to a code editor that supports R.\nWhile Quarto itself doesn’t require a programming language, the exercises will include code chunks in R. If you don’t already have R set up locally, I recommend using a cloud-based option like Posit Cloud.",
     "crumbs": [
       "Setup"
     ]
@@ -708,7 +708,7 @@
     "href": "materials/00-setup/index.html#recommended-setup-options",
     "title": "Setup",
     "section": "Recommended setup options",
-    "text": "Recommended setup options\n\nOption 1: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nOpen the Posit Cloud project link: https://posit.cloud/spaces/679626/join?access_code=VwU0N2fEy5wwQ8qHayo8TrTZRKcT6sndAF13AHlx\nClick “Yes” to join the space.\nClick Content and select quarto-brand-exercises or go to https://posit.cloud/spaces/679626/content/10865885/\nTo save a copy of the project to your workspace, click “Save a permanent copy”.\n\n\n\nOption 2: Local installation\nChoose one editor and follow the steps:\n\nRStudioPositronVS Code\n\n\n\nDownload and install RStudio: https://posit.co/downloads/\n\nMake sure RStudio is version 2022.07+.\n\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install Positron: https://positron.posit.co/download.html\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install VS Code: https://code.visualstudio.com/download/\nDownload and install Quarto: https://quarto.org/docs/get-started/\nInstall the following extensions:\n\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto/\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/",
+    "text": "Recommended setup options\n\nOption 1: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: https://posit.cloud/spaces/704423/join?access_code=fDGrujjY7mb1j-9bq-dlKl7JZw5XkLdq5sm3cFoE\nClick “Yes” to join the space.\nClick Content and select quarto-websites-exercises_2025-10 or go to LINK FORTHCOMING\nTo save a copy of the project to your workspace, click “Save a permanent copy”.\n\n\n\nOption 2: Local installation\nChoose one editor and follow the steps:\n\nRStudioPositronVS Code\n\n\n\nDownload and install RStudio: https://posit.co/downloads/\n\nMake sure RStudio is version 2022.07+.\n\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install Positron: https://positron.posit.co/download.html\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install VS Code: https://code.visualstudio.com/download/\nDownload and install Quarto: https://quarto.org/docs/get-started/\nInstall the following extensions:\n\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto/\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/",
     "crumbs": [
       "Setup"
     ]
@@ -718,7 +718,7 @@
     "href": "materials/00-setup/index.html#accessing-the-course-materials",
     "title": "Setup",
     "section": "Accessing the course materials",
-    "text": "Accessing the course materials\nIf you are using a cloud-based option, the files will be included in the project folder.\nIf you are not using a cloud-based option:\nIf you use Git/GitHub:\n\nExercises are available at: https://github.com/posit-dev/quarto-brand-exercises/\nClone the repository with Git:\n\ngit clone https://github.com/posit-dev/quarto-brand-exercises.git\nIf you don’t use Git/GitHub:\n\nGo to the GitHub repo: https://github.com/posit-dev/quarto-brand-exercises/\nClick the green “Code” button → “Download ZIP”.\nUnzip the folder and open it in your chosen editor.",
+    "text": "Accessing the course materials\nIf you are using a cloud-based option, the files will be included in the project folder.\nIf you are not using a cloud-based option:\nIf you don’t use Git/GitHub:\n\nGo to the GitHub repo: LINK FORTHCOMING\nClick the green “Code” button → “Download ZIP”.\nUnzip the folder and open it in your chosen editor.\n\nIf you use Git/GitHub:\n\nExercises are available at: LINK FORTHCOMING\nClone the repository with Git:\n\ngit clone LINK FORTHCOMING",
     "crumbs": [
       "Setup"
     ]
@@ -728,7 +728,7 @@
     "href": "materials/00-setup/index.html#install-the-necessary-r-packages",
     "title": "Setup",
     "section": "Install the necessary R packages",
-    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed.\nIf you are using RStudio or Positron locally, install the packages on a Mac by running:\nif (!require(\"pak\")) install.packages(\"pak\")\npak::pak(c(\"tidyverse\", \"quarto\", \"patchwork\", \"posit-dev/brand-yml/pkg-r\"))\nIf you are using Windows, please run the below for the brand.yml package:\ninstall.packages('brand.yml', repos = c('https://posit-dev.r-universe.dev', 'https://cloud.r-project.org'))",
+    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed.\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(c(\"tidyverse\", \"quarto\", \"patchwork\", \"ggridges\", \"tinytable\"))\ninstall.packages('brand.yml', repos = c('https://posit-dev.r-universe.dev', 'https://cloud.r-project.org'))",
     "crumbs": [
       "Setup"
     ]
