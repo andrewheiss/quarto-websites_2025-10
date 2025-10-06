@@ -1,5 +1,271 @@
 [
   {
+    "objectID": "materials/publishing/slides.html#files-are-real",
+    "href": "materials/publishing/slides.html#files-are-real",
+    "title": "Publishing",
+    "section": "Files are real",
+    "text": "Files are real\n\n\nMonica Chin, “File not found,” The Verge, September 22, 2021"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#files-live-on-computers",
+    "href": "materials/publishing/slides.html#files-live-on-computers",
+    "title": "Publishing",
+    "section": "Files live on computers",
+    "text": "Files live on computers"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#websites-are-files",
+    "href": "materials/publishing/slides.html#websites-are-files",
+    "title": "Publishing",
+    "section": "Websites are files",
+    "text": "Websites are files\n\n\n HTML\n&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n  &lt;title&gt;Page title&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n  &lt;h1&gt;A heading&lt;/h1&gt;\n  &lt;p&gt;Some text&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n CSS\nh1 {\n  color: \"red\";\n  text-align: center;\n  margin-bottom: 10px;\n}\n\n     Other files\n \n Javascript\nconst listItems = document.querySelectorAll(\"li\");\n\nfunction toggleDone(e) {\n  if (!e.target.className) {\n    e.target.className = \"done\";\n  } else {\n    e.target.className = \"\";\n  }\n}\n\nlistItems.forEach((item) =&gt; {\n  item.addEventListener(\"click\", toggleDone);\n});"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#some-are-databases-files",
+    "href": "materials/publishing/slides.html#some-are-databases-files",
+    "title": "Publishing",
+    "section": "(Some are databases + files)",
+    "text": "(Some are databases + files)\n\n\nBy WordPress Foundation - Own work, GPL, Link"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#quarto-websites-are-static",
+    "href": "materials/publishing/slides.html#quarto-websites-are-static",
+    "title": "Publishing",
+    "section": "Quarto websites are static",
+    "text": "Quarto websites are static\nThere’s no need for fancy web servers—Quarto puts the whole rendered website in _site/\n\n\nYour job is to put that _site/ on a server."
+  },
+  {
+    "objectID": "materials/publishing/slides.html#servers",
+    "href": "materials/publishing/slides.html#servers",
+    "title": "Publishing",
+    "section": "Servers",
+    "text": "Servers\nWeb servers are computers that (1) store files and (2) show those files as websites to web browsers."
+  },
+  {
+    "objectID": "materials/publishing/slides.html#local-files",
+    "href": "materials/publishing/slides.html#local-files",
+    "title": "Publishing",
+    "section": "Local files",
+    "text": "Local files\n\nfile:///Users/andrew/Desktop/example/index.html"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#local-files-1",
+    "href": "materials/publishing/slides.html#local-files-1",
+    "title": "Publishing",
+    "section": "Local files",
+    "text": "Local files"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#local-server",
+    "href": "materials/publishing/slides.html#local-server",
+    "title": "Publishing",
+    "section": "Local server",
+    "text": "Local server\n\nhttp://localhost:3333/"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#local-server-1",
+    "href": "materials/publishing/slides.html#local-server-1",
+    "title": "Publishing",
+    "section": "Local server",
+    "text": "Local server"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#local-server-2",
+    "href": "materials/publishing/slides.html#local-server-2",
+    "title": "Publishing",
+    "section": "Local server",
+    "text": "Local server"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#remote-server",
+    "href": "materials/publishing/slides.html#remote-server",
+    "title": "Publishing",
+    "section": "Remote server",
+    "text": "Remote server"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#remote-server-1",
+    "href": "materials/publishing/slides.html#remote-server-1",
+    "title": "Publishing",
+    "section": "Remote server",
+    "text": "Remote server"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#domain-names",
+    "href": "materials/publishing/slides.html#domain-names",
+    "title": "Publishing",
+    "section": "Domain names",
+    "text": "Domain names\nAll computers on the internet have IP addresses\n\nhttp://8.8.8.8\n\n\nDomain names map IP addresses to memorable, human-readable names"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#domain-names-1",
+    "href": "materials/publishing/slides.html#domain-names-1",
+    "title": "Publishing",
+    "section": "Domain names",
+    "text": "Domain names"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#costs",
+    "href": "materials/publishing/slides.html#costs",
+    "title": "Publishing",
+    "section": "Costs",
+    "text": "Costs\n\n\nServer space\nCan be free!\nTypically $5+/month\n\nDomain name\nNot free!\n$10–20+/year"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#deployment-services",
+    "href": "materials/publishing/slides.html#deployment-services",
+    "title": "Publishing",
+    "section": "Deployment services",
+    "text": "Deployment services\nQuarto has built-in support for several different hosting services for publshing documents, presentations, dashboards, and websites\n\n\nhttps://quarto.org/docs/publishing/"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#section-1",
+    "href": "materials/publishing/slides.html#section-1",
+    "title": "Publishing",
+    "section": "",
+    "text": "Easy\n\nQuarto Pub: Free!; everything’s public; no custom domains\nPosit Connect: $$; public and private; custom domains\n\nMedium\n\nGitHub Pages: Free!; everything’s public; custom domains\nNetlify: Free and paid; public and private; custom domains\n\nAdvanced\n\nDIY: Set up a server yourself and do whatever you want"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#what-i-use",
+    "href": "materials/publishing/slides.html#what-i-use",
+    "title": "Publishing",
+    "section": "What I use",
+    "text": "What I use\n\nQuarto Pub: example + example\nGitHub Pages: example + example + this very course website!\nDIY: example + example"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#what-well-do-together",
+    "href": "materials/publishing/slides.html#what-well-do-together",
+    "title": "Publishing",
+    "section": "What we’ll do together",
+    "text": "What we’ll do together\n\nQuarto Pub\nGitHub Pages"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#quarto-pub",
+    "href": "materials/publishing/slides.html#quarto-pub",
+    "title": "Publishing",
+    "section": "Quarto Pub",
+    "text": "Quarto Pub\n\nhttps://quartopub.com/\n\n\nWhat: Free hosting service for all types of Quarto documents, run by Posit\nWhen to use: When you want to publish something on the internet quickly and you don’t really care about (1) privacy or (2) the domain name\nDifficulty level: The easiest!\n\n\n\nComplete documentation"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#how-to-publish",
+    "href": "materials/publishing/slides.html#how-to-publish",
+    "title": "Publishing",
+    "section": "How to publish",
+    "text": "How to publish\n\nGo to quartopub.com and create a free account. Make sure you’re logged in.\nIn the terminal, run this:\n\n\nTerminal\n\nquarto publish\n\nSelect Quarto Pub and press enter. Answer all the other questions.\nWait for the site to render and upload.\nDone!"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#other-details",
+    "href": "materials/publishing/slides.html#other-details",
+    "title": "Publishing",
+    "section": "Other details",
+    "text": "Other details\n\nTo update the site later, run quarto publish in the terminal again.\nManage other site settings at your quartopub.com dashboard."
+  },
+  {
+    "objectID": "materials/publishing/slides.html#your-turn",
+    "href": "materials/publishing/slides.html#your-turn",
+    "title": "Publishing",
+    "section": "Your turn",
+    "text": "Your turn\nPublish your playground website to Quarto Pub.\n\nGo to quartopub.com and create a free account. Make sure you’re logged in.\nIn the terminal, run this:\n\n\nTerminal\n\nquarto publish\n\nSelect Quarto Pub and press enter. Answer all the other questions.\nWait for the site to render and upload.\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#github-pages",
+    "href": "materials/publishing/slides.html#github-pages",
+    "title": "Publishing",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nWhat: Free hosting service for repositories hosted on GitHub\nWhen to use: When you want a (free) longer term hosting solution (with a custom domain if you want) and you’re already using GitHub for version control\nDifficulty level: Medium\n\n\n\nComplete documentation"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#three-ways-three-difficulties",
+    "href": "materials/publishing/slides.html#three-ways-three-difficulties",
+    "title": "Publishing",
+    "section": "Three ways; three difficulties",
+    "text": "Three ways; three difficulties\n\nEasy: Render your site to docs/ and include that folder in your git repository.\nMedium: Use the quarto publish terminal command to render the site and push it to a gh-pages branch.\nHard: Use GitHub Actions to build an on-the-fly virtual computer that remotely rebuilds and publishes your site every time you commit to your repository.\n\n\nWe’re going to do Option 1!"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#some-git-knowledge-required",
+    "href": "materials/publishing/slides.html#some-git-knowledge-required",
+    "title": "Publishing",
+    "section": "Some git knowledge required",
+    "text": "Some git knowledge required\n\n\n\n\n\nGeneral version control\n\n\n\n\nRemote version control hosting + collaboration\n\n\nHelpful resources:\n\nGitHub’s Hello World tutorial\nHappy Git with R"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#interacting-with-git",
+    "href": "materials/publishing/slides.html#interacting-with-git",
+    "title": "Publishing",
+    "section": "Interacting with git",
+    "text": "Interacting with git\n\nGitHub DesktopRStudioPositron / VS CodeTerminal\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTerminal\n\ngit add new-file.qmd\ngit commit -m \"New file added\"\ngit push origin main"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#basic-workflow",
+    "href": "materials/publishing/slides.html#basic-workflow",
+    "title": "Publishing",
+    "section": "Basic workflow",
+    "text": "Basic workflow\n\nMake changes\nCommit changes to lock them in\nPush commits to remote server\n\n\n\nAdvanced stuff you don’t have to worry about: branches, collaboration, pull requests, etc."
+  },
+  {
+    "objectID": "materials/publishing/slides.html#gitignore",
+    "href": "materials/publishing/slides.html#gitignore",
+    "title": "Publishing",
+    "section": ".gitignore",
+    "text": ".gitignore\nUse .gitignore to hide things from git.\n\n\n\n\n\n\n\nGeneral rules\n\n\nCommit things that make outputs; don’t commit outputs themselves.\nDon’t commit user-specific things (or passwords!)\n\n\n\n\n\n\n\n.gitignore\n\n.Rproj.user\n.Rhistory\n.RData\n.Ruserdata\n\ndata/private-data.csv\noutput/*.png\nall_my_passwords.txt"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#how-to-publish-1",
+    "href": "materials/publishing/slides.html#how-to-publish-1",
+    "title": "Publishing",
+    "section": "How to publish",
+    "text": "How to publish\nPart 1: Get your project code on GitHub\n\nGo to github.com and create a free account.\nAdd a .gitignore file to your website project with this:\n\n\n.gitignore\n\n.Rproj.user\n.Rhistory\n.RData\n.Ruserdata\n\n/_site/\n\nInitialize a git repository for your website project.\nCommit the files and push to GitHub."
+  },
+  {
+    "objectID": "materials/publishing/slides.html#how-to-publish-2",
+    "href": "materials/publishing/slides.html#how-to-publish-2",
+    "title": "Publishing",
+    "section": "How to publish",
+    "text": "How to publish\nPart 2: Tell Quarto to use GitHub Pages\n\nChange the output-dir option in _quarto.yml to docs.\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nAdd an empty file named .nojekyll to the root of your website project (this tells GitHub to not run its own static site generator).\nRender your site.\nCommit the newly created docs/ folder and push to GitHub."
+  },
+  {
+    "objectID": "materials/publishing/slides.html#how-to-publish-3",
+    "href": "materials/publishing/slides.html#how-to-publish-3",
+    "title": "Publishing",
+    "section": "How to publish",
+    "text": "How to publish\nPart 3: Tell GitHub Pages to serve your site\n\nFrom your GitHub repository, go to Settings &gt; Pages and configure the repository to publish from the docs directory of your main branch.\n\n\n\n\n\nWait for GitHub to build and deploy the site."
+  },
+  {
+    "objectID": "materials/publishing/slides.html#other-details-1",
+    "href": "materials/publishing/slides.html#other-details-1",
+    "title": "Publishing",
+    "section": "Other details",
+    "text": "Other details\n\nTo update the site later, render the site, commit to GitHub, and wait for the site to rebuild.\nTrack the progress under the “Actions” section of your GitHub repository.\nAdd a custom domain at Settings &gt; Pages"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#your-turn-part-1",
+    "href": "materials/publishing/slides.html#your-turn-part-1",
+    "title": "Publishing",
+    "section": "Your turn, part 1",
+    "text": "Your turn, part 1\nGet your project code on GitHub\n\nGo to github.com and create a free account.\nAdd a .gitignore file to your website project with this:\n\n\n.gitignore\n\n.Rproj.user\n.Rhistory\n.RData\n.Ruserdata\n\n/_site/\n\nInitialize a git repository for your website project.\nCommit the files and push to GitHub.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#your-turn-part-2",
+    "href": "materials/publishing/slides.html#your-turn-part-2",
+    "title": "Publishing",
+    "section": "Your turn, part 2",
+    "text": "Your turn, part 2\nTell Quarto to use GitHub Pages\n\nChange the output-dir option in _quarto.yml to docs.\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nAdd an empty file named .nojekyll to the root of your website project (this tells GitHub to not run its own static site generator).\nRender your site.\nCommit the newly created docs/ folder and push to GitHub.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#your-turn-part-3",
+    "href": "materials/publishing/slides.html#your-turn-part-3",
+    "title": "Publishing",
+    "section": "Your turn, part 3",
+    "text": "Your turn, part 3\nTell GitHub Pages to serve your site\n\nFrom your GitHub repository, go to Settings &gt; Pages and configure the repository to publish from the docs directory of your main branch.\n\n\n\n\n\nWait for GitHub to build and deploy the site.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/publishing/slides.html#course-outline",
+    "href": "materials/publishing/slides.html#course-outline",
+    "title": "Publishing",
+    "section": "Course outline",
+    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\n✅ Advanced website features\n✅ Publishing\nCustomization and branding\nInteractivity"
+  },
+  {
     "objectID": "materials/basic-websites/slides.html#page-structure",
     "href": "materials/basic-websites/slides.html#page-structure",
     "title": "Creatingbasic websites",
@@ -392,7 +658,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-05 at 15:44:01 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-06 at 00:28:40 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -402,7 +668,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-05 at 15:44:01 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-06 at 00:28:40 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -928,7 +1194,29 @@
     "href": "materials/publishing/index.html",
     "title": "Publishing",
     "section": "",
-    "text": "_sec_welcome.qmd _sec_web-hosting-basics.qmd (stuff has to live on a server; when previewing, your computer creates a temporary server; domain names point at different servers) _sec_hosting-options.qmd (easiest = quartopub (free) and Posit Connect ($$$) ; medium = gh-pages and netlify ; advanced = GitHub Actions and DIY - gh-pages and netlify are a good sweet spot - quarto pub doesn’t let you use custom domain names) _sec_quarto-pub.qmd _sec_gh-pages.qmd _sec_next.qmd",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Publishing"
+    ]
+  },
+  {
+    "objectID": "materials/publishing/index.html#slides",
+    "href": "materials/publishing/index.html#slides",
+    "title": "Publishing",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Publishing"
+    ]
+  },
+  {
+    "objectID": "materials/publishing/index.html#exercises",
+    "href": "materials/publishing/index.html#exercises",
+    "title": "Publishing",
+    "section": "Exercises",
+    "text": "Exercises\n\nDeploying with Quarto Pub\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nGo to quartopub.com and create a free account. Make sure you’re logged in.\nIn the terminal, run this:\n\n\nTerminal\n\nquarto publish\n\nSelect Quarto Pub and press enter. Answer all the other questions.\nWait for the site to render and upload.\n\n\n\n\n\n\nDeploying with GitHub Pages\nGet your project code on GitHub\n\n\n\n\n\n\nTipYour turn, part 1\n\n\n\n\n\n\nGo to github.com and create a free account.\nAdd a .gitignore file to your website project with this:\n\n\n.gitignore\n\n.Rproj.user\n.Rhistory\n.RData\n.Ruserdata\n\n/_site/\n\nInitialize a git repository for your website project.\nCommit the files and push to GitHub.\n\n\n\n\n\n\n\n\n\n\nTipYour turn, part 2\n\n\n\n\n\nTell Quarto to use GitHub Pages\n\nChange the output-dir option in _quarto.yml to docs.\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nAdd an empty file named .nojekyll to the root of your website project (this tells GitHub to not run its own static site generator).\nRender your site.\nCommit the newly created docs/ folder and .nojekyll file and push to GitHub.\n\n\n\n\n\n\n\n\n\n\nTipYour turn, part 3\n\n\n\n\n\nTell GitHub Pages to serve your site\n\nFrom your GitHub repository, go to Settings &gt; Pages and configure the repository to publish from the docs directory of your main branch.\n\n\n\n\n\nWait for GitHub to build and deploy the site.",
     "crumbs": [
       "Materials",
       "Publishing"
