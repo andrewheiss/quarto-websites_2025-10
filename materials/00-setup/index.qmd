@@ -84,6 +84,13 @@ install.packages(
 )
 ```
 
+## Create publishing accounts
+
+For [the section on publishing](/materials/publishing/index.qmd), you'll neeed to create two free accounts (if you don't have them already):
+
+- [Quarto Pub](https://quartopub.com/)
+- [GitHub](https://github.com/)
+
 ## Credits {.appendix}
 
 These instructions were adapted from Isabella Velásquez and Sara Altman's [posit::conf(2025) workshop](https://posit-conf-2025.github.io/quarto-brand/) on branded Quarto documents ([{{< fa brands github >}} GitHub repository](https://github.com/posit-conf-2025/quarto-brand)). They graciously licensed their content under [{{< fa brands creative-commons >}} Creative Commons CC-BY-SA {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://github.com/posit-conf-2025/quarto-brand/blob/main/LICENSE.md).
