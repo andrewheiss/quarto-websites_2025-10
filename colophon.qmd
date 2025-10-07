@@ -77,7 +77,19 @@ time_updated <- format(
 
 ## Design
 
-The typography, colors, and custom CSS settings are all controlled with [this `_brand.yml` file](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/_brand.yml). [(See more about brand.yml [here](https://posit-dev.github.io/brand-yml/)).]{.small}
+The typography, colors, and custom CSS settings are all controlled with [this `_brand.yml` file](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/_brand.yml):
+
+<details>
+<summary>Show `_brand.yml` for this site</summary>
+
+```{.yaml filename="_brand.yml"}
+{{< include _brand.yml >}}
+```
+
+</details>
+
+[(See more about brand.yml [here](https://posit-dev.github.io/brand-yml/)).]{.small}
+
 
 ### Typefaces
 

@@ -4,6 +4,7 @@
 
 meta:
   name: Quarto website course
+  license: CC BY-SA 4.0
   link:
     home: https://www.andrewheiss.com/
 
@@ -35,8 +36,8 @@ color:
     black: "#111111"
     light-gray: "#cdcdcd"
 
-  background: off-white
   foreground: black
+  background: off-white
   primary: red
   secondary: blue
   tertiary: teal
@@ -49,7 +50,7 @@ typography:
       weight: [400, 700]
     - family: Alan Sans
       source: google
-      weight: [400, 700]
+      weight: [400, 500, 700]
 
   base:
     family: Open Sans
@@ -71,12 +72,26 @@ defaults:
     defaults:  # list of Bootstrap Sass variables to override
       link-hover-color: $brand-pink
       font-family-headings: Alan Sans
+      navbar-font-family: Alan Sans
       code-color: $brand-indigo
+
+      font-size-base: 1rem
+      h1-font-size: $font-size-base * 2.45
+      h2-font-size: $font-size-base * 1.85
+      h3-font-size: $font-size-base * 1.45
+      h4-font-size: $font-size-base * 1.2
+      h5-font-size: $font-size-base * 1
+      h6-font-size: $font-size-base * 0.8
+
       # code-bg: lighten($brand-orange, 25%)  # Sass functions work here!
       code-bg: rgba(233, 236, 239, 0.65)  # Same color as github div background
     mixins:    # string with SCSS mixins
     rules: |   # string with SCSS rules
+      #quarto-document-content h3 {
+          color: $brand-blue;
+          font-weight: 500;
+      }
+
       .navbar-title {
-          font-family: $font-family-headings;
           font-size: 1.3em;
       }
