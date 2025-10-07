@@ -14,7 +14,9 @@ While Quarto itself doesn't require a programming language, the exercises will i
 - Create a free account at <https://posit.cloud/>
 - Join the Posit Cloud workspace: <https://posit.cloud/spaces/704423/join?access_code=fDGrujjY7mb1j-9bq-dlKl7JZw5XkLdq5sm3cFoE>
 - Click "Yes" to join the space.
-- Click Content and select `quarto-websites-exercise-intro_2025-10` or go to `LINK FORTHCOMING`
+- Click Content and select one of these (depending on which activity we're doing):
+  - `quarto-websites-exercise-intro_2025-10`
+  - `quarto-websites-exercise-site_2025-10`
 - To save a copy of the project to your workspace, click "Save a permanent copy".
 
 ### Option 2: Local installation
