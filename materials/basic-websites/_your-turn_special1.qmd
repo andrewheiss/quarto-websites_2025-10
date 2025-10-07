@@ -4,3 +4,8 @@
    - Add links to different websites (with icons!)
    - Try different `template` options
    - Try different `image-shape` options
+
+**Advice**:
+
+- Don't try to make all these changes at once! Remember the workflow: edit, save, preview, repeat. 
+- Use the documentation at [Quarto.org \> Guide \> Websites \> About Pages](https://quarto.org/docs/websites/website-about.html)

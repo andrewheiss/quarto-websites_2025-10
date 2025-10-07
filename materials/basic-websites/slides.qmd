@@ -24,7 +24,6 @@ format:
 library(countdown)
 ```
 
-
 {{< include _sec_anatomy.qmd >}}
 
 {{< include _sec_workflow.qmd >}}

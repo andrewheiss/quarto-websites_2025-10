@@ -87,7 +87,7 @@ Documentation: <https://quarto.org/docs/websites/website-about.html>{target="_bl
 [Quarto.org \> Guide \> Websites \> About Pages](https://quarto.org/docs/websites/website-about.html)
 :::
 
-## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
 
 {{< include _your-turn_special1.qmd >}}
 
