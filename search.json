@@ -1468,6 +1468,16 @@
     ]
   },
   {
+    "objectID": "materials/00-setup/index.html#create-publishing-accounts",
+    "href": "materials/00-setup/index.html#create-publishing-accounts",
+    "title": "Setup",
+    "section": "Create publishing accounts",
+    "text": "Create publishing accounts\nFor the section on publishing, you’ll neeed to create two free accounts (if you don’t have them already):\n\nQuarto Pub\nGitHub",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
     "objectID": "materials/00-setup/index.html#credits",
     "href": "materials/00-setup/index.html#credits",
     "title": "Setup",
@@ -1482,7 +1492,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-07 at 10:30:27 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-07 at 10:35:18 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -1492,7 +1502,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-07 at 10:30:27 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-07 at 10:35:18 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
