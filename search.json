@@ -1442,7 +1442,7 @@
     "href": "materials/00-setup/index.html#recommended-setup-options",
     "title": "Setup",
     "section": "Recommended setup options",
-    "text": "Recommended setup options\n\nOption 1: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: https://posit.cloud/spaces/704423/join?access_code=fDGrujjY7mb1j-9bq-dlKl7JZw5XkLdq5sm3cFoE\nClick “Yes” to join the space.\nClick Content and select quarto-websites-exercise-intro_2025-10 or go to LINK FORTHCOMING\nTo save a copy of the project to your workspace, click “Save a permanent copy”.\n\n\n\nOption 2: Local installation\nChoose one editor and follow the steps:\n\nRStudioPositronVS Code\n\n\n\nDownload and install RStudio: https://posit.co/downloads/\n\nMake sure RStudio is version 2022.07+.\n\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install Positron: https://positron.posit.co/download.html\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install VS Code: https://code.visualstudio.com/download/\nDownload and install Quarto: https://quarto.org/docs/get-started/\nInstall the following extensions:\n\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto/\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/",
+    "text": "Recommended setup options\n\nOption 1: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: https://posit.cloud/spaces/704423/join?access_code=fDGrujjY7mb1j-9bq-dlKl7JZw5XkLdq5sm3cFoE\nClick “Yes” to join the space.\nClick Content and select one of these (depending on which activity we’re doing):\n\nquarto-websites-exercise-intro_2025-10\nquarto-websites-exercise-site_2025-10\n\nTo save a copy of the project to your workspace, click “Save a permanent copy”.\n\n\n\nOption 2: Local installation\nChoose one editor and follow the steps:\n\nRStudioPositronVS Code\n\n\n\nDownload and install RStudio: https://posit.co/downloads/\n\nMake sure RStudio is version 2022.07+.\n\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install Positron: https://positron.posit.co/download.html\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install VS Code: https://code.visualstudio.com/download/\nDownload and install Quarto: https://quarto.org/docs/get-started/\nInstall the following extensions:\n\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto/\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/",
     "crumbs": [
       "Setup"
     ]
@@ -1492,7 +1492,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-07 at 10:35:18 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-07 at 10:43:21 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -1502,7 +1502,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "",
-    "text": "Last built: 2025-10-07 at 10:35:18 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Last built: 2025-10-07 at 10:43:21 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
