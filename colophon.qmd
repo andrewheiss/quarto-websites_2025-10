@@ -3,26 +3,6 @@ title: Colophon
 freeze: false
 format:
   html:
-    include-in-header:
-      - text: |
-          <style>
-            .font-example {
-                background: #ffffff;
-                padding: 1.5em 1.5em 0.75em 1.5em;
-                margin-bottom: 1rem;
-                border-left: 10px solid #ffcc3d;
-                border-top: 1px solid #ffcc3d;
-                border-right: 1px solid #ffcc3d;
-                border-bottom: 1px solid #ffcc3d;
-                font-size: 0.95em;
-            }
-
-            .fake-heading {
-                font-family: "Alan Sans";
-                font-weight: 700;
-                font-size: 1.3em;
-            }
-          </style>
     knitr:
       opts_chunk:
         dev-args:
@@ -67,6 +47,17 @@ time_updated <- format(
   "%F at %T US Eastern"
 )
 ```
+
+::: {.dictionary-entry}
+
+[colophon]{.headword} [(noun)]{.part-of-speech}
+
+[col&thinsp;•&thinsp;o&thinsp;•&thinsp;phon&emsp;/ˈkä-lə-fən, -fän/&emsp;/ˈkɒləfən, -fɒn/]{.pronunciation}
+
+1. an inscription at the end of a book or manuscript containing information about its production
+2. this page
+
+:::
 
 ## Technology
 

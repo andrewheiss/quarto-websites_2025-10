@@ -64,3 +64,81 @@ div.sidebar-item-container .sidebar-link > code {
 .nav-footer-left {
     flex-grow: 3;
 }
+
+// Mixin for bordered boxes
+@mixin bordered-box($border-color, $padding: 1.5em 1.5em 0.75em 1.5em) {
+    background: #ffffff;
+    padding: $padding;
+    border: 1px solid $border-color;
+    border-left-width: 10px;
+}
+
+.font-example {
+    @include bordered-box($brand-yellow);
+    margin-bottom: 1rem;
+    font-size: 0.95em;
+}
+
+.fake-heading {
+    font-family: "Alan Sans";
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.dictionary-entry {
+    @include bordered-box($brand-pink);
+    margin: 1em 0 2em;
+    font-size: 0.95em;
+
+    p {
+        margin-bottom: 0.7em;
+    }
+
+    ol {
+        list-style: none;
+        counter-reset: definition-counter;
+        padding-left: 1em;
+
+        li {
+            counter-increment: definition-counter;
+            margin-bottom: 0.5em;
+            padding-left: 1.25em;
+            position: relative;
+            line-height: 1.2;
+            color: $brand-black;
+
+            &::before {
+                content: counter(definition-counter);
+                position: absolute;
+                left: -1em;
+                top: 0;
+                font-size: 1em;
+                font-weight: 700;
+                color: $brand-gray-500;
+            }
+
+            &::after {
+                content: ":";
+                position: absolute;
+                left: 0.25em;
+                top: 0;
+            }
+        }
+    }
+}
+
+.headword {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.part-of-speech {
+    font-size: 1em;
+    color: $brand-gray-600;
+    margin-left: 1rem;
+}
+
+.pronunciation {
+    font-size: 1em;
+    color: $brand-gray-600;
+}
