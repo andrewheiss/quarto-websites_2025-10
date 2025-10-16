@@ -273,6 +273,13 @@
     "text": "Plotly\nDashboards\nOJS"
   },
   {
+    "objectID": "materials/brand/slides.html#your-turn",
+    "href": "materials/brand/slides.html#your-turn",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\nTo keep everyone on the same page, we’ll play with quarto-websites-exercise-site_2025-10\n\n\nandhs.co/quarto-websites-2025\n\n\nBut keep your playground site from yesterday handy!\n\n\n\n−+\n05:00"
+  },
+  {
     "objectID": "materials/brand/slides.html#bootstrap",
     "href": "materials/brand/slides.html#bootstrap",
     "title": "Customizationand branding",
@@ -301,8 +308,8 @@
     "text": "Changing themes\nSpecify the custom theme under theme in the YAML settings:\n\n\n_quarto.yml\n\nformat:\n  html:\n    theme:\n      - zephyr"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn",
-    "href": "materials/brand/slides.html#your-turn",
+    "objectID": "materials/brand/slides.html#your-turn-1",
+    "href": "materials/brand/slides.html#your-turn-1",
     "title": "Customizationand branding",
     "section": "Your turn",
     "text": "Your turn\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n−+\n07:00"
@@ -364,8 +371,8 @@
     "text": "Browser inpsector\nSee which rule applies"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn-1",
-    "href": "materials/brand/slides.html#your-turn-1",
+    "objectID": "materials/brand/slides.html#your-turn-2",
+    "href": "materials/brand/slides.html#your-turn-2",
     "title": "Customizationand branding",
     "section": "Your turn",
     "text": "Your turn\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nTODO\n\n\n\n\n−+\n10:00"
@@ -392,8 +399,8 @@
     "text": "Using CSS/Sass with Quarto\n\n\nUse vanilla CSS\nformat:\n  html:\n    css: custom.css\n\nUse Sass\nformat:\n  html:\n    theme:\n      - zephyr\n      - custom.scss\n\nTODO: Examples from other sites"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn-2",
-    "href": "materials/brand/slides.html#your-turn-2",
+    "objectID": "materials/brand/slides.html#your-turn-3",
+    "href": "materials/brand/slides.html#your-turn-3",
     "title": "Customizationand branding",
     "section": "Your turn",
     "text": "Your turn\nTODO: Create a SCSS file and make a bunch of rules"
@@ -483,8 +490,8 @@
     "text": "Disable _brand.yml\nTo turn off _brand.yml for a document, use brand: false.\n\n\nmy-document.qmd\n\n---\ntitle: \"My neat report\"\nformat: html\nbrand: false\n---"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn-3",
-    "href": "materials/brand/slides.html#your-turn-3",
+    "objectID": "materials/brand/slides.html#your-turn-4",
+    "href": "materials/brand/slides.html#your-turn-4",
     "title": "Customizationand branding",
     "section": "Your turn",
     "text": "Your turn\n\nThere is a file named urban_institute.yml. Rename it to _brand.yml and rerender your site. What changes? TODO\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nTODO You can reset the file by copying and pasting it from here.\n\n\n\n\n−+\n05:00"
@@ -525,15 +532,15 @@
     "text": "Example plot\nlibrary(tidyverse)\nlibrary(brand.yml)\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nbrand_theme &lt;- quarto::theme_brand_ggplot2(\"_brand.yml\") +\n  theme(\n    text = element_text(family = brand$typography$fonts[[1]]$family, size = 11)\n  )\n\nggplot(mpg, aes(x = displ, y = hwy, color = drv)) +\n  geom_point() +\n  labs(title = \"A plot\") +\n  scale_color_manual(\n    values = c(\n      brand$color$palette$blue,\n      brand$color$palette$black,\n      brand$color$palette$yellow\n    )\n  ) +\n  brand_theme"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn-4",
-    "href": "materials/brand/slides.html#your-turn-4",
+    "objectID": "materials/brand/slides.html#your-turn-5",
+    "href": "materials/brand/slides.html#your-turn-5",
     "title": "Customizationand branding",
     "section": "Your turn",
     "text": "Your turn\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\"). TODO\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn-5",
-    "href": "materials/brand/slides.html#your-turn-5",
+    "objectID": "materials/brand/slides.html#your-turn-6",
+    "href": "materials/brand/slides.html#your-turn-6",
     "title": "Customizationand branding",
     "section": "Your turn",
     "text": "Your turn\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand. TODO\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n−+\n05:00"
@@ -553,8 +560,8 @@
     "text": "Don’t reinvent the wheel!\nDO NOT try to write a _brand.yml from scratch!\nLook at the “Inspiration” page!\n\n\nLearn more: https://posit-dev.github.io/brand-yml/inspiration/"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn-6",
-    "href": "materials/brand/slides.html#your-turn-6",
+    "objectID": "materials/brand/slides.html#your-turn-7",
+    "href": "materials/brand/slides.html#your-turn-7",
     "title": "Customizationand branding",
     "section": "Your turn",
     "text": "Your turn\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml\n\n\n\n\n−+\n05:00"
@@ -1586,7 +1593,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "Technology",
-    "text": "Technology\n\nLast built: 2025-10-15 at 23:58:34 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Technology\n\nLast built: 2025-10-16 at 01:04:28 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -1744,7 +1751,7 @@
     "href": "materials/basic-websites/index.html#exercises",
     "title": "Creating basic websites",
     "section": "Exercises",
-    "text": "Exercises\n\nAnatomy of a Quarto website\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a new website project somewhere on your computer.\nWe’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen your playground website.\nOpen index.qmd and click Render/Preview.\nEdit the title entry in index.qmd’s YAML metadata to something different and add a subtitle entry. Preview.\nAdd some text to index.qmd. Preview.\nAdd an R code chunk to about.qmd. Preview.\n\n\n\n\n\n\n_quarto.yml\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nEdit your _quarto.yml to make the following changes:\n\nChange the preview port to 5555\nEnable a cookie consent dialog\nAdd a site description\n\nBonus tasks!\n\nAdd a footer that says “© 2025, Myself”\nAdd an announcement bar that says something\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Reference &gt; Websites\n\n\n\n\n\n\nNavigation\n\n\n\n\n\n\nTipYour turn 1\n\n\n\n\n\n\nCreate a new file named contact.qmd and paste the content from about.qmd into it. Then change it to something else.\nAdd contact.qmd to the left section of your top navigation bar.\nAdd a right section to the navigation bar with icon-based links to a few other websites.\nBonus task! Create a dropdown menu in the top navigation bar, either with links to other websites or links to some new .qmd pages that you create.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\n\n\n\n\nTipYour turn 2\n\n\n\n\n\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\nSpecial pages\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a basic About page for either yourself or some fictional person.\n\nFind an image on your computer or from the internet and add it to your project, either in the root of project, or (better!) in a folder just for images, like img/\nAdd links to different websites (with icons!)\nTry different template options\nTry different image-shape options\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; About Pages",
+    "text": "Exercises\n\nAnatomy of a Quarto website\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a new website project somewhere on your computer.\nYou’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen your playground website.\nOpen index.qmd and click Render/Preview.\nEdit the title entry in index.qmd’s YAML metadata to something different and add a subtitle entry. Preview.\nAdd some text to index.qmd. Preview.\nAdd an R code chunk to about.qmd. Preview.\n\n\n\n\n\n\n_quarto.yml\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nEdit your _quarto.yml to make the following changes:\n\nChange the preview port to 5555\nEnable a cookie consent dialog\nAdd a site description\n\nBonus tasks!\n\nAdd a footer that says “© 2025, Myself”\nAdd an announcement bar that says something\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Reference &gt; Websites\n\n\n\n\n\n\nNavigation\n\n\n\n\n\n\nTipYour turn 1\n\n\n\n\n\n\nCreate a new file named contact.qmd and paste the content from about.qmd into it. Then change it to something else.\nAdd contact.qmd to the left section of your top navigation bar.\nAdd a right section to the navigation bar with icon-based links to a few other websites.\nBonus task! Create a dropdown menu in the top navigation bar, either with links to other websites or links to some new .qmd pages that you create.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\n\n\n\n\nTipYour turn 2\n\n\n\n\n\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\nSpecial pages\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a basic About page for either yourself or some fictional person.\n\nFind an image on your computer or from the internet and add it to your project, either in the root of project, or (better!) in a folder just for images, like img/\nAdd links to different websites (with icons!)\nTry different template options\nTry different image-shape options\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; About Pages",
     "crumbs": [
       "Materials",
       "Creating basic websites"
