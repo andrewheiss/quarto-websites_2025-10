@@ -1,4 +1,4 @@
-1. Add metadata to your different research `.qmd` files, including images. See how those are reflected in the listing page after rendering.
+1. Add metadata to your different research `.qmd` files, including images (find some at [Unsplash](https://unsplash.com/)). See how those are reflected in the listing page.
 
 2. *Bonus task!* Modify how the listing page is sorted. Sort it by descending title. 
 
