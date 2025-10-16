@@ -152,7 +152,7 @@ countdown::countdown(minutes = 10)
 /* Built-in Bootstrap variables */
 $h2-font-size:          1.6rem !default;
 $headings-font-weight:  500 !default;
-$font-family-sans-serif:  Roboto
+$font-family-sans-serif:  Roboto;
 
 /* Your own variables */
 $my-neat-red: #e21818;
