@@ -11,6 +11,8 @@ language:
 These slides and materials aren't *quite* ready yet! Anything you see here is subject to change—don't do anything here before the course.
 :::
 
+::: {.content-hidden}
+
 ## Slides
 
 <p style="line-height: 2.5"><a class="btn btn-success btn-sm" target="_blank" href="slides.html">{{< fa arrow-up-right-from-square >}} &ensp;Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button">{{< fa file-pdf >}} &ensp;Download PDF of slides</a></p>
@@ -20,3 +22,5 @@ These slides and materials aren't *quite* ready yet! Anything you see here is su
 <iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
 </div>
 ```
+
+:::

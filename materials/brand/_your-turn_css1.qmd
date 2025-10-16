@@ -1,0 +1,7 @@
+1. Preview your site
+2. Use the browser inspector to select a heading
+3. Create a CSS style that targets that heading and makes it 
+   - red (`color`) and 
+   - italic (`font-style`) and 
+   - 30px (`font-size`)
+4. TODO

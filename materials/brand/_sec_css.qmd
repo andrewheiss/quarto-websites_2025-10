@@ -2,40 +2,212 @@
 
 ## Theme options
 
-Sometimes we want to change theme settings though
+Sometimes we want to change theme settings:
 
-Many common basic options: https://quarto.org/docs/output-formats/html-themes.html#basic-options
+- Fonts
+- Colors
+- Aligment
+- Spacing
+
+## Basic theme options
+
+Quarto automatically supports [some common Bootstrap theme options](https://quarto.org/docs/output-formats/html-themes.html#basic-options)
+
+```{.yaml code-line-numbers="false"}
+format:
+  html: 
+    theme: zephyr
+    fontsize: 1.2em
+    linestretch: 1.2
+    linkcolor: "#32a852"
+    backgroundcolor: "#f8f8c4"
+    mainfont: Comic Sans
+```
 
 ## Total control with CSS
 
-## Crash course in CSS
+## Crash course in CSS {.smaller}
 
-HTML elements can have IDs and classes
+:::: {.columns}
 
+::: {.column}
+HTML elements can have IDs and classes:
+
+```{.html code-line-numbers="false"}
+<h2 id="my-section" class="special">A heading</h2>
+```
+
+- IDs are unique on the page
+  - Shorthand: `#my-section`
+- Classes aren't unique and can be repeated
+  - Shorthand: `.special`
+
+:::
+
+::: {.column}
+```{.css code-line-numbers="false"}
+/* All H2s */
+h2 {
+  color: red;
+}
+
+/* All elements with id my-section */
+/* This includes non H2s */
+#my-section {
+  color: red;
+}
+
+/* All H2s with id my-section */
+h2#mysection {
+  color: red;
+}
+
+/* All elements with class .special */
+.special {
+  font-style: italic;
+}
+
+/* All H2s with class .special */
+h2.special {
+  font-style: italic;
+}
+```
+:::
+
+::::
+
+
+## Nesting {.smaller}
+
+:::: {.columns}
+
+::: {.column}
 HTML elements can be nested inside each other
 
-You can target HTML elements with different degrees of specificity:
+```{.html code-line-numbers="false"}
+<div id="part1">
+  <h2 id="my-section" class="special">A heading</h2>
+</div>
 
-- All \<h3\> headings
+<div id="part2">
+  <h2 id="blah" class="special">Another heading</h2>
+</div>
+```
 
-- H3 headings with the class `neato`
+:::
 
-- \<a>\ links that are inside a div with the id `quarto-sidebar`
+::: {.column}
+```{.css code-line-numbers="false"}
+/* All H2s in #part1 */
+#part1 h2 {
+  color: red;
+}
+
+/* All H2s in #part2 */
+#part2 h2 {
+  color: blue;
+}
+```
+:::
+
+::::
 
 ## Browser inpsector
 
-Explore and edit any HTML and CSS right from your browser.
+Explore HTML and CSS right from your browser!
 
-## Sass: CSS, but fancier
+![](img/inspector-full.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
 
-variables
+## Browser inpsector
 
-rules that use variables
+Edit and tinker with styles
 
-## Combining CSS and themes
+![](img/inspector-edit.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
 
-asdf
+## Browser inpsector
 
-## Your turn
+See which rule applies
 
-Create a SCSS file and make a bunch of rules
+![](img/inspector-computed.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+{{< include _your-turn_css1.qmd >}}
+
+```{r}
+#| label: clock-listings2
+#| echo: false
+countdown::countdown(minutes = 10)
+```
+
+
+## Sass: CSS, but fancier {.smaller}
+
+```{.css code-line-numbers="false"}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*-- scss:defaults --*/
+
+/* Built-in Bootstrap variables */
+$h2-font-size:          1.6rem !default;
+$headings-font-weight:  500 !default;
+$font-family-sans-serif:  Roboto
+
+/* Your own variables */
+$my-neat-red: #e21818;
+
+/*-- scss:rules --*/
+#quarto-sidebar h2 {
+  font-family: Roboto;
+  color: $my-neat-red;
+
+  /* Magically compiles to #quarto-sidebar h2 a:hover */
+  a:hover {
+    color: #d1c81d;
+  }
+}
+```
+
+## Bootstrap Sass variables
+
+There are ***so many***
+
+- TODO: Quarto list
+- TODO: Bootstrap directory
+
+
+## Using CSS/Sass with Quarto
+
+:::: {.columns}
+
+::: {.column}
+Use vanilla CSS
+
+```{.yaml code-line-numbers="false"}
+format:
+  html:
+    css: custom.css
+```
+:::
+
+::: {.column}
+Use Sass
+
+```{.yaml code-line-numbers="false"}
+format:
+  html:
+    theme:
+      - zephyr
+      - custom.scss
+```
+:::
+
+::::
+
+TODO: Examples from other sites
+
+
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+{{< include _your-turn_css2.qmd >}}

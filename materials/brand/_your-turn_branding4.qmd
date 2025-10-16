@@ -1,0 +1,7 @@
+Create a brand file for yourself, your project, or your organization.
+
+Don't try to do this from scratch! Use these resources:
+
+- [The brand.yml documentation](https://posit-dev.github.io/brand-yml/){target="_blank"}
+- [The brand.yml inspiration page](https://posit-dev.github.io/brand-yml/inspiration/){target="_blank"}
+- [This site's `_brand.yml`](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/_brand.yml){target="_blank"}

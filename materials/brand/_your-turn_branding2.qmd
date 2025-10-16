@@ -1,0 +1,5 @@
+1. In the first code chunk of `01-exercise.qmd`, replace `theme_minimal()` with `theme_brand_ggplot2()`. You will need to supply a brand file path (`"_brand.yml"`). TODO
+
+2. Re-render and see what changes. 
+
+3. Change the `foreground` and `background` colors in `_brand.yml` and rerun the code to create the plot. What changes?

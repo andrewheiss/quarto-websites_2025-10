@@ -18,6 +18,7 @@ format:
           </script>
 ---
 
+
 ```{r}
 #| include: false
 
@@ -29,7 +30,5 @@ library(countdown)
 {{< include _sec_css.qmd >}}
 
 {{< include _sec_branding.qmd >}}
-
-{{< include _sec_templates.qmd >}}
 
 {{< include _sec_next.qmd >}}

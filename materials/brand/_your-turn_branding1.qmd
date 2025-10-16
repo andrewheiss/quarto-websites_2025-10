@@ -1,0 +1,5 @@
+1. There is a file named `urban_institute.yml`. Rename it to `_brand.yml` and rerender your site. What changes? TODO
+
+2. Modify some of the variables in the `_brand.yml` file and rerender to see how your site changes. Explore [the brand.yml documentation](https://posit-dev.github.io/brand-yml/){target="_blank"} and see what other settings you can adjust.
+
+   TODO You can reset the file by copying and pasting it from [here](https://github.com/posit-dev/quarto-brand-exercises/blob/main/04-exercise.yml).

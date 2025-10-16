@@ -2,7 +2,7 @@
 title: "Customization and branding"
 draft: true
 language: 
-  draft: "This page is a draft"
+  draft: "This page is (almost not!) a draft"
 ---
 
 ::: {.callout-warning}
@@ -20,3 +20,55 @@ These slides and materials aren't *quite* ready yet! Anything you see here is su
 <iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
 </div>
 ```
+
+## Exercises
+
+### Themes
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_themes1.qmd >}}
+:::
+
+
+### CSS and Sass
+
+::: {.callout-tip collapse="true"}
+#### Browser inspector
+
+{{< include _your-turn_css1.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### SCSS
+
+{{< include _your-turn_css1.qmd >}}
+:::
+
+
+### Branding
+
+::: {.callout-tip collapse="true"}
+#### `_brand.yml` tinkering
+
+{{< include _your-turn_branding1.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### `theme_brand_ggplot()`
+
+{{< include _your-turn_branding2.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### `read_brand_yaml()` tinkering
+
+{{< include _your-turn_branding3.qmd >}}
+:::
+
+::: {.callout-tip collapse="true"}
+#### Make your own `_brand.yml`
+
+{{< include _your-turn_branding4.qmd >}}
+:::
