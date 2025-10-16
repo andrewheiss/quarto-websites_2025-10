@@ -48,7 +48,7 @@ Documentation: <https://quarto.org/docs/websites/website-navigation.html#auto-ge
 
 \ 
 
-```` {.markdown filename="research.qmd" code-line-numbers="3-5"}
+```` {.markdown filename="research/index.qmd" code-line-numbers="3-5"}
 ---
 title: "Research"
 listing:
@@ -174,7 +174,7 @@ Go beyond `default`, `table`, and `grid` and make your own template ([example](h
 
 **YAML lists**
 
-Generate listings of items in a YAML file isntead of `.qmd` files ([example](https://www.andrewheiss.com/teaching/ + [code](https://github.com/andrewheiss/ath-quarto/blob/main/teaching/index.qmd) + [custom listing code](https://github.com/andrewheiss/ath-quarto/blob/main/html/teaching/listing.ejs)))
+Generate listings of items in a YAML file instead of `.qmd` files ([example](https://www.andrewheiss.com/teaching/ + [code](https://github.com/andrewheiss/ath-quarto/blob/main/teaching/index.qmd) + [custom listing code](https://github.com/andrewheiss/ath-quarto/blob/main/html/teaching/listing.ejs)))
 
 
 ## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
