@@ -25,6 +25,25 @@ format:
 library(countdown)
 ```
 
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+To keep everyone on the same page, we'll play with `quarto-websites-exercise-site_2025-10`
+
+<br>
+
+<center>[andhs.co/quarto-websites-2025](https://andhs.co/quarto-websites-2025){style="font-size: 1.3em"}</center>
+
+<br>
+
+But keep your playground site from yesterday handy!
+
+```{r}
+#| label: setup-clock
+#| echo: false
+# 5 minutes, warning at 1 minute
+countdown::countdown(minutes = 5, seconds = 0, play_sound = TRUE, warn_when = 1 * 60)
+```
+
 {{< include _sec_themes.qmd >}}
 
 {{< include _sec_css.qmd >}}
