@@ -48,7 +48,7 @@ built on Pandoc.
 
 <center><script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/izl69pu9ua.js" async type="module"></script><style>wistia-player[media-id='izl69pu9ua']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/izl69pu9ua/swatch'); display: block; filter: blur(5px); }</style> <wistia-player media-id="izl69pu9ua" aspect="1.7777777777777777" style="width: 800px;height: 463px;"></wistia-player></center>
 
-::: notes
+::: {.notes}
 Posit recently held a Scrollytelling contest. You may have seen articles in newspapers like the New York Times that display visualizations as you scroll through the document. Quarto has an extension called Scrollytelling that lets you create these sorts of stories in Quarto. This one, from folks at the European Centre for Social Welfare Policy and Research which talked about Housing & Neighborhood Income Inequality in Vienna, was one of the winners.
 :::
 
@@ -101,7 +101,7 @@ Posit recently held a Scrollytelling contest. You may have seen articles in news
 
 ![](img/quarto_template_overview.png){fig-align="center" width="40%" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
 
-::: notes
+::: {.notes}
 With Quarto, you can create reports or presentations that update automatically when data changes or when you change inputs because you are creating your report with code. Use variables (parameters) to dynamically change parts of your analysis or report like to generate the same report for different regions, departments, or time periods, write reusable functions to avoid repeating code and keeps work cleaner, more consistent, and easier to maintain. The folks at United States Geological Survey have great blog posts on how they are implementing these ideas in Quarto.
 :::
 
@@ -123,7 +123,7 @@ With Quarto, you can create reports or presentations that update automatically w
 ::::
 :::::
 
-::: notes
+::: {.notes}
 And finally, Melissa van Bussel gave a talk on how the Statistics Canada team converted not just their documentation, but training resources, presentations, and more to Quarto to streamline efforts.
 :::
 

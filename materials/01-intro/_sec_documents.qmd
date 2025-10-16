@@ -59,9 +59,6 @@ This analysis explores data from the Gapminder foundation.
 - Markdown is a lightweight language for creating formatted text
 - Quarto is based on Pandoc and uses its variation of markdown as its underlying document syntax
 
-::: notes
-Markdown is a lightweight markup language for creating formatted text using a plain-text editor. Quarto uses markdown syntax for text.
-:::
 
 ## Anatomy of a Quarto document
 

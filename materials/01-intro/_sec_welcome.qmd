@@ -108,6 +108,16 @@ You'll learn:
 :::
 ::::
 
+## Bring your own ideas!
+
+::: {.incremental}
+- The best way to learn is by building something
+- I've given you playground code, but *it's not great* 
+  - *This is by design!*
+  - You're not learning a specific statistical method for a specific type of data; you're exploring the whole world of web design with Quarto
+- You'll have time during the "Your turn"s to to play around and experiment. Try to use these new principles and skills to create something
+:::
+
 ## Getting help
 
 :::: {.columns}
