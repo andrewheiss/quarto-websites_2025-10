@@ -69,3 +69,12 @@ title: "Advanced website features"
 
 {{< include _your-turn_extensions1.qmd >}}
 :::
+
+
+### Start building a real website
+
+::: {.callout-tip collapse="true"}
+#### Your turn
+
+{{< include _your-turn_diy.qmd >}}
+:::

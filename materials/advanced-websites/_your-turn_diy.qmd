@@ -1,0 +1,12 @@
+At some point today you've (hopefully!) thought "I could use these tools to make something really cool!" A new personal website with a portfolio and blog. A website for an upcoming event. A notebook to accompany a research project. A course website. Something!
+
+\ 
+
+**Start building it!**
+
+1. Create a new website project skeleton
+2. Start building your idea
+   - Do this gradually! Remember the worflow: edit, save, preview, repeat
+   - Pore over the Quarto documentation and these slides for tips and tricks
+3. Ask for help.
+   - We'll work on it now and tomorrow (and maybe on your own tonight)

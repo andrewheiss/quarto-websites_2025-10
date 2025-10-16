@@ -1,3 +1,8 @@
+## Start building a real website {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
+
+{{< include _your-turn_diy.qmd >}}
+
+
 # What's next? {background-color='{{< brand color yellow >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
 
 ## Course outline
