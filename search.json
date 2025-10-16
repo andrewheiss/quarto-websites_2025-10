@@ -312,7 +312,14 @@
     "href": "materials/brand/slides.html#theme-options",
     "title": "Customizationand branding",
     "section": "Theme options",
-    "text": "Theme options\nSometimes we want to change theme settings though\nMany common basic options: https://quarto.org/docs/output-formats/html-themes.html#basic-options"
+    "text": "Theme options\nSometimes we want to change theme settings:\n\nFonts\nColors\nAligment\nSpacing"
+  },
+  {
+    "objectID": "materials/brand/slides.html#basic-theme-options",
+    "href": "materials/brand/slides.html#basic-theme-options",
+    "title": "Customizationand branding",
+    "section": "Basic theme options",
+    "text": "Basic theme options\nQuarto automatically supports some common Bootstrap theme options\nformat:\n  html: \n    theme: zephyr\n    fontsize: 1.2em\n    linestretch: 1.2\n    linkcolor: \"#32a852\"\n    backgroundcolor: \"#f8f8c4\"\n    mainfont: Comic Sans"
   },
   {
     "objectID": "materials/brand/slides.html#total-control-with-css",
@@ -326,154 +333,231 @@
     "href": "materials/brand/slides.html#crash-course-in-css",
     "title": "Customizationand branding",
     "section": "Crash course in CSS",
-    "text": "Crash course in CSS\nHTML elements can have IDs and classes\nHTML elements can be nested inside each other\nYou can target HTML elements with different degrees of specificity:\n\nAll &lt;h3&gt; headings\nH3 headings with the class neato\n&lt;a&gt; links that are inside a div with the id quarto-sidebar"
+    "text": "Crash course in CSS\n\n\nHTML elements can have IDs and classes:\n&lt;h2 id=\"my-section\" class=\"special\"&gt;A heading&lt;/h2&gt;\n\nIDs are unique on the page\n\nShorthand: #my-section\n\nClasses aren’t unique and can be repeated\n\nShorthand: .special\n\n\n\n/* All H2s */\nh2 {\n  color: red;\n}\n\n/* All elements with id my-section */\n/* This includes non H2s */\n#my-section {\n  color: red;\n}\n\n/* All H2s with id my-section */\nh2#mysection {\n  color: red;\n}\n\n/* All elements with class .special */\n.special {\n  font-style: italic;\n}\n\n/* All H2s with class .special */\nh2.special {\n  font-style: italic;\n}"
+  },
+  {
+    "objectID": "materials/brand/slides.html#nesting",
+    "href": "materials/brand/slides.html#nesting",
+    "title": "Customizationand branding",
+    "section": "Nesting",
+    "text": "Nesting\n\n\nHTML elements can be nested inside each other\n&lt;div id=\"part1\"&gt;\n  &lt;h2 id=\"my-section\" class=\"special\"&gt;A heading&lt;/h2&gt;\n&lt;/div&gt;\n\n&lt;div id=\"part2\"&gt;\n  &lt;h2 id=\"blah\" class=\"special\"&gt;Another heading&lt;/h2&gt;\n&lt;/div&gt;\n\n/* All H2s in #part1 */\n#part1 h2 {\n  color: red;\n}\n\n/* All H2s in #part2 */\n#part2 h2 {\n  color: blue;\n}"
   },
   {
     "objectID": "materials/brand/slides.html#browser-inpsector",
     "href": "materials/brand/slides.html#browser-inpsector",
     "title": "Customizationand branding",
     "section": "Browser inpsector",
-    "text": "Browser inpsector\nExplore and edit any HTML and CSS right from your browser."
+    "text": "Browser inpsector\nExplore HTML and CSS right from your browser!"
   },
   {
-    "objectID": "materials/brand/slides.html#sass-css-but-fancier",
-    "href": "materials/brand/slides.html#sass-css-but-fancier",
+    "objectID": "materials/brand/slides.html#browser-inpsector-1",
+    "href": "materials/brand/slides.html#browser-inpsector-1",
     "title": "Customizationand branding",
-    "section": "Sass: CSS, but fancier",
-    "text": "Sass: CSS, but fancier\nvariables\nrules that use variables"
+    "section": "Browser inpsector",
+    "text": "Browser inpsector\nEdit and tinker with styles"
   },
   {
-    "objectID": "materials/brand/slides.html#combining-css-and-themes",
-    "href": "materials/brand/slides.html#combining-css-and-themes",
+    "objectID": "materials/brand/slides.html#browser-inpsector-2",
+    "href": "materials/brand/slides.html#browser-inpsector-2",
     "title": "Customizationand branding",
-    "section": "Combining CSS and themes",
-    "text": "Combining CSS and themes\nasdf"
+    "section": "Browser inpsector",
+    "text": "Browser inpsector\nSee which rule applies"
   },
   {
     "objectID": "materials/brand/slides.html#your-turn-1",
     "href": "materials/brand/slides.html#your-turn-1",
     "title": "Customizationand branding",
     "section": "Your turn",
-    "text": "Your turn\nCreate a SCSS file and make a bunch of rules"
+    "text": "Your turn\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nTODO\n\n\n\n\n−+\n10:00"
   },
   {
-    "objectID": "materials/brand/slides.html#css-is-a-little-inconvenient",
-    "href": "materials/brand/slides.html#css-is-a-little-inconvenient",
+    "objectID": "materials/brand/slides.html#sass-css-but-fancier",
+    "href": "materials/brand/slides.html#sass-css-but-fancier",
     "title": "Customizationand branding",
-    "section": "CSS is a little inconvenient",
-    "text": "CSS is a little inconvenient\n\nDoesn’t play well across HTML outputs - HTML, slides, and dashboards all use slighlty different underlying HTML\nNo easy way to reuse the colors and typography from your CSS customizations in R and Python plots or in PDF documents\nHard to share consistent, resusable themes with others in your organization (or with the world)"
+    "section": "Sass: CSS, but fancier",
+    "text": "Sass: CSS, but fancier\n@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');\n\n/*-- scss:defaults --*/\n\n/* Built-in Bootstrap variables */\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$font-family-sans-serif:  Roboto\n\n/* Your own variables */\n$my-neat-red: #e21818;\n\n/*-- scss:rules --*/\n#quarto-sidebar h2 {\n  font-family: Roboto;\n  color: $my-neat-red;\n\n  /* Magically compiles to #quarto-sidebar h2 a:hover */\n  a:hover {\n    color: #d1c81d;\n  }\n}"
   },
   {
-    "objectID": "materials/brand/slides.html#style-guides",
-    "href": "materials/brand/slides.html#style-guides",
+    "objectID": "materials/brand/slides.html#bootstrap-sass-variables",
+    "href": "materials/brand/slides.html#bootstrap-sass-variables",
     "title": "Customizationand branding",
-    "section": "Style guides",
-    "text": "Style guides\nOrganizations and projects generally have style guides for consistency\nUrban Institute\nThis course! See the colophon"
+    "section": "Bootstrap Sass variables",
+    "text": "Bootstrap Sass variables\nThere are so many\n\nTODO: Quarto list\nTODO: Bootstrap directory"
   },
   {
-    "objectID": "materials/brand/slides.html#section",
-    "href": "materials/brand/slides.html#section",
+    "objectID": "materials/brand/slides.html#using-csssass-with-quarto",
+    "href": "materials/brand/slides.html#using-csssass-with-quarto",
     "title": "Customizationand branding",
-    "section": "",
-    "text": "Unified branding with a simple YAML file\n\n\nCreate reports, apps, dashboards, plots and more that match your company’s brand guidelines with a single _brand.yml file.\n\nbrand.yml is a simple, portable YAML file that codifies your company’s brand guidelines into a format that can be used by Quarto, Python and R tooling to create branded outputs. Our goal is to support unified, branded theming for all of Posit’s open source tools—from web applications to printed reports to dashboards and presentations—with a consistent look and feel.\n\n\nLearn more: https://posit-dev.github.io/brand-yml/"
-  },
-  {
-    "objectID": "materials/brand/slides.html#section-1",
-    "href": "materials/brand/slides.html#section-1",
-    "title": "Customizationand branding",
-    "section": "",
-    "text": "Branding can be frustrating\n\n\n\nBut brand.yml makes it easier"
-  },
-  {
-    "objectID": "materials/brand/slides.html#section-2",
-    "href": "materials/brand/slides.html#section-2",
-    "title": "Customizationand branding",
-    "section": "",
-    "text": "1. Define branding in a single _brand.yml file.\n2. Apply that branding across almost all Quarto formats.\n\n\n\nbrand.yml also works with Shiny!"
-  },
-  {
-    "objectID": "materials/brand/slides.html#section-3",
-    "href": "materials/brand/slides.html#section-3",
-    "title": "Customizationand branding",
-    "section": "",
-    "text": "---\nconfig:\n  look: handDrawn\n  theme: neutral\n---\nflowchart LR\n    by{brand.yml}\n    by--&gt;quarto[Quarto]\n    quarto--&gt;quarto-html\n    quarto--&gt;quarto-pdf\n    quarto-html--&gt;quarto-websites[Websites]\n    quarto-html--&gt;quarto-presentations[Presentations]\n    quarto-html--&gt;quarto-dashboards[Dashboards]\n    quarto-html--&gt;quarto-emails[Emails]\n    quarto-pdf--&gt;quarto-typst[Typst]\n\n    by--&gt;R\n    R--&gt;r-bslib[\"{bslib}\"]\n    r-bslib--&gt;r-thematic[\"{thematic}\"]\n    r-bslib--&gt;r-shiny[\"Shiny for R\"]\n    r-bslib--&gt;r-rmd[\"R Markdown\"]\n    r-bslib--&gt;r-pkgdown[\"pkgdown\"]\n    %% r-thematic--&gt;r-ggplot2[\"{ggplot2}\"]\n    %% r-thematic--&gt;r-plot[\"{plot}\"]\n\n    by--&gt;Python\n    Python--&gt;py-brand_yml[\"brand_yml\"]\n    py-brand_yml--&gt;py-shiny[Shiny for Python]\n    py-brand_yml--&gt;py-plots[seaborn, matplotlib, etc.]\n\n    classDef implemented fill:#8CE3A0,stroke:#0A2911,color:#0A2911;\n    classDef partial fill:#A8E5B9,stroke:#4B8A5D,color:#0A2911;\n    classDef in-progress fill:#B3D7FF,stroke:#00254D,color:#00254D;\n    classDef highlighted fill:#FFE8DB,stroke:#612200,color:#612200;\n\n    class quarto-websites,quarto-presentations,quarto-dashboards,quarto-typst,py-brand_yml,py-shiny,r-bslib,r-shiny,r-rmd,r-pkgdown implemented;\n    class r-thematic,py-plots partial;\n    class by highlighted;\n\n    click quarto href \"https://prerelease.quarto.org/docs/authoring/brand.html\"\n    click quarto-typst href \"https://quarto.org/docs/output-formats/typst.html\" \"Typst in Quarto\"\n    click quarto-presentations href \"https://quarto.org/docs/presentations/revealjs/\" \"Reveal.js in Quarto\"\n    click quarto-dashboards href \"https://quarto.org/docs/dashboards/\" \"Dashboards in Quarto\"\n    click r-shiny href \"https://shiny.posit.co/\"\n    click r-bslib href \"https://rstudio.github.io/bslib/\"\n    click r-thematic href \"https://rstudio.github.io/thematic/\"\n    click r-ggplot2 href \"https://ggplot2.tidyverse.org/\"\n    click r-rmd href \"https://rmarkdown.rstudio.com/\"\n    click py-shiny href \"https://shiny.posit.co/py/\"\n    click py-brand_yml href \"pkg/py/\"\n\n\n\n\n\n\n\n\n\nLearn more: https://posit-dev.github.io/brand-yml/\n\n\nbrand.yml works with a variety of open source projects, including all the Quarto outputs we’ll talk about today. as well as Shiny for R and Shiny for Python. This means you can define your organization’s branding in a brand.yml file once, and then apply it all over relatively effortlessly.\nover the course of this workshop, we’ll use the same brand file to apply to all our outputs"
-  },
-  {
-    "objectID": "materials/brand/slides.html#brand.yml-elements",
-    "href": "materials/brand/slides.html#brand.yml-elements",
-    "title": "Customizationand branding",
-    "section": "brand.yml elements",
-    "text": "brand.yml elements\n\nmeta: Identifying information, name of the company, URLs, etc.\nlogo: Files or links to the brand’s logos.\ncolor: Colors in the brand’s color palette.\ntypography: Fonts for different elements.\ndefaults: Additional context-specific settings."
-  },
-  {
-    "objectID": "materials/brand/slides.html#brand.yml-structure",
-    "href": "materials/brand/slides.html#brand.yml-structure",
-    "title": "Customizationand branding",
-    "section": "_brand.yml structure",
-    "text": "_brand.yml structure\n\n\n_brand.yml\n\nmeta:\n  name: World Happiness Report\n  link:\n    home: https://www.worldhappiness.report/\n\nlogo:\n  images:\n    icon:\n      path: images/whr_logo.png\n      alt: World Happiness Report icon.\n  small: images/whr_logo.png\n\ncolor:\n  palette:\n    dark-purple: \"#93358c\"\n    light-purple: \"#f8f6fb\"\n    teal: \"#04afaf\"\n    dark-blue: \"#086992\"\n    hot-pink: \"#eb068c\"\n    light-blue: \"#1aade4\"\n\n  background: light-purple\n  foreground: black\n  primary: dark-purple\n  secondary: hot-pink\n  tertiary: light-blue\n  dark: black\n\ntypography:\n  fonts:\n    - family: Libre Franklin\n      source: google\n      weight: [400, 700]\n\n  base:\n    family: Libre Franklin\n    weight: 400\n\n  headings:\n    family: Libre Franklin\n    weight: 700\n    color: dark-purple\n\n  link:\n    color: primary\n    decoration: none\n\n\ndefine your brand’s color palette and map your palette to the roles colors play. the semantic colors – primary, foreground, etc\nif this seems like a lot of details, don’t worry! we will show you how to make your own file later. for now, it’s enough to just have a general understanding of the different parts"
-  },
-  {
-    "objectID": "materials/brand/slides.html#how-to-apply-brand.yml-to-quarto",
-    "href": "materials/brand/slides.html#how-to-apply-brand.yml-to-quarto",
-    "title": "Customizationand branding",
-    "section": "How to apply brand.yml to Quarto",
-    "text": "How to apply brand.yml to Quarto\n\nDefine branding in _brand.yml.\nSave in the root directory of your Quarto project.\n\nQuarto will detect the presence of _brand.yml and automatically apply the brand to all documents of the supported formats in the project."
-  },
-  {
-    "objectID": "materials/brand/slides.html#section-4",
-    "href": "materials/brand/slides.html#section-4",
-    "title": "Customizationand branding",
-    "section": "",
-    "text": "If your brand file has a different name or lives in a subdirectory, use the brand key.\n\n\nmy-document.qmd\n\n---\ntitle: \"World Happiness Report\"\nsubtitle: \"Happiness Trends and Contributing Factors (2011-2024)\"\nformat: html\nbrand: org_theme.yml\n---\n\n\nuse this if you have a file named something other than brand.yml or it lives elsewhere."
-  },
-  {
-    "objectID": "materials/brand/slides.html#disable-brand.yml",
-    "href": "materials/brand/slides.html#disable-brand.yml",
-    "title": "Customizationand branding",
-    "section": "Disable brand.yml",
-    "text": "Disable brand.yml\nTo turn off brand.yml for a document, use brand: false.\n\n\nmy-document.qmd\n\n---\ntitle: \"World Happiness Report\"\nsubtitle: \"Happiness Trends and Contributing Factors (2011-2024)\"\nformat: html\nbrand: false\n---"
-  },
-  {
-    "objectID": "materials/brand/slides.html#brand-shortcode",
-    "href": "materials/brand/slides.html#brand-shortcode",
-    "title": "Customizationand branding",
-    "section": "brand shortcode",
-    "text": "brand shortcode\nAccess some brand.yml values with a shortcode.\n\n\nmy_document.qmd\n\n{{&lt; brand color primary &gt;}}\n\n\nLearn more: https://quarto.org/docs/authoring/brand.html#using-brand-values"
+    "section": "Using CSS/Sass with Quarto",
+    "text": "Using CSS/Sass with Quarto\n\n\nUse vanilla CSS\nformat:\n  html:\n    css: custom.css\n\nUse Sass\nformat:\n  html:\n    theme:\n      - zephyr\n      - custom.scss\n\nTODO: Examples from other sites"
   },
   {
     "objectID": "materials/brand/slides.html#your-turn-2",
     "href": "materials/brand/slides.html#your-turn-2",
     "title": "Customizationand branding",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n−+\n05:00"
+    "text": "Your turn\nTODO: Create a SCSS file and make a bunch of rules"
   },
   {
-    "objectID": "materials/brand/slides.html#what-about-plots",
-    "href": "materials/brand/slides.html#what-about-plots",
+    "objectID": "materials/brand/slides.html#css-is-a-little-inconvenient",
+    "href": "materials/brand/slides.html#css-is-a-little-inconvenient",
     "title": "Customizationand branding",
-    "section": "What about plots?",
-    "text": "What about plots?\n\nThe plots, at least for the R version, are unbranded. how can we apply brand.yml to plots too?"
+    "section": "CSS is a little inconvenient",
+    "text": "CSS is a little inconvenient\n\nHTML, slides, and dashboards all use slighlty different underlying HTML\nNo easy way to reuse the colors and typography from your CSS customizations in R and Python plots or in PDF documents\nHard to share consistent, resusable themes with others in your organization (or with the world)"
   },
   {
-    "objectID": "materials/brand/slides.html#theme-helpers",
-    "href": "materials/brand/slides.html#theme-helpers",
+    "objectID": "materials/brand/slides.html#style-guides",
+    "href": "materials/brand/slides.html#style-guides",
     "title": "Customizationand branding",
-    "section": "Theme helpers",
-    "text": "Theme helpers\nThe quarto packages contain theme helpers that apply branding to plots.\n\nRPython\n\n\n\nlibrary(quarto)\n\nmy_theme &lt;- theme_brand_ggplot2(\"_brand.yml\")\n\n\n\n#| eval: false\n#| echo: true\nfrom quarto import theme_brand_plotnine\n\nmy_theme = theme_brand_plotnine('_brand.yml')\n\n\n\n\n\nThere are other theme helpers for other plotting libraries\n\n\nR: https://quarto-dev.github.io/quarto-r/articles/theme-helpers.html\nPython: https://github.com/quarto-dev/quarto-python?tab=readme-ov-file#theme-helpers"
+    "section": "Style guides",
+    "text": "Style guides\n\n\nUrban Institute Data Visualization Style Guide"
+  },
+  {
+    "objectID": "materials/brand/slides.html#style-guides-1",
+    "href": "materials/brand/slides.html#style-guides-1",
+    "title": "Customizationand branding",
+    "section": "Style guides",
+    "text": "Style guides\n\n\nUniversity of Georgia Brand Style Guide"
+  },
+  {
+    "objectID": "materials/brand/slides.html#style-guides-2",
+    "href": "materials/brand/slides.html#style-guides-2",
+    "title": "Customizationand branding",
+    "section": "Style guides",
+    "text": "Style guides\n\n\nGeorgia State University Web Color Guidelines"
+  },
+  {
+    "objectID": "materials/brand/slides.html#matching-style-with-css",
+    "href": "materials/brand/slides.html#matching-style-with-css",
+    "title": "Customizationand branding",
+    "section": "Matching style with CSS",
+    "text": "Matching style with CSS\nYou can recreate styles with CSS (site; custom.scss)"
+  },
+  {
+    "objectID": "materials/brand/slides.html#section",
+    "href": "materials/brand/slides.html#section",
+    "title": "Customizationand branding",
+    "section": "",
+    "text": "Unified branding with a simple YAML file\n\n\n\nCreate reports, apps, dashboards, plots and more that match your organization’s brand guidelines with a single _brand.yml file.\n\n\nLearn more: https://posit-dev.github.io/brand-yml/"
+  },
+  {
+    "objectID": "materials/brand/slides.html#section-1",
+    "href": "materials/brand/slides.html#section-1",
+    "title": "Customizationand branding",
+    "section": "",
+    "text": "1. Define branding in a single _brand.yml file.\n2. Apply that branding across almost all Quarto formats."
+  },
+  {
+    "objectID": "materials/brand/slides.html#brand.yml-elements",
+    "href": "materials/brand/slides.html#brand.yml-elements",
+    "title": "Customizationand branding",
+    "section": "_brand.yml elements",
+    "text": "_brand.yml elements\n\nmeta: Identifying information, name of the company, URLs, etc.\nlogo: Files or links to the brand’s logos\ncolor: Colors in the brand’s color palette\ntypography: Fonts for different elements\ndefaults: Additional context-specific settings"
+  },
+  {
+    "objectID": "materials/brand/slides.html#brand.yml-structure",
+    "href": "materials/brand/slides.html#brand.yml-structure",
+    "title": "Customizationand branding",
+    "section": "_brand.yml structure",
+    "text": "_brand.yml structure\n\n\n_brand.yml\n\nmeta:\n  name: Urban Institute\n  link:\n    home: https://urbaninstitute.github.io/graphics-styleguide/\n\nlogo:\n  images:\n    icon:\n      path: img/urban.png\n      alt: Urban Institute logo\n  small: img/urban-sm.png\n\ncolor:\n  palette:\n    blue: \"#1696d2\"\n    gray-light: \"#d2d2d2\"\n    black: \"#000000\"\n    yellow: \"#fdbf11\"\n    magenta: \"#ec008b\"\n    green: \"#55b748\"\n    gray-dark: \"#5c5859\"\n    red: \"#db2b27\"\n    orange: \"#e88e2d\"\n    white: \"#ffffff\"\n\n  background: white\n  foreground: gray-dark\n  primary: blue\n  secondary: yellow\n  dark: black\n\ntypography:\n  fonts:\n    - family: Lato\n      source: google\n      weight: [400, 700]\n    - family: Jost\n      source: google\n      weight: [400, 700]\n\n  base:\n    family: Lato\n    weight: 400\n\n  headings:\n    family: Jost\n    weight: 700\n\n  link:\n    color: primary\n    decoration: none\n\ndefaults:\n  bootstrap:\n    functions: # string with SCSS functions\n    defaults:  # list of Bootstrap Sass variables to override\n      link-hover-color: $brand-magenta\n    mixins:    # string with SCSS mixins\n    rules: |   # string with SCSS rules\n      #quarto-content h2, #quarto-content h3 {\n          text-transform: uppercase;\n          letter-spacing: 1px;\n      }\n\n      .content .highlight {\n          color: $brand-yellow;\n      }\n\n      .navbar-title {\n          font-family: Jost;\n          font-weight: 700;\n      }"
+  },
+  {
+    "objectID": "materials/brand/slides.html#enabling-_brand.yml-in-quarto",
+    "href": "materials/brand/slides.html#enabling-_brand.yml-in-quarto",
+    "title": "Customizationand branding",
+    "section": "Enabling _brand.yml in Quarto",
+    "text": "Enabling _brand.yml in Quarto\n\nDefine branding in _brand.yml.\nSave in the root directory of your Quarto project.\n\nQuarto will detect the presence of _brand.yml and automatically apply the brand to all documents of the supported formats in the project."
+  },
+  {
+    "objectID": "materials/brand/slides.html#section-2",
+    "href": "materials/brand/slides.html#section-2",
+    "title": "Customizationand branding",
+    "section": "",
+    "text": "If your brand file has a different name or lives in a subdirectory, use the brand key.\n\n\nmy-document.qmd\n\n---\ntitle: \"My neat report\"\nformat: html\nbrand: org_theme.yml\n---"
+  },
+  {
+    "objectID": "materials/brand/slides.html#disable-_brand.yml",
+    "href": "materials/brand/slides.html#disable-_brand.yml",
+    "title": "Customizationand branding",
+    "section": "Disable _brand.yml",
+    "text": "Disable _brand.yml\nTo turn off _brand.yml for a document, use brand: false.\n\n\nmy-document.qmd\n\n---\ntitle: \"My neat report\"\nformat: html\nbrand: false\n---"
   },
   {
     "objectID": "materials/brand/slides.html#your-turn-3",
     "href": "materials/brand/slides.html#your-turn-3",
     "title": "Customizationand branding",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n−+\n05:00\n\n\n\n\nThe R function applies theme_minimal()."
+    "text": "Your turn\n\nThere is a file named urban_institute.yml. Rename it to _brand.yml and rerender your site. What changes? TODO\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nTODO You can reset the file by copying and pasting it from here.\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "materials/brand/slides.html#brand.yml-packages",
-    "href": "materials/brand/slides.html#brand.yml-packages",
+    "objectID": "materials/brand/slides.html#use-_brand.yml-in-markdown",
+    "href": "materials/brand/slides.html#use-_brand.yml-in-markdown",
     "title": "Customizationand branding",
-    "section": "brand.yml packages",
-    "text": "brand.yml packages\nAccess and apply specific brand elements.\n\nRPython\n\n\n\nlibrary(brand.yml)\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nbrand$color$primary\n\n\n\n#| eval: false\n#| echo: true\nfrom brand_yml import Brand\n\nbrand = Brand.from_yaml(\"_brand.yml\")\n\nbrand.color.primary"
+    "section": "Use _brand.yml in markdown",
+    "text": "Use _brand.yml in markdown\nAccess some _brand.yml values in Quarto documents with a shortcode\n\n\nmy_document.qmd\n\n{{&lt; brand color primary &gt;}}\n\n\nLearn more: https://quarto.org/docs/authoring/brand.html#using-brand-values"
+  },
+  {
+    "objectID": "materials/brand/slides.html#use-_brand.yml-in-sass",
+    "href": "materials/brand/slides.html#use-_brand.yml-in-sass",
+    "title": "Customizationand branding",
+    "section": "Use _brand.yml in Sass",
+    "text": "Use _brand.yml in Sass\nAccess some _brand.yml values with the $brand-* prefix\n\n\ncustom-styles.scss\n\n/*-- scss:rules --*/\n\nh3 {\n  color: $brand-magenta;\n}\n\n\nLearn more: https://quarto.org/docs/authoring/brand.html#in-scss"
+  },
+  {
+    "objectID": "materials/brand/slides.html#use-_brand.yml-in-r-and-python",
+    "href": "materials/brand/slides.html#use-_brand.yml-in-r-and-python",
+    "title": "Customizationand branding",
+    "section": "Use _brand.yml in R and Python",
+    "text": "Use _brand.yml in R and Python\nAccess and apply specific brand elements\n\nRPython\n\n\nlibrary(brand.yml)\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nbrand$color$primary\n#&gt; [1] \"#1696d2\"\n\nbrand$color$palette$yellow\n#&gt; [1] \"#fdbf11\"\n\nbrand$typography$fonts[[1]]$family\n#&gt; [1] \"Lato\"\n\n\nfrom brand_yml import Brand\n\nbrand = Brand.from_yaml(\"_brand.yml\")\n\nbrand.color.primary"
+  },
+  {
+    "objectID": "materials/brand/slides.html#theme-helpers",
+    "href": "materials/brand/slides.html#theme-helpers",
+    "title": "Customizationand branding",
+    "section": "Theme helpers",
+    "text": "Theme helpers\nThe {quarto} package contains theme helpers that apply branding to plots\n\nRPython\n\n\nlibrary(quarto)\n\nmy_theme &lt;- theme_brand_ggplot2(\"_brand.yml\")\n\n\nfrom quarto import theme_brand_plotnine\n\nmy_theme = theme_brand_plotnine('_brand.yml')\n\n\n\n\n\nR + {ggplot2} and Python + plotnine documentation\n\n\nDoesn’t do much (yet) beyond using the brand’s background and foreground colors in the plot"
+  },
+  {
+    "objectID": "materials/brand/slides.html#example-plot",
+    "href": "materials/brand/slides.html#example-plot",
+    "title": "Customizationand branding",
+    "section": "Example plot",
+    "text": "Example plot\nlibrary(tidyverse)\nlibrary(brand.yml)\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nbrand_theme &lt;- quarto::theme_brand_ggplot2(\"_brand.yml\") +\n  theme(\n    text = element_text(family = brand$typography$fonts[[1]]$family, size = 11)\n  )\n\nggplot(mpg, aes(x = displ, y = hwy, color = drv)) +\n  geom_point() +\n  labs(title = \"A plot\") +\n  scale_color_manual(\n    values = c(\n      brand$color$palette$blue,\n      brand$color$palette$black,\n      brand$color$palette$yellow\n    )\n  ) +\n  brand_theme"
+  },
+  {
+    "objectID": "materials/brand/slides.html#your-turn-4",
+    "href": "materials/brand/slides.html#your-turn-4",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\"). TODO\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/brand/slides.html#your-turn-5",
+    "href": "materials/brand/slides.html#your-turn-5",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand. TODO\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/brand/slides.html#make-your-own-_brand.yml",
+    "href": "materials/brand/slides.html#make-your-own-_brand.yml",
+    "title": "Customizationand branding",
+    "section": "Make your own _brand.yml",
+    "text": "Make your own _brand.yml\n\nIn RStudio, go to File &gt; New File &gt; Text file\nIn Positron or VS Code, use the Explorer panel to add a new file.\n\nSave the file as _brand.yml\n\n \nOr create a Brand Extension for sharing and distributing your brand"
+  },
+  {
+    "objectID": "materials/brand/slides.html#dont-reinvent-the-wheel",
+    "href": "materials/brand/slides.html#dont-reinvent-the-wheel",
+    "title": "Customizationand branding",
+    "section": "Don’t reinvent the wheel!",
+    "text": "Don’t reinvent the wheel!\nDO NOT try to write a _brand.yml from scratch!\nLook at the “Inspiration” page!\n\n\nLearn more: https://posit-dev.github.io/brand-yml/inspiration/"
+  },
+  {
+    "objectID": "materials/brand/slides.html#your-turn-6",
+    "href": "materials/brand/slides.html#your-turn-6",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "materials/brand/slides.html#course-outline",
@@ -1502,7 +1586,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "Technology",
-    "text": "Technology\n\nLast built: 2025-10-09 at 23:04:55 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Technology\n\nLast built: 2025-10-15 at 23:58:34 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -1689,22 +1773,22 @@
     ]
   },
   {
+    "objectID": "materials/brand/index.html#exercises",
+    "href": "materials/brand/index.html#exercises",
+    "title": "Customization and branding",
+    "section": "Exercises",
+    "text": "Exercises\n\nThemes\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n\n\nCSS and Sass\n\n\n\n\n\n\nTipBrowser inspector\n\n\n\n\n\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nTODO\n\n\n\n\n\n\n\n\n\n\nTipSCSS\n\n\n\n\n\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nTODO\n\n\n\n\n\n\nBranding\n\n\n\n\n\n\nTip_brand.yml tinkering\n\n\n\n\n\n\nThere is a file named urban_institute.yml. Rename it to _brand.yml and rerender your site. What changes? TODO\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nTODO You can reset the file by copying and pasting it from here.\n\n\n\n\n\n\n\n\n\n\nTiptheme_brand_ggplot()\n\n\n\n\n\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\"). TODO\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n\n\n\n\n\n\nTipread_brand_yaml() tinkering\n\n\n\n\n\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand. TODO\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n\n\n\n\n\n\nTipMake your own _brand.yml\n\n\n\n\n\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml",
+    "crumbs": [
+      "Materials",
+      "Customization and branding"
+    ]
+  },
+  {
     "objectID": "materials/interactivity/index.html",
     "href": "materials/interactivity/index.html",
     "title": "Interactivity",
     "section": "",
     "text": "WarningDraft materials\n\n\n\nThese slides and materials aren’t quite ready yet! Anything you see here is subject to change—don’t do anything here before the course.",
-    "crumbs": [
-      "Materials",
-      "Interactivity"
-    ]
-  },
-  {
-    "objectID": "materials/interactivity/index.html#slides",
-    "href": "materials/interactivity/index.html#slides",
-    "title": "Interactivity",
-    "section": "Slides",
-    "text": "Slides\n\n  Open slides in new window   Download PDF of slides",
     "crumbs": [
       "Materials",
       "Interactivity"

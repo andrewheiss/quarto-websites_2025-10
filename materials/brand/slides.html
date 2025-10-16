@@ -186,9 +186,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
   <link href="../../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
   <script src="../../site_libs/countdown-0.4.0/countdown.js"></script>
   <script>
@@ -300,7 +297,7 @@
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_8436d4db" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_6356aa6f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">07</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -314,39 +311,188 @@
 </section>
 <section id="theme-options" class="slide level2">
 <h2>Theme options</h2>
-<p>Sometimes we want to change theme settings though</p>
-<p>Many common basic options: https://quarto.org/docs/output-formats/html-themes.html#basic-options</p>
+<p>Sometimes we want to change theme settings:</p>
+<ul>
+<li>Fonts</li>
+<li>Colors</li>
+<li>Aligment</li>
+<li>Spacing</li>
+</ul>
+</section>
+<section id="basic-theme-options" class="slide level2">
+<h2>Basic theme options</h2>
+<p>Quarto automatically supports <a href="https://quarto.org/docs/output-formats/html-themes.html#basic-options">some common Bootstrap theme options</a></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb3-2"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-3"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> zephyr</span></span>
+<span id="cb3-4"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">fontsize</span><span class="kw">:</span><span class="at"> 1.2em</span></span>
+<span id="cb3-5"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">linestretch</span><span class="kw">:</span><span class="at"> </span><span class="fl">1.2</span></span>
+<span id="cb3-6"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">linkcolor</span><span class="kw">:</span><span class="at"> </span><span class="st">"#32a852"</span></span>
+<span id="cb3-7"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">backgroundcolor</span><span class="kw">:</span><span class="at"> </span><span class="st">"#f8f8c4"</span></span>
+<span id="cb3-8"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">mainfont</span><span class="kw">:</span><span class="at"> Comic Sans</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="total-control-with-css" class="slide level2">
 <h2>Total control with CSS</h2>
 </section>
-<section id="crash-course-in-css" class="slide level2">
+<section id="crash-course-in-css" class="slide level2 smaller">
 <h2>Crash course in CSS</h2>
-<p>HTML elements can have IDs and classes</p>
-<p>HTML elements can be nested inside each other</p>
-<p>You can target HTML elements with different degrees of specificity:</p>
+<div class="columns">
+<div class="column">
+<p>HTML elements can have IDs and classes:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h2</span><span class="ot"> id</span><span class="op">=</span><span class="st">"my-section"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"special"</span><span class="dt">&gt;</span>A heading<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li><p>All &lt;h3&gt; headings</p></li>
-<li><p>H3 headings with the class <code>neato</code></p></li>
-<li><p>&lt;a&gt;&nbsp;links that are inside a div with the id <code>quarto-sidebar</code></p></li>
+<li>IDs are unique on the page
+<ul>
+<li>Shorthand: <code>#my-section</code></li>
+</ul></li>
+<li>Classes aren’t unique and can be repeated
+<ul>
+<li>Shorthand: <code>.special</code></li>
+</ul></li>
 </ul>
+</div><div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* All H2s */</span></span>
+<span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a>h2 {</span>
+<span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">red</span><span class="op">;</span></span>
+<span id="cb5-4"><a aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-5"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* All elements with id my-section */</span></span>
+<span id="cb5-7"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* This includes non H2s */</span></span>
+<span id="cb5-8"><a aria-hidden="true" tabindex="-1"></a><span class="pp">#my-section</span> {</span>
+<span id="cb5-9"><a aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">red</span><span class="op">;</span></span>
+<span id="cb5-10"><a aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-11"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* All H2s with id my-section */</span></span>
+<span id="cb5-13"><a aria-hidden="true" tabindex="-1"></a>h2<span class="pp">#mysection</span> {</span>
+<span id="cb5-14"><a aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">red</span><span class="op">;</span></span>
+<span id="cb5-15"><a aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-16"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* All elements with class .special */</span></span>
+<span id="cb5-18"><a aria-hidden="true" tabindex="-1"></a><span class="fu">.special</span> {</span>
+<span id="cb5-19"><a aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-style</span><span class="ch">:</span> <span class="dv">italic</span><span class="op">;</span></span>
+<span id="cb5-20"><a aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-21"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* All H2s with class .special */</span></span>
+<span id="cb5-23"><a aria-hidden="true" tabindex="-1"></a>h2<span class="fu">.special</span> {</span>
+<span id="cb5-24"><a aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-style</span><span class="ch">:</span> <span class="dv">italic</span><span class="op">;</span></span>
+<span id="cb5-25"><a aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></div>
+</section>
+<section id="nesting" class="slide level2 smaller">
+<h2>Nesting</h2>
+<div class="columns">
+<div class="column">
+<p>HTML elements can be nested inside each other</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"part1"</span><span class="dt">&gt;</span></span>
+<span id="cb6-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h2</span><span class="ot"> id</span><span class="op">=</span><span class="st">"my-section"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"special"</span><span class="dt">&gt;</span>A heading<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb6-3"><a aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb6-4"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"part2"</span><span class="dt">&gt;</span></span>
+<span id="cb6-6"><a aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">h2</span><span class="ot"> id</span><span class="op">=</span><span class="st">"blah"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"special"</span><span class="dt">&gt;</span>Another heading<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb6-7"><a aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* All H2s in #part1 */</span></span>
+<span id="cb7-2"><a aria-hidden="true" tabindex="-1"></a><span class="pp">#part1</span> h2 {</span>
+<span id="cb7-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">red</span><span class="op">;</span></span>
+<span id="cb7-4"><a aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-5"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* All H2s in #part2 */</span></span>
+<span id="cb7-7"><a aria-hidden="true" tabindex="-1"></a><span class="pp">#part2</span> h2 {</span>
+<span id="cb7-8"><a aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">blue</span><span class="op">;</span></span>
+<span id="cb7-9"><a aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></div>
 </section>
 <section id="browser-inpsector" class="slide level2">
 <h2>Browser inpsector</h2>
-<p>Explore and edit any HTML and CSS right from your browser.</p>
-</section>
-<section id="sass-css-but-fancier" class="slide level2">
-<h2>Sass: CSS, but fancier</h2>
-<p>variables</p>
-<p>rules that use variables</p>
-</section>
-<section id="combining-css-and-themes" class="slide level2">
-<h2>Combining CSS and themes</h2>
-<p>asdf</p>
-</section>
-<section id="your-turn-1" class="slide level2">
+<p>Explore HTML and CSS right from your browser!</p>
+
+<img data-src="img/inspector-full.png" class="quarto-figure quarto-figure-center r-stretch" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"></section>
+<section id="browser-inpsector-1" class="slide level2">
+<h2>Browser inpsector</h2>
+<p>Edit and tinker with styles</p>
+
+<img data-src="img/inspector-edit.png" class="quarto-figure quarto-figure-center r-stretch" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"></section>
+<section id="browser-inpsector-2" class="slide level2">
+<h2>Browser inpsector</h2>
+<p>See which rule applies</p>
+
+<img data-src="img/inspector-computed.png" class="quarto-figure quarto-figure-center r-stretch" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"></section>
+<section id="your-turn-1" class="slide level2" data-background-color="#95caa6" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
 <h2>Your turn</h2>
-<p>Create a SCSS file and make a bunch of rules</p>
+<ol type="1">
+<li>Preview your site</li>
+<li>Use the browser inspector to select a heading</li>
+<li>Create a CSS style that targets that heading and makes it
+<ul>
+<li>red (<code>color</code>) and</li>
+<li>italic (<code>font-style</code>) and</li>
+<li>30px (<code>font-size</code>)</li>
+</ul></li>
+<li>TODO</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_7f4ac103" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="sass-css-but-fancier" class="slide level2 smaller">
+<h2>Sass: CSS, but fancier</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a><span class="im">@import</span> <span class="fu">url(</span><span class="st">'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap'</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb8-2"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a aria-hidden="true" tabindex="-1"></a><span class="co">/*-- scss:defaults --*/</span></span>
+<span id="cb8-4"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* Built-in Bootstrap variables */</span></span>
+<span id="cb8-6"><a aria-hidden="true" tabindex="-1"></a>$h2-font-size<span class="in">:</span>          1<span class="fu">.6rem</span> !default;</span>
+<span id="cb8-7"><a aria-hidden="true" tabindex="-1"></a>$headings-font-weight<span class="in">:</span>  500 !default;</span>
+<span id="cb8-8"><a aria-hidden="true" tabindex="-1"></a>$font-family-sans-serif<span class="in">:</span>  Roboto</span>
+<span id="cb8-9"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a aria-hidden="true" tabindex="-1"></a><span class="co">/* Your own variables */</span></span>
+<span id="cb8-11"><a aria-hidden="true" tabindex="-1"></a>$my-neat-red<span class="in">:</span> <span class="pp">#e21818</span>;</span>
+<span id="cb8-12"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a aria-hidden="true" tabindex="-1"></a><span class="co">/*-- scss:rules --*/</span></span>
+<span id="cb8-14"><a aria-hidden="true" tabindex="-1"></a><span class="pp">#quarto-sidebar</span> h2 {</span>
+<span id="cb8-15"><a aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-family</span><span class="ch">:</span> <span class="dv">Roboto</span><span class="op">;</span></span>
+<span id="cb8-16"><a aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> $<span class="dv">my-neat-red</span><span class="op">;</span></span>
+<span id="cb8-17"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a aria-hidden="true" tabindex="-1"></a>  <span class="co">/* Magically compiles to #quarto-sidebar h2 a:hover */</span></span>
+<span id="cb8-19"><a aria-hidden="true" tabindex="-1"></a>  a<span class="ch">:</span><span class="dv">hover </span>{</span>
+<span id="cb8-20"><a aria-hidden="true" tabindex="-1"></a>    <span class="dv">color</span>: <span class="cn">#d1c81d</span><span class="op">;</span></span>
+<span id="cb8-21"><a aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb8-22"><a aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="bootstrap-sass-variables" class="slide level2">
+<h2>Bootstrap Sass variables</h2>
+<p>There are <strong><em>so many</em></strong></p>
+<ul>
+<li>TODO: Quarto list</li>
+<li>TODO: Bootstrap directory</li>
+</ul>
+</section>
+<section id="using-csssass-with-quarto" class="slide level2">
+<h2>Using CSS/Sass with Quarto</h2>
+<div class="columns">
+<div class="column">
+<p>Use vanilla CSS</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb9-2"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb9-3"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> custom.css</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div><div class="column">
+<p>Use Sass</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb10-2"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb10-3"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span></span>
+<span id="cb10-4"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> zephyr</span></span>
+<span id="cb10-5"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> custom.scss</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></div>
+<p>TODO: Examples from other sites</p>
+</section>
+<section id="your-turn-2" class="slide level2" data-background-color="#95caa6" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
+<h2>Your turn</h2>
+<p>TODO: Create a SCSS file and make a bunch of rules</p>
 </section></section>
 <section>
 <section id="branding" class="title-slide slide level1 center" data-background-color="#d7433b" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
@@ -356,37 +502,47 @@
 <section id="css-is-a-little-inconvenient" class="slide level2">
 <h2>CSS is a little inconvenient</h2>
 <ul>
-<li>Doesn’t play well across HTML outputs - HTML, slides, and dashboards all use slighlty different underlying HTML</li>
-<li>No easy way to reuse the colors and typography from your CSS customizations in R and Python plots or in PDF documents</li>
-<li>Hard to share consistent, resusable themes with others in your organization (or with the world)</li>
+<li class="fragment">HTML, slides, and dashboards all use slighlty different underlying HTML</li>
+<li class="fragment">No easy way to reuse the colors and typography from your CSS customizations in R and Python plots or in PDF documents</li>
+<li class="fragment">Hard to share consistent, resusable themes with others in your organization (or with the world)</li>
 </ul>
 </section>
 <section id="style-guides" class="slide level2">
 <h2>Style guides</h2>
-<p>Organizations and projects generally have style guides for consistency</p>
-<p>Urban Institute</p>
-<p>This course! See the colophon</p>
+
+<img data-src="img/urban-institute.png" class="quarto-figure quarto-figure-center r-stretch" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:100.0%"><div class="footer">
+<p><a href="https://urbaninstitute.github.io/graphics-styleguide/" target="_blank">Urban Institute Data Visualization Style Guide</a></p>
+</div>
 </section>
+<section id="style-guides-1" class="slide level2">
+<h2>Style guides</h2>
+
+<img data-src="img/uga.png" class="quarto-figure quarto-figure-center r-stretch" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:100.0%"><div class="footer">
+<p><a href="https://brand.uga.edu/visual-identity/visual-style/#typography" target="_blank">University of Georgia Brand Style Guide</a></p>
+</div>
+</section>
+<section id="style-guides-2" class="slide level2">
+<h2>Style guides</h2>
+
+<img data-src="img/gsu.png" class="quarto-figure quarto-figure-center r-stretch" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:100.0%"><div class="footer">
+<p><a href="https://commkit.gsu.edu/website-management/web-color-guidelines/" target="_blank">Georgia State University Web Color Guidelines</a></p>
+</div>
+</section>
+<section id="matching-style-with-css" class="slide level2">
+<h2>Matching style with CSS</h2>
+<p>You can recreate styles with CSS (<a href="https://aysps.github.io/2024-aysps-dataviz/" target="_blank">site</a>; <a href="https://github.com/aysps/2024-aysps-dataviz/blob/main/custom.scss" target="_blank">custom.scss</a>)</p>
+
+<img data-src="img/ays-dataviz.png" class="quarto-figure quarto-figure-center r-stretch" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:100.0%"></section>
 <section id="section" class="slide level2">
 <h2></h2>
 
-<img data-src="img/brand-yml.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><p><span style="font-size: 1.2em;">Unified branding with a simple YAML file</span></p>
+<img data-src="img/brand-yml.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><div style="text-align: center; padding-top: 0.5em;">
+<p><span style="font-size: 1.2em;">Unified branding with a simple YAML file</span></p>
+</div>
 <div class="fragment">
-<p><br></p>
-<p>Create reports, apps, dashboards, plots and more that match your company’s brand guidelines with a single <code>_brand.yml</code> file.</p>
-<aside class="notes">
-<p>brand.yml is a simple, portable YAML file that codifies your company’s brand guidelines into a format that can be used by Quarto, Python and R tooling to create branded outputs. Our goal is to support unified, branded theming for all of Posit’s open source tools—from web applications to printed reports to dashboards and presentations—with a consistent look and feel.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<div style="text-align: center; padding-top: 1em; font-size: 0.85em;">
+<p>Create reports, apps, dashboards, plots and more that match your organization’s brand guidelines with a single <code>_brand.yml</code> file.</p>
+</div>
 <div class="footer">
 <p>Learn more: <a href="https://posit-dev.github.io/brand-yml/" class="uri">https://posit-dev.github.io/brand-yml/</a></p>
 </div>
@@ -394,139 +550,19 @@
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-<div class="r-fit-text">
-<p>Branding can be frustrating</p>
-</div>
-<div class="fragment">
-<div class="r-fit-text">
-<p>But brand.yml makes it easier</p>
-</div>
-</div>
-</section>
-<section id="section-2" class="slide level2">
-<h2></h2>
 <div class="fragment">
 <p><span style="font-size: 1.5em;">1. Define branding in a single <code>_brand.yml</code> file.</span></p>
 <p><span style="font-size: 1.5em;">2. Apply that branding across almost all Quarto formats.</span></p>
 </div>
-<p><br></p>
-<div class="fragment">
-<p><code>brand.yml</code> also works with Shiny!</p>
-</div>
-</section>
-<section id="section-3" class="slide level2">
-<h2></h2>
-<div style="--mermaid-max-height: 600px">
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">---
-config:
-  look: handDrawn
-  theme: neutral
----
-flowchart LR
-    by{brand.yml}
-    by--&gt;quarto[Quarto]
-    quarto--&gt;quarto-html
-    quarto--&gt;quarto-pdf
-    quarto-html--&gt;quarto-websites[Websites]
-    quarto-html--&gt;quarto-presentations[Presentations]
-    quarto-html--&gt;quarto-dashboards[Dashboards]
-    quarto-html--&gt;quarto-emails[Emails]
-    quarto-pdf--&gt;quarto-typst[Typst]
-
-    by--&gt;R
-    R--&gt;r-bslib["{bslib}"]
-    r-bslib--&gt;r-thematic["{thematic}"]
-    r-bslib--&gt;r-shiny["Shiny for R"]
-    r-bslib--&gt;r-rmd["R Markdown"]
-    r-bslib--&gt;r-pkgdown["pkgdown"]
-    %% r-thematic--&gt;r-ggplot2["{ggplot2}"]
-    %% r-thematic--&gt;r-plot["{plot}"]
-
-    by--&gt;Python
-    Python--&gt;py-brand_yml["brand_yml"]
-    py-brand_yml--&gt;py-shiny[Shiny for Python]
-    py-brand_yml--&gt;py-plots[seaborn, matplotlib, etc.]
-
-    classDef implemented fill:#8CE3A0,stroke:#0A2911,color:#0A2911;
-    classDef partial fill:#A8E5B9,stroke:#4B8A5D,color:#0A2911;
-    classDef in-progress fill:#B3D7FF,stroke:#00254D,color:#00254D;
-    classDef highlighted fill:#FFE8DB,stroke:#612200,color:#612200;
-
-    class quarto-websites,quarto-presentations,quarto-dashboards,quarto-typst,py-brand_yml,py-shiny,r-bslib,r-shiny,r-rmd,r-pkgdown implemented;
-    class r-thematic,py-plots partial;
-    class by highlighted;
-
-    click quarto href "https://prerelease.quarto.org/docs/authoring/brand.html"
-    click quarto-typst href "https://quarto.org/docs/output-formats/typst.html" "Typst in Quarto"
-    click quarto-presentations href "https://quarto.org/docs/presentations/revealjs/" "Reveal.js in Quarto"
-    click quarto-dashboards href "https://quarto.org/docs/dashboards/" "Dashboards in Quarto"
-    click r-shiny href "https://shiny.posit.co/"
-    click r-bslib href "https://rstudio.github.io/bslib/"
-    click r-thematic href "https://rstudio.github.io/thematic/"
-    click r-ggplot2 href "https://ggplot2.tidyverse.org/"
-    click r-rmd href "https://rmarkdown.rstudio.com/"
-    click py-shiny href "https://shiny.posit.co/py/"
-    click py-brand_yml href "pkg/py/"
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</div>
-<style>
-.mermaid-js {
-  max-height: var(--mermaid-max-height);
-}
-.mermaid-js .nodeLabel {
-  color: var(--bs-black) !important;
-  font-weight: 500;
-}
-.implemented {
-  background-color: #8CE3A0;
-  border-color: #0A2911;
-  color: #0A2911;
-  padding-inline: 0.2rem
-}
-
-.in-progress {
-  background-color: #B3D7FF;
-  border-color: #00254D;
-  color: #00254D;
-  padding-inline: 0.2rem
-}
-</style>
-<div class="footer">
-<p>Learn more: <a href="https://posit-dev.github.io/brand-yml/" class="uri">https://posit-dev.github.io/brand-yml/</a></p>
-</div>
-<aside class="notes">
-<p>brand.yml works with a variety of open source projects, including all the Quarto outputs we’ll talk about today. as well as Shiny for R and Shiny for Python. This means you can define your organization’s branding in a brand.yml file once, and then apply it all over relatively effortlessly.</p>
-<p>over the course of this workshop, we’ll use the same brand file to apply to all our outputs</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="brand.yml-elements" class="slide level2">
-<h2>brand.yml elements</h2>
+<h2><code>_brand.yml</code> elements</h2>
 <ul>
 <li class="fragment"><code>meta</code>: Identifying information, name of the company, URLs, etc.</li>
-<li class="fragment"><code>logo</code>: Files or links to the brand’s logos.</li>
-<li class="fragment"><code>color</code>: Colors in the brand’s color palette.</li>
-<li class="fragment"><code>typography</code>: Fonts for different elements.</li>
-<li class="fragment"><code>defaults</code>: Additional context-specific settings.</li>
+<li class="fragment"><code>logo</code>: Files or links to the brand’s logos</li>
+<li class="fragment"><code>color</code>: Colors in the brand’s color palette</li>
+<li class="fragment"><code>typography</code>: Fonts for different elements</li>
+<li class="fragment"><code>defaults</code>: Additional context-specific settings</li>
 </ul>
 </section>
 <section id="brand.yml-structure" class="slide level2">
@@ -535,255 +571,317 @@ flowchart LR
 <div class="code-with-filename-file">
 <pre><strong>_brand.yml</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-filename="_brand.yml" data-code-line-numbers="1-4|6-11|13-27|29-42"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a><span class="fu">meta</span><span class="kw">:</span></span>
-<span id="cb3-2"><a></a><span class="at">  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> World Happiness Report</span></span>
-<span id="cb3-3"><a></a><span class="at">  </span><span class="fu">link</span><span class="kw">:</span></span>
-<span id="cb3-4"><a></a><span class="at">    </span><span class="fu">home</span><span class="kw">:</span><span class="at"> https://www.worldhappiness.report/</span></span>
-<span id="cb3-5"><a></a></span>
-<span id="cb3-6"><a></a><span class="fu">logo</span><span class="kw">:</span></span>
-<span id="cb3-7"><a></a><span class="at">  </span><span class="fu">images</span><span class="kw">:</span></span>
-<span id="cb3-8"><a></a><span class="at">    </span><span class="fu">icon</span><span class="kw">:</span></span>
-<span id="cb3-9"><a></a><span class="at">      </span><span class="fu">path</span><span class="kw">:</span><span class="at"> images/whr_logo.png</span></span>
-<span id="cb3-10"><a></a><span class="at">      </span><span class="fu">alt</span><span class="kw">:</span><span class="at"> World Happiness Report icon.</span></span>
-<span id="cb3-11"><a></a><span class="at">  </span><span class="fu">small</span><span class="kw">:</span><span class="at"> images/whr_logo.png</span></span>
-<span id="cb3-12"><a></a></span>
-<span id="cb3-13"><a></a><span class="fu">color</span><span class="kw">:</span></span>
-<span id="cb3-14"><a></a><span class="at">  </span><span class="fu">palette</span><span class="kw">:</span></span>
-<span id="cb3-15"><a></a><span class="at">    </span><span class="fu">dark-purple</span><span class="kw">:</span><span class="at"> </span><span class="st">"#93358c"</span></span>
-<span id="cb3-16"><a></a><span class="at">    </span><span class="fu">light-purple</span><span class="kw">:</span><span class="at"> </span><span class="st">"#f8f6fb"</span></span>
-<span id="cb3-17"><a></a><span class="at">    </span><span class="fu">teal</span><span class="kw">:</span><span class="at"> </span><span class="st">"#04afaf"</span></span>
-<span id="cb3-18"><a></a><span class="at">    </span><span class="fu">dark-blue</span><span class="kw">:</span><span class="at"> </span><span class="st">"#086992"</span></span>
-<span id="cb3-19"><a></a><span class="at">    </span><span class="fu">hot-pink</span><span class="kw">:</span><span class="at"> </span><span class="st">"#eb068c"</span></span>
-<span id="cb3-20"><a></a><span class="at">    </span><span class="fu">light-blue</span><span class="kw">:</span><span class="at"> </span><span class="st">"#1aade4"</span></span>
-<span id="cb3-21"><a></a></span>
-<span id="cb3-22"><a></a><span class="at">  </span><span class="fu">background</span><span class="kw">:</span><span class="at"> light-purple</span></span>
-<span id="cb3-23"><a></a><span class="at">  </span><span class="fu">foreground</span><span class="kw">:</span><span class="at"> black</span></span>
-<span id="cb3-24"><a></a><span class="at">  </span><span class="fu">primary</span><span class="kw">:</span><span class="at"> dark-purple</span></span>
-<span id="cb3-25"><a></a><span class="at">  </span><span class="fu">secondary</span><span class="kw">:</span><span class="at"> hot-pink</span></span>
-<span id="cb3-26"><a></a><span class="at">  </span><span class="fu">tertiary</span><span class="kw">:</span><span class="at"> light-blue</span></span>
-<span id="cb3-27"><a></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> black</span></span>
-<span id="cb3-28"><a></a></span>
-<span id="cb3-29"><a></a><span class="fu">typography</span><span class="kw">:</span></span>
-<span id="cb3-30"><a></a><span class="at">  </span><span class="fu">fonts</span><span class="kw">:</span></span>
-<span id="cb3-31"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Libre Franklin</span></span>
-<span id="cb3-32"><a></a><span class="at">      </span><span class="fu">source</span><span class="kw">:</span><span class="at"> google</span></span>
-<span id="cb3-33"><a></a><span class="at">      </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="dv">400</span><span class="kw">,</span><span class="at"> </span><span class="dv">700</span><span class="kw">]</span></span>
-<span id="cb3-34"><a></a></span>
-<span id="cb3-35"><a></a><span class="at">  </span><span class="fu">base</span><span class="kw">:</span></span>
-<span id="cb3-36"><a></a><span class="at">    </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Libre Franklin</span></span>
-<span id="cb3-37"><a></a><span class="at">    </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="dv">400</span></span>
-<span id="cb3-38"><a></a></span>
-<span id="cb3-39"><a></a><span class="at">  </span><span class="fu">headings</span><span class="kw">:</span></span>
-<span id="cb3-40"><a></a><span class="at">    </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Libre Franklin</span></span>
-<span id="cb3-41"><a></a><span class="at">    </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="dv">700</span></span>
-<span id="cb3-42"><a></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span><span class="at"> dark-purple</span></span>
-<span id="cb3-43"><a></a></span>
-<span id="cb3-44"><a></a><span class="at">  </span><span class="fu">link</span><span class="kw">:</span></span>
-<span id="cb3-45"><a></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span><span class="at"> primary</span></span>
-<span id="cb3-46"><a></a><span class="at">    </span><span class="fu">decoration</span><span class="kw">:</span><span class="at"> none</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" data-filename="_brand.yml" data-code-line-numbers="1-4|6-11|13-30|32-51|53-72"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a></a><span class="fu">meta</span><span class="kw">:</span></span>
+<span id="cb11-2"><a></a><span class="at">  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Urban Institute</span></span>
+<span id="cb11-3"><a></a><span class="at">  </span><span class="fu">link</span><span class="kw">:</span></span>
+<span id="cb11-4"><a></a><span class="at">    </span><span class="fu">home</span><span class="kw">:</span><span class="at"> https://urbaninstitute.github.io/graphics-styleguide/</span></span>
+<span id="cb11-5"><a></a></span>
+<span id="cb11-6"><a></a><span class="fu">logo</span><span class="kw">:</span></span>
+<span id="cb11-7"><a></a><span class="at">  </span><span class="fu">images</span><span class="kw">:</span></span>
+<span id="cb11-8"><a></a><span class="at">    </span><span class="fu">icon</span><span class="kw">:</span></span>
+<span id="cb11-9"><a></a><span class="at">      </span><span class="fu">path</span><span class="kw">:</span><span class="at"> img/urban.png</span></span>
+<span id="cb11-10"><a></a><span class="at">      </span><span class="fu">alt</span><span class="kw">:</span><span class="at"> Urban Institute logo</span></span>
+<span id="cb11-11"><a></a><span class="at">  </span><span class="fu">small</span><span class="kw">:</span><span class="at"> img/urban-sm.png</span></span>
+<span id="cb11-12"><a></a></span>
+<span id="cb11-13"><a></a><span class="fu">color</span><span class="kw">:</span></span>
+<span id="cb11-14"><a></a><span class="at">  </span><span class="fu">palette</span><span class="kw">:</span></span>
+<span id="cb11-15"><a></a><span class="at">    </span><span class="fu">blue</span><span class="kw">:</span><span class="at"> </span><span class="st">"#1696d2"</span></span>
+<span id="cb11-16"><a></a><span class="at">    </span><span class="fu">gray-light</span><span class="kw">:</span><span class="at"> </span><span class="st">"#d2d2d2"</span></span>
+<span id="cb11-17"><a></a><span class="at">    </span><span class="fu">black</span><span class="kw">:</span><span class="at"> </span><span class="st">"#000000"</span></span>
+<span id="cb11-18"><a></a><span class="at">    </span><span class="fu">yellow</span><span class="kw">:</span><span class="at"> </span><span class="st">"#fdbf11"</span></span>
+<span id="cb11-19"><a></a><span class="at">    </span><span class="fu">magenta</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ec008b"</span></span>
+<span id="cb11-20"><a></a><span class="at">    </span><span class="fu">green</span><span class="kw">:</span><span class="at"> </span><span class="st">"#55b748"</span></span>
+<span id="cb11-21"><a></a><span class="at">    </span><span class="fu">gray-dark</span><span class="kw">:</span><span class="at"> </span><span class="st">"#5c5859"</span></span>
+<span id="cb11-22"><a></a><span class="at">    </span><span class="fu">red</span><span class="kw">:</span><span class="at"> </span><span class="st">"#db2b27"</span></span>
+<span id="cb11-23"><a></a><span class="at">    </span><span class="fu">orange</span><span class="kw">:</span><span class="at"> </span><span class="st">"#e88e2d"</span></span>
+<span id="cb11-24"><a></a><span class="at">    </span><span class="fu">white</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ffffff"</span></span>
+<span id="cb11-25"><a></a></span>
+<span id="cb11-26"><a></a><span class="at">  </span><span class="fu">background</span><span class="kw">:</span><span class="at"> white</span></span>
+<span id="cb11-27"><a></a><span class="at">  </span><span class="fu">foreground</span><span class="kw">:</span><span class="at"> gray-dark</span></span>
+<span id="cb11-28"><a></a><span class="at">  </span><span class="fu">primary</span><span class="kw">:</span><span class="at"> blue</span></span>
+<span id="cb11-29"><a></a><span class="at">  </span><span class="fu">secondary</span><span class="kw">:</span><span class="at"> yellow</span></span>
+<span id="cb11-30"><a></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> black</span></span>
+<span id="cb11-31"><a></a></span>
+<span id="cb11-32"><a></a><span class="fu">typography</span><span class="kw">:</span></span>
+<span id="cb11-33"><a></a><span class="at">  </span><span class="fu">fonts</span><span class="kw">:</span></span>
+<span id="cb11-34"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Lato</span></span>
+<span id="cb11-35"><a></a><span class="at">      </span><span class="fu">source</span><span class="kw">:</span><span class="at"> google</span></span>
+<span id="cb11-36"><a></a><span class="at">      </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="dv">400</span><span class="kw">,</span><span class="at"> </span><span class="dv">700</span><span class="kw">]</span></span>
+<span id="cb11-37"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Jost</span></span>
+<span id="cb11-38"><a></a><span class="at">      </span><span class="fu">source</span><span class="kw">:</span><span class="at"> google</span></span>
+<span id="cb11-39"><a></a><span class="at">      </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="dv">400</span><span class="kw">,</span><span class="at"> </span><span class="dv">700</span><span class="kw">]</span></span>
+<span id="cb11-40"><a></a></span>
+<span id="cb11-41"><a></a><span class="at">  </span><span class="fu">base</span><span class="kw">:</span></span>
+<span id="cb11-42"><a></a><span class="at">    </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Lato</span></span>
+<span id="cb11-43"><a></a><span class="at">    </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="dv">400</span></span>
+<span id="cb11-44"><a></a></span>
+<span id="cb11-45"><a></a><span class="at">  </span><span class="fu">headings</span><span class="kw">:</span></span>
+<span id="cb11-46"><a></a><span class="at">    </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Jost</span></span>
+<span id="cb11-47"><a></a><span class="at">    </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="dv">700</span></span>
+<span id="cb11-48"><a></a></span>
+<span id="cb11-49"><a></a><span class="at">  </span><span class="fu">link</span><span class="kw">:</span></span>
+<span id="cb11-50"><a></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span><span class="at"> primary</span></span>
+<span id="cb11-51"><a></a><span class="at">    </span><span class="fu">decoration</span><span class="kw">:</span><span class="at"> none</span></span>
+<span id="cb11-52"><a></a></span>
+<span id="cb11-53"><a></a><span class="fu">defaults</span><span class="kw">:</span></span>
+<span id="cb11-54"><a></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span></span>
+<span id="cb11-55"><a></a><span class="at">    </span><span class="fu">functions</span><span class="kw">:</span><span class="co"> # string with SCSS functions</span></span>
+<span id="cb11-56"><a></a><span class="at">    </span><span class="fu">defaults</span><span class="kw">:</span><span class="co">  # list of Bootstrap Sass variables to override</span></span>
+<span id="cb11-57"><a></a><span class="at">      </span><span class="fu">link-hover-color</span><span class="kw">:</span><span class="at"> $brand-magenta</span></span>
+<span id="cb11-58"><a></a><span class="at">    </span><span class="fu">mixins</span><span class="kw">:</span><span class="co">    # string with SCSS mixins</span></span>
+<span id="cb11-59"><a></a><span class="fu">    rules</span><span class="kw">: </span><span class="ch">|</span><span class="co">   # string with SCSS rules</span></span>
+<span id="cb11-60"><a></a>      #quarto-content h2, #quarto-content h3 {</span>
+<span id="cb11-61"><a></a>          text-transform: uppercase;</span>
+<span id="cb11-62"><a></a>          letter-spacing: 1px;</span>
+<span id="cb11-63"><a></a>      }</span>
+<span id="cb11-64"><a></a></span>
+<span id="cb11-65"><a></a>      .content .highlight {</span>
+<span id="cb11-66"><a></a>          color: $brand-yellow;</span>
+<span id="cb11-67"><a></a>      }</span>
+<span id="cb11-68"><a></a></span>
+<span id="cb11-69"><a></a>      .navbar-title {</span>
+<span id="cb11-70"><a></a>          font-family: Jost;</span>
+<span id="cb11-71"><a></a>          font-weight: 700;</span>
+<span id="cb11-72"><a></a>      }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<aside class="notes">
-<p>define your brand’s color palette and map your palette to the roles colors play. the semantic colors – primary, foreground, etc</p>
-<p>if this seems like a lot of details, don’t worry! we will show you how to make your own file later. for now, it’s enough to just have a general understanding of the different parts</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="how-to-apply-brand.yml-to-quarto" class="slide level2">
-<h2>How to apply brand.yml to Quarto</h2>
+<section id="enabling-_brand.yml-in-quarto" class="slide level2">
+<h2>Enabling <code>_brand.yml</code> in Quarto</h2>
 <ol type="1">
 <li>Define branding in <code>_brand.yml</code>.</li>
 <li>Save in the root directory of your Quarto project.</li>
 </ol>
 <p>Quarto will detect the presence of <code>_brand.yml</code> and automatically apply the brand to all documents of the supported formats in the project.</p>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 <p>If your brand file has a different name or lives in a subdirectory, use the <code>brand</code> key.</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>my-document.qmd</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-filename="my-document.qmd" data-code-line-numbers="5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a></a><span class="pp">---</span></span>
-<span id="cb4-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"World Happiness Report"</span></span>
-<span id="cb4-3"><a></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Happiness Trends and Contributing Factors (2011-2024)"</span></span>
-<span id="cb4-4"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb4-5"><a></a><span class="fu">brand</span><span class="kw">:</span><span class="at"> org_theme.yml</span></span>
-<span id="cb4-6"><a></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12" data-filename="my-document.qmd" data-code-line-numbers="4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a></a><span class="pp">---</span></span>
+<span id="cb12-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My neat report"</span></span>
+<span id="cb12-3"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb12-4"><a></a><span class="fu">brand</span><span class="kw">:</span><span class="at"> org_theme.yml</span></span>
+<span id="cb12-5"><a></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<aside class="notes">
-<p>use this if you have a file named something other than brand.yml or it lives elsewhere.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="disable-brand.yml" class="slide level2">
-<h2>Disable brand.yml</h2>
-<p>To turn off brand.yml for a document, use <code>brand: false</code>.</p>
+<section id="disable-_brand.yml" class="slide level2">
+<h2>Disable <code>_brand.yml</code></h2>
+<p>To turn off <code>_brand.yml</code> for a document, use <code>brand: false</code>.</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>my-document.qmd</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-filename="my-document.qmd" data-code-line-numbers="5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a></a><span class="pp">---</span></span>
-<span id="cb5-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"World Happiness Report"</span></span>
-<span id="cb5-3"><a></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Happiness Trends and Contributing Factors (2011-2024)"</span></span>
-<span id="cb5-4"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb5-5"><a></a><span class="fu">brand</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb5-6"><a></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13" data-filename="my-document.qmd" data-code-line-numbers="4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a></a><span class="pp">---</span></span>
+<span id="cb13-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My neat report"</span></span>
+<span id="cb13-3"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb13-4"><a></a><span class="fu">brand</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb13-5"><a></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="brand-shortcode" class="slide level2">
-<h2><code>brand</code> shortcode</h2>
-<p>Access some brand.yml values with a shortcode.</p>
+<section id="your-turn-3" class="slide level2" data-background-color="#95caa6" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
+<h2>Your turn</h2>
+<ol type="1">
+<li><p>There is a file named <code>urban_institute.yml</code>. Rename it to <code>_brand.yml</code> and rerender your site. What changes? TODO</p></li>
+<li><p>Modify some of the variables in the <code>_brand.yml</code> file and rerender to see how your site changes. Explore <a href="https://posit-dev.github.io/brand-yml/" target="_blank">the brand.yml documentation</a> and see what other settings you can adjust.</p>
+<p>TODO You can reset the file by copying and pasting it from <a href="https://github.com/posit-dev/quarto-brand-exercises/blob/main/04-exercise.yml">here</a>.</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_2aa6e62c" data-warn-when="60" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="use-_brand.yml-in-markdown" class="slide level2">
+<h2>Use <code>_brand.yml</code> in markdown</h2>
+<p>Access some <code>_brand.yml</code> values in Quarto documents with a shortcode</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>my_document.qmd</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" data-filename="my_document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a>{{&lt; brand color primary &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14" data-filename="my_document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a>{{&lt; brand color primary &gt;}}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="footer">
 <p>Learn more: <a href="https://quarto.org/docs/authoring/brand.html#using-brand-values" class="uri">https://quarto.org/docs/authoring/brand.html#using-brand-values</a></p>
 </div>
 </section>
-<section id="your-turn-2" class="slide level2" data-background-color="#ffcc3d">
-<h2>Your turn</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_88745c92" data-warn-when="60" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<section id="use-_brand.yml-in-sass" class="slide level2">
+<h2>Use <code>_brand.yml</code> in Sass</h2>
+<p>Access some <code>_brand.yml</code> values with the <code>$brand-*</code> prefix</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>custom-styles.scss</strong></pre>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15" data-filename="custom-styles.scss"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb15-1"><a></a><span class="co">/*-- scss:rules --*/</span></span>
+<span id="cb15-2"><a></a></span>
+<span id="cb15-3"><a></a>h3 {</span>
+<span id="cb15-4"><a></a>  <span class="kw">color</span><span class="ch">:</span> $<span class="dv">brand-magenta</span><span class="op">;</span></span>
+<span id="cb15-5"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<div class="footer">
+<p>Learn more: <a href="https://quarto.org/docs/authoring/brand.html#in-scss" class="uri">https://quarto.org/docs/authoring/brand.html#in-scss</a></p>
 </div>
 </section>
-<section id="what-about-plots" class="slide level2">
-<h2>What about plots?</h2>
-<aside class="notes">
-<p>The plots, at least for the R version, are unbranded. how can we apply brand.yml to plots too?</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="theme-helpers" class="slide level2">
-<h2>Theme helpers</h2>
-<p>The quarto packages contain theme helpers that apply branding to plots.</p>
+<section id="use-_brand.yml-in-r-and-python" class="slide level2">
+<h2>Use <code>_brand.yml</code> in R and Python</h2>
+<p>Access and apply specific brand elements</p>
 <div class="panel-tabset">
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R</a></li><li><a href="#tabset-1-2">Python</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">library</span>(quarto)</span>
-<span id="cb7-2"><a></a></span>
-<span id="cb7-3"><a></a>my_theme <span class="ot">&lt;-</span> <span class="fu">theme_brand_ggplot2</span>(<span class="st">"_brand.yml"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">library</span>(brand.yml)</span>
+<span id="cb16-2"><a></a></span>
+<span id="cb16-3"><a></a>brand <span class="ot">&lt;-</span> <span class="fu">read_brand_yml</span>(<span class="st">"_brand.yml"</span>)</span>
+<span id="cb16-4"><a></a></span>
+<span id="cb16-5"><a></a>brand<span class="sc">$</span>color<span class="sc">$</span>primary</span>
+<span id="cb16-6"><a></a><span class="co">#&gt; [1] "#1696d2"</span></span>
+<span id="cb16-7"><a></a></span>
+<span id="cb16-8"><a></a>brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>yellow</span>
+<span id="cb16-9"><a></a><span class="co">#&gt; [1] "#fdbf11"</span></span>
+<span id="cb16-10"><a></a></span>
+<span id="cb16-11"><a></a>brand<span class="sc">$</span>typography<span class="sc">$</span>fonts[[<span class="dv">1</span>]]<span class="sc">$</span>family</span>
+<span id="cb16-12"><a></a><span class="co">#&gt; [1] "Lato"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div id="tabset-1-2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="co">#| eval: false</span></span>
-<span id="cb8-2"><a></a><span class="co">#| echo: true</span></span>
-<span id="cb8-3"><a></a><span class="im">from</span> quarto <span class="im">import</span> theme_brand_plotnine</span>
-<span id="cb8-4"><a></a></span>
-<span id="cb8-5"><a></a>my_theme <span class="op">=</span> theme_brand_plotnine(<span class="st">'_brand.yml'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a></a><span class="im">from</span> brand_yml <span class="im">import</span> Brand</span>
+<span id="cb17-2"><a></a></span>
+<span id="cb17-3"><a></a>brand <span class="op">=</span> Brand.from_yaml(<span class="st">"_brand.yml"</span>)</span>
+<span id="cb17-4"><a></a></span>
+<span id="cb17-5"><a></a>brand.color.primary</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+</section>
+<section id="theme-helpers" class="slide level2">
+<h2>Theme helpers</h2>
+<p>The {quarto} package contains theme helpers that apply branding to plots</p>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">R</a></li><li><a href="#tabset-2-2">Python</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">library</span>(quarto)</span>
+<span id="cb18-2"><a></a></span>
+<span id="cb18-3"><a></a>my_theme <span class="ot">&lt;-</span> <span class="fu">theme_brand_ggplot2</span>(<span class="st">"_brand.yml"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tabset-2-2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a></a><span class="im">from</span> quarto <span class="im">import</span> theme_brand_plotnine</span>
+<span id="cb19-2"><a></a></span>
+<span id="cb19-3"><a></a>my_theme <span class="op">=</span> theme_brand_plotnine(<span class="st">'_brand.yml'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
 
-<aside class="notes">
-<p>There are other theme helpers for other plotting libraries</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<div class="footer">
+<p><a href="https://quarto-dev.github.io/quarto-r/articles/theme-helpers.html">R + {ggplot2}</a> and <a href="https://github.com/quarto-dev/quarto-python?tab=readme-ov-file#theme-helpers">Python + plotnine</a> documentation</p>
+</div>
 <aside><div>
-<p>R: <a href="https://quarto-dev.github.io/quarto-r/articles/theme-helpers.html">https://quarto-dev.github.io/quarto-r/articles/theme-helpers.html</a></p>
-<p>Python: <a href="https://github.com/quarto-dev/quarto-python?tab=readme-ov-file#theme-helpers">https://github.com/quarto-dev/quarto-python?tab=readme-ov-file#theme-helpers</a></p>
+<p>Doesn’t do much (yet) beyond using the brand’s <code>background</code> and <code>foreground</code> colors in the plot</p>
 </div></aside></section>
-<section id="your-turn-3" class="slide level2" data-background-color="#ffcc3d">
+<section id="example-plot" class="slide level2">
+<h2>Example plot</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb20-2"><a></a><span class="fu">library</span>(brand.yml)</span>
+<span id="cb20-3"><a></a></span>
+<span id="cb20-4"><a></a>brand <span class="ot">&lt;-</span> <span class="fu">read_brand_yml</span>(<span class="st">"_brand.yml"</span>)</span>
+<span id="cb20-5"><a></a></span>
+<span id="cb20-6"><a></a>brand_theme <span class="ot">&lt;-</span> quarto<span class="sc">::</span><span class="fu">theme_brand_ggplot2</span>(<span class="st">"_brand.yml"</span>) <span class="sc">+</span></span>
+<span id="cb20-7"><a></a>  <span class="fu">theme</span>(</span>
+<span id="cb20-8"><a></a>    <span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> brand<span class="sc">$</span>typography<span class="sc">$</span>fonts[[<span class="dv">1</span>]]<span class="sc">$</span>family, <span class="at">size =</span> <span class="dv">11</span>)</span>
+<span id="cb20-9"><a></a>  )</span>
+<span id="cb20-10"><a></a></span>
+<span id="cb20-11"><a></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(<span class="at">x =</span> displ, <span class="at">y =</span> hwy, <span class="at">color =</span> drv)) <span class="sc">+</span></span>
+<span id="cb20-12"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb20-13"><a></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"A plot"</span>) <span class="sc">+</span></span>
+<span id="cb20-14"><a></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb20-15"><a></a>    <span class="at">values =</span> <span class="fu">c</span>(</span>
+<span id="cb20-16"><a></a>      brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>blue,</span>
+<span id="cb20-17"><a></a>      brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>black,</span>
+<span id="cb20-18"><a></a>      brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>yellow</span>
+<span id="cb20-19"><a></a>    )</span>
+<span id="cb20-20"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb20-21"><a></a>  brand_theme</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+
+<img data-src="img/unnamed-chunk-1-1.png" class="r-stretch"></section>
+<section id="your-turn-4" class="slide level2" data-background-color="#95caa6" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
 <h2>Your turn</h2>
+<ol type="1">
+<li><p>In the first code chunk of <code>01-exercise.qmd</code>, replace <code>theme_minimal()</code> with <code>theme_brand_ggplot2()</code>. You will need to supply a brand file path (<code>"_brand.yml"</code>). TODO</p></li>
+<li><p>Re-render and see what changes.</p></li>
+<li><p>Change the <code>foreground</code> and <code>background</code> colors in <code>_brand.yml</code> and rerun the code to create the plot. What changes?</p></li>
+</ol>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_e6aba989" data-warn-when="60" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_528c1cc0" data-warn-when="60" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
-<aside class="notes">
-<p>The R function applies theme_minimal().</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="brand.yml-packages" class="slide level2">
-<h2>brand.yml packages</h2>
-<p>Access and apply specific brand elements.</p>
-<div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">R</a></li><li><a href="#tabset-2-2">Python</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1">
+<section id="your-turn-5" class="slide level2" data-background-color="#95caa6" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
+<h2>Your turn</h2>
+<ol type="1">
+<li><p>In <code>01-exercise.qmd</code>, read in <code>_brand.yml</code> with <code>read_brand_yml()</code> from the {brand.yml} package. Store it as a variable named <code>brand</code>. TODO</p></li>
+<li><p>Change the color of the points to the brand’s <code>blue</code> color and the line to the brand’s <code>magenta</code> color. You’ll use code that looks something like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">color =</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>black)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><strong>Bonus task!</strong> Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.</p></li>
+</ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">library</span>(brand.yml)</span>
-<span id="cb9-2"><a></a></span>
-<span id="cb9-3"><a></a>brand <span class="ot">&lt;-</span> <span class="fu">read_brand_yml</span>(<span class="st">"_brand.yml"</span>)</span>
-<span id="cb9-4"><a></a></span>
-<span id="cb9-5"><a></a>brand<span class="sc">$</span>color<span class="sc">$</span>primary</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="countdown" id="timer_e3ad4b58" data-warn-when="60" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
-<div id="tabset-2-2">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="co">#| eval: false</span></span>
-<span id="cb10-2"><a></a><span class="co">#| echo: true</span></span>
-<span id="cb10-3"><a></a><span class="im">from</span> brand_yml <span class="im">import</span> Brand</span>
-<span id="cb10-4"><a></a></span>
-<span id="cb10-5"><a></a>brand <span class="op">=</span> Brand.from_yaml(<span class="st">"_brand.yml"</span>)</span>
-<span id="cb10-6"><a></a></span>
-<span id="cb10-7"><a></a>brand.color.primary</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="make-your-own-_brand.yml" class="slide level2">
+<h2>Make your own <code>_brand.yml</code></h2>
+<ul>
+<li>In RStudio, go to File &gt; New File &gt; Text file</li>
+<li>In Positron or VS Code, use the Explorer panel to add a new file.</li>
+</ul>
+<p>Save the file as <code>_brand.yml</code></p>
+<div class="fragment">
+<p>&nbsp;</p>
+<p>Or create a <a href="https://quarto.org/docs/extensions/brand.html" target="_blank">Brand Extension</a> for sharing and distributing your brand</p>
+</div>
+</section>
+<section id="dont-reinvent-the-wheel" class="slide level2">
+<h2>Don’t reinvent the wheel!</h2>
+<p><strong>DO NOT</strong> try to write a <code>_brand.yml</code> from scratch!</p>
+<p>Look at <a href="https://posit-dev.github.io/brand-yml/inspiration/">the “Inspiration” page</a>!</p>
+
+<img data-src="img/brand-inspiration.png" class="quarto-figure quarto-figure-center r-stretch" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:100.0%"><div class="footer">
+<p>Learn more: <a href="https://posit-dev.github.io/brand-yml/inspiration/" class="uri">https://posit-dev.github.io/brand-yml/inspiration/</a></p>
+</div>
+</section>
+<section id="your-turn-6" class="slide level2" data-background-color="#95caa6" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
+<h2>Your turn</h2>
+<p>Create a brand file for yourself, your project, or your organization.</p>
+<p>Don’t try to do this from scratch! Use these resources:</p>
+<ul>
+<li><a href="https://posit-dev.github.io/brand-yml/" target="_blank">The brand.yml documentation</a></li>
+<li><a href="https://posit-dev.github.io/brand-yml/inspiration/" target="_blank">The brand.yml inspiration page</a></li>
+<li><a href="https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/_brand.yml" target="_blank">This site’s <code>_brand.yml</code></a></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_da607a10" data-warn-when="60" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
 </section></section>
-<section id="templates" class="title-slide slide level1 center" data-background-color="#d7433b" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
-<h1>Templates</h1>
-
-</section>
-
 <section>
 <section id="whats-next" class="title-slide slide level1 center" data-background-color="#ffcc3d" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
 <h1>What’s next?</h1>
