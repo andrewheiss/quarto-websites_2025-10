@@ -1,6 +1,6 @@
 1. Create a folder named `research` and create these files in there: `index.qmd`, `project1.qmd`, `project2.qmd`, and `project3.qmd`
 
-2. Add an entry for `research.qmd` in your top navigation bar
+2. Add an entry for `research/index.qmd` in your top navigation bar
 
 3. Make a sidebar that only appears on the research page that contains links to `index.qmd`, `project1.qmd`, `project2.qmd`, and `project3.qmd`
 
