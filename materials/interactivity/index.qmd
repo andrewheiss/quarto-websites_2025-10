@@ -1,7 +1,14 @@
 ---
 title: "Interactivity"
 code-fold: true
-format: live-html
+format: 
+  live-html:
+    highlight-style: github
+    theme:
+      - cosmo
+      - ../../css/site-styles.scss
+      - brand
+    toc: true
 engine: knitr
 webr:
   packages:
@@ -9,6 +16,7 @@ webr:
     - palmerpenguins
     - ggplot2
     - tidyr
+
 ---
 
 {{< include ../../_extensions/r-wasm/live/_knitr.qmd >}}
