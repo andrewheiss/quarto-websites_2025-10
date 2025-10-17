@@ -47,6 +47,7 @@ jobs:
             libcurl4-openssl-dev \
             libssl-dev \
             zlib1g-dev \
+            libcairo2-dev \
             libfontconfig1-dev \
             libfreetype6-dev \
             libfribidi-dev \
