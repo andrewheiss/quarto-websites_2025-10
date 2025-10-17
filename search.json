@@ -1789,7 +1789,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "Technology",
-    "text": "Technology\n\nLast built: 2025-10-17 at 09:58:25 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Technology\n\nLast built: 2025-10-17 at 10:18:53 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -1958,7 +1958,7 @@
     "href": "materials/brand/index.html",
     "title": "Customization and branding",
     "section": "",
-    "text": "WarningDraft materials\n\n\n\nThese slides and materials aren’t quite ready yet! Anything you see here is subject to change—don’t do anything here before the course.",
+    "text": "Open slides in new window   Download PDF of slides",
     "crumbs": [
       "Materials",
       "Customization and branding"
@@ -1968,8 +1968,8 @@
     "objectID": "materials/brand/index.html#slides",
     "href": "materials/brand/index.html#slides",
     "title": "Customization and branding",
-    "section": "Slides",
-    "text": "Slides\n\n  Open slides in new window   Download PDF of slides",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
     "crumbs": [
       "Materials",
       "Customization and branding"
