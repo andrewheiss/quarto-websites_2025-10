@@ -1,0 +1,3 @@
+Together we'll make an interactive dashboard about the [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/articles/intro.html).
+
+I'll post all the final code on the course website when we're done.

@@ -1,0 +1,3 @@
+Together we'll make some plots with `plotly::ggplotly()` and `ggiraph::girafe()`
+
+I'll post all the final code on the course website when we're done.

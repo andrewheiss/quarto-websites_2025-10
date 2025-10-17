@@ -1,1 +1,292 @@
-# Interactivity {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+# Interactive<br>elements {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Shiny is fine!
+
+![](img/01_hello.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+## But Shiny has problems! {.nostretch}
+
+::: {.incremental}
+- Requires a whole live server
+- Is often difficult to learn
+- Slow to load
+- Times out regularly
+
+  ![](img/shiny-server-disconnected.png){width="80%" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+:::
+
+## Newer approaches to interactivity
+
+::: {.incremental}
+- [{plotly}](https://plotly.com/ggplot2/) and [{ggiraph}](https://davidgohel.github.io/ggiraph/)
+  - Regular R + ggplot, but can't deal with live data
+- Observable JS
+  - Can deal with live data (even remote APIs), but uses a different language
+- quarto-live (LITERAL MAGIC)
+  - Can deal with live data *and* uses regular R
+:::
+
+## Plotly
+
+`plotly::ggplotly()` automatically converts ggplot objects to plotly plots
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+```{r}
+#| echo: true
+library(plotly)
+
+basic_plot <- ggplot(
+  penguins,
+  aes(
+    x = bill_len,
+    y = body_mass,
+    color = species
+  )
+) +
+  geom_point()
+```
+
+\ 
+
+```{r}
+#| echo: true
+#| eval: false
+ggplotly(basic_plot)
+```
+
+:::
+
+::: {.column width="70%"}
+
+```{r}
+#| echo: false
+ggplotly(basic_plot)
+```
+
+:::
+
+::::
+
+::: {.footer}
+Documentation: <https://plotly.com/ggplot2/>
+:::
+
+
+## {ggiraph}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{r}
+#| echo: true
+library(ggiraph)
+
+plot_thing <- ggplot(
+  penguins,
+  aes(
+    x = bill_len,
+    y = body_mass,
+    color = species
+  )
+) +
+  geom_point_interactive(
+    aes(tooltip = species, data_id = species)
+  )
+```
+
+\ 
+
+```{r}
+#| echo: true
+#| eval: false
+girafe(ggobj = plot_thing)
+```
+
+:::
+
+::: {.column width="60%"}
+
+```{r}
+#| echo: false
+girafe(ggobj = plot_thing)
+```
+
+:::
+
+::::
+
+::: {.footer}
+Documentation: <https://davidgohel.github.io/ggiraph/>
+:::
+
+## Observable Plot {.smaller}
+
+:::: {.columns}
+
+::: {.column}
+
+This is R:
+
+```{r}
+#| echo: true
+
+library(gapminder)
+
+# Make the gapminder data available to Observable JS
+ojs_define(gapminder = gapminder)
+```
+
+This is Observable JS:
+
+```{ojs}
+//| echo: true
+//| eval: false
+
+// Rotate the data so that it works with OJS
+gapminder_js = transpose(gapminder)
+
+Plot.plot({
+  x: {type: "log"},
+  marks: [
+    Plot.dot(gapminder_js, {
+        x: "gdpPercap", y: "lifeExp", fill: "continent", r: 6,
+        channels: {
+          Country: d => d.country
+        },
+        tip: true
+      }
+    )
+  ]}
+)
+```
+
+:::
+
+::: {.column}
+
+```{ojs}
+// Rotate the data so that it works with OJS
+gapminder_js = transpose(gapminder)
+
+Plot.plot({
+  x: {type: "log"},
+  marks: [
+    Plot.dot(gapminder_js, {
+        x: "gdpPercap", y: "lifeExp", fill: "continent", r: 6,
+        channels: {
+          Country: d => d.country
+        },
+        tip: true
+      }
+    )
+  ]}
+)
+```
+
+:::
+
+::::
+
+
+## Observable Plot {.smaller}
+
+:::: {.columns}
+
+::: {.column}
+
+```{ojs}
+//| echo: true
+//| eval: false
+
+// Make an input slider
+viewof current_year = Inputs.range(
+  [1952, 2007], 
+  {value: 1952, step: 5, label: "Year:"}
+)
+
+// Filter the data based on the selected year
+gapminder_filtered = gapminder_js.filter(d => d.year == current_year)
+
+Plot.plot({
+  x: {type: "log"},
+  marks: [
+    Plot.dot(gapminder_filtered, {
+        x: "gdpPercap", y: "lifeExp", fill: "continent", r: 6,
+        channels: {
+          Country: d => d.country
+        },
+        tip: true
+      }
+    )
+  ]}
+)
+```
+
+:::
+
+::: {.column}
+
+```{ojs}
+//| echo: false
+
+// Make an input slider
+viewof current_year = Inputs.range(
+  [1952, 2007], 
+  {value: 1952, step: 5, label: "Year:"}
+)
+
+// Filter the data based on the selected year
+gapminder_filtered = gapminder_js.filter(d => d.year == current_year)
+
+Plot.plot({
+  x: {type: "log"},
+  marks: [
+    Plot.dot(gapminder_filtered, {
+        x: "gdpPercap", y: "lifeExp", fill: "continent", r: 6,
+        channels: {
+          Country: d => d.country
+        },
+        tip: true
+      }
+    )
+  ]}
+)
+```
+
+:::
+
+::::
+
+## Observable Plot examples
+
+- [Quarto documentation](https://quarto.org/docs/interactive/ojs/)
+- [Quarto OJS examples](https://quarto.org/docs/interactive/ojs/examples/penguins.html)
+- [Using USAID data to make fancy world maps with Observable Plot](https://www.andrewheiss.com/blog/2025/02/10/usaid-ojs-maps/) + [ForeignAssistance dot gov emergency backup](https://foreignassistance.andrewheiss.com/live-example-dashboard.html)
+- [Dashboard with OJS chunks](https://www.andrewheiss.com/blog/2024/01/12/diy-api-plumber-quarto-ojs/_book/dashboard.html)
+
+
+## Our turn {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+**Play with {plotly} and {ggiraph}**
+
+\ 
+
+{{< include _our-turn_plotly-ggiraph.qmd >}}
+
+```{r}
+#| label: clock-plotly
+#| echo: false
+countdown::countdown(minutes = 10)
+```
+
+## Our turn {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+~~**Play with Observable**~~
+
+\ 
+
+jk we won't do that today. It's a whole different language and takes a while to get used to. Do this on your own—it's neat!

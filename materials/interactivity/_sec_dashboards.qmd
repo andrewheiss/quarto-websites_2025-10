@@ -1,0 +1,73 @@
+# Dashboards {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Dashboard detour
+
+With {plotly} and {ggiraph}, you know enough to make basic dashboards!
+
+. . .
+
+````{.markdown code-line-numbers="false"}
+---
+title: My dashboard
+format: dashboard
+---
+
+## Row
+
+```{{r}}
+```
+
+## Row
+
+```{{r}}
+```
+
+````
+
+::: {.footer}
+Documentation: <https://quarto.org/docs/dashboards/>
+:::
+
+## Dashboard layouts
+
+Quarto uses special Markdown syntax to place **dashboard components** in **dashboard layouts**.
+
+![](img/dashboard-basic-layout.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+::: {.footer}
+Documentation: <https://quarto.org/docs/dashboards/layout.html>
+:::
+
+## Dashboard components
+
+- Plots
+- Tables
+- Value boxes
+- Text and content cards
+
+::: {.footer}
+Documentation: <https://quarto.org/docs/dashboards/data-display.html>
+:::
+
+## Dynamic content
+
+::: {.incremental}
+- Dashboards are still static HTML sites
+  - If using live data, you're limited(ish) to OJS
+- Dashboards can [connect to Shiny servers](https://quarto.org/docs/dashboards/interactivity/shiny-r.html) though
+  - But then the site has to live on a Shiny server
+:::
+
+## Our turn {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+**Make a dashboard about penguins**
+
+\ 
+
+{{< include _our-turn_dashboards.qmd >}}
+
+```{r}
+#| label: clock-dashboard
+#| echo: false
+countdown::countdown(minutes = 20)
+```

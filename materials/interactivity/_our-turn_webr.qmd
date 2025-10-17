@@ -1,0 +1,7 @@
+Together we'll do this:
+
+1. Create a {webr} chunk that helps teach something and provides feedback
+2. Recreate the [Shiny k-means example](https://shiny.posit.co/r/gallery/start-simple/kmeans-example/)
+3. **Bonus**: Make a live ggplot plot!
+
+I'll post all the final code on the course website when we're done.

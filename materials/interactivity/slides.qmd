@@ -1,7 +1,8 @@
 ---
 title: "Interactivity"
+engine: knitr
 format:
-  revealjs:
+  live-revealjs:
     theme: [simple, ../../css/slide-styles.scss, brand]
     title-slide-attributes: 
       data-background-image: ../../img/background-hex-shapes.svg
@@ -16,7 +17,16 @@ format:
               document.documentElement.classList.add('decktape-export');
             }
           </script>
+webr:
+  packages:
+    - dplyr
+    - palmerpenguins
+    - ggplot2
 ---
+
+{{< include ../../_extensions/r-wasm/live/_knitr.qmd >}}
+
+
 
 ```{r}
 #| include: false
@@ -26,6 +36,8 @@ library(countdown)
 
 {{< include _sec_interactivity.qmd >}}
 
-{{< include _sec_content.qmd >}}
+{{< include _sec_dashboards.qmd >}}
 
-{{< include _sec_execution.qmd >}}
+{{< include _sec_quarto-live.qmd >}}
+
+{{< include _sec_next.qmd >}}

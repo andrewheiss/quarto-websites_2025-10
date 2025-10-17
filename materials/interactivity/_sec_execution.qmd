@@ -1,1 +1,0 @@
-# Interactive<br>execution {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}

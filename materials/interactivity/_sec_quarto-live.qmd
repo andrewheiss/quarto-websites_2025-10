@@ -1,85 +1,139 @@
+# webR and<br>Quarto Live {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## R in the browser
+
+[webR](https://docs.r-wasm.org/webr/latest/) is a special version of R that's compiled for Javascript and Node.js using WebAssembly
+
+. . .
+
+\ 
+
+::: {.callout-tip}
+
+#### tl;dr
+
+Through compiled Javascript magic, you can run R in your browser.
+
+:::
+
+. . .
+
+\ 
+
+[Quarto Live](https://r-wasm.github.io/quarto-live/) makes it trivial to use (and it works with Python and [Pyodide](https://pyodide.org/en/stable/))
+
+## Enabling webR
+
+Install the extension:
+
+```{.bash filename="Terminal" code-line-numbers="false"}
+quarto add r-wasm/quarto-live
+```
+
+. . .
+
+\ 
+
+Use special format and include special file (for now)
+
+```{.yaml code-line-numbers="false"}
 ---
-title: "Interactivity"
-code-fold: true
 format: live-html
 engine: knitr
 ---
 
-{{< include ../../_extensions/r-wasm/live/_knitr.qmd >}}
-
-## Slides
-
-<p style="line-height: 2.5"><a class="btn btn-success btn-sm" target="_blank" href="slides.html">{{< fa arrow-up-right-from-square >}} &ensp;Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button">{{< fa file-pdf >}} &ensp;Download PDF of slides</a></p>
-
-```{=html}
-<div class="ratio ratio-16x9">
-<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
-</div>
+{{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}}
 ```
 
-## Exercises
-
-### {plotly} and {ggiraph}
-
-::: {.callout-tip collapse="true"}
-#### Our turn
-
-{{< include _our-turn_plotly-ggiraph.qmd >}}
+::: {.footer}
+Documentation: <https://r-wasm.github.io/quarto-live/getting_started/installation.html>
 :::
 
+## Using webR
 
-### Dashboards
+Make `webr` chunks
 
-::: {.callout-tip collapse="true"}
-#### Our turn
+````{.markdown}
+```{{webr}}
+mean(1:5)
+plot(1:10)
+```
+````
 
-{{< include _our-turn_dashboards.qmd >}}
+```{webr}
+mean(1:5)
+plot(1:10)
+```
+
+
+## Install packages
+
+You don't have access to *every* package on CRAN; packages have to be compiled for WebAssembly/Javascript (many/most are though!)
+
+Packages come from the [webR public package repository](https://repo.r-wasm.org)
+
+```{.yaml}
+---
+format: live-html
+webr:
+  packages:
+    - dplyr
+    - palmerpenguins
+    - ggplot2
+---
+```
+
+::: {.footer}
+Documentation: <https://r-wasm.github.io/quarto-live/getting_started/packages.html>
 :::
 
+## Teaching with webR
 
-### webR
+````{.markdown filename="exercise.qmd"}
+Fill in the blank to fill the density plots by species
 
-::: {.callout-tip collapse="true"}
-#### Our turn
+```{{webr}}
+#| exercise: ex_1
+ggplot(palmerpenguins::penguins, aes(x = body_mass_g)) +
+  geom_density(aes(______), alpha = 0.7)
+```
+````
 
-{{< include _our-turn_webr.qmd >}}
+```{webr}
+#| exercise: ex_1
+ggplot(palmerpenguins::penguins, aes(x = body_mass_g)) +
+  geom_density(aes(______), alpha = 0.7)
+```
+
+## More with exercises
+
+- [R for Data Science exercises and lessons](https://r-primers.andrewheiss.com/)
+
+- ["Grade" exercises and provide feedback](https://r-wasm.github.io/quarto-live/exercises/exercises.html)
+
+## Use OJS to interact with live R
+
+::: {style="text-align: center; font-size: 1.4em; margin-top: 2em;"}
+**Replicate/replace basic Shiny apps!**
 :::
 
+## Old Faithful app
 
-## Code examples
+[Classic Old Faithful Shiny example](https://gallery.shinyapps.io/083-front-page/)
 
-### {plotly} and {ggiraph}
+![](img/faithful-shiny.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
 
-Finished "our turn" code will go here
+## Old Faithful app with OJS {.smaller}
 
-
-### Dashboards
-
-Finished "our turn" code will go here
-
-
-### Quarto Live
-
-Finished "our turn" code will go here
-
-
-## Replicated Shiny example!
-
-### With OJS
-
-::: {.callout-warning}
-This required hours of fighting with Claude and it is so janky and awful
-:::
-
-This is R code that sends the `faithful` data to OJS:
+*(2 hours fighting with Claude…)*; see website for full code
 
 ```{r}
 ojs_define(faithful = faithful)
 ```
 
-This is OJS code for making input options:
-
 ```{ojs}
+faithful_js = transpose(faithful)
+
 viewof nbins = Inputs.select(
   [10, 20, 35, 50],
   {label: "Number of bins"}
@@ -100,11 +154,7 @@ viewof bw_adjust = Inputs.range([0.2, 2], {
 })
 ```
 
-This is OJS code for plotting the data:
-
 ```{ojs}
-faithful_js = transpose(faithful)
-
 Plot.plot({
   height: 300,
   y: { label: "Density" },
@@ -180,17 +230,12 @@ function jitter(value, range) {
 }
 ```
 
-### With webR
+## Old Faithful app with webR {.smaller}
 
-::: {.callout-tip}
-### MAGIC
-
-This required literally 8 minutes of reading the documentation.
-:::
-
-Here's OJS code for creating the interactive inputs:
+*(8 minutes reading the documentation)*; see website for full code
 
 ```{ojs}
+//| echo: false
 viewof nbins_r = Inputs.select(
   [10, 20, 35, 50],
   {label: "Number of bins"}
@@ -242,31 +287,13 @@ if (density_r) {
 }
 ```
 
-This is the R code for connecting to those OJS inputs and using them live:
 
-```{{webr}}
-#| autorun: true
+## Our turn {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+{{< include _our-turn_webr.qmd >}}
+
+```{r}
+#| label: clock-webr
 #| echo: false
-#| input:
-#|   - nbins_r
-#|   - individual_obs_r
-#|   - density_r
-#|   - bw_adjust_r
-
-hist(
-  faithful$eruptions,
-  probability = TRUE,
-  breaks = as.numeric(nbins_r),
-  xlab = "Duration (minutes)",
-  main = "Geyser eruption duration"
-)
-
-if (individual_obs_r) {
-  rug(faithful$eruptions)
-}
-
-if (density_r) {
-  dens <- density(faithful$eruptions, adjust = bw_adjust_r)
-  lines(dens, col = "blue")
-}
+countdown::countdown(minutes = 20)
 ```
