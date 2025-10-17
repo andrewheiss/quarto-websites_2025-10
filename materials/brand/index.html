@@ -341,7 +341,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>italic (<code>font-style</code>) and</li>
 <li>30px (<code>font-size</code>)</li>
 </ul></li>
-<li>TODO</li>
+<li><strong>Bonus</strong>: Those in-browser edits will disappear if you refresh the page. See if you can figure out how to put them in your website. (<a href="https://quarto.org/docs/output-formats/html-basics.html#css-styles">Hint!</a>)</li>
 </ol>
 </div>
 </div>
@@ -352,13 +352,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>SCSS
+<span class="screen-reader-only">Tip</span>Our turn: SCSS
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>TODO: Create a SCSS file and make a bunch of rules</p>
+<p>Create a SCSS file and make a bunch of rules!</p>
 </div>
 </div>
 </div>
@@ -378,9 +378,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><p>There is a file named <code>urban_institute.yml</code>. Rename it to <code>_brand.yml</code> and rerender your site. What changes? TODO</p></li>
+<li><p>There is a file named <code>urban_institute.yml</code>. Make a copy of it, rename it to <code>_brand.yml</code>, and rerender your site. What changes?</p></li>
 <li><p>Modify some of the variables in the <code>_brand.yml</code> file and rerender to see how your site changes. Explore <a href="https://posit-dev.github.io/brand-yml/" target="_blank">the brand.yml documentation</a> and see what other settings you can adjust.</p>
-<p>TODO You can reset the file by copying and pasting it from <a href="https://github.com/posit-dev/quarto-brand-exercises/blob/main/04-exercise.yml">here</a>.</p></li>
+<p>You can reset the file by copying and pasting it from <a href="https://github.com/andrewheiss/quarto-websites-exercise-site_2025-10/blob/main/urban-institute.yml" target="_blank">here</a>.</p></li>
 </ol>
 </div>
 </div>
@@ -398,7 +398,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><p>In the first code chunk of <code>01-exercise.qmd</code>, replace <code>theme_minimal()</code> with <code>theme_brand_ggplot2()</code>. You will need to supply a brand file path (<code>"_brand.yml"</code>). TODO</p></li>
+<li><p>In the first code chunk of <code>01-exercise.qmd</code>, replace <code>theme_minimal()</code> with <code>theme_brand_ggplot2()</code>. You will need to supply a brand file path (<code>"_brand.yml"</code>).</p></li>
 <li><p>Re-render and see what changes.</p></li>
 <li><p>Change the <code>foreground</code> and <code>background</code> colors in <code>_brand.yml</code> and rerun the code to create the plot. What changes?</p></li>
 </ol>
@@ -418,7 +418,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><p>In <code>01-exercise.qmd</code>, read in <code>_brand.yml</code> with <code>read_brand_yml()</code> from the {brand.yml} package. Store it as a variable named <code>brand</code>. TODO</p></li>
+<li><p>In <code>01-exercise.qmd</code>, read in <code>_brand.yml</code> with <code>read_brand_yml()</code> from the {brand.yml} package. Store it as a variable named <code>brand</code>.</p></li>
 <li><p>Change the color of the points to the brand’s <code>blue</code> color and the line to the brand’s <code>magenta</code> color. You’ll use code that looks something like this:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">color =</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>black)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p><strong>Bonus task!</strong> Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.</p></li>

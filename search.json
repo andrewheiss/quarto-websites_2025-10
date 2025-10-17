@@ -284,7 +284,7 @@
     "href": "materials/interactivity/slides.html#newer-approaches-to-interactivity",
     "title": "Interactivity",
     "section": "Newer approaches to interactivity",
-    "text": "Newer approaches to interactivity\n\n{plotly} and {ggiraph}\n\nRegular R + ggplot, but can’t deal with live data\n\nObservable JS\n\nCan deal with live data (even remote APIs), but uses a different language\n\nquarto-live (LITERAL MAGIC)\n\nCan deal with live data and uses regular R"
+    "text": "Newer approaches to interactivity\n\n{plotly} and {ggiraph}\n\nRegular R + ggplot, but can’t deal with live data\n\nObservable JS\n\nCan deal with live data (even remote APIs), but uses a different language\n\nquarto-live (✨LITERAL MAGIC✨)\n\nCan deal with live data and uses regular R/Python"
   },
   {
     "objectID": "materials/interactivity/slides.html#plotly",
@@ -319,21 +319,14 @@
     "href": "materials/interactivity/slides.html#observable-plot-examples",
     "title": "Interactivity",
     "section": "Observable Plot examples",
-    "text": "Observable Plot examples\n\nQuarto documentation\nQuarto OJS examples\nUsing USAID data to make fancy world maps with Observable Plot + ForeignAssistance dot gov emergency backup\nDashboard with OJS chunks"
+    "text": "Observable Plot examples\n\nQuarto documentation + Observable Plot documentation + Arquero vs. {dplyr}\nQuarto OJS examples\nHack Your Way To Scientific Glory\nUsing USAID data to make fancy world maps with Observable Plot + ForeignAssistance dot gov emergency backup\nDashboard with OJS chunks"
   },
   {
     "objectID": "materials/interactivity/slides.html#our-turn",
     "href": "materials/interactivity/slides.html#our-turn",
     "title": "Interactivity",
     "section": "Our turn",
-    "text": "Our turn\nPlay with {plotly} and {ggiraph}\n \nTogether we’ll make some plots with plotly::ggplotly() and ggiraph::girafe()\nI’ll post all the final code on the course website when we’re done.\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "materials/interactivity/slides.html#our-turn-1",
-    "href": "materials/interactivity/slides.html#our-turn-1",
-    "title": "Interactivity",
-    "section": "Our turn",
-    "text": "Our turn\nPlay with Observable\n \njk we won’t do that today. It’s a whole different language and takes a while to get used to. Do this on your own—it’s neat!"
+    "text": "Our turn\nPlay with {plotly} and {ggiraph}\nTogether we’ll make some plots with plotly::ggplotly() and ggiraph::girafe() (see this for a general ggplotly tutorial)\nI’ll post all the final code on the course website when we’re done.\nPlay with Observable\njk we won’t do that today. It’s a whole different language and takes a while to get used to. Do this on your own—it’s neat!\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "materials/interactivity/slides.html#dashboard-detour",
@@ -364,8 +357,8 @@
     "text": "Dynamic content\n\nDashboards are still static HTML sites\n\nIf using live data, you’re limited(ish) to OJS\n\nDashboards can connect to Shiny servers though\n\nBut then the site has to live on a Shiny server"
   },
   {
-    "objectID": "materials/interactivity/slides.html#our-turn-2",
-    "href": "materials/interactivity/slides.html#our-turn-2",
+    "objectID": "materials/interactivity/slides.html#our-turn-1",
+    "href": "materials/interactivity/slides.html#our-turn-1",
     "title": "Interactivity",
     "section": "Our turn",
     "text": "Our turn\nMake a dashboard about penguins\n \nTogether we’ll make an interactive dashboard about the Palmer Penguins.\nI’ll post all the final code on the course website when we’re done.\n\n\n\n−+\n20:00"
@@ -441,8 +434,8 @@
     "text": "Old Faithful app with webR\n(8 minutes reading the documentation); see website for full code\n\nviewof nbins_r = Inputs.select(\n  [10, 20, 35, 50],\n  {label: \"Number of bins\"}\n)\n\nviewof individual_obs_r = Inputs.toggle({\n  label: \"Show individual observations\",\n  value: false\n})\n\nviewof density_r = Inputs.toggle({\n  label: \"Show density estimate\",\n  value: false\n})\n\nviewof bw_adjust_r = density_r \n  ? Inputs.range([0.2, 2], {\n      label: \"Bandwidth adjustment:\",\n      step: 0.2,\n      value: 1\n    })\n  : html`&lt;input type=\"range\" value=\"1\" style=\"display:none\"&gt;`"
   },
   {
-    "objectID": "materials/interactivity/slides.html#our-turn-3",
-    "href": "materials/interactivity/slides.html#our-turn-3",
+    "objectID": "materials/interactivity/slides.html#our-turn-2",
+    "href": "materials/interactivity/slides.html#our-turn-2",
     "title": "Interactivity",
     "section": "Our turn",
     "text": "Our turn\nTogether we’ll do this:\n\nCreate a {webr} chunk that helps teach something and provides feedback\nRecreate the Shiny k-means example\nBonus: Make a live ggplot plot!\n\nI’ll post all the final code on the course website when we’re done.\n\n\n\n−+\n20:00"
@@ -564,14 +557,14 @@
     "href": "materials/brand/slides.html#your-turn-2",
     "title": "Customizationand branding",
     "section": "Your turn",
-    "text": "Your turn\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nTODO\n\n\n\n\n−+\n10:00"
+    "text": "Your turn\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nBonus: Those in-browser edits will disappear if you refresh the page. See if you can figure out how to put them in your website. (Hint!)\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "materials/brand/slides.html#sass-css-but-fancier",
     "href": "materials/brand/slides.html#sass-css-but-fancier",
     "title": "Customizationand branding",
     "section": "Sass: CSS, but fancier",
-    "text": "Sass: CSS, but fancier\n@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');\n\n/*-- scss:defaults --*/\n\n/* Built-in Bootstrap variables */\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$font-family-sans-serif:  Roboto;\n\n/* Your own variables */\n$my-neat-red: #e21818;\n\n/*-- scss:rules --*/\n#quarto-sidebar h2 {\n  font-family: Roboto;\n  color: $my-neat-red;\n\n  /* Magically compiles to #quarto-sidebar h2 a:hover */\n  a:hover {\n    color: #d1c81d;\n  }\n}"
+    "text": "Sass: CSS, but fancier\n@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');\n\n\n/*-- scss:defaults --*/\n\n/* Built-in Bootstrap variables */\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$font-family-sans-serif:  Roboto;\n\n/* Your own variables */\n$my-neat-red: #e21818;\n\n\n/*-- scss:rules --*/\n#quarto-sidebar h2 {\n  font-family: Roboto;\n  color: $my-neat-red;\n\n  /* Magically compiles to #quarto-sidebar h2 a:hover */\n  a:hover {\n    color: #d1c81d;\n  }\n}"
   },
   {
     "objectID": "materials/brand/slides.html#bootstrap-sass-variables",
@@ -585,14 +578,14 @@
     "href": "materials/brand/slides.html#using-csssass-with-quarto",
     "title": "Customizationand branding",
     "section": "Using CSS/Sass with Quarto",
-    "text": "Using CSS/Sass with Quarto\n\n\nUse vanilla CSS\nformat:\n  html:\n    css: custom.css\n\nUse Sass\nformat:\n  html:\n    theme:\n      - zephyr\n      - custom.scss\n\nTODO: Examples from other sites"
+    "text": "Using CSS/Sass with Quarto\n\n\nUse vanilla CSS\nformat:\n  html:\n    css: custom.css\n\nUse Sass\nformat:\n  html:\n    theme:\n      - zephyr\n      - custom.scss\n\nSome examples:\n\nThis simple one\nThis slightly more complex one\nThis even more complex one\nheck yeah this one is wild"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn-3",
-    "href": "materials/brand/slides.html#your-turn-3",
+    "objectID": "materials/brand/slides.html#our-turn",
+    "href": "materials/brand/slides.html#our-turn",
     "title": "Customizationand branding",
-    "section": "Your turn",
-    "text": "Your turn\nTODO: Create a SCSS file and make a bunch of rules"
+    "section": "Our turn",
+    "text": "Our turn\nCreate a SCSS file and make a bunch of rules!\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "materials/brand/slides.html#css-is-a-little-inconvenient",
@@ -679,18 +672,18 @@
     "text": "Disable _brand.yml\nTo turn off _brand.yml for a document, use brand: false.\n\n\nmy-document.qmd\n\n---\ntitle: \"My neat report\"\nformat: html\nbrand: false\n---"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn-4",
-    "href": "materials/brand/slides.html#your-turn-4",
+    "objectID": "materials/brand/slides.html#your-turn-3",
+    "href": "materials/brand/slides.html#your-turn-3",
     "title": "Customizationand branding",
     "section": "Your turn",
-    "text": "Your turn\n\nThere is a file named urban_institute.yml. Rename it to _brand.yml and rerender your site. What changes? TODO\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nTODO You can reset the file by copying and pasting it from here.\n\n\n\n\n−+\n05:00"
+    "text": "Your turn\n\nThere is a file named urban_institute.yml. Make a copy of it, rename it to _brand.yml, and rerender your site. What changes?\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nYou can reset the file by copying and pasting it from here.\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "materials/brand/slides.html#use-_brand.yml-in-markdown",
     "href": "materials/brand/slides.html#use-_brand.yml-in-markdown",
     "title": "Customizationand branding",
-    "section": "Use _brand.yml in markdown",
-    "text": "Use _brand.yml in markdown\nAccess some _brand.yml values in Quarto documents with a shortcode\n\n\nmy_document.qmd\n\n{{&lt; brand color primary &gt;}}\n\n\nLearn more: https://quarto.org/docs/authoring/brand.html#using-brand-values"
+    "section": "Use _brand.yml in Markdown",
+    "text": "Use _brand.yml in Markdown\nAccess some _brand.yml values in Quarto documents with a shortcode\n\n\nmy_document.qmd\n\nThe site's main color is {{&lt; brand color primary &gt;}}\n\n\n\n↓\n\nThe site’s main color is #d7433b\n\nLearn more: https://quarto.org/docs/authoring/brand.html#using-brand-values"
   },
   {
     "objectID": "materials/brand/slides.html#use-_brand.yml-in-sass",
@@ -721,18 +714,18 @@
     "text": "Example plot\nlibrary(tidyverse)\nlibrary(brand.yml)\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nbrand_theme &lt;- quarto::theme_brand_ggplot2(\"_brand.yml\") +\n  theme(\n    text = element_text(family = brand$typography$fonts[[1]]$family, size = 11)\n  )\n\nggplot(mpg, aes(x = displ, y = hwy, color = drv)) +\n  geom_point() +\n  labs(title = \"A plot\") +\n  scale_color_manual(\n    values = c(\n      brand$color$palette$blue,\n      brand$color$palette$black,\n      brand$color$palette$yellow\n    )\n  ) +\n  brand_theme"
   },
   {
+    "objectID": "materials/brand/slides.html#your-turn-4",
+    "href": "materials/brand/slides.html#your-turn-4",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\").\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n−+\n05:00"
+  },
+  {
     "objectID": "materials/brand/slides.html#your-turn-5",
     "href": "materials/brand/slides.html#your-turn-5",
     "title": "Customizationand branding",
     "section": "Your turn",
-    "text": "Your turn\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\"). TODO\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/brand/slides.html#your-turn-6",
-    "href": "materials/brand/slides.html#your-turn-6",
-    "title": "Customizationand branding",
-    "section": "Your turn",
-    "text": "Your turn\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand. TODO\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n−+\n05:00"
+    "text": "Your turn\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand.\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "materials/brand/slides.html#make-your-own-_brand.yml",
@@ -749,8 +742,8 @@
     "text": "Don’t reinvent the wheel!\nDO NOT try to write a _brand.yml from scratch!\nLook at the “Inspiration” page!\n\n\nLearn more: https://posit-dev.github.io/brand-yml/inspiration/"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn-7",
-    "href": "materials/brand/slides.html#your-turn-7",
+    "objectID": "materials/brand/slides.html#your-turn-6",
+    "href": "materials/brand/slides.html#your-turn-6",
     "title": "Customizationand branding",
     "section": "Your turn",
     "text": "Your turn\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml\n\n\n\n\n−+\n05:00"
@@ -1796,7 +1789,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "Technology",
-    "text": "Technology\n\nLast built: 2025-10-17 at 09:04:36 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Technology\n\nLast built: 2025-10-17 at 09:58:25 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -1987,7 +1980,7 @@
     "href": "materials/brand/index.html#exercises",
     "title": "Customization and branding",
     "section": "Exercises",
-    "text": "Exercises\n\nThemes\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n\n\nCSS and Sass\n\n\n\n\n\n\nTipBrowser inspector\n\n\n\n\n\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nTODO\n\n\n\n\n\n\n\n\n\n\nTipSCSS\n\n\n\n\n\nTODO: Create a SCSS file and make a bunch of rules\n\n\n\n\n\nBranding\n\n\n\n\n\n\nTip_brand.yml tinkering\n\n\n\n\n\n\nThere is a file named urban_institute.yml. Rename it to _brand.yml and rerender your site. What changes? TODO\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nTODO You can reset the file by copying and pasting it from here.\n\n\n\n\n\n\n\n\n\n\nTiptheme_brand_ggplot()\n\n\n\n\n\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\"). TODO\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n\n\n\n\n\n\nTipread_brand_yaml() tinkering\n\n\n\n\n\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand. TODO\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n\n\n\n\n\n\nTipMake your own _brand.yml\n\n\n\n\n\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml",
+    "text": "Exercises\n\nThemes\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n\n\nCSS and Sass\n\n\n\n\n\n\nTipBrowser inspector\n\n\n\n\n\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nBonus: Those in-browser edits will disappear if you refresh the page. See if you can figure out how to put them in your website. (Hint!)\n\n\n\n\n\n\n\n\n\n\nTipOur turn: SCSS\n\n\n\n\n\nCreate a SCSS file and make a bunch of rules!\n\n\n\n\n\nBranding\n\n\n\n\n\n\nTip_brand.yml tinkering\n\n\n\n\n\n\nThere is a file named urban_institute.yml. Make a copy of it, rename it to _brand.yml, and rerender your site. What changes?\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nYou can reset the file by copying and pasting it from here.\n\n\n\n\n\n\n\n\n\n\nTiptheme_brand_ggplot()\n\n\n\n\n\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\").\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n\n\n\n\n\n\nTipread_brand_yaml() tinkering\n\n\n\n\n\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand.\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n\n\n\n\n\n\nTipMake your own _brand.yml\n\n\n\n\n\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml",
     "crumbs": [
       "Materials",
       "Customization and branding"
@@ -2020,7 +2013,7 @@
     "href": "materials/interactivity/index.html#exercises",
     "title": "Interactivity",
     "section": "Exercises",
-    "text": "Exercises\n\n{plotly} and {ggiraph}\n\n\n\n\n\n\nTipOur turn\n\n\n\n\n\nTogether we’ll make some plots with plotly::ggplotly() and ggiraph::girafe()\nI’ll post all the final code on the course website when we’re done.\n\n\n\n\n\nDashboards\n\n\n\n\n\n\nTipOur turn\n\n\n\n\n\nTogether we’ll make an interactive dashboard about the Palmer Penguins.\nI’ll post all the final code on the course website when we’re done.\n\n\n\n\n\nwebR\n\n\n\n\n\n\nTipOur turn\n\n\n\n\n\nTogether we’ll do this:\n\nCreate a {webr} chunk that helps teach something and provides feedback\nRecreate the Shiny k-means example\nBonus: Make a live ggplot plot!\n\nI’ll post all the final code on the course website when we’re done.",
+    "text": "Exercises\n\n{plotly} and {ggiraph}\n\n\n\n\n\n\nTipOur turn\n\n\n\n\n\nTogether we’ll make some plots with plotly::ggplotly() and ggiraph::girafe() (see this for a general ggplotly tutorial)\nI’ll post all the final code on the course website when we’re done.\n\n\n\n\n\nDashboards\n\n\n\n\n\n\nTipOur turn\n\n\n\n\n\nTogether we’ll make an interactive dashboard about the Palmer Penguins.\nI’ll post all the final code on the course website when we’re done.\n\n\n\n\n\nwebR\n\n\n\n\n\n\nTipOur turn\n\n\n\n\n\nTogether we’ll do this:\n\nCreate a {webr} chunk that helps teach something and provides feedback\nRecreate the Shiny k-means example\nBonus: Make a live ggplot plot!\n\nI’ll post all the final code on the course website when we’re done.",
     "crumbs": [
       "Materials",
       "Interactivity"
