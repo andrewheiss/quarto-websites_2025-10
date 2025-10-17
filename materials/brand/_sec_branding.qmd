@@ -3,7 +3,7 @@
 ## CSS is a little inconvenient
 
 ::: {.incremental}
-- HTML, slides, and dashboards all use slighlty different underlying HTML
+- HTML, slides, and dashboards all use slightly different underlying HTML
 - No easy way to reuse the colors and typography from your CSS customizations in R and Python plots or in PDF documents
 - Hard to share consistent, resusable themes with others in your organization (or with the world)
 :::
