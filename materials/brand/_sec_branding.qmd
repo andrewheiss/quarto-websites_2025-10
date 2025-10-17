@@ -195,13 +195,21 @@ brand: false
 countdown::countdown(minutes = 5, seconds = 0, play_sound = TRUE, warn_when = 1 * 60)
 ```
 
-## Use `_brand.yml` in markdown
+## Use `_brand.yml` in Markdown
 
 Access some `_brand.yml` values in Quarto documents with a shortcode
 
 ``` {.markdown filename="my_document.qmd"}
-{{{< brand color primary >}}}
+The site's main color is {{{< brand color primary >}}}
 ```
+
+. . .
+
+::: {style="text-align: center"}
+↓
+:::
+
+The site's main color is {{< brand color primary >}}
 
 ::: {.footer}
 Learn more: <https://quarto.org/docs/authoring/brand.html#using-brand-values>

@@ -131,14 +131,14 @@ See which rule applies
 ![](img/inspector-computed.png){fig-align="center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
 
 
-## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5' .smaller}
 
 {{< include _your-turn_css1.qmd >}}
 
 ```{r}
-#| label: clock-listings2
+#| label: clock-css1
 #| echo: false
-countdown::countdown(minutes = 10)
+countdown::countdown(minutes = 5)
 ```
 
 
@@ -146,6 +146,7 @@ countdown::countdown(minutes = 10)
 
 ```{.css code-line-numbers="false"}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /*-- scss:defaults --*/
 
@@ -156,6 +157,7 @@ $font-family-sans-serif:  Roboto;
 
 /* Your own variables */
 $my-neat-red: #e21818;
+
 
 /*-- scss:rules --*/
 #quarto-sidebar h2 {
@@ -171,10 +173,11 @@ $my-neat-red: #e21818;
 
 ## Bootstrap Sass variables
 
-There are ***so many***
+There are ***so many***!
 
-- TODO: Quarto list
-- TODO: Bootstrap directory
+- Quarto [lists these as the most typical](https://quarto.org/docs/output-formats/html-themes.html#sass-variables)
+- Bootstrap technically has [*all these*](https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss)
+- [Here's a filterable table](https://rstudio.github.io/bslib/articles/bs5-variables/index.html) of everything
 
 
 ## Using CSS/Sass with Quarto
@@ -205,9 +208,20 @@ format:
 
 ::::
 
-TODO: Examples from other sites
+Some examples:
+
+- [This simple one](https://github.com/andrewheiss/silent-skywalk/blob/main/manuscript/html/custom.scss)
+- [This slightly more complex one](https://github.com/andrewheiss/lemon-lucifer/blob/main/html/custom.scss)
+- [This even more complex one](https://github.com/andrewheiss/datavizf25.classes.andrewheiss.com/blob/main/html/custom.scss)
+- [heck yeah this one is wild](https://github.com/andrewheiss/ath-quarto/blob/main/html/ath.scss)
 
 
-## Your turn {background-color='{{< brand color cyan >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+## Our turn {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
 
-{{< include _your-turn_css2.qmd >}}
+{{< include _our-turn_css2.qmd >}}
+
+```{r}
+#| label: clock-css2
+#| echo: false
+countdown::countdown(minutes = 5)
+```

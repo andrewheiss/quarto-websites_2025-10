@@ -4,4 +4,4 @@
    - red (`color`) and 
    - italic (`font-style`) and 
    - 30px (`font-size`)
-4. TODO
+4. **Bonus**: Those in-browser edits will disappear if you refresh the page. See if you can figure out how to put them in your website. ([Hint!](https://quarto.org/docs/output-formats/html-basics.html#css-styles))

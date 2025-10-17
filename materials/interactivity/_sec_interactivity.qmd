@@ -20,10 +20,10 @@
 ::: {.incremental}
 - [{plotly}](https://plotly.com/ggplot2/) and [{ggiraph}](https://davidgohel.github.io/ggiraph/)
   - Regular R + ggplot, but can't deal with live data
-- Observable JS
+- [Observable JS](https://quarto.org/docs/interactive/ojs/)
   - Can deal with live data (even remote APIs), but uses a different language
-- quarto-live (LITERAL MAGIC)
-  - Can deal with live data *and* uses regular R
+- [quarto-live](https://r-wasm.github.io/quarto-live/) (✨LITERAL MAGIC✨)
+  - Can deal with live data *and* uses regular R/Python
 :::
 
 ## Plotly
@@ -263,8 +263,9 @@ Plot.plot({
 
 ## Observable Plot examples
 
-- [Quarto documentation](https://quarto.org/docs/interactive/ojs/)
+- [Quarto documentation](https://quarto.org/docs/interactive/ojs/) + [Observable Plot documentation](https://observablehq.com/plot/) + [Arquero vs. {dplyr}](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
 - [Quarto OJS examples](https://quarto.org/docs/interactive/ojs/examples/penguins.html)
+- [Hack Your Way To Scientific Glory](https://stats.andrewheiss.com/hack-your-way/)
 - [Using USAID data to make fancy world maps with Observable Plot](https://www.andrewheiss.com/blog/2025/02/10/usaid-ojs-maps/) + [ForeignAssistance dot gov emergency backup](https://foreignassistance.andrewheiss.com/live-example-dashboard.html)
 - [Dashboard with OJS chunks](https://www.andrewheiss.com/blog/2024/01/12/diy-api-plumber-quarto-ojs/_book/dashboard.html)
 
@@ -273,20 +274,14 @@ Plot.plot({
 
 **Play with {plotly} and {ggiraph}**
 
-\ 
-
 {{< include _our-turn_plotly-ggiraph.qmd >}}
+
+~~**Play with Observable**~~
+
+jk we won't do that today. It's a whole different language and takes a while to get used to. Do this on your own—it's neat!
 
 ```{r}
 #| label: clock-plotly
 #| echo: false
 countdown::countdown(minutes = 10)
 ```
-
-## Our turn {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
-
-~~**Play with Observable**~~
-
-\ 
-
-jk we won't do that today. It's a whole different language and takes a while to get used to. Do this on your own—it's neat!

@@ -1,4 +1,4 @@
-1. In `01-exercise.qmd`, read in `_brand.yml` with `read_brand_yml()` from the {brand.yml} package. Store it as a variable named `brand`. TODO
+1. In `01-exercise.qmd`, read in `_brand.yml` with `read_brand_yml()` from the {brand.yml} package. Store it as a variable named `brand`.
 
 2. Change the color of the points to the brand's `blue` color and the line to the brand's `magenta` color. You'll use code that looks something like this:
 

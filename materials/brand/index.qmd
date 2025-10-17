@@ -41,9 +41,9 @@ These slides and materials aren't *quite* ready yet! Anything you see here is su
 :::
 
 ::: {.callout-tip collapse="true"}
-#### SCSS
+#### Our turn: SCSS
 
-{{< include _your-turn_css2.qmd >}}
+{{< include _our-turn_css2.qmd >}}
 :::
 
 
