@@ -571,14 +571,14 @@
     "href": "materials/brand/slides.html#sass-css-but-fancier",
     "title": "Customizationand branding",
     "section": "Sass: CSS, but fancier",
-    "text": "Sass: CSS, but fancier\n@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');\n\n/*-- scss:defaults --*/\n\n/* Built-in Bootstrap variables */\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$font-family-sans-serif:  Roboto\n\n/* Your own variables */\n$my-neat-red: #e21818;\n\n/*-- scss:rules --*/\n#quarto-sidebar h2 {\n  font-family: Roboto;\n  color: $my-neat-red;\n\n  /* Magically compiles to #quarto-sidebar h2 a:hover */\n  a:hover {\n    color: #d1c81d;\n  }\n}"
+    "text": "Sass: CSS, but fancier\n@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');\n\n/*-- scss:defaults --*/\n\n/* Built-in Bootstrap variables */\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$font-family-sans-serif:  Roboto;\n\n/* Your own variables */\n$my-neat-red: #e21818;\n\n/*-- scss:rules --*/\n#quarto-sidebar h2 {\n  font-family: Roboto;\n  color: $my-neat-red;\n\n  /* Magically compiles to #quarto-sidebar h2 a:hover */\n  a:hover {\n    color: #d1c81d;\n  }\n}"
   },
   {
     "objectID": "materials/brand/slides.html#bootstrap-sass-variables",
     "href": "materials/brand/slides.html#bootstrap-sass-variables",
     "title": "Customizationand branding",
     "section": "Bootstrap Sass variables",
-    "text": "Bootstrap Sass variables\nThere are so many\n\nTODO: Quarto list\nTODO: Bootstrap directory"
+    "text": "Bootstrap Sass variables\nThere are so many!\n\nQuarto lists these as the most typical\nBootstrap technically has all these\nHere’s a filterable table of everything"
   },
   {
     "objectID": "materials/brand/slides.html#using-csssass-with-quarto",
@@ -823,7 +823,7 @@
     "href": "materials/basic-websites/slides.html#your-turn",
     "title": "Creatingbasic websites",
     "section": "Your turn",
-    "text": "Your turn\n\nCreate a new website project somewhere on your computer.\nWe’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n−+\n03:00"
+    "text": "Your turn\n\nCreate a new website project somewhere on your computer.\nYou’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n−+\n03:00"
   },
   {
     "objectID": "materials/basic-websites/slides.html#preview",
@@ -1019,7 +1019,7 @@
     "href": "materials/basic-websites/slides.html#your-turn-4",
     "title": "Creatingbasic websites",
     "section": "Your turn",
-    "text": "Your turn\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n−+\n07:00"
+    "text": "Your turn\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research/index.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n−+\n07:00"
   },
   {
     "objectID": "materials/basic-websites/slides.html#answer-4",
@@ -1187,7 +1187,7 @@
     "href": "materials/advanced-websites/slides.html#listing-pages",
     "title": "Advancedwebsite features",
     "section": "Listing pages",
-    "text": "Listing pages\n\n\n \n\n\nresearch.qmd\n\n---\ntitle: \"Research\"\nlisting:\n  contents: \"*.qmd\"\n  type: table\n---\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-listings.html"
+    "text": "Listing pages\n\n\n \n\n\nresearch/index.qmd\n\n---\ntitle: \"Research\"\nlisting:\n  contents: \"*.qmd\"\n  type: table\n---\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-listings.html"
   },
   {
     "objectID": "materials/advanced-websites/slides.html#your-turn-3",
@@ -1229,7 +1229,7 @@
     "href": "materials/advanced-websites/slides.html#extra-advanced-bonus-stuff",
     "title": "Advancedwebsite features",
     "section": "Extra advanced bonus stuff",
-    "text": "Extra advanced bonus stuff\nMultiple listings\nInclude lists of different document types on the same page (example + code)\n\nCustom listings\nGo beyond default, table, and grid and make your own template (example + code)\n\n\nYAML lists\nGenerate listings of items in a YAML file isntead of .qmd files (example)"
+    "text": "Extra advanced bonus stuff\nMultiple listings\nInclude lists of different document types on the same page (example + code)\n\nCustom listings\nGo beyond default, table, and grid and make your own template (example + code)\n\n\nYAML lists\nGenerate listings of items in a YAML file instead of .qmd files (example)"
   },
   {
     "objectID": "materials/advanced-websites/slides.html#your-turn-6",
@@ -1796,7 +1796,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "Technology",
-    "text": "Technology\n\nLast built: 2025-10-17 at 02:35:23 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Technology\n\nLast built: 2025-10-17 at 09:04:36 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -2031,7 +2031,7 @@
     "href": "materials/interactivity/index.html#code-examples",
     "title": "Interactivity",
     "section": "Code examples",
-    "text": "Code examples\n\n{plotly} and {ggiraph}\nFinished “our turn” code will go here\n\n\nDashboards\nFinished “our turn” code will go here\n\n\nQuarto Live\nFinished “our turn” code will go here",
+    "text": "Code examples\n\n{plotly} and {ggiraph}\nFinished “our turn” code will go here\n\n\nDashboards\nFinished “our turn” code will go here\n\n\nQuarto Live\nShiny k-means example\nFinished “our turn” code will go here",
     "crumbs": [
       "Materials",
       "Interactivity"
@@ -2042,7 +2042,18 @@
     "href": "materials/interactivity/index.html#replicated-shiny-example",
     "title": "Interactivity",
     "section": "Replicated Shiny example!",
-    "text": "Replicated Shiny example!\n\nWith OJS\n\n\n\n\n\n\nWarning\n\n\n\nThis required hours of fighting with Claude and it is so janky and awful\n\n\nThis is R code that sends the faithful data to OJS:\n\n\nCode\nojs_define(faithful = faithful)\n\n\nThis is OJS code for making input options:\n\n\nCode\nviewof nbins = Inputs.select(\n  [10, 20, 35, 50],\n  {label: \"Number of bins\"}\n)\n\nviewof individual_obs = Inputs.checkbox([\"Show individual observations\"], {\n  value: []\n})\n\nviewof density = Inputs.checkbox([\"Show density estimate\"], {\n  value: []\n})\n\nviewof bw_adjust = Inputs.range([0.2, 2], {\n  label: \"Bandwidth adjustment:\",\n  step: 0.2,\n  value: 1\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is OJS code for plotting the data:\n\n\nCode\nfaithful_js = transpose(faithful)\n\nPlot.plot({\n  height: 300,\n  y: { label: \"Density\" },\n  x: { label: \"Duration (minutes)\" },\n  marks: [\n    // Probability-based histogram\n    Plot.rectY(\n      faithful_js,\n      Plot.binX(\n        { y: (bin, { x1, x2 }) =&gt; bin.length / faithful_js.length / (x2 - x1) }, // Normalize to probability density\n        { x: \"eruptions\", thresholds: nbins } // Use nbins for threshold count\n      )\n    ),\n\n    // Zero line\n    Plot.ruleY([0]),\n\n    // Individual observations\n    // Individual observations (separate layer for ticks)\n    individual_obs.length &gt; 0\n      ? Plot.dot(faithful_js, {\n          x: \"eruptions\",\n          y: (d) =&gt; jitter(d.eruptions, 0.05), // Deterministic jitter based on data\n          // y: () =&gt; Math.random() * 0.05, // Jitter points randomly along the y-axis\n          stroke: \"white\",\n          fill: \"red\",\n        })\n      : null,\n\n    // Density line\n    density.length &gt; 0\n      ? Plot.line(\n          densityEstimate(\n            faithful_js.map((d) =&gt; d.eruptions),\n            bw_adjust // Bandwidth adjustment\n          ),\n          { x: \"x\", y: \"density\", stroke: \"blue\" }\n        )\n      : null,\n  ].filter((d) =&gt; d !== null),\n});\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nfunction densityEstimate(values, bwAdjust) {\n  const kde = kernelDensityEstimator(\n    kernelEpanechnikov(0.2 * bwAdjust), // Kernel function\n    d3.scaleLinear().domain(d3.extent(values)).ticks(200) // Evaluate KDE at 200 equally spaced points\n  );\n  return kde(values);\n}\n\n// Kernel density estimator function\nfunction kernelDensityEstimator(kernel, X) {\n  return function (sample) {\n    return X.map((x) =&gt; ({\n      x: x,\n      density: d3.mean(sample, (v) =&gt; kernel(x - v)), // Adjusted scaling\n    }));\n  };\n}\n\n// Epanechnikov kernel function\nfunction kernelEpanechnikov(bandwidth) {\n  return function (u) {\n    return Math.abs(u /= bandwidth) &lt;= 1 ? (0.75 * (1 - u * u)) / bandwidth : 0;\n  };\n}\n\n// Deterministic jitter function because Math.random() doesn't support seeds\nfunction jitter(value, range) {\n  const hash = Math.sin(value) * 10000; // Generate pseudo-random hash based on value\n  return (hash - Math.floor(hash)) * range; // Scale hash to the desired range\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWith webR\n\n\n\n\n\n\nTipMAGIC\n\n\n\nThis required literally 8 minutes of reading the documentation.\n\n\nHere’s OJS code for creating the interactive inputs:\n\n\nCode\nviewof nbins_r = Inputs.select(\n  [10, 20, 35, 50],\n  {label: \"Number of bins\"}\n)\n\nviewof individual_obs_r = Inputs.toggle({\n  label: \"Show individual observations\",\n  value: false\n})\n\nviewof density_r = Inputs.toggle({\n  label: \"Show density estimate\",\n  value: false\n})\n\nviewof bw_adjust_r = density_r \n  ? Inputs.range([0.2, 2], {\n      label: \"Bandwidth adjustment:\",\n      step: 0.2,\n      value: 1\n    })\n  : html`&lt;input type=\"range\" value=\"1\" style=\"display:none\"&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is the R code for connecting to those OJS inputs and using them live:\n```{webr}\n#| autorun: true\n#| echo: false\n#| input:\n#|   - nbins_r\n#|   - individual_obs_r\n#|   - density_r\n#|   - bw_adjust_r\n\nhist(\n  faithful$eruptions,\n  probability = TRUE,\n  breaks = as.numeric(nbins_r),\n  xlab = \"Duration (minutes)\",\n  main = \"Geyser eruption duration\"\n)\n\nif (individual_obs_r) {\n  rug(faithful$eruptions)\n}\n\nif (density_r) {\n  dens &lt;- density(faithful$eruptions, adjust = bw_adjust_r)\n  lines(dens, col = \"blue\")\n}\n```",
+    "text": "Replicated Shiny example!\nOriginal faithful example\n\nWith OJS\n\n\n\n\n\n\nWarning\n\n\n\nThis required hours of fighting with Claude and it is so janky and awful\n\n\nThis is R code that sends the faithful data to OJS:\n\n\nCode\nojs_define(faithful = faithful)\n\n\nThis is OJS code for making input options:\n\n\nCode\nviewof nbins = Inputs.select(\n  [10, 20, 35, 50],\n  {label: \"Number of bins\"}\n)\n\nviewof individual_obs = Inputs.checkbox([\"Show individual observations\"], {\n  value: []\n})\n\nviewof density = Inputs.checkbox([\"Show density estimate\"], {\n  value: []\n})\n\nviewof bw_adjust = Inputs.range([0.2, 2], {\n  label: \"Bandwidth adjustment:\",\n  step: 0.2,\n  value: 1\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is OJS code for plotting the data:\n\n\nCode\nfaithful_js = transpose(faithful)\n\nPlot.plot({\n  height: 300,\n  y: { label: \"Density\" },\n  x: { label: \"Duration (minutes)\" },\n  marks: [\n    // Probability-based histogram\n    Plot.rectY(\n      faithful_js,\n      Plot.binX(\n        { y: (bin, { x1, x2 }) =&gt; bin.length / faithful_js.length / (x2 - x1) }, // Normalize to probability density\n        { x: \"eruptions\", thresholds: nbins } // Use nbins for threshold count\n      )\n    ),\n\n    // Zero line\n    Plot.ruleY([0]),\n\n    // Individual observations\n    // Individual observations (separate layer for ticks)\n    individual_obs.length &gt; 0\n      ? Plot.dot(faithful_js, {\n          x: \"eruptions\",\n          y: (d) =&gt; jitter(d.eruptions, 0.05), // Deterministic jitter based on data\n          // y: () =&gt; Math.random() * 0.05, // Jitter points randomly along the y-axis\n          stroke: \"white\",\n          fill: \"red\",\n        })\n      : null,\n\n    // Density line\n    density.length &gt; 0\n      ? Plot.line(\n          densityEstimate(\n            faithful_js.map((d) =&gt; d.eruptions),\n            bw_adjust // Bandwidth adjustment\n          ),\n          { x: \"x\", y: \"density\", stroke: \"blue\" }\n        )\n      : null,\n  ].filter((d) =&gt; d !== null),\n});\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nfunction densityEstimate(values, bwAdjust) {\n  const kde = kernelDensityEstimator(\n    kernelEpanechnikov(0.2 * bwAdjust), // Kernel function\n    d3.scaleLinear().domain(d3.extent(values)).ticks(200) // Evaluate KDE at 200 equally spaced points\n  );\n  return kde(values);\n}\n\n// Kernel density estimator function\nfunction kernelDensityEstimator(kernel, X) {\n  return function (sample) {\n    return X.map((x) =&gt; ({\n      x: x,\n      density: d3.mean(sample, (v) =&gt; kernel(x - v)), // Adjusted scaling\n    }));\n  };\n}\n\n// Epanechnikov kernel function\nfunction kernelEpanechnikov(bandwidth) {\n  return function (u) {\n    return Math.abs(u /= bandwidth) &lt;= 1 ? (0.75 * (1 - u * u)) / bandwidth : 0;\n  };\n}\n\n// Deterministic jitter function because Math.random() doesn't support seeds\nfunction jitter(value, range) {\n  const hash = Math.sin(value) * 10000; // Generate pseudo-random hash based on value\n  return (hash - Math.floor(hash)) * range; // Scale hash to the desired range\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWith webR\n\n\n\n\n\n\nTipMAGIC\n\n\n\nThis required literally 8 minutes of reading the documentation.\n\n\nHere’s OJS code for creating the interactive inputs:\n\n\nCode\nviewof nbins_r = Inputs.select(\n  [10, 20, 35, 50],\n  {label: \"Number of bins\"}\n)\n\nviewof individual_obs_r = Inputs.toggle({\n  label: \"Show individual observations\",\n  value: false\n})\n\nviewof density_r = Inputs.toggle({\n  label: \"Show density estimate\",\n  value: false\n})\n\nviewof bw_adjust_r = density_r \n  ? Inputs.range([0.2, 2], {\n      label: \"Bandwidth adjustment:\",\n      step: 0.2,\n      value: 1\n    })\n  : html`&lt;input type=\"range\" value=\"1\" style=\"display:none\"&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is the R code for connecting to those OJS inputs and using them live:\n\n\nCode\n\n```{webr}\n#| autorun: true\n#| echo: false\n#| input:\n#|   - nbins_r\n#|   - individual_obs_r\n#|   - density_r\n#|   - bw_adjust_r\n\nhist(\n  faithful$eruptions,\n  probability = TRUE,\n  breaks = as.numeric(nbins_r),\n  xlab = \"Duration (minutes)\",\n  main = \"Geyser eruption duration\"\n)\n\nif (individual_obs_r) {\n  rug(faithful$eruptions)\n}\n\nif (density_r) {\n  dens &lt;- density(faithful$eruptions, adjust = bw_adjust_r)\n  lines(dens, col = \"blue\")\n}\n```",
+    "crumbs": [
+      "Materials",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "materials/interactivity/index.html#this-works-with-ggplot-too",
+    "href": "materials/interactivity/index.html#this-works-with-ggplot-too",
+    "title": "Interactivity",
+    "section": "This works with ggplot too!",
+    "text": "This works with ggplot too!\n\n\n\n\n\n\n\n\nHere’s OJS code for creating the interactive inputs:\n\n\nCode\nnumeric_vars = [\"bill_length_mm\", \"bill_depth_mm\", \"flipper_length_mm\", \"body_mass_g\"]\ncategorical_vars = [\"species\", \"island\", \"sex\"]\n\nviewof species_filter = Inputs.checkbox(\n  [\"Adelie\", \"Chinstrap\", \"Gentoo\"],\n  {label: \"Species to include\", value: [\"Adelie\", \"Chinstrap\", \"Gentoo\"]}\n)\n\nviewof x_var = Inputs.select(numeric_vars, {\n  label: \"X Variable\",\n  value: \"bill_length_mm\"\n})\n\nviewof y_var = Inputs.select(numeric_vars, {\n  label: \"Y Variable\",\n  value: \"bill_depth_mm\"\n})\n\nviewof color_var = Inputs.select(categorical_vars, {\n  label: \"Color by\",\n  value: \"species\"\n})\n\nviewof show_trend_species = Inputs.toggle({\n  label: \"Show species trends\",\n  value: false\n})\n\nviewof show_trend_overall = Inputs.toggle({\n  label: \"Show overall trend\",\n  value: false\n})",
     "crumbs": [
       "Materials",
       "Interactivity"
