@@ -1,15 +1,6 @@
 ---
 title: "Customization and branding"
-draft: true
-language: 
-  draft: "This page is (almost not!) a draft"
 ---
-
-::: {.callout-warning}
-### Draft materials
-
-These slides and materials aren't *quite* ready yet! Anything you see here is subject to change—don't do anything here before the course.
-:::
 
 ## Slides
 
