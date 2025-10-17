@@ -82,3 +82,10 @@ format:
       - css/site-styles.scss
       - brand
     toc: true
+  live-html:
+    highlight-style: github
+    theme:
+      - cosmo
+      - css/site-styles.scss
+      - brand
+    toc: true
