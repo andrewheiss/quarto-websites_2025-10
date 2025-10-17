@@ -66,10 +66,14 @@ Finished "our turn" code will go here
 
 ### Quarto Live
 
+[Shiny k-means example](https://shiny.posit.co/r/gallery/start-simple/kmeans-example/)
+
 Finished "our turn" code will go here
 
 
 ## Replicated Shiny example!
+
+[Original faithful example](https://shiny.posit.co/r/gallery/start-simple/faithful/)
 
 ### With OJS
 
