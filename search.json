@@ -266,11 +266,200 @@
     "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\n✅ Advanced website features\n✅ Publishing\nCustomization and branding\nInteractivity"
   },
   {
+    "objectID": "materials/interactivity/slides.html#shiny-is-fine",
+    "href": "materials/interactivity/slides.html#shiny-is-fine",
+    "title": "Interactivity",
+    "section": "Shiny is fine!",
+    "text": "Shiny is fine!"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#but-shiny-has-problems",
+    "href": "materials/interactivity/slides.html#but-shiny-has-problems",
+    "title": "Interactivity",
+    "section": "But Shiny has problems!",
+    "text": "But Shiny has problems!\n\nRequires a whole live server\nIs often difficult to learn\nSlow to load\nTimes out regularly"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#newer-approaches-to-interactivity",
+    "href": "materials/interactivity/slides.html#newer-approaches-to-interactivity",
+    "title": "Interactivity",
+    "section": "Newer approaches to interactivity",
+    "text": "Newer approaches to interactivity\n\n{plotly} and {ggiraph}\n\nRegular R + ggplot, but can’t deal with live data\n\nObservable JS\n\nCan deal with live data (even remote APIs), but uses a different language\n\nquarto-live (LITERAL MAGIC)\n\nCan deal with live data and uses regular R"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#plotly",
+    "href": "materials/interactivity/slides.html#plotly",
+    "title": "Interactivity",
+    "section": "Plotly",
+    "text": "Plotly\nplotly::ggplotly() automatically converts ggplot objects to plotly plots\n\n\n\nlibrary(plotly)\n\nbasic_plot &lt;- ggplot(\n  penguins,\n  aes(\n    x = bill_len,\n    y = body_mass,\n    color = species\n  )\n) +\n  geom_point()\n\n \n\nggplotly(basic_plot)\n\n\n\n\n\n\n\n\n\n\nDocumentation: https://plotly.com/ggplot2/"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#ggiraph",
+    "href": "materials/interactivity/slides.html#ggiraph",
+    "title": "Interactivity",
+    "section": "{ggiraph}",
+    "text": "{ggiraph}\n\n\n\nlibrary(ggiraph)\n\nplot_thing &lt;- ggplot(\n  penguins,\n  aes(\n    x = bill_len,\n    y = body_mass,\n    color = species\n  )\n) +\n  geom_point_interactive(\n    aes(tooltip = species, data_id = species)\n  )\n\n \n\ngirafe(ggobj = plot_thing)\n\n\n\n\n\n\n\n\n\n\nDocumentation: https://davidgohel.github.io/ggiraph/"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#observable-plot",
+    "href": "materials/interactivity/slides.html#observable-plot",
+    "title": "Interactivity",
+    "section": "Observable Plot",
+    "text": "Observable Plot\n\n\nThis is R:\n\nlibrary(gapminder)\n\n# Make the gapminder data available to Observable JS\nojs_define(gapminder = gapminder)\n\nThis is Observable JS:\n\ngapminder_js = transpose(gapminder)\n\nPlot.plot({\n  x: {type: \"log\"},\n  marks: [\n    Plot.dot(gapminder_js, {\n        x: \"gdpPercap\", y: \"lifeExp\", fill: \"continent\", r: 6,\n        channels: {\n          Country: d =&gt; d.country\n        },\n        tip: true\n      }\n    )\n  ]}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ngapminder_js = transpose(gapminder)\n\nPlot.plot({\n  x: {type: \"log\"},\n  marks: [\n    Plot.dot(gapminder_js, {\n        x: \"gdpPercap\", y: \"lifeExp\", fill: \"continent\", r: 6,\n        channels: {\n          Country: d =&gt; d.country\n        },\n        tip: true\n      }\n    )\n  ]}\n)"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#observable-plot-1",
+    "href": "materials/interactivity/slides.html#observable-plot-1",
+    "title": "Interactivity",
+    "section": "Observable Plot",
+    "text": "Observable Plot\n\n\n\nviewof current_year = Inputs.range(\n  [1952, 2007], \n  {value: 1952, step: 5, label: \"Year:\"}\n)\n\n// Filter the data based on the selected year\ngapminder_filtered = gapminder_js.filter(d =&gt; d.year == current_year)\n\nPlot.plot({\n  x: {type: \"log\"},\n  marks: [\n    Plot.dot(gapminder_filtered, {\n        x: \"gdpPercap\", y: \"lifeExp\", fill: \"continent\", r: 6,\n        channels: {\n          Country: d =&gt; d.country\n        },\n        tip: true\n      }\n    )\n  ]}\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof current_year = Inputs.range(\n  [1952, 2007], \n  {value: 1952, step: 5, label: \"Year:\"}\n)\n\n// Filter the data based on the selected year\ngapminder_filtered = gapminder_js.filter(d =&gt; d.year == current_year)\n\nPlot.plot({\n  x: {type: \"log\"},\n  marks: [\n    Plot.dot(gapminder_filtered, {\n        x: \"gdpPercap\", y: \"lifeExp\", fill: \"continent\", r: 6,\n        channels: {\n          Country: d =&gt; d.country\n        },\n        tip: true\n      }\n    )\n  ]}\n)"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#observable-plot-examples",
+    "href": "materials/interactivity/slides.html#observable-plot-examples",
+    "title": "Interactivity",
+    "section": "Observable Plot examples",
+    "text": "Observable Plot examples\n\nQuarto documentation\nQuarto OJS examples\nUsing USAID data to make fancy world maps with Observable Plot + ForeignAssistance dot gov emergency backup\nDashboard with OJS chunks"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#our-turn",
+    "href": "materials/interactivity/slides.html#our-turn",
+    "title": "Interactivity",
+    "section": "Our turn",
+    "text": "Our turn\nPlay with {plotly} and {ggiraph}\n \nTogether we’ll make some plots with plotly::ggplotly() and ggiraph::girafe()\nI’ll post all the final code on the course website when we’re done.\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#our-turn-1",
+    "href": "materials/interactivity/slides.html#our-turn-1",
+    "title": "Interactivity",
+    "section": "Our turn",
+    "text": "Our turn\nPlay with Observable\n \njk we won’t do that today. It’s a whole different language and takes a while to get used to. Do this on your own—it’s neat!"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#dashboard-detour",
+    "href": "materials/interactivity/slides.html#dashboard-detour",
+    "title": "Interactivity",
+    "section": "Dashboard detour",
+    "text": "Dashboard detour\nWith {plotly} and {ggiraph}, you know enough to make basic dashboards!\n\n---\ntitle: My dashboard\nformat: dashboard\n---\n\n## Row\n\n```{r}\n```\n\n## Row\n\n```{r}\n```\n\nDocumentation: https://quarto.org/docs/dashboards/"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#dashboard-layouts",
+    "href": "materials/interactivity/slides.html#dashboard-layouts",
+    "title": "Interactivity",
+    "section": "Dashboard layouts",
+    "text": "Dashboard layouts\nQuarto uses special Markdown syntax to place dashboard components in dashboard layouts.\n\n\nDocumentation: https://quarto.org/docs/dashboards/layout.html"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#dashboard-components",
+    "href": "materials/interactivity/slides.html#dashboard-components",
+    "title": "Interactivity",
+    "section": "Dashboard components",
+    "text": "Dashboard components\n\nPlots\nTables\nValue boxes\nText and content cards\n\n\nDocumentation: https://quarto.org/docs/dashboards/data-display.html"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#dynamic-content",
+    "href": "materials/interactivity/slides.html#dynamic-content",
+    "title": "Interactivity",
+    "section": "Dynamic content",
+    "text": "Dynamic content\n\nDashboards are still static HTML sites\n\nIf using live data, you’re limited(ish) to OJS\n\nDashboards can connect to Shiny servers though\n\nBut then the site has to live on a Shiny server"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#our-turn-2",
+    "href": "materials/interactivity/slides.html#our-turn-2",
+    "title": "Interactivity",
+    "section": "Our turn",
+    "text": "Our turn\nMake a dashboard about penguins\n \nTogether we’ll make an interactive dashboard about the Palmer Penguins.\nI’ll post all the final code on the course website when we’re done.\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#r-in-the-browser",
+    "href": "materials/interactivity/slides.html#r-in-the-browser",
+    "title": "Interactivity",
+    "section": "R in the browser",
+    "text": "R in the browser\nwebR is a special version of R that’s compiled for Javascript and Node.js using WebAssembly\n\n \n\n\n\n\n\n\ntl;dr\n\n\nThrough compiled Javascript magic, you can run R in your browser.\n\n\n\n\n\n \nQuarto Live makes it trivial to use (and it works with Python and Pyodide)"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#enabling-webr",
+    "href": "materials/interactivity/slides.html#enabling-webr",
+    "title": "Interactivity",
+    "section": "Enabling webR",
+    "text": "Enabling webR\nInstall the extension:\n\n\nTerminal\n\nquarto add r-wasm/quarto-live\n\n\n \nUse special format and include special file (for now)\n---\nformat: live-html\nengine: knitr\n---\n\n{{&lt; include ./_extensions/r-wasm/live/_knitr.qmd &gt;}}\n\nDocumentation: https://r-wasm.github.io/quarto-live/getting_started/installation.html"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#using-webr",
+    "href": "materials/interactivity/slides.html#using-webr",
+    "title": "Interactivity",
+    "section": "Using webR",
+    "text": "Using webR\nMake webr chunks\n```{webr}\nmean(1:5)\nplot(1:10)\n```"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#install-packages",
+    "href": "materials/interactivity/slides.html#install-packages",
+    "title": "Interactivity",
+    "section": "Install packages",
+    "text": "Install packages\nYou don’t have access to every package on CRAN; packages have to be compiled for WebAssembly/Javascript (many/most are though!)\nPackages come from the webR public package repository\n---\nformat: live-html\nwebr:\n  packages:\n    - dplyr\n    - palmerpenguins\n    - ggplot2\n---\n\nDocumentation: https://r-wasm.github.io/quarto-live/getting_started/packages.html"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#teaching-with-webr",
+    "href": "materials/interactivity/slides.html#teaching-with-webr",
+    "title": "Interactivity",
+    "section": "Teaching with webR",
+    "text": "Teaching with webR\n\n\nexercise.qmd\n\nFill in the blank to fill the density plots by species\n\n```{webr}\n#| exercise: ex_1\nggplot(palmerpenguins::penguins, aes(x = body_mass_g)) +\n  geom_density(aes(______), alpha = 0.7)\n```"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#more-with-exercises",
+    "href": "materials/interactivity/slides.html#more-with-exercises",
+    "title": "Interactivity",
+    "section": "More with exercises",
+    "text": "More with exercises\n\nR for Data Science exercises and lessons\n“Grade” exercises and provide feedback"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#use-ojs-to-interact-with-live-r",
+    "href": "materials/interactivity/slides.html#use-ojs-to-interact-with-live-r",
+    "title": "Interactivity",
+    "section": "Use OJS to interact with live R",
+    "text": "Use OJS to interact with live R\n\nReplicate/replace basic Shiny apps!"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#old-faithful-app",
+    "href": "materials/interactivity/slides.html#old-faithful-app",
+    "title": "Interactivity",
+    "section": "Old Faithful app",
+    "text": "Old Faithful app\nClassic Old Faithful Shiny example"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#old-faithful-app-with-ojs",
+    "href": "materials/interactivity/slides.html#old-faithful-app-with-ojs",
+    "title": "Interactivity",
+    "section": "Old Faithful app with OJS",
+    "text": "Old Faithful app with OJS\n(2 hours fighting with Claude…); see website for full code\n\nfaithful_js = transpose(faithful)\n\nviewof nbins = Inputs.select(\n  [10, 20, 35, 50],\n  {label: \"Number of bins\"}\n)\n\nviewof individual_obs = Inputs.checkbox([\"Show individual observations\"], {\n  value: []\n})\n\nviewof density = Inputs.checkbox([\"Show density estimate\"], {\n  value: []\n})\n\nviewof bw_adjust = Inputs.range([0.2, 2], {\n  label: \"Bandwidth adjustment:\",\n  step: 0.2,\n  value: 1\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlot.plot({\n  height: 300,\n  y: { label: \"Density\" },\n  x: { label: \"Duration (minutes)\" },\n  marks: [\n    // Probability-based histogram\n    Plot.rectY(\n      faithful_js,\n      Plot.binX(\n        { y: (bin, { x1, x2 }) =&gt; bin.length / faithful_js.length / (x2 - x1) }, // Normalize to probability density\n        { x: \"eruptions\", thresholds: nbins } // Use nbins for threshold count\n      )\n    ),\n\n    // Zero line\n    Plot.ruleY([0]),\n\n    // Individual observations\n    // Individual observations (separate layer for ticks)\n    individual_obs.length &gt; 0\n      ? Plot.dot(faithful_js, {\n          x: \"eruptions\",\n          y: (d) =&gt; jitter(d.eruptions, 0.05), // Deterministic jitter based on data\n          // y: () =&gt; Math.random() * 0.05, // Jitter points randomly along the y-axis\n          stroke: \"white\",\n          fill: \"red\",\n        })\n      : null,\n\n    // Density line\n    density.length &gt; 0\n      ? Plot.line(\n          densityEstimate(\n            faithful_js.map((d) =&gt; d.eruptions),\n            bw_adjust // Bandwidth adjustment\n          ),\n          { x: \"x\", y: \"density\", stroke: \"blue\" }\n        )\n      : null,\n  ].filter((d) =&gt; d !== null),\n});\n\n\n\n\n\n\n\nfunction densityEstimate(values, bwAdjust) {\n  const kde = kernelDensityEstimator(\n    kernelEpanechnikov(0.2 * bwAdjust), // Kernel function\n    d3.scaleLinear().domain(d3.extent(values)).ticks(200) // Evaluate KDE at 200 equally spaced points\n  );\n  return kde(values);\n}\n\n// Kernel density estimator function\nfunction kernelDensityEstimator(kernel, X) {\n  return function (sample) {\n    return X.map((x) =&gt; ({\n      x: x,\n      density: d3.mean(sample, (v) =&gt; kernel(x - v)), // Adjusted scaling\n    }));\n  };\n}\n\n// Epanechnikov kernel function\nfunction kernelEpanechnikov(bandwidth) {\n  return function (u) {\n    return Math.abs(u /= bandwidth) &lt;= 1 ? (0.75 * (1 - u * u)) / bandwidth : 0;\n  };\n}\n\n// Deterministic jitter function because Math.random() doesn't support seeds\nfunction jitter(value, range) {\n  const hash = Math.sin(value) * 10000; // Generate pseudo-random hash based on value\n  return (hash - Math.floor(hash)) * range; // Scale hash to the desired range\n}"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#old-faithful-app-with-webr",
+    "href": "materials/interactivity/slides.html#old-faithful-app-with-webr",
+    "title": "Interactivity",
+    "section": "Old Faithful app with webR",
+    "text": "Old Faithful app with webR\n(8 minutes reading the documentation); see website for full code\n\nviewof nbins_r = Inputs.select(\n  [10, 20, 35, 50],\n  {label: \"Number of bins\"}\n)\n\nviewof individual_obs_r = Inputs.toggle({\n  label: \"Show individual observations\",\n  value: false\n})\n\nviewof density_r = Inputs.toggle({\n  label: \"Show density estimate\",\n  value: false\n})\n\nviewof bw_adjust_r = density_r \n  ? Inputs.range([0.2, 2], {\n      label: \"Bandwidth adjustment:\",\n      step: 0.2,\n      value: 1\n    })\n  : html`&lt;input type=\"range\" value=\"1\" style=\"display:none\"&gt;`"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#our-turn-3",
+    "href": "materials/interactivity/slides.html#our-turn-3",
+    "title": "Interactivity",
+    "section": "Our turn",
+    "text": "Our turn\nTogether we’ll do this:\n\nCreate a {webr} chunk that helps teach something and provides feedback\nRecreate the Shiny k-means example\nBonus: Make a live ggplot plot!\n\nI’ll post all the final code on the course website when we’re done.\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "materials/interactivity/slides.html#course-outline",
+    "href": "materials/interactivity/slides.html#course-outline",
+    "title": "Interactivity",
+    "section": "Course outline",
+    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\n✅ Advanced website features\n✅ Publishing\n✅ Customization and branding\n✅ Interactivity"
+  },
+  {
     "objectID": "materials/interactivity/slides.html#section",
     "href": "materials/interactivity/slides.html#section",
     "title": "Interactivity",
     "section": "",
-    "text": "Plotly\nDashboards\nOJS"
+    "text": "Stay curious andkeep playing"
   },
   {
     "objectID": "materials/brand/slides.html#your-turn",
@@ -1607,7 +1796,7 @@
     "href": "colophon.html#technology",
     "title": "Colophon",
     "section": "Technology",
-    "text": "Technology\n\nLast built: 2025-10-16 at 15:26:24 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "text": "Technology\n\nLast built: 2025-10-17 at 02:35:23 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
     "crumbs": [
       "Colophon"
     ]
@@ -1798,7 +1987,7 @@
     "href": "materials/brand/index.html#exercises",
     "title": "Customization and branding",
     "section": "Exercises",
-    "text": "Exercises\n\nThemes\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n\n\nCSS and Sass\n\n\n\n\n\n\nTipBrowser inspector\n\n\n\n\n\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nTODO\n\n\n\n\n\n\n\n\n\n\nTipSCSS\n\n\n\n\n\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nTODO\n\n\n\n\n\n\nBranding\n\n\n\n\n\n\nTip_brand.yml tinkering\n\n\n\n\n\n\nThere is a file named urban_institute.yml. Rename it to _brand.yml and rerender your site. What changes? TODO\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nTODO You can reset the file by copying and pasting it from here.\n\n\n\n\n\n\n\n\n\n\nTiptheme_brand_ggplot()\n\n\n\n\n\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\"). TODO\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n\n\n\n\n\n\nTipread_brand_yaml() tinkering\n\n\n\n\n\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand. TODO\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n\n\n\n\n\n\nTipMake your own _brand.yml\n\n\n\n\n\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml",
+    "text": "Exercises\n\nThemes\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n\n\nCSS and Sass\n\n\n\n\n\n\nTipBrowser inspector\n\n\n\n\n\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nTODO\n\n\n\n\n\n\n\n\n\n\nTipSCSS\n\n\n\n\n\nTODO: Create a SCSS file and make a bunch of rules\n\n\n\n\n\nBranding\n\n\n\n\n\n\nTip_brand.yml tinkering\n\n\n\n\n\n\nThere is a file named urban_institute.yml. Rename it to _brand.yml and rerender your site. What changes? TODO\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nTODO You can reset the file by copying and pasting it from here.\n\n\n\n\n\n\n\n\n\n\nTiptheme_brand_ggplot()\n\n\n\n\n\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\"). TODO\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n\n\n\n\n\n\nTipread_brand_yaml() tinkering\n\n\n\n\n\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand. TODO\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n\n\n\n\n\n\nTipMake your own _brand.yml\n\n\n\n\n\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml",
     "crumbs": [
       "Materials",
       "Customization and branding"
@@ -1809,7 +1998,51 @@
     "href": "materials/interactivity/index.html",
     "title": "Interactivity",
     "section": "",
-    "text": "WarningDraft materials\n\n\n\nThese slides and materials aren’t quite ready yet! Anything you see here is subject to change—don’t do anything here before the course.",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "materials/interactivity/index.html#slides",
+    "href": "materials/interactivity/index.html#slides",
+    "title": "Interactivity",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "materials/interactivity/index.html#exercises",
+    "href": "materials/interactivity/index.html#exercises",
+    "title": "Interactivity",
+    "section": "Exercises",
+    "text": "Exercises\n\n{plotly} and {ggiraph}\n\n\n\n\n\n\nTipOur turn\n\n\n\n\n\nTogether we’ll make some plots with plotly::ggplotly() and ggiraph::girafe()\nI’ll post all the final code on the course website when we’re done.\n\n\n\n\n\nDashboards\n\n\n\n\n\n\nTipOur turn\n\n\n\n\n\nTogether we’ll make an interactive dashboard about the Palmer Penguins.\nI’ll post all the final code on the course website when we’re done.\n\n\n\n\n\nwebR\n\n\n\n\n\n\nTipOur turn\n\n\n\n\n\nTogether we’ll do this:\n\nCreate a {webr} chunk that helps teach something and provides feedback\nRecreate the Shiny k-means example\nBonus: Make a live ggplot plot!\n\nI’ll post all the final code on the course website when we’re done.",
+    "crumbs": [
+      "Materials",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "materials/interactivity/index.html#code-examples",
+    "href": "materials/interactivity/index.html#code-examples",
+    "title": "Interactivity",
+    "section": "Code examples",
+    "text": "Code examples\n\n{plotly} and {ggiraph}\nFinished “our turn” code will go here\n\n\nDashboards\nFinished “our turn” code will go here\n\n\nQuarto Live\nFinished “our turn” code will go here",
+    "crumbs": [
+      "Materials",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "materials/interactivity/index.html#replicated-shiny-example",
+    "href": "materials/interactivity/index.html#replicated-shiny-example",
+    "title": "Interactivity",
+    "section": "Replicated Shiny example!",
+    "text": "Replicated Shiny example!\n\nWith OJS\n\n\n\n\n\n\nWarning\n\n\n\nThis required hours of fighting with Claude and it is so janky and awful\n\n\nThis is R code that sends the faithful data to OJS:\n\n\nCode\nojs_define(faithful = faithful)\n\n\nThis is OJS code for making input options:\n\n\nCode\nviewof nbins = Inputs.select(\n  [10, 20, 35, 50],\n  {label: \"Number of bins\"}\n)\n\nviewof individual_obs = Inputs.checkbox([\"Show individual observations\"], {\n  value: []\n})\n\nviewof density = Inputs.checkbox([\"Show density estimate\"], {\n  value: []\n})\n\nviewof bw_adjust = Inputs.range([0.2, 2], {\n  label: \"Bandwidth adjustment:\",\n  step: 0.2,\n  value: 1\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is OJS code for plotting the data:\n\n\nCode\nfaithful_js = transpose(faithful)\n\nPlot.plot({\n  height: 300,\n  y: { label: \"Density\" },\n  x: { label: \"Duration (minutes)\" },\n  marks: [\n    // Probability-based histogram\n    Plot.rectY(\n      faithful_js,\n      Plot.binX(\n        { y: (bin, { x1, x2 }) =&gt; bin.length / faithful_js.length / (x2 - x1) }, // Normalize to probability density\n        { x: \"eruptions\", thresholds: nbins } // Use nbins for threshold count\n      )\n    ),\n\n    // Zero line\n    Plot.ruleY([0]),\n\n    // Individual observations\n    // Individual observations (separate layer for ticks)\n    individual_obs.length &gt; 0\n      ? Plot.dot(faithful_js, {\n          x: \"eruptions\",\n          y: (d) =&gt; jitter(d.eruptions, 0.05), // Deterministic jitter based on data\n          // y: () =&gt; Math.random() * 0.05, // Jitter points randomly along the y-axis\n          stroke: \"white\",\n          fill: \"red\",\n        })\n      : null,\n\n    // Density line\n    density.length &gt; 0\n      ? Plot.line(\n          densityEstimate(\n            faithful_js.map((d) =&gt; d.eruptions),\n            bw_adjust // Bandwidth adjustment\n          ),\n          { x: \"x\", y: \"density\", stroke: \"blue\" }\n        )\n      : null,\n  ].filter((d) =&gt; d !== null),\n});\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nfunction densityEstimate(values, bwAdjust) {\n  const kde = kernelDensityEstimator(\n    kernelEpanechnikov(0.2 * bwAdjust), // Kernel function\n    d3.scaleLinear().domain(d3.extent(values)).ticks(200) // Evaluate KDE at 200 equally spaced points\n  );\n  return kde(values);\n}\n\n// Kernel density estimator function\nfunction kernelDensityEstimator(kernel, X) {\n  return function (sample) {\n    return X.map((x) =&gt; ({\n      x: x,\n      density: d3.mean(sample, (v) =&gt; kernel(x - v)), // Adjusted scaling\n    }));\n  };\n}\n\n// Epanechnikov kernel function\nfunction kernelEpanechnikov(bandwidth) {\n  return function (u) {\n    return Math.abs(u /= bandwidth) &lt;= 1 ? (0.75 * (1 - u * u)) / bandwidth : 0;\n  };\n}\n\n// Deterministic jitter function because Math.random() doesn't support seeds\nfunction jitter(value, range) {\n  const hash = Math.sin(value) * 10000; // Generate pseudo-random hash based on value\n  return (hash - Math.floor(hash)) * range; // Scale hash to the desired range\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWith webR\n\n\n\n\n\n\nTipMAGIC\n\n\n\nThis required literally 8 minutes of reading the documentation.\n\n\nHere’s OJS code for creating the interactive inputs:\n\n\nCode\nviewof nbins_r = Inputs.select(\n  [10, 20, 35, 50],\n  {label: \"Number of bins\"}\n)\n\nviewof individual_obs_r = Inputs.toggle({\n  label: \"Show individual observations\",\n  value: false\n})\n\nviewof density_r = Inputs.toggle({\n  label: \"Show density estimate\",\n  value: false\n})\n\nviewof bw_adjust_r = density_r \n  ? Inputs.range([0.2, 2], {\n      label: \"Bandwidth adjustment:\",\n      step: 0.2,\n      value: 1\n    })\n  : html`&lt;input type=\"range\" value=\"1\" style=\"display:none\"&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is the R code for connecting to those OJS inputs and using them live:\n```{webr}\n#| autorun: true\n#| echo: false\n#| input:\n#|   - nbins_r\n#|   - individual_obs_r\n#|   - density_r\n#|   - bw_adjust_r\n\nhist(\n  faithful$eruptions,\n  probability = TRUE,\n  breaks = as.numeric(nbins_r),\n  xlab = \"Duration (minutes)\",\n  main = \"Geyser eruption duration\"\n)\n\nif (individual_obs_r) {\n  rug(faithful$eruptions)\n}\n\nif (density_r) {\n  dens &lt;- density(faithful$eruptions, adjust = bw_adjust_r)\n  lines(dens, col = \"blue\")\n}\n```",
     "crumbs": [
       "Materials",
       "Interactivity"
