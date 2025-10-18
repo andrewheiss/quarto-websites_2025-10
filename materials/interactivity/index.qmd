@@ -63,19 +63,120 @@ webr:
 
 ### {plotly} and {ggiraph}
 
-Finished "our turn" code will go here
+Plotly:
+
+```{r}
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(plotly)
+
+p1 <- ggplot(mpg, aes(x = displ, y = hwy)) +
+  geom_point(aes(color = drv))
+
+ggplotly(p1)
+```
+
+{ggiraph}:
+
+```{r}
+library(ggiraph)
+
+mpg_fancy <- mpg |>
+  mutate(
+    carname = glue::glue(
+      "{str_to_title(manufacturer)} {str_to_title(model)}"
+    )
+  )
+
+p2 <- ggplot(mpg_fancy, aes(x = displ, y = hwy, color = drv)) +
+  geom_point_interactive(aes(tooltip = carname, data_id = carname), size = 2) +
+  theme_minimal()
+
+girafe(ggobj = p2)
+```
 
 
 ### Dashboards
 
-Finished "our turn" code will go here
+[See here for the code for this dashboard](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/materials/interactivity/dashboard.qmd) (and [click here](dashboard.qmd){target="_blank"} to open the dashboard in a new tab):
 
+::: {.column-page}
+
+```{=html}
+<div class="ratio ratio-4x3 shadow">
+  <iframe src="dashboard.html"></iframe>
+</div>
+```
+
+:::
 
 ### Quarto Live
 
-[Shiny k-means example](https://shiny.posit.co/r/gallery/start-simple/kmeans-example/)
+Live `rnorm()` ([see code here](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/materials/interactivity/dashboard.qmd)):
 
-Finished "our turn" code will go here
+```{webr}
+#| autorun: true
+#| echo: false
+#| input:
+#|   - n
+hist(rnorm(n), main = paste0("rnorm(", n, ")"))
+```
+
+```{ojs}
+//| echo: false
+viewof n = Inputs.range([0, 501], {step: 1, label: "n"})
+```
+
+\ 
+
+[Original Shiny k-means example](https://shiny.posit.co/r/gallery/start-simple/kmeans-example/)
+
+Recreation with webR and OJS inputs ([see code here](https://github.com/andrewheiss/quarto-websites_2025-10/blob/main/materials/interactivity/dashboard.qmd)):
+
+```{ojs}
+//| echo: false
+vars = ["Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width"]
+
+viewof xcol = Inputs.select(vars, {
+  label: "X variable",
+  value: "Sepal.Length"
+})
+
+viewof ycol = Inputs.select(vars, {
+  label: "Y variable", 
+  value: "Sepal.Width"
+})
+
+viewof clusters = Inputs.range([1, 9], {
+  label: "Clusters",
+  step: 1,
+  value: 3
+})
+```
+
+```{webr}
+#| autorun: true
+#| input:
+#|   - xcol
+#|   - ycol
+#|   - clusters
+selectedData <- iris[, c(xcol, ycol)]
+clusters_result <- kmeans(selectedData, clusters)
+
+palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3",
+          "#FF7F00", "#FFFF33", "#A65628", "#F781BF", "#999999"))
+
+par(mar = c(5.1, 4.1, 0, 1))
+plot(
+  selectedData,
+  col = clusters_result$cluster,
+  pch = 20, cex = 3,
+  xlab = xcol, ylab = ycol
+)
+points(clusters_result$centers, pch = 4, cex = 4, lwd = 4)
+```
 
 
 ## Replicated Shiny example!

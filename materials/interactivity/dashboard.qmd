@@ -1,0 +1,79 @@
+---
+title: "Penguin dashboard"
+format: 
+  dashboard:
+    include-in-header:
+      - text: |
+          <style>
+          footer.footer {
+            display: none;
+          }
+          </style>
+navbar: false
+---
+
+```{r}
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(plotly)
+library(leaflet)
+library(brand.yml)
+
+brand <- brand.yml::read_brand_yml(here::here("_brand.yml"))
+```
+
+## Row
+
+```{r}
+#| title: "Palmer Station, Antarctica"
+palmer_coords <- list(lng = -64.053, lat = -64.774)
+
+leaflet() |>
+  addTiles() |>
+  setView(
+    lng = palmer_coords$lng,
+    lat = palmer_coords$lat, 
+    zoom = 16
+  ) |> 
+  addMarkers(
+    lng = palmer_coords$lng,
+    lat = palmer_coords$lat, 
+    popup = "Home of the famous penguins"
+  )
+```
+
+## Row
+
+### Column
+
+```{r}
+#| content: valuebox
+#| title: "Number of islands"
+list(
+  icon = "globe-americas",
+  color = brand$color$palette$cyan,
+  value = length(unique(penguins$species))
+)
+```
+
+```{r}
+#| content: valuebox
+#| title: "Favorite food"
+list(
+  icon = "fork-knife",
+  color = brand$color$palette$orange,
+  value = "Fish"
+)
+```
+
+### Column
+
+```{r}
+#| title: "Bill length and bill depth"
+p <- ggplot(penguins, aes(x = bill_dep, y = bill_len, color = species)) +
+  geom_point()
+
+ggplotly(p)
+```
