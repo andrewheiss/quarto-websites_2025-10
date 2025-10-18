@@ -455,844 +455,276 @@
     "text": "Stay curious andkeep playing"
   },
   {
-    "objectID": "materials/brand/slides.html#your-turn",
-    "href": "materials/brand/slides.html#your-turn",
-    "title": "Customizationand branding",
-    "section": "Your turn",
-    "text": "Your turn\nTo keep everyone on the same page, we’ll play with quarto-websites-exercise-site_2025-10\n\n\nandhs.co/quarto-websites-2025\n\n\nBut keep your playground site from yesterday handy!\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/brand/slides.html#bootstrap",
-    "href": "materials/brand/slides.html#bootstrap",
-    "title": "Customizationand branding",
-    "section": "Bootstrap",
-    "text": "Bootstrap\nQuarto uses the popular Bootstrap library for HTML structure and CSS styles."
-  },
-  {
-    "objectID": "materials/brand/slides.html#bootstrap-1",
-    "href": "materials/brand/slides.html#bootstrap-1",
-    "title": "Customizationand branding",
-    "section": "Bootstrap",
-    "text": "Bootstrap\nYou can use Bootstrap components and classes for special styling\n\n \n[Here's a button](thing.pdf){.btn .btn-primary role=\"button\"}\n\n[Here's another button](thing.pdf){.btn .btn-warning role=\"button\"}\n\n\n\n↓"
-  },
-  {
-    "objectID": "materials/brand/slides.html#bootswatch-themes",
-    "href": "materials/brand/slides.html#bootswatch-themes",
-    "title": "Customizationand branding",
-    "section": "Bootswatch themes",
-    "text": "Bootswatch themes\nQuarto includes 25 themes from Bootswatch:\n\n\n\ndefault\ncerulean\ncosmo\ncyborg\ndarkly\nflatly\njournal\nlitera\nlumen\n\n\n\nlux\nmateria\nminty\nmorph\npulse\nquartz\nsandstone\nsimplex\nsketchy\n\n\n\nslate\nsolar\nspacelab\nsuperhero\nunited\nvapor\nyeti\nzephyr"
-  },
-  {
-    "objectID": "materials/brand/slides.html#changing-themes",
-    "href": "materials/brand/slides.html#changing-themes",
-    "title": "Customizationand branding",
-    "section": "Changing themes",
-    "text": "Changing themes\nSpecify the custom theme under theme in the YAML settings:\n\n\n_quarto.yml\n\nformat:\n  html:\n    theme:\n      - zephyr"
-  },
-  {
-    "objectID": "materials/brand/slides.html#your-turn-1",
-    "href": "materials/brand/slides.html#your-turn-1",
-    "title": "Customizationand branding",
-    "section": "Your turn",
-    "text": "Your turn\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n−+\n07:00"
-  },
-  {
-    "objectID": "materials/brand/slides.html#theme-options",
-    "href": "materials/brand/slides.html#theme-options",
-    "title": "Customizationand branding",
-    "section": "Theme options",
-    "text": "Theme options\nSometimes we want to change theme settings:\n\nFonts\nColors\nAligment\nSpacing"
-  },
-  {
-    "objectID": "materials/brand/slides.html#basic-theme-options",
-    "href": "materials/brand/slides.html#basic-theme-options",
-    "title": "Customizationand branding",
-    "section": "Basic theme options",
-    "text": "Basic theme options\nQuarto automatically supports some common Bootstrap theme options\nformat:\n  html: \n    theme: zephyr\n    fontsize: 1.2em\n    linestretch: 1.2\n    linkcolor: \"#32a852\"\n    backgroundcolor: \"#f8f8c4\"\n    mainfont: Comic Sans"
-  },
-  {
-    "objectID": "materials/brand/slides.html#total-control-with-css",
-    "href": "materials/brand/slides.html#total-control-with-css",
-    "title": "Customizationand branding",
-    "section": "Total control with CSS",
-    "text": "Total control with CSS"
-  },
-  {
-    "objectID": "materials/brand/slides.html#crash-course-in-css",
-    "href": "materials/brand/slides.html#crash-course-in-css",
-    "title": "Customizationand branding",
-    "section": "Crash course in CSS",
-    "text": "Crash course in CSS\n\n\nHTML elements can have IDs and classes:\n&lt;h2 id=\"my-section\" class=\"special\"&gt;A heading&lt;/h2&gt;\n\nIDs are unique on the page\n\nShorthand: #my-section\n\nClasses aren’t unique and can be repeated\n\nShorthand: .special\n\n\n\n/* All H2s */\nh2 {\n  color: red;\n}\n\n/* All elements with id my-section */\n/* This includes non H2s */\n#my-section {\n  color: red;\n}\n\n/* All H2s with id my-section */\nh2#mysection {\n  color: red;\n}\n\n/* All elements with class .special */\n.special {\n  font-style: italic;\n}\n\n/* All H2s with class .special */\nh2.special {\n  font-style: italic;\n}"
-  },
-  {
-    "objectID": "materials/brand/slides.html#nesting",
-    "href": "materials/brand/slides.html#nesting",
-    "title": "Customizationand branding",
-    "section": "Nesting",
-    "text": "Nesting\n\n\nHTML elements can be nested inside each other\n&lt;div id=\"part1\"&gt;\n  &lt;h2 id=\"my-section\" class=\"special\"&gt;A heading&lt;/h2&gt;\n&lt;/div&gt;\n\n&lt;div id=\"part2\"&gt;\n  &lt;h2 id=\"blah\" class=\"special\"&gt;Another heading&lt;/h2&gt;\n&lt;/div&gt;\n\n/* All H2s in #part1 */\n#part1 h2 {\n  color: red;\n}\n\n/* All H2s in #part2 */\n#part2 h2 {\n  color: blue;\n}"
-  },
-  {
-    "objectID": "materials/brand/slides.html#browser-inpsector",
-    "href": "materials/brand/slides.html#browser-inpsector",
-    "title": "Customizationand branding",
-    "section": "Browser inpsector",
-    "text": "Browser inpsector\nExplore HTML and CSS right from your browser!"
-  },
-  {
-    "objectID": "materials/brand/slides.html#browser-inpsector-1",
-    "href": "materials/brand/slides.html#browser-inpsector-1",
-    "title": "Customizationand branding",
-    "section": "Browser inpsector",
-    "text": "Browser inpsector\nEdit and tinker with styles"
-  },
-  {
-    "objectID": "materials/brand/slides.html#browser-inpsector-2",
-    "href": "materials/brand/slides.html#browser-inpsector-2",
-    "title": "Customizationand branding",
-    "section": "Browser inpsector",
-    "text": "Browser inpsector\nSee which rule applies"
-  },
-  {
-    "objectID": "materials/brand/slides.html#your-turn-2",
-    "href": "materials/brand/slides.html#your-turn-2",
-    "title": "Customizationand branding",
-    "section": "Your turn",
-    "text": "Your turn\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nBonus: Those in-browser edits will disappear if you refresh the page. See if you can figure out how to put them in your website. (Hint!)\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/brand/slides.html#sass-css-but-fancier",
-    "href": "materials/brand/slides.html#sass-css-but-fancier",
-    "title": "Customizationand branding",
-    "section": "Sass: CSS, but fancier",
-    "text": "Sass: CSS, but fancier\n@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');\n\n\n/*-- scss:defaults --*/\n\n/* Built-in Bootstrap variables */\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$font-family-sans-serif:  Roboto;\n\n/* Your own variables */\n$my-neat-red: #e21818;\n\n\n/*-- scss:rules --*/\n#quarto-sidebar h2 {\n  font-family: Roboto;\n  color: $my-neat-red;\n\n  /* Magically compiles to #quarto-sidebar h2 a:hover */\n  a:hover {\n    color: #d1c81d;\n  }\n}"
-  },
-  {
-    "objectID": "materials/brand/slides.html#bootstrap-sass-variables",
-    "href": "materials/brand/slides.html#bootstrap-sass-variables",
-    "title": "Customizationand branding",
-    "section": "Bootstrap Sass variables",
-    "text": "Bootstrap Sass variables\nThere are so many!\n\nQuarto lists these as the most typical\nBootstrap technically has all these\nHere’s a filterable table of everything"
-  },
-  {
-    "objectID": "materials/brand/slides.html#using-csssass-with-quarto",
-    "href": "materials/brand/slides.html#using-csssass-with-quarto",
-    "title": "Customizationand branding",
-    "section": "Using CSS/Sass with Quarto",
-    "text": "Using CSS/Sass with Quarto\n\n\nUse vanilla CSS\nformat:\n  html:\n    css: custom.css\n\nUse Sass\nformat:\n  html:\n    theme:\n      - zephyr\n      - custom.scss\n\nSome examples:\n\nThis simple one\nThis slightly more complex one\nThis even more complex one\nheck yeah this one is wild"
-  },
-  {
-    "objectID": "materials/brand/slides.html#our-turn",
-    "href": "materials/brand/slides.html#our-turn",
-    "title": "Customizationand branding",
-    "section": "Our turn",
-    "text": "Our turn\nCreate a SCSS file and make a bunch of rules!\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/brand/slides.html#css-is-a-little-inconvenient",
-    "href": "materials/brand/slides.html#css-is-a-little-inconvenient",
-    "title": "Customizationand branding",
-    "section": "CSS is a little inconvenient",
-    "text": "CSS is a little inconvenient\n\nHTML, slides, and dashboards all use slighlty different underlying HTML\nNo easy way to reuse the colors and typography from your CSS customizations in R and Python plots or in PDF documents\nHard to share consistent, resusable themes with others in your organization (or with the world)"
-  },
-  {
-    "objectID": "materials/brand/slides.html#style-guides",
-    "href": "materials/brand/slides.html#style-guides",
-    "title": "Customizationand branding",
-    "section": "Style guides",
-    "text": "Style guides\n\n\nUrban Institute Data Visualization Style Guide"
-  },
-  {
-    "objectID": "materials/brand/slides.html#style-guides-1",
-    "href": "materials/brand/slides.html#style-guides-1",
-    "title": "Customizationand branding",
-    "section": "Style guides",
-    "text": "Style guides\n\n\nUniversity of Georgia Brand Style Guide"
-  },
-  {
-    "objectID": "materials/brand/slides.html#style-guides-2",
-    "href": "materials/brand/slides.html#style-guides-2",
-    "title": "Customizationand branding",
-    "section": "Style guides",
-    "text": "Style guides\n\n\nGeorgia State University Web Color Guidelines"
-  },
-  {
-    "objectID": "materials/brand/slides.html#matching-style-with-css",
-    "href": "materials/brand/slides.html#matching-style-with-css",
-    "title": "Customizationand branding",
-    "section": "Matching style with CSS",
-    "text": "Matching style with CSS\nYou can recreate styles with CSS (site; custom.scss)"
-  },
-  {
-    "objectID": "materials/brand/slides.html#section",
-    "href": "materials/brand/slides.html#section",
-    "title": "Customizationand branding",
+    "objectID": "materials/brand/index.html",
+    "href": "materials/brand/index.html",
+    "title": "Customization and branding",
     "section": "",
-    "text": "Unified branding with a simple YAML file\n\n\n\nCreate reports, apps, dashboards, plots and more that match your organization’s brand guidelines with a single _brand.yml file.\n\n\nLearn more: https://posit-dev.github.io/brand-yml/"
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Customization and branding"
+    ]
   },
   {
-    "objectID": "materials/brand/slides.html#section-1",
-    "href": "materials/brand/slides.html#section-1",
-    "title": "Customizationand branding",
+    "objectID": "materials/brand/index.html#slides",
+    "href": "materials/brand/index.html#slides",
+    "title": "Customization and branding",
     "section": "",
-    "text": "1. Define branding in a single _brand.yml file.\n2. Apply that branding across almost all Quarto formats."
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Customization and branding"
+    ]
   },
   {
-    "objectID": "materials/brand/slides.html#brand.yml-elements",
-    "href": "materials/brand/slides.html#brand.yml-elements",
-    "title": "Customizationand branding",
-    "section": "_brand.yml elements",
-    "text": "_brand.yml elements\n\nmeta: Identifying information, name of the company, URLs, etc.\nlogo: Files or links to the brand’s logos\ncolor: Colors in the brand’s color palette\ntypography: Fonts for different elements\ndefaults: Additional context-specific settings"
+    "objectID": "materials/brand/index.html#exercises",
+    "href": "materials/brand/index.html#exercises",
+    "title": "Customization and branding",
+    "section": "Exercises",
+    "text": "Exercises\n\nThemes\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n\n\nCSS and Sass\n\n\n\n\n\n\nTipBrowser inspector\n\n\n\n\n\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nBonus: Those in-browser edits will disappear if you refresh the page. See if you can figure out how to put them in your website. (Hint!)\n\n\n\n\n\n\n\n\n\n\nTipOur turn: SCSS\n\n\n\n\n\nCreate a SCSS file and make a bunch of rules!\n\n\n\n\n\nBranding\n\n\n\n\n\n\nTip_brand.yml tinkering\n\n\n\n\n\n\nThere is a file named urban_institute.yml. Make a copy of it, rename it to _brand.yml, and rerender your site. What changes?\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nYou can reset the file by copying and pasting it from here.\n\n\n\n\n\n\n\n\n\n\nTiptheme_brand_ggplot()\n\n\n\n\n\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\").\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n\n\n\n\n\n\nTipread_brand_yaml() tinkering\n\n\n\n\n\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand.\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n\n\n\n\n\n\nTipMake your own _brand.yml\n\n\n\n\n\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml",
+    "crumbs": [
+      "Materials",
+      "Customization and branding"
+    ]
   },
   {
-    "objectID": "materials/brand/slides.html#brand.yml-structure",
-    "href": "materials/brand/slides.html#brand.yml-structure",
-    "title": "Customizationand branding",
-    "section": "_brand.yml structure",
-    "text": "_brand.yml structure\n\n\n_brand.yml\n\nmeta:\n  name: Urban Institute\n  link:\n    home: https://urbaninstitute.github.io/graphics-styleguide/\n\nlogo:\n  images:\n    icon:\n      path: img/urban.png\n      alt: Urban Institute logo\n  small: img/urban-sm.png\n\ncolor:\n  palette:\n    blue: \"#1696d2\"\n    gray-light: \"#d2d2d2\"\n    black: \"#000000\"\n    yellow: \"#fdbf11\"\n    magenta: \"#ec008b\"\n    green: \"#55b748\"\n    gray-dark: \"#5c5859\"\n    red: \"#db2b27\"\n    orange: \"#e88e2d\"\n    white: \"#ffffff\"\n\n  background: white\n  foreground: gray-dark\n  primary: blue\n  secondary: yellow\n  dark: black\n\ntypography:\n  fonts:\n    - family: Lato\n      source: google\n      weight: [400, 700]\n    - family: Jost\n      source: google\n      weight: [400, 700]\n\n  base:\n    family: Lato\n    weight: 400\n\n  headings:\n    family: Jost\n    weight: 700\n\n  link:\n    color: primary\n    decoration: none\n\ndefaults:\n  bootstrap:\n    functions: # string with SCSS functions\n    defaults:  # list of Bootstrap Sass variables to override\n      link-hover-color: $brand-magenta\n    mixins:    # string with SCSS mixins\n    rules: |   # string with SCSS rules\n      #quarto-content h2, #quarto-content h3 {\n          text-transform: uppercase;\n          letter-spacing: 1px;\n      }\n\n      .content .highlight {\n          color: $brand-yellow;\n      }\n\n      .navbar-title {\n          font-family: Jost;\n          font-weight: 700;\n      }"
-  },
-  {
-    "objectID": "materials/brand/slides.html#enabling-_brand.yml-in-quarto",
-    "href": "materials/brand/slides.html#enabling-_brand.yml-in-quarto",
-    "title": "Customizationand branding",
-    "section": "Enabling _brand.yml in Quarto",
-    "text": "Enabling _brand.yml in Quarto\n\nDefine branding in _brand.yml.\nSave in the root directory of your Quarto project.\n\nQuarto will detect the presence of _brand.yml and automatically apply the brand to all documents of the supported formats in the project."
-  },
-  {
-    "objectID": "materials/brand/slides.html#section-2",
-    "href": "materials/brand/slides.html#section-2",
-    "title": "Customizationand branding",
+    "objectID": "materials/basic-websites/index.html",
+    "href": "materials/basic-websites/index.html",
+    "title": "Creating basic websites",
     "section": "",
-    "text": "If your brand file has a different name or lives in a subdirectory, use the brand key.\n\n\nmy-document.qmd\n\n---\ntitle: \"My neat report\"\nformat: html\nbrand: org_theme.yml\n---"
-  },
-  {
-    "objectID": "materials/brand/slides.html#disable-_brand.yml",
-    "href": "materials/brand/slides.html#disable-_brand.yml",
-    "title": "Customizationand branding",
-    "section": "Disable _brand.yml",
-    "text": "Disable _brand.yml\nTo turn off _brand.yml for a document, use brand: false.\n\n\nmy-document.qmd\n\n---\ntitle: \"My neat report\"\nformat: html\nbrand: false\n---"
-  },
-  {
-    "objectID": "materials/brand/slides.html#your-turn-3",
-    "href": "materials/brand/slides.html#your-turn-3",
-    "title": "Customizationand branding",
-    "section": "Your turn",
-    "text": "Your turn\n\nThere is a file named urban_institute.yml. Make a copy of it, rename it to _brand.yml, and rerender your site. What changes?\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nYou can reset the file by copying and pasting it from here.\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/brand/slides.html#use-_brand.yml-in-markdown",
-    "href": "materials/brand/slides.html#use-_brand.yml-in-markdown",
-    "title": "Customizationand branding",
-    "section": "Use _brand.yml in Markdown",
-    "text": "Use _brand.yml in Markdown\nAccess some _brand.yml values in Quarto documents with a shortcode\n\n\nmy_document.qmd\n\nThe site's main color is {{&lt; brand color primary &gt;}}\n\n\n\n↓\n\nThe site’s main color is #d7433b\n\nLearn more: https://quarto.org/docs/authoring/brand.html#using-brand-values"
-  },
-  {
-    "objectID": "materials/brand/slides.html#use-_brand.yml-in-sass",
-    "href": "materials/brand/slides.html#use-_brand.yml-in-sass",
-    "title": "Customizationand branding",
-    "section": "Use _brand.yml in Sass",
-    "text": "Use _brand.yml in Sass\nAccess some _brand.yml values with the $brand-* prefix\n\n\ncustom-styles.scss\n\n/*-- scss:rules --*/\n\nh3 {\n  color: $brand-magenta;\n}\n\n\nLearn more: https://quarto.org/docs/authoring/brand.html#in-scss"
-  },
-  {
-    "objectID": "materials/brand/slides.html#use-_brand.yml-in-r-and-python",
-    "href": "materials/brand/slides.html#use-_brand.yml-in-r-and-python",
-    "title": "Customizationand branding",
-    "section": "Use _brand.yml in R and Python",
-    "text": "Use _brand.yml in R and Python\nAccess and apply specific brand elements\n\nRPython\n\n\nlibrary(brand.yml)\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nbrand$color$primary\n#&gt; [1] \"#1696d2\"\n\nbrand$color$palette$yellow\n#&gt; [1] \"#fdbf11\"\n\nbrand$typography$fonts[[1]]$family\n#&gt; [1] \"Lato\"\n\n\nfrom brand_yml import Brand\n\nbrand = Brand.from_yaml(\"_brand.yml\")\n\nbrand.color.primary"
-  },
-  {
-    "objectID": "materials/brand/slides.html#theme-helpers",
-    "href": "materials/brand/slides.html#theme-helpers",
-    "title": "Customizationand branding",
-    "section": "Theme helpers",
-    "text": "Theme helpers\nThe {quarto} package contains theme helpers that apply branding to plots\n\nRPython\n\n\nlibrary(quarto)\n\nmy_theme &lt;- theme_brand_ggplot2(\"_brand.yml\")\n\n\nfrom quarto import theme_brand_plotnine\n\nmy_theme = theme_brand_plotnine('_brand.yml')\n\n\n\n\n\nR + {ggplot2} and Python + plotnine documentation\n\n\nDoesn’t do much (yet) beyond using the brand’s background and foreground colors in the plot"
-  },
-  {
-    "objectID": "materials/brand/slides.html#example-plot",
-    "href": "materials/brand/slides.html#example-plot",
-    "title": "Customizationand branding",
-    "section": "Example plot",
-    "text": "Example plot\nlibrary(tidyverse)\nlibrary(brand.yml)\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nbrand_theme &lt;- quarto::theme_brand_ggplot2(\"_brand.yml\") +\n  theme(\n    text = element_text(family = brand$typography$fonts[[1]]$family, size = 11)\n  )\n\nggplot(mpg, aes(x = displ, y = hwy, color = drv)) +\n  geom_point() +\n  labs(title = \"A plot\") +\n  scale_color_manual(\n    values = c(\n      brand$color$palette$blue,\n      brand$color$palette$black,\n      brand$color$palette$yellow\n    )\n  ) +\n  brand_theme"
-  },
-  {
-    "objectID": "materials/brand/slides.html#your-turn-4",
-    "href": "materials/brand/slides.html#your-turn-4",
-    "title": "Customizationand branding",
-    "section": "Your turn",
-    "text": "Your turn\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\").\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/brand/slides.html#your-turn-5",
-    "href": "materials/brand/slides.html#your-turn-5",
-    "title": "Customizationand branding",
-    "section": "Your turn",
-    "text": "Your turn\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand.\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/brand/slides.html#make-your-own-_brand.yml",
-    "href": "materials/brand/slides.html#make-your-own-_brand.yml",
-    "title": "Customizationand branding",
-    "section": "Make your own _brand.yml",
-    "text": "Make your own _brand.yml\n\nIn RStudio, go to File &gt; New File &gt; Text file\nIn Positron or VS Code, use the Explorer panel to add a new file.\n\nSave the file as _brand.yml\n\n \nOr create a Brand Extension for sharing and distributing your brand"
-  },
-  {
-    "objectID": "materials/brand/slides.html#dont-reinvent-the-wheel",
-    "href": "materials/brand/slides.html#dont-reinvent-the-wheel",
-    "title": "Customizationand branding",
-    "section": "Don’t reinvent the wheel!",
-    "text": "Don’t reinvent the wheel!\nDO NOT try to write a _brand.yml from scratch!\nLook at the “Inspiration” page!\n\n\nLearn more: https://posit-dev.github.io/brand-yml/inspiration/"
-  },
-  {
-    "objectID": "materials/brand/slides.html#your-turn-6",
-    "href": "materials/brand/slides.html#your-turn-6",
-    "title": "Customizationand branding",
-    "section": "Your turn",
-    "text": "Your turn\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/brand/slides.html#course-outline",
-    "href": "materials/brand/slides.html#course-outline",
-    "title": "Customizationand branding",
-    "section": "Course outline",
-    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\n✅ Advanced website features\n✅ Publishing\n✅ Customization and branding\nInteractivity"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#page-structure",
-    "href": "materials/basic-websites/slides.html#page-structure",
-    "title": "Creatingbasic websites",
-    "section": "Page Structure",
-    "text": "Page Structure\n\n\n\n\nindex.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\n---\n\nThe `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).\n\n```{r}\n#| label: fig-neat-plot\nlibrary(tidyverse)\nlibrary(brand.yml)\n\ndf &lt;- read_csv(\"data/gapminder.csv\")\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nggplot(df, aes(x = gdpPercap, y = lifeExp)) +\n  geom_point(aes(size = pop, color = continent)) +\n  scale_x_log10() +\n  theme_brand_ggplot2(\"_brand.yml\")\n```\n\n\n\n\nWebpages are like any other Quarto document:\n\nStart with a YAML header\nCan include code cells\nEverything else is markdown content"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#website-structure",
-    "href": "materials/basic-websites/slides.html#website-structure",
-    "title": "Creatingbasic websites",
-    "section": "Website Structure",
-    "text": "Website Structure\nA minimal website has two files: index.qmd and _quarto.yml\n\nindex.qmd: Renders to index.html, your home page.\n_quarto.yml: Controls project and website properties.\n\nWhen rendered you will get a _site/ folder. This contains everything needed to serve the site."
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#quarto.yml",
-    "href": "materials/basic-websites/slides.html#quarto.yml",
-    "title": "Creatingbasic websites",
-    "section": "_quarto.yml",
-    "text": "_quarto.yml\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#quarto-projects",
-    "href": "materials/basic-websites/slides.html#quarto-projects",
-    "title": "Creatingbasic websites",
-    "section": "Quarto projects",
-    "text": "Quarto projects\nWebsites are Quarto projects.\nAll Quarto projects include a _quarto.yml file.\n\n\nThis is a Quarto Project.\nmy-folder/\n├── _quarto.yml\n└── my-document.qmd\n\nThis is not.\nmy-folder/\n└── my-document.qmd"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#quarto-projects-1",
-    "href": "materials/basic-websites/slides.html#quarto-projects-1",
-    "title": "Creatingbasic websites",
-    "section": "Quarto projects",
-    "text": "Quarto projects\nA Quarto project is a directory that provides:\n\nA way to render all or some of the files in a directory with a single command (e.g. quarto render myproject).\nA way to share YAML configuration across multiple documents."
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#quarto-projects-2",
-    "href": "materials/basic-websites/slides.html#quarto-projects-2",
-    "title": "Creatingbasic websites",
-    "section": "Quarto projects",
-    "text": "Quarto projects\nNot all Quarto projects are websites (though they’re typically website-like).\n\n\nTerminal\n\n❯ quarto create project\n# ? Type\n#   default\n# ❯ website\n#   blog\n#   manuscript\n#   book\n#   confluence"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#creating-a-project-skeleton",
-    "href": "materials/basic-websites/slides.html#creating-a-project-skeleton",
-    "title": "Creatingbasic websites",
-    "section": "Creating a project skeleton",
-    "text": "Creating a project skeleton\n\nRStudioPositron / VS CodeTerminal\n\n\n\nFile &gt; New Project &gt; New Directory &gt; Quarto Website\n\n\n\n\n\n\n\n\n\n\nOpen the Command Palette ( ⌘⇧P |  Ctrl + Shift + P)and start typing “create project”\n\n\n\n\n\n\n\n\n\n\n\nTerminal\n\n❯ quarto create project website my-site\n# ? Title (my-site) › My site\n# Creating project at /Users/andrew/Desktop/my-site:\n#   - Created _quarto.yml\n#   - Created index.qmd\n#   - Created about.qmd\n#   - Created styles.css\n# ? Open With › (don't open)"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#creating-a-project-skeleton-1",
-    "href": "materials/basic-websites/slides.html#creating-a-project-skeleton-1",
-    "title": "Creatingbasic websites",
-    "section": "Creating a project skeleton",
-    "text": "Creating a project skeleton\nmy-site/\n├── _quarto.yml\n├── about.qmd\n├── index.qmd\n├── styles.css\n└── testing.Rproj  ← if made with RStudio"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#your-turn",
-    "href": "materials/basic-websites/slides.html#your-turn",
-    "title": "Creatingbasic websites",
-    "section": "Your turn",
-    "text": "Your turn\n\nCreate a new website project somewhere on your computer.\nYou’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n−+\n03:00"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#preview",
-    "href": "materials/basic-websites/slides.html#preview",
-    "title": "Creatingbasic websites",
-    "section": "Preview",
-    "text": "Preview\n\nRStudioPositron / VS CodeTerminal\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n Ctrl + Shift + K\n\nWhole site\nUse Terminal:\n\n\nTerminal\n\nquarto preview \n\n\nRequires Quarto Extension for VS Code\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#your-turn-1",
-    "href": "materials/basic-websites/slides.html#your-turn-1",
-    "title": "Creatingbasic websites",
-    "section": "Your turn",
-    "text": "Your turn\n\nOpen your playground website.\nOpen index.qmd and click Render/Preview.\nEdit the title entry in index.qmd’s YAML metadata to something different and add a subtitle entry. Preview.\nAdd some text to index.qmd. Preview.\nAdd an R code chunk to about.qmd. Preview.\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#quarto.yml-2",
-    "href": "materials/basic-websites/slides.html#quarto.yml-2",
-    "title": "Creatingbasic websites",
-    "section": "_quarto.yml",
-    "text": "_quarto.yml\nConfigure all site-level settings with _quarto.yml:\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#project-settings",
-    "href": "materials/basic-websites/slides.html#project-settings",
-    "title": "Creatingbasic websites",
-    "section": "Project settings",
-    "text": "Project settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: _output\n  preview:\n    port: 5555"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#project-settings-1",
-    "href": "materials/basic-websites/slides.html#project-settings-1",
-    "title": "Creatingbasic websites",
-    "section": "Project settings",
-    "text": "Project settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: _output\n  preview:\n    port: 5555"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#site-settings",
-    "href": "materials/basic-websites/slides.html#site-settings",
-    "title": "Creatingbasic websites",
-    "section": "Site settings",
-    "text": "Site settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  description: \"Some neat stuff\"\n  cookie-consent: true\n  search: false\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#navigation-settings",
-    "href": "materials/basic-websites/slides.html#navigation-settings",
-    "title": "Creatingbasic websites",
-    "section": "Navigation settings",
-    "text": "Navigation settings\nMore on this in a bit!\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n  sidebar: \n    style: \"docked\"\n    contents: \n      - about.qmd\n\nformat:\n  html:\n    toc: true"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#format-settings",
-    "href": "materials/basic-websites/slides.html#format-settings",
-    "title": "Creatingbasic websites",
-    "section": "Format settings",
-    "text": "Format settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true\n    number-sections: true\n    cap-location: margin"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff",
-    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff",
-    "title": "Creatingbasic websites",
-    "section": "Don’t memorize this stuff!",
-    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Reference &gt; Websites"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#your-turn-2",
-    "href": "materials/basic-websites/slides.html#your-turn-2",
-    "title": "Creatingbasic websites",
-    "section": "Your turn",
-    "text": "Your turn\n\nEdit your _quarto.yml to make the following changes:\n\nChange the preview port to 5555\nEnable a cookie consent dialog\nAdd a site description\n\nBonus tasks!\n\nAdd a footer that says “© 2025, Myself”\nAdd an announcement bar that says something\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Reference &gt; Websites\n\n\n\n\n−+\n07:00"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#answer",
-    "href": "materials/basic-websites/slides.html#answer",
-    "title": "Creatingbasic websites",
-    "section": "Answer",
-    "text": "Answer\n\n\n_quarto.yml\n\nproject:\n  type: website\n  preview:\n    port: 5555\n\nwebsite:\n  title: \"My site\"\n  description: \"Something\"\n  cookie-consent: true\n  page-footer: \"© 2025, Myself\"\n  announcement:\n    content: \"**Fun!** This is my playground site.\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#answer-1",
-    "href": "materials/basic-websites/slides.html#answer-1",
-    "title": "Creatingbasic websites",
-    "section": "Answer",
-    "text": "Answer"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#top-navigation",
-    "href": "materials/basic-websites/slides.html#top-navigation",
-    "title": "Creatingbasic websites",
-    "section": "Top navigation",
-    "text": "Top navigation\n\n\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#add-new-page",
-    "href": "materials/basic-websites/slides.html#add-new-page",
-    "title": "Creatingbasic websites",
-    "section": "Add new page",
-    "text": "Add new page\n\n\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n\nformat:\n  html:\n    toc: true\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#entry-titles",
-    "href": "materials/basic-websites/slides.html#entry-titles",
-    "title": "Creatingbasic websites",
-    "section": "Entry titles",
-    "text": "Entry titles\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n\n\n\nUse href + text to control the link title\nUse the .qmd filename to use that page’s title as the link title\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#icons",
-    "href": "materials/basic-websites/slides.html#icons",
-    "title": "Creatingbasic websites",
-    "section": "Icons",
-    "text": "Icons\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - href: https://www.github.com\n        icon: github\n\n\n\n\nicons.getbootstrap.com\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#dropdowns",
-    "href": "materials/basic-websites/slides.html#dropdowns",
-    "title": "Creatingbasic websites",
-    "section": "Dropdowns",
-    "text": "Dropdowns\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - href: https://www.github.com\n        icon: github\n      - icon: share\n        menu: \n          - href: https://bsky.app/\n            icon: bluesky\n            text: Bluesky\n          - href: https://www.linkedin.com/\n            icon: linkedin\n            text: LinkedIn\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff-1",
-    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff-1",
-    "title": "Creatingbasic websites",
-    "section": "Don’t memorize this stuff!",
-    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Websites &gt; Website Navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#your-turn-3",
-    "href": "materials/basic-websites/slides.html#your-turn-3",
-    "title": "Creatingbasic websites",
-    "section": "Your turn",
-    "text": "Your turn\n\nCreate a new file named contact.qmd and paste the content from about.qmd into it. Then change it to something else.\nAdd contact.qmd to the left section of your top navigation bar.\nAdd a right section to the navigation bar with icon-based links to a few other websites.\nBonus task! Create a dropdown menu in the top navigation bar, either with links to other websites or links to some new .qmd pages that you create.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n−+\n07:00"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#answer-2",
-    "href": "materials/basic-websites/slides.html#answer-2",
-    "title": "Creatingbasic websites",
-    "section": "Answer",
-    "text": "Answer\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - contact.qmd\n    right:\n      - href: https://www.github.com\n        icon: github\n      - icon: share\n        text: Share!\n        menu: \n          - href: https://bsky.app/\n            icon: bluesky\n            text: Bluesky\n          - href: https://www.linkedin.com/\n            icon: linkedin\n            text: LinkedIn"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#answer-3",
-    "href": "materials/basic-websites/slides.html#answer-3",
-    "title": "Creatingbasic websites",
-    "section": "Answer",
-    "text": "Answer"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#side-navigation",
-    "href": "materials/basic-websites/slides.html#side-navigation",
-    "title": "Creatingbasic websites",
-    "section": "Side navigation",
-    "text": "Side navigation\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - contact.qmd\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#side-navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#side-navigation-and-sections",
-    "href": "materials/basic-websites/slides.html#side-navigation-and-sections",
-    "title": "Creatingbasic websites",
-    "section": "Side navigation and sections",
-    "text": "Side navigation and sections\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: About me\n        contents:\n          - about.qmd\n          - contact.qmd\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#side-navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#side-navigation-and-other-settings",
-    "href": "materials/basic-websites/slides.html#side-navigation-and-other-settings",
-    "title": "Creatingbasic websites",
-    "section": "Side navigation and other settings",
-    "text": "Side navigation and other settings\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    style: \"docked\"  # Default is \"floating\"\n    background: \"#dddddd\"\n    logo: img/logo.png\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: About me\n        contents:\n          - about.qmd\n          - contact.qmd\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#side-navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#automatic-sidebar",
-    "href": "materials/basic-websites/slides.html#automatic-sidebar",
-    "title": "Creatingbasic websites",
-    "section": "Automatic sidebar",
-    "text": "Automatic sidebar\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents:\n          - research/project1.qmd\n          - research/project2.qmd\n          - research/project3.qmd\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents: research/*\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#auto-generation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#hybrid-navigation",
-    "href": "materials/basic-websites/slides.html#hybrid-navigation",
-    "title": "Creatingbasic websites",
-    "section": "Hybrid navigation",
-    "text": "Hybrid navigation\nHave a different sidebar for different sections!\n\n\n_quarto.yml\n\nwebsite:\n  navbar: \n    left: \n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - text: \"Research\"\n        href: research/index.qmd\n  sidebar:\n    - title: \"Research\"\n      contents:\n        - research/index.qmd\n        - research/project1.qmd\n        - research/project2.qmd\n        - research/project3.qmd\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff-2",
-    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff-2",
-    "title": "Creatingbasic websites",
-    "section": "Don’t memorize this stuff!",
-    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Websites &gt; Website Navigation"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#your-turn-4",
-    "href": "materials/basic-websites/slides.html#your-turn-4",
-    "title": "Creatingbasic websites",
-    "section": "Your turn",
-    "text": "Your turn\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research/index.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n−+\n07:00"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#answer-4",
-    "href": "materials/basic-websites/slides.html#answer-4",
-    "title": "Creatingbasic websites",
-    "section": "Answer",
-    "text": "Answer\n\n\n_quarto.yml\n\n# Excerpt!\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - text: \"Research\"\n        href: research/index.qmd\n\n  sidebar:\n    - title: \"Research\"\n      contents:\n        - research/index.qmd\n        - research/project1.qmd\n        - research/project2.qmd\n        - research/project3.qmd"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#answer-5",
-    "href": "materials/basic-websites/slides.html#answer-5",
-    "title": "Creatingbasic websites",
-    "section": "Answer",
-    "text": "Answer"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#yaml-based-page-settings",
-    "href": "materials/basic-websites/slides.html#yaml-based-page-settings",
-    "title": "Creatingbasic websites",
-    "section": "YAML-based page settings",
-    "text": "YAML-based page settings\nSome page types are based on special templates that use information from the YAML metadata.\nTwo main built-in special page types:\n\nListing pages\nAbout pages\n\n\n(you can make your own special templates too!)"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#listing-pages",
-    "href": "materials/basic-websites/slides.html#listing-pages",
-    "title": "Creatingbasic websites",
-    "section": "Listing pages",
-    "text": "Listing pages\n\n\nMore about these in the advanced section!\n\n\nresearch.qmd\n\n---\ntitle: \"Research\"\nlisting:\n  contents: \"*.qmd\"\n  type: table\n---\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-listings.html"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#about-pages",
-    "href": "materials/basic-websites/slides.html#about-pages",
-    "title": "Creatingbasic websites",
-    "section": "About pages",
-    "text": "About pages\n\n\n\n\nabout.qmd\n\n---\ntitle: \"Ada Lovelace\"\nabout:\n  template: solana\n  image: img/ada-lovelace.jpg\n  links: \n    - icon: wikipedia\n      text: Wikipedia\n      href: https://en.wikipedia.org/wiki/Ada_Lovelace\ntoc: false\n---\n\n## Background\n\nAugusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852), also known as Ada Lovelace, was an English mathematician and writer chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. Ada Lovelace is sometimes considered to be the first computer programmer.\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-about.html"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff-3",
-    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff-3",
-    "title": "Creatingbasic websites",
-    "section": "Don’t memorize this stuff!",
-    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Websites &gt; About Pages"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#your-turn-5",
-    "href": "materials/basic-websites/slides.html#your-turn-5",
-    "title": "Creatingbasic websites",
-    "section": "Your turn",
-    "text": "Your turn\n\nCreate a basic About page for either yourself or some fictional person.\n\nFind an image on your computer or from the internet and add it to your project, either in the root of project, or (better!) in a folder just for images, like img/\nAdd links to different websites (with icons!)\nTry different template options\nTry different image-shape options\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; About Pages\n\n\n\n\n−+\n07:00"
-  },
-  {
-    "objectID": "materials/basic-websites/slides.html#course-outline",
-    "href": "materials/basic-websites/slides.html#course-outline",
-    "title": "Creatingbasic websites",
-    "section": "Course outline",
-    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\nAdvanced website features\nPublishing\nCustomization and branding\nInteractivity"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#urls",
-    "href": "materials/advanced-websites/slides.html#urls",
-    "title": "Advancedwebsite features",
-    "section": "URLs",
-    "text": "URLs\nThe website will mirror your file structure, including subdirectories\n\n\n/about.qmd ↓ example.com/about.html\n\n\n\n \n\n/research/project1.qmd ↓ example.com/research/project1.html"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#custom-urls",
-    "href": "materials/advanced-websites/slides.html#custom-urls",
-    "title": "Advancedwebsite features",
-    "section": "Custom URLs",
-    "text": "Custom URLs\nWhat if you want nicer URLs?\n \n\nexample.com/about/\nexample.com/research/project1/"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#index.html",
-    "href": "materials/advanced-websites/slides.html#index.html",
-    "title": "Advancedwebsite features",
-    "section": "index.html",
-    "text": "index.html\nBy convention, web servers treat index.html files in a special way.\n \n\nexample.com/about/\nimplicitly means\nexample.com/about/index.html"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#index.qmd",
-    "href": "materials/advanced-websites/slides.html#index.qmd",
-    "title": "Advancedwebsite features",
-    "section": "index.qmd",
-    "text": "index.qmd\nIf you want example.com/about/, put your about page in a folder named about and rename it to index.qmd.\n \n\n/about.qmd ↓ /about/index.qmd ↓ example.com/about/"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#user-friendly-urls",
-    "href": "materials/advanced-websites/slides.html#user-friendly-urls",
-    "title": "Advancedwebsite features",
-    "section": "User-friendly URLs",
-    "text": "User-friendly URLs\nYou could have a blog post like this (ew):\n\n/2025-10-16_blog-post-title.qmd ↓ example.com/2025-10-16_blog-post-title.html\n\n \nOr like this (yay):\n\n/blog/2025/10/16/blog-post-title/index.qmd ↓ example.com/blog/2025/10/16/blog-post-title/"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#your-turn",
-    "href": "materials/advanced-websites/slides.html#your-turn",
-    "title": "Advancedwebsite features",
-    "section": "Your turn",
-    "text": "Your turn\n\nMake your about.qmd page appear at about/\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#page-layout",
-    "href": "materials/advanced-websites/slides.html#page-layout",
-    "title": "Advancedwebsite features",
-    "section": "Page layout",
-    "text": "Page layout\nPage layouts\n\narticle: Default layout with main text area between 600px–900px\nfull: Expand main text area into the sidebar and margin area if there’s no content there\ncustom: Provide your own HTML template for the main text area\n\n\n\nComponent widths\n\n\nYAML settings\nformat: \n  html:\n    page-layout: article  # or \"full\" or \"custom\"\n    grid:\n      sidebar-width: 300px\n      body-width: 900px\n      margin-width: 300px\n      gutter-width: 1.5rem"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#your-turn-1",
-    "href": "materials/advanced-websites/slides.html#your-turn-1",
-    "title": "Advancedwebsite features",
-    "section": "Your turn",
-    "text": "Your turn\n\nChange the page layout settings for one of your page\nBonus task! Try using the Bootstrap CSS Grid layout system with page-layout: custom.\n\nSee the documentation here\nSee an IRL example here (and code here)\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Advanced &gt; Page Layout.\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#article-layout",
-    "href": "materials/advanced-websites/slides.html#article-layout",
-    "title": "Advancedwebsite features",
-    "section": "Article layout",
-    "text": "Article layout\nQuarto offers a ton of article-specific layout options:\n\nMake content go into the margin\nMake content go across the whole page\nPut content in the margins"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#your-turn-2",
-    "href": "materials/advanced-websites/slides.html#your-turn-2",
-    "title": "Advancedwebsite features",
-    "section": "Your turn",
-    "text": "Your turn\n\nAdd an image that spans across the whole page\nAdd some text to the margin\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Authoring &gt; Article Layout.\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#re-running-code",
-    "href": "materials/advanced-websites/slides.html#re-running-code",
-    "title": "Advancedwebsite features",
-    "section": "Re-running code",
-    "text": "Re-running code\n\n\n\n\nyour-document.qmd\n\n---\ntitle: \"My Complex Document\"\nformat: html\n---\n\nHere we run all our models and then plot them:\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n\n\n\n\nSometimes you’ll have a lot of code chunks that take a long time to run.\nQuarto will re-run these chunks each time you render the site.\nGood for reproducibility! Bad for speed!"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#freeze-computational-output",
-    "href": "materials/advanced-websites/slides.html#freeze-computational-output",
-    "title": "Advancedwebsite features",
-    "section": "Freeze computational output",
-    "text": "Freeze computational output\n\n\n\n\nyour-document.qmd\n\n---\ntitle: \"My Complex Document\"\nformat: html\nexecute:\n  freeze: auto\n---\n\nHere we run all our models and then plot them:\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n\n\n\nUse freeze: auto to only re-run the code if the source file changes.\n← Individual filesor site-wide ↓\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nexecute: \n  freeze: auto\n\nwebsite:\n  title: \"Example site\""
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#freeze-computational-output-1",
-    "href": "materials/advanced-websites/slides.html#freeze-computational-output-1",
-    "title": "Advancedwebsite features",
-    "section": "Freeze computational output",
-    "text": "Freeze computational output\nCode output is stored in _freeze"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#freezing-caching",
-    "href": "materials/advanced-websites/slides.html#freezing-caching",
-    "title": "Advancedwebsite features",
-    "section": "Freezing ≠ caching",
-    "text": "Freezing ≠ caching\n\nFreezing only stores the text of the code output.\nChanging the file will force a re-run.\nConsider caching if you don’t want the code to re-run (see documentation):\nexecute:\n  cache: true"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#automatic-content",
-    "href": "materials/advanced-websites/slides.html#automatic-content",
-    "title": "Advancedwebsite features",
-    "section": "Automatic content",
-    "text": "Automatic content\nWe can automatically add all the pages in a folder to a sidebar:\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents:\n          - research/project1.qmd\n          - research/project2.qmd\n          - research/project3.qmd\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents: research/*\n\n\n\nWhat if we want fancier automatic pages?\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#auto-generation"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#listing-pages",
-    "href": "materials/advanced-websites/slides.html#listing-pages",
-    "title": "Advancedwebsite features",
-    "section": "Listing pages",
-    "text": "Listing pages\n\n\n \n\n\nresearch/index.qmd\n\n---\ntitle: \"Research\"\nlisting:\n  contents: \"*.qmd\"\n  type: table\n---\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-listings.html"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#your-turn-3",
-    "href": "materials/advanced-websites/slides.html#your-turn-3",
-    "title": "Advancedwebsite features",
-    "section": "Your turn",
-    "text": "Your turn\n\nEdit research/index.qmd to be a listing page, showing all the pages in the research folder.\nExperiment with changing the listing type to default, then table, then grid.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Listing Pages.\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#metadata-in-listings",
-    "href": "materials/advanced-websites/slides.html#metadata-in-listings",
-    "title": "Advancedwebsite features",
-    "section": "Metadata in listings",
-    "text": "Metadata in listings\n\n\n\n\n\n\n\n\n\n\npost.qmd\n\n---\ntitle: \"Research\"\nauthor: \"Your name\"\ndescription: \"Something\"\ndate: 2025-10-06\nimage: \"img/thing.jpg\"\n---"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#your-turn-4",
-    "href": "materials/advanced-websites/slides.html#your-turn-4",
-    "title": "Advancedwebsite features",
-    "section": "Your turn",
-    "text": "Your turn\n\nAdd metadata to your different research .qmd files, including images (find some at Unsplash). See how those are reflected in the listing page.\nBonus task! Modify how the listing page is sorted. Sort it by descending title.\n\nSee the documentation here\n\nBonus task! Change how the dates are shown in the listing page with the date-format option.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#categories",
-    "href": "materials/advanced-websites/slides.html#categories",
-    "title": "Advancedwebsite features",
-    "section": "Categories",
-    "text": "Categories\n\n\n\nEnable categories in the listing settings\n\n\nlisting-page.qmd\n\nlisting:\n  categories: true\n\n\nSpecify categories in the document\n\n\npost.qmd\n\n---\ntitle: \"Research\"\ncategories:\n  - statistics\n  - r\n  - tidyverse\n---"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#your-turn-5",
-    "href": "materials/advanced-websites/slides.html#your-turn-5",
-    "title": "Advancedwebsite features",
-    "section": "Your turn",
-    "text": "Your turn\n\nAdd categories to your different research .qmd files. See how those are reflected in the listing page after rendering.\nBonus task! Change the category list on the listing page to appear as a word cloud.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings &gt; Categories.\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#extra-advanced-bonus-stuff",
-    "href": "materials/advanced-websites/slides.html#extra-advanced-bonus-stuff",
-    "title": "Advancedwebsite features",
-    "section": "Extra advanced bonus stuff",
-    "text": "Extra advanced bonus stuff\nMultiple listings\nInclude lists of different document types on the same page (example + code)\n\nCustom listings\nGo beyond default, table, and grid and make your own template (example + code)\n\n\nYAML lists\nGenerate listings of items in a YAML file instead of .qmd files (example)"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#your-turn-6",
-    "href": "materials/advanced-websites/slides.html#your-turn-6",
-    "title": "Advancedwebsite features",
-    "section": "Your turn",
-    "text": "Your turn\nMake a blog!\n\nCreate a new folder named blog with a file named index.qmd in it.\nMake a few folders and files named blog/2025/10/16/thing/index.qmd, etc.\nAdd some fake content in the blog posts. Add images, titles, descriptions, etc.\nMake the blog posts appear as a listing page at blog/index.qmd.\nAdd blog/index.qmd to your top navigation bar.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n−+\n20:00"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#extensions-1",
-    "href": "materials/advanced-websites/slides.html#extensions-1",
-    "title": "Advancedwebsite features",
-    "section": "Extensions",
-    "text": "Extensions\nQuarto has extensions that let you add custom…\n\nshortcodes\nfilters\ndocument formats and templates\nbrands"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#shortcode-extensions",
-    "href": "materials/advanced-websites/slides.html#shortcode-extensions",
-    "title": "Advancedwebsite features",
-    "section": "Shortcode extensions",
-    "text": "Shortcode extensions\nFont Awesome icons (site + extension)\n\n\nTerminal\n\nquarto add quarto-ext/fontawesome\n\n \n\n\n\n\n\n\n\nText\nOutput\n\n\n\n\n{{&lt; fa home &gt;}}\n\n\n\n{{&lt; fa wand-magic-sparkles &gt;}}\n\n\n\n{{&lt; fa brands apple &gt;}}\n\n\n\n{{&lt; fa brands r-project &gt;}}\n\n\n\n{{&lt; fa globe &gt;}}"
-  },
-  {
-    "objectID": "materials/advanced-websites/slides.html#section",
-    "href": "materials/advanced-websites/slides.html#section",
-    "title": "Advancedwebsite features",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Creating basic websites"
+    ]
+  },
+  {
+    "objectID": "materials/basic-websites/index.html#slides",
+    "href": "materials/basic-websites/index.html#slides",
+    "title": "Creating basic websites",
     "section": "",
-    "text": "Use in Markdown:\n\n\nmy-document.qmd\n\n- {{&lt; fa book &gt;}} [Book page](https://www.bayesrulesbook.com/)\n- {{&lt; fa person-chalkboard &gt;}} [Teaching resources](https://bayes-rules.github.io/posts/resources/)\n- {{&lt; fa brands r-project &gt;}} [R package](https://github.com/bayes-rules/bayesrules) and [package documentation](https://bayes-rules.github.io/bayesrules/docs/)\n- {{&lt; fa brands youtube &gt;}} Alicia Johnson, [\"Bayes Rules! An Introduction to Bayesian Modeling with R with Alicia Johnson\"](https://www.youtube.com/watch?v=MgB1ihuEDN4), presentation for R-Ladies Philly on October 18, 2021\n\n\n\n↓\n\n\n\n\n\n Book page\n Project page\n R package and package documentation\n Alicia Johnson, “Bayes Rules! An Introduction to Bayesian Modeling with R with Alicia Johnson”, presentation for R-Ladies Philly on October 18, 2021"
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Creating basic websites"
+    ]
   },
   {
-    "objectID": "materials/advanced-websites/slides.html#section-1",
-    "href": "materials/advanced-websites/slides.html#section-1",
-    "title": "Advancedwebsite features",
+    "objectID": "materials/basic-websites/index.html#exercises",
+    "href": "materials/basic-websites/index.html#exercises",
+    "title": "Creating basic websites",
+    "section": "Exercises",
+    "text": "Exercises\n\nAnatomy of a Quarto website\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a new website project somewhere on your computer.\nYou’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen your playground website.\nOpen index.qmd and click Render/Preview.\nEdit the title entry in index.qmd’s YAML metadata to something different and add a subtitle entry. Preview.\nAdd some text to index.qmd. Preview.\nAdd an R code chunk to about.qmd. Preview.\n\n\n\n\n\n\n_quarto.yml\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nEdit your _quarto.yml to make the following changes:\n\nChange the preview port to 5555\nEnable a cookie consent dialog\nAdd a site description\n\nBonus tasks!\n\nAdd a footer that says “© 2025, Myself”\nAdd an announcement bar that says something\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Reference &gt; Websites\n\n\n\n\n\n\nNavigation\n\n\n\n\n\n\nTipYour turn 1\n\n\n\n\n\n\nCreate a new file named contact.qmd and paste the content from about.qmd into it. Then change it to something else.\nAdd contact.qmd to the left section of your top navigation bar.\nAdd a right section to the navigation bar with icon-based links to a few other websites.\nBonus task! Create a dropdown menu in the top navigation bar, either with links to other websites or links to some new .qmd pages that you create.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\n\n\n\n\nTipYour turn 2\n\n\n\n\n\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research/index.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\nSpecial pages\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a basic About page for either yourself or some fictional person.\n\nFind an image on your computer or from the internet and add it to your project, either in the root of project, or (better!) in a folder just for images, like img/\nAdd links to different websites (with icons!)\nTry different template options\nTry different image-shape options\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; About Pages",
+    "crumbs": [
+      "Materials",
+      "Creating basic websites"
+    ]
+  },
+  {
+    "objectID": "materials/advanced-websites/index.html",
+    "href": "materials/advanced-websites/index.html",
+    "title": "Advanced website features",
     "section": "",
-    "text": "Use in YAML:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - text: \"{{&lt; fa person-chalkboard &gt;}} Teaching\"\n        href: teaching.qmd\n      - text: \"{{&lt; fa flask &gt;}} Research\"\n        href: research.qmd\n    right:\n      - text: \"{{&lt; fa brands google-scholar &gt;}}\"\n        href: \"https://example.com\"\n\n\n\n↓"
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Advanced website features"
+    ]
   },
   {
-    "objectID": "materials/advanced-websites/slides.html#filter-extensions",
-    "href": "materials/advanced-websites/slides.html#filter-extensions",
-    "title": "Advancedwebsite features",
-    "section": "Filter extensions",
-    "text": "Filter extensions\nPreview Color (extension)\n\n\nTerminal\n\nquarto add mcanouil/quarto-preview-colour\n\nEnable in YAML, either for one page or site-wide:\nfilters:\n  - preview-colour\n\n \n\nWe use #1696d2 for Democrats and and #db2b27 for Republicans.\n\n\n\n\n↓\n\n\nWe use #1696d2◉ for Democrats and and #db2b27◉ for Republicans."
+    "objectID": "materials/advanced-websites/index.html#slides",
+    "href": "materials/advanced-websites/index.html#slides",
+    "title": "Advanced website features",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Advanced website features"
+    ]
   },
   {
-    "objectID": "materials/advanced-websites/slides.html#lots-of-others",
-    "href": "materials/advanced-websites/slides.html#lots-of-others",
-    "title": "Advancedwebsite features",
-    "section": "Lots of others!",
-    "text": "Lots of others!\nThere are hundreds of extensions: find them all at Quarto.org &gt; Extensions or at the Quarto Extensions directory.\nHere are some common extensions for websites specifically:\n\n\n\n\n\n\n\nExtension\nDescription\n\n\n\n\nFont Awesome\nInclude Font Awesome icons\n\n\nAcademicons\nInclude academicons icons\n\n\nCustom Callouts\nGo beyond Quarto’s default note, warning, important, tip, and caution callouts\n\n\nPreview Color\nAdd little circles to show hex colors\n\n\nEmbed PDFs\nEasily embed PDF files in HTML documents\n\n\nDownloadthis\nCreate download buttons"
+    "objectID": "materials/advanced-websites/index.html#exercises",
+    "href": "materials/advanced-websites/index.html#exercises",
+    "title": "Advanced website features",
+    "section": "Exercises",
+    "text": "Exercises\n\nOther common features\n\n\n\n\n\n\nTipYour turn: URLs\n\n\n\n\n\n\nMake your about.qmd page appear at about/\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Page layout\n\n\n\n\n\n\nChange the page layout settings for one of your page\nBonus task! Try using the Bootstrap CSS Grid layout system with page-layout: custom.\n\nSee the documentation here\nSee an IRL example here (and code here)\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Advanced &gt; Page Layout.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Article layout\n\n\n\n\n\n\nAdd an image that spans across the whole page\nAdd some text to the margin\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Authoring &gt; Article Layout.\n\n\n\n\n\n\nListings\n\n\n\n\n\n\nTipYour turn: Listings\n\n\n\n\n\n\nEdit research/index.qmd to be a listing page, showing all the pages in the research folder.\nExperiment with changing the listing type to default, then table, then grid.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Listing Pages.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Metadata\n\n\n\n\n\n\nAdd metadata to your different research .qmd files, including images (find some at Unsplash). See how those are reflected in the listing page.\nBonus task! Modify how the listing page is sorted. Sort it by descending title.\n\nSee the documentation here\n\nBonus task! Change how the dates are shown in the listing page with the date-format option.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Categories\n\n\n\n\n\n\nAdd categories to your different research .qmd files. See how those are reflected in the listing page after rendering.\nBonus task! Change the category list on the listing page to appear as a word cloud.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings &gt; Categories.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Make a blog\n\n\n\n\n\nMake a blog!\n\nCreate a new folder named blog with a file named index.qmd in it.\nMake a few folders and files named blog/2025/10/16/thing/index.qmd, etc.\nAdd some fake content in the blog posts. Add images, titles, descriptions, etc.\nMake the blog posts appear as a listing page at blog/index.qmd.\nAdd blog/index.qmd to your top navigation bar.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n\n\nExtensions\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nInstall the Font Awesome extension in your website project.\nUse Font Awesome shortcodes:\n\nInclude a Font Awesome icon in your navigation bar\nInclude a Font Awesome icon in the text of one of your pages\n\nInstall another Quarto extension and play around with it.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at the Font Awesome extension page and Quarto.org &gt; Extensions.\n\n\n\n\n\n\nStart building a real website\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\nAt some point today you’ve (hopefully!) thought “I could use these tools to make something really cool!” A new personal website with a portfolio and blog. A website for an upcoming event. A notebook to accompany a research project. A course website. Something!\n \nStart building it!\n\nCreate a new website project skeleton\nStart building your idea\n\nDo this gradually! Remember the worflow: edit, save, preview, repeat\nPore over the Quarto documentation and these slides for tips and tricks\n\nAsk for help.\n\nWe’ll work on it now and tomorrow (and maybe on your own tonight)",
+    "crumbs": [
+      "Materials",
+      "Advanced website features"
+    ]
   },
   {
-    "objectID": "materials/advanced-websites/slides.html#your-turn-7",
-    "href": "materials/advanced-websites/slides.html#your-turn-7",
-    "title": "Advancedwebsite features",
-    "section": "Your turn",
-    "text": "Your turn\n\nInstall the Font Awesome extension in your website project.\nUse Font Awesome shortcodes:\n\nInclude a Font Awesome icon in your navigation bar\nInclude a Font Awesome icon in the text of one of your pages\n\nInstall another Quarto extension and play around with it.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at the Font Awesome extension page and Quarto.org &gt; Extensions.\n\n\n\n\n−+\n10:00"
+    "objectID": "materials/01-intro/index.html",
+    "href": "materials/01-intro/index.html",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Intro to Quarto"
+    ]
   },
   {
-    "objectID": "materials/advanced-websites/slides.html#start-building-a-real-website",
-    "href": "materials/advanced-websites/slides.html#start-building-a-real-website",
-    "title": "Advancedwebsite features",
-    "section": "Start building a real website",
-    "text": "Start building a real website\nAt some point today you’ve (hopefully!) thought “I could use these tools to make something really cool!” A new personal website with a portfolio and blog. A website for an upcoming event. A notebook to accompany a research project. A course website. Something!\n \nStart building it!\n\nCreate a new website project skeleton\nStart building your idea\n\nDo this gradually! Remember the worflow: edit, save, preview, repeat\nPore over the Quarto documentation and these slides for tips and tricks\n\nAsk for help.\n\nWe’ll work on it now and tomorrow (and maybe on your own tonight)"
+    "objectID": "materials/01-intro/index.html#slides",
+    "href": "materials/01-intro/index.html#slides",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Intro to Quarto"
+    ]
   },
   {
-    "objectID": "materials/advanced-websites/slides.html#course-outline",
-    "href": "materials/advanced-websites/slides.html#course-outline",
-    "title": "Advancedwebsite features",
-    "section": "Course outline",
-    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\n✅ Advanced website features\nPublishing\nCustomization and branding\nInteractivity"
+    "objectID": "materials/01-intro/index.html#exercises",
+    "href": "materials/01-intro/index.html#exercises",
+    "title": "Introduction to Quarto",
+    "section": "Exercises",
+    "text": "Exercises\n\nWelcome\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\nIntroduce yourself:\n\nName\nProfessional affiliation\nOn a scale of 1–10, how well do you know…\n\nQuarto?\nR?\nPython?\nHTML and CSS?\n\nWhat do you hope to get out of this course?\n\n\n\n\n\n\nIntroduction to Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd\nPreview/render the document\n\nIf you’re using Posit Cloud, you might be asked to allow pop-ups\n\nEdit the title and preview the document again.\n\n\n\n\n\n\nQuarto documents\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd and run some of the code chunks (in order!).\nAdd #| include: false to the second chunk and preview again. Switch it back to true or remove it. Preview again.\nIn the YAML area, add an author field and add your name. Preview again.\nChange code-fold to be true. Preview again.\nEdit the first paragraph to:\n\nMake something bold\nMake “the Gapminder foundation” link to https://www.gapminder.org\nReplace XXXX and YYYY with inline code instead of hardcoded values. The first code chunk creates R objects named first_year and last_year—use those.\n\n\n\n\n\n\n\nAuthoring Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nAdd an important callout box to the introduction summarizing the report’s findings. Preview the file.\nChange the caption for the first plot. Preview again.\nChange some text color to #ec008b. Preview again.\nEdit the “Average life expectancy increased…” paragraph to say “According to Figure 1, average life expectancy increased…”, BUT do it without typing “Figure 1”. Preview again.\nIn the first paragraph, add a citation to something in bib/references.bib. Preview again.\nChange the bibliography style to APA. Preview again.",
+    "crumbs": [
+      "Materials",
+      "Intro to Quarto"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "",
+    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "Schedule",
+    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (October 16)\n                  Day 1 (October 16)\n                \n                \n                  10:30–11:30\n                  Welcome + Intro to Quarto\n                \n                \n                  11:30–12:30\n                  Creating basic websites\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Advanced website features\n                \n                \n                  Day 2 (October 17)\n                  Day 2 (October 17)\n                \n                \n                  10:30–11:00\n                  Publishing\n                \n                \n                  11:00–12:30\n                  Customization and branding\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Interactivity",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Create an Online Presence with Quarto Websites",
+    "section": "Instructor",
+    "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "colophon.html",
+    "href": "colophon.html",
+    "title": "Colophon",
+    "section": "",
+    "text": "colophon (noun)\ncol • o • phon /ˈkä-lə-fən, -fän/ /ˈkɒləfən, -fɒn/\n\nan inscription at the end of a book or manuscript containing information about its production\nthis page",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#technology",
+    "href": "colophon.html#technology",
+    "title": "Colophon",
+    "section": "Technology",
+    "text": "Technology\n\nLast built: 2025-10-17 at 22:15:19 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#design",
+    "href": "colophon.html#design",
+    "title": "Colophon",
+    "section": "Design",
+    "text": "Design\nThe typography, colors, and custom CSS settings are all controlled with this _brand.yml file:\n\n\nShow _brand.yml for this site\n\n\n\n_brand.yml\n\n#\n# _brand.yml for Quarto websites mini course\n#\n\nmeta:\n  name: Quarto website course\n  license: CC BY-SA 4.0\n  link:\n    home: https://www.andrewheiss.com/\n\ncolor:\n  # Colors from MoMAColors::moma.colors(\"ustwo\"), supplemented with CARTOColors (Prism)\n  palette:\n    blue: \"#008d98\"    # ustwo\n    indigo: \"#5F4690\"  # Prism\n    purple: \"#994E95\"  # Prism\n    pink: \"#f06a63\"    # ustwo\n    red: \"#d7433b\"     # ustwo\n    orange: \"#ff8e5e\"  # ustwo\n    yellow: \"#ffcc3d\"  # ustwo\n    green: \"#0F8554\"   # Prism\n    teal: \"#38A6A5\"    # Prism\n    cyan: \"#95caa6\"    # ustwo\n\n    gray-100: \"#f8f9fa\"\n    gray-200: \"#e9ecef\"\n    gray-300: \"#dddddd\"\n    gray-400: \"#ced4da\"\n    gray-500: \"#adb5bd\"\n    gray-600: \"#868e96\"\n    gray-700: \"#495057\"\n    gray-800: \"#343a40\"\n    gray-900: \"#212529\"\n\n    off-white: \"#F5F5F5\"\n    black: \"#111111\"\n    light-gray: \"#cdcdcd\"\n\n  foreground: black\n  background: off-white\n  primary: red\n  secondary: blue\n  tertiary: teal\n  dark: black\n\ntypography:\n  fonts:\n    - family: Open Sans\n      source: google\n      weight: [400, 700]\n    - family: Alan Sans\n      source: google\n      weight: [400, 500, 700]\n\n  base:\n    family: Open Sans\n    weight: 400\n\n  headings:\n    family: Alan Sans\n    weight: 700\n    color: red\n\n  link:\n    weight: 700\n    color: orange\n    decoration: none\n\ndefaults:\n  bootstrap:\n    functions: # string with SCSS functions\n    defaults:  # list of Bootstrap Sass variables to override\n      link-hover-color: $brand-pink\n      font-family-headings: Alan Sans\n      navbar-font-family: Alan Sans\n      code-color: $brand-indigo\n\n      font-size-base: 1rem\n      h1-font-size: $font-size-base * 2.45\n      h2-font-size: $font-size-base * 1.85\n      h3-font-size: $font-size-base * 1.45\n      h4-font-size: $font-size-base * 1.2\n      h5-font-size: $font-size-base * 1\n      h6-font-size: $font-size-base * 0.8\n\n      # code-bg: lighten($brand-orange, 25%)  # Sass functions work here!\n      code-bg: rgba(233, 236, 239, 0.65)  # Same color as github div background\n    mixins:    # string with SCSS mixins\n    rules: |   # string with SCSS rules\n      #quarto-document-content h3 {\n          color: $brand-blue;\n          font-weight: 500;\n      }\n\n      .navbar-title {\n          font-size: 1.3em;\n      }\n\n\n(See more about brand.yml here).\n\nTypefaces\nI use Open Sans (Google Fonts) as the main body font throughout the site, and I use Alan Sans (Google Fonts) for all headings.\n\nA heading\nWhereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world…\n\n\n\nColors\nThe colors for this course website come primarily from the “ustwo” palette from the {MoMAColors} R package. The colors come from the video game Monument Valley, developed and produced by ustwo, and is one of only a few pieces of software-based art in the MoMA (see its MoMA page).\n\n\n\n\n\nMonument Valley, 2014, ustwo, video game software, MoMA link.\n\n\n\n\n\n\n\n\n\n\n\nSince this palette only has 6 colors, I supplement it with a few colors from the qualitative Prism palette from CARTOColors:",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#license-and-credits",
+    "href": "colophon.html#license-and-credits",
+    "title": "Colophon",
+    "section": "License and credits",
+    "text": "License and credits\nAll the materials and content for this course are licensed under  Creative Commons CC-BY-SA  .\nSome of the materials in the course were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html",
+    "href": "materials/00-setup/index.html",
+    "title": "Setup",
+    "section": "",
+    "text": "To follow along with the course exercises, you’ll need Quarto version 1.8+ and access to a code editor that supports R.\nWhile Quarto itself doesn’t require a programming language, the exercises will include code chunks in R. If you don’t already have R set up locally, I recommend using a cloud-based option like Posit Cloud.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html#recommended-setup-options",
+    "href": "materials/00-setup/index.html#recommended-setup-options",
+    "title": "Setup",
+    "section": "Recommended setup options",
+    "text": "Recommended setup options\n\nOption 1: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: https://posit.cloud/spaces/704423/join?access_code=fDGrujjY7mb1j-9bq-dlKl7JZw5XkLdq5sm3cFoE\nClick “Yes” to join the space.\nClick Content and select one of these (depending on which activity we’re doing):\n\nquarto-websites-exercise-intro_2025-10\nquarto-websites-exercise-site_2025-10\n\nTo save a copy of the project to your workspace, click “Save a permanent copy”.\n\n\n\nOption 2: Local installation\nChoose one editor and follow the steps:\n\nRStudioPositronVS Code\n\n\n\nDownload and install RStudio: https://posit.co/downloads/\n\nMake sure RStudio is version 2022.07+.\n\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install Positron: https://positron.posit.co/download.html\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install VS Code: https://code.visualstudio.com/download/\nDownload and install Quarto: https://quarto.org/docs/get-started/\nInstall the following extensions:\n\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto/\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html#accessing-the-course-materials",
+    "href": "materials/00-setup/index.html#accessing-the-course-materials",
+    "title": "Setup",
+    "section": "Accessing the course materials",
+    "text": "Accessing the course materials\nIf you are using a cloud-based option, the files will be included in the respecitve project folders.\nIf you are not using a cloud-based option:\nIf you don’t use Git/GitHub:\n\nGo to the GitHub repos for each example project:\n\nhttps://github.com/andrewheiss/quarto-websites-exercise-intro_2025-10\nhttps://github.com/andrewheiss/quarto-websites-exercise-site_2025-10\n\nClick the green “Code” button → “Download ZIP”.\nUnzip the folder and open it in your chosen editor.\n\nIf you use Git/GitHub:\n\nExercises are available here:\n\nhttps://github.com/andrewheiss/quarto-websites-exercise-intro_2025-10\nhttps://github.com/andrewheiss/quarto-websites-exercise-site_2025-10\n\nClone each repository with Git:\ngit clone https://github.com/andrewheiss/quarto-websites-exercise-intro_2025-10.git\ngit clone https://github.com/andrewheiss/quarto-websites-exercise-site_2025-10.git",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html#install-the-necessary-r-packages",
+    "href": "materials/00-setup/index.html#install-the-necessary-r-packages",
+    "title": "Setup",
+    "section": "Install the necessary R packages",
+    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed.\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(\n  c(\"tidyverse\", \"quarto\", \"patchwork\", \"ggridges\", \"tinytable\", \"brand.yml\"),\n  repos = c('https://posit-dev.r-universe.dev', 'https://cloud.r-project.org')\n)",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html#create-publishing-accounts",
+    "href": "materials/00-setup/index.html#create-publishing-accounts",
+    "title": "Setup",
+    "section": "Create publishing accounts",
+    "text": "Create publishing accounts\nFor the section on publishing, you’ll neeed to create two free accounts (if you don’t have them already):\n\nQuarto Pub\nGitHub",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/00-setup/index.html#credits",
+    "href": "materials/00-setup/index.html#credits",
+    "title": "Setup",
+    "section": "Credits",
+    "text": "Credits\n\nThese instructions were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
+    "crumbs": [
+      "Setup"
+    ]
   },
   {
     "objectID": "materials/01-intro/slides.html#housekeeping",
@@ -1715,276 +1147,844 @@
     "text": "Course outline\n\n✅ Intro to Quarto\nCreating basic websites\nAdvanced website features\nPublishing\nCustomization and branding\nInteractivity"
   },
   {
-    "objectID": "materials/00-setup/index.html",
-    "href": "materials/00-setup/index.html",
-    "title": "Setup",
+    "objectID": "materials/advanced-websites/slides.html#urls",
+    "href": "materials/advanced-websites/slides.html#urls",
+    "title": "Advancedwebsite features",
+    "section": "URLs",
+    "text": "URLs\nThe website will mirror your file structure, including subdirectories\n\n\n/about.qmd ↓ example.com/about.html\n\n\n\n \n\n/research/project1.qmd ↓ example.com/research/project1.html"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#custom-urls",
+    "href": "materials/advanced-websites/slides.html#custom-urls",
+    "title": "Advancedwebsite features",
+    "section": "Custom URLs",
+    "text": "Custom URLs\nWhat if you want nicer URLs?\n \n\nexample.com/about/\nexample.com/research/project1/"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#index.html",
+    "href": "materials/advanced-websites/slides.html#index.html",
+    "title": "Advancedwebsite features",
+    "section": "index.html",
+    "text": "index.html\nBy convention, web servers treat index.html files in a special way.\n \n\nexample.com/about/\nimplicitly means\nexample.com/about/index.html"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#index.qmd",
+    "href": "materials/advanced-websites/slides.html#index.qmd",
+    "title": "Advancedwebsite features",
+    "section": "index.qmd",
+    "text": "index.qmd\nIf you want example.com/about/, put your about page in a folder named about and rename it to index.qmd.\n \n\n/about.qmd ↓ /about/index.qmd ↓ example.com/about/"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#user-friendly-urls",
+    "href": "materials/advanced-websites/slides.html#user-friendly-urls",
+    "title": "Advancedwebsite features",
+    "section": "User-friendly URLs",
+    "text": "User-friendly URLs\nYou could have a blog post like this (ew):\n\n/2025-10-16_blog-post-title.qmd ↓ example.com/2025-10-16_blog-post-title.html\n\n \nOr like this (yay):\n\n/blog/2025/10/16/blog-post-title/index.qmd ↓ example.com/blog/2025/10/16/blog-post-title/"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn",
+    "href": "materials/advanced-websites/slides.html#your-turn",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nMake your about.qmd page appear at about/\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#page-layout",
+    "href": "materials/advanced-websites/slides.html#page-layout",
+    "title": "Advancedwebsite features",
+    "section": "Page layout",
+    "text": "Page layout\nPage layouts\n\narticle: Default layout with main text area between 600px–900px\nfull: Expand main text area into the sidebar and margin area if there’s no content there\ncustom: Provide your own HTML template for the main text area\n\n\n\nComponent widths\n\n\nYAML settings\nformat: \n  html:\n    page-layout: article  # or \"full\" or \"custom\"\n    grid:\n      sidebar-width: 300px\n      body-width: 900px\n      margin-width: 300px\n      gutter-width: 1.5rem"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-1",
+    "href": "materials/advanced-websites/slides.html#your-turn-1",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nChange the page layout settings for one of your page\nBonus task! Try using the Bootstrap CSS Grid layout system with page-layout: custom.\n\nSee the documentation here\nSee an IRL example here (and code here)\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Advanced &gt; Page Layout.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#article-layout",
+    "href": "materials/advanced-websites/slides.html#article-layout",
+    "title": "Advancedwebsite features",
+    "section": "Article layout",
+    "text": "Article layout\nQuarto offers a ton of article-specific layout options:\n\nMake content go into the margin\nMake content go across the whole page\nPut content in the margins"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-2",
+    "href": "materials/advanced-websites/slides.html#your-turn-2",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nAdd an image that spans across the whole page\nAdd some text to the margin\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Authoring &gt; Article Layout.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#re-running-code",
+    "href": "materials/advanced-websites/slides.html#re-running-code",
+    "title": "Advancedwebsite features",
+    "section": "Re-running code",
+    "text": "Re-running code\n\n\n\n\nyour-document.qmd\n\n---\ntitle: \"My Complex Document\"\nformat: html\n---\n\nHere we run all our models and then plot them:\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n\n\n\n\nSometimes you’ll have a lot of code chunks that take a long time to run.\nQuarto will re-run these chunks each time you render the site.\nGood for reproducibility! Bad for speed!"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#freeze-computational-output",
+    "href": "materials/advanced-websites/slides.html#freeze-computational-output",
+    "title": "Advancedwebsite features",
+    "section": "Freeze computational output",
+    "text": "Freeze computational output\n\n\n\n\nyour-document.qmd\n\n---\ntitle: \"My Complex Document\"\nformat: html\nexecute:\n  freeze: auto\n---\n\nHere we run all our models and then plot them:\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n```{r}\n# Intensive code!\n```\n\n\n\n\nUse freeze: auto to only re-run the code if the source file changes.\n← Individual filesor site-wide ↓\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nexecute: \n  freeze: auto\n\nwebsite:\n  title: \"Example site\""
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#freeze-computational-output-1",
+    "href": "materials/advanced-websites/slides.html#freeze-computational-output-1",
+    "title": "Advancedwebsite features",
+    "section": "Freeze computational output",
+    "text": "Freeze computational output\nCode output is stored in _freeze"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#freezing-caching",
+    "href": "materials/advanced-websites/slides.html#freezing-caching",
+    "title": "Advancedwebsite features",
+    "section": "Freezing ≠ caching",
+    "text": "Freezing ≠ caching\n\nFreezing only stores the text of the code output.\nChanging the file will force a re-run.\nConsider caching if you don’t want the code to re-run (see documentation):\nexecute:\n  cache: true"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#automatic-content",
+    "href": "materials/advanced-websites/slides.html#automatic-content",
+    "title": "Advancedwebsite features",
+    "section": "Automatic content",
+    "text": "Automatic content\nWe can automatically add all the pages in a folder to a sidebar:\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents:\n          - research/project1.qmd\n          - research/project2.qmd\n          - research/project3.qmd\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents: research/*\n\n\n\nWhat if we want fancier automatic pages?\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#auto-generation"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#listing-pages",
+    "href": "materials/advanced-websites/slides.html#listing-pages",
+    "title": "Advancedwebsite features",
+    "section": "Listing pages",
+    "text": "Listing pages\n\n\n \n\n\nresearch/index.qmd\n\n---\ntitle: \"Research\"\nlisting:\n  contents: \"*.qmd\"\n  type: table\n---\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-listings.html"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-3",
+    "href": "materials/advanced-websites/slides.html#your-turn-3",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nEdit research/index.qmd to be a listing page, showing all the pages in the research folder.\nExperiment with changing the listing type to default, then table, then grid.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Listing Pages.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#metadata-in-listings",
+    "href": "materials/advanced-websites/slides.html#metadata-in-listings",
+    "title": "Advancedwebsite features",
+    "section": "Metadata in listings",
+    "text": "Metadata in listings\n\n\n\n\n\n\n\n\n\n\npost.qmd\n\n---\ntitle: \"Research\"\nauthor: \"Your name\"\ndescription: \"Something\"\ndate: 2025-10-06\nimage: \"img/thing.jpg\"\n---"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-4",
+    "href": "materials/advanced-websites/slides.html#your-turn-4",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nAdd metadata to your different research .qmd files, including images (find some at Unsplash). See how those are reflected in the listing page.\nBonus task! Modify how the listing page is sorted. Sort it by descending title.\n\nSee the documentation here\n\nBonus task! Change how the dates are shown in the listing page with the date-format option.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#categories",
+    "href": "materials/advanced-websites/slides.html#categories",
+    "title": "Advancedwebsite features",
+    "section": "Categories",
+    "text": "Categories\n\n\n\nEnable categories in the listing settings\n\n\nlisting-page.qmd\n\nlisting:\n  categories: true\n\n\nSpecify categories in the document\n\n\npost.qmd\n\n---\ntitle: \"Research\"\ncategories:\n  - statistics\n  - r\n  - tidyverse\n---"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-5",
+    "href": "materials/advanced-websites/slides.html#your-turn-5",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nAdd categories to your different research .qmd files. See how those are reflected in the listing page after rendering.\nBonus task! Change the category list on the listing page to appear as a word cloud.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings &gt; Categories.\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#extra-advanced-bonus-stuff",
+    "href": "materials/advanced-websites/slides.html#extra-advanced-bonus-stuff",
+    "title": "Advancedwebsite features",
+    "section": "Extra advanced bonus stuff",
+    "text": "Extra advanced bonus stuff\nMultiple listings\nInclude lists of different document types on the same page (example + code)\n\nCustom listings\nGo beyond default, table, and grid and make your own template (example + code)\n\n\nYAML lists\nGenerate listings of items in a YAML file instead of .qmd files (example)"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#your-turn-6",
+    "href": "materials/advanced-websites/slides.html#your-turn-6",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\nMake a blog!\n\nCreate a new folder named blog with a file named index.qmd in it.\nMake a few folders and files named blog/2025/10/16/thing/index.qmd, etc.\nAdd some fake content in the blog posts. Add images, titles, descriptions, etc.\nMake the blog posts appear as a listing page at blog/index.qmd.\nAdd blog/index.qmd to your top navigation bar.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#extensions-1",
+    "href": "materials/advanced-websites/slides.html#extensions-1",
+    "title": "Advancedwebsite features",
+    "section": "Extensions",
+    "text": "Extensions\nQuarto has extensions that let you add custom…\n\nshortcodes\nfilters\ndocument formats and templates\nbrands"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#shortcode-extensions",
+    "href": "materials/advanced-websites/slides.html#shortcode-extensions",
+    "title": "Advancedwebsite features",
+    "section": "Shortcode extensions",
+    "text": "Shortcode extensions\nFont Awesome icons (site + extension)\n\n\nTerminal\n\nquarto add quarto-ext/fontawesome\n\n \n\n\n\n\n\n\n\nText\nOutput\n\n\n\n\n{{&lt; fa home &gt;}}\n\n\n\n{{&lt; fa wand-magic-sparkles &gt;}}\n\n\n\n{{&lt; fa brands apple &gt;}}\n\n\n\n{{&lt; fa brands r-project &gt;}}\n\n\n\n{{&lt; fa globe &gt;}}"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#section",
+    "href": "materials/advanced-websites/slides.html#section",
+    "title": "Advancedwebsite features",
     "section": "",
-    "text": "To follow along with the course exercises, you’ll need Quarto version 1.8+ and access to a code editor that supports R.\nWhile Quarto itself doesn’t require a programming language, the exercises will include code chunks in R. If you don’t already have R set up locally, I recommend using a cloud-based option like Posit Cloud.",
-    "crumbs": [
-      "Setup"
-    ]
+    "text": "Use in Markdown:\n\n\nmy-document.qmd\n\n- {{&lt; fa book &gt;}} [Book page](https://www.bayesrulesbook.com/)\n- {{&lt; fa person-chalkboard &gt;}} [Teaching resources](https://bayes-rules.github.io/posts/resources/)\n- {{&lt; fa brands r-project &gt;}} [R package](https://github.com/bayes-rules/bayesrules) and [package documentation](https://bayes-rules.github.io/bayesrules/docs/)\n- {{&lt; fa brands youtube &gt;}} Alicia Johnson, [\"Bayes Rules! An Introduction to Bayesian Modeling with R with Alicia Johnson\"](https://www.youtube.com/watch?v=MgB1ihuEDN4), presentation for R-Ladies Philly on October 18, 2021\n\n\n\n↓\n\n\n\n\n\n Book page\n Project page\n R package and package documentation\n Alicia Johnson, “Bayes Rules! An Introduction to Bayesian Modeling with R with Alicia Johnson”, presentation for R-Ladies Philly on October 18, 2021"
   },
   {
-    "objectID": "materials/00-setup/index.html#recommended-setup-options",
-    "href": "materials/00-setup/index.html#recommended-setup-options",
-    "title": "Setup",
-    "section": "Recommended setup options",
-    "text": "Recommended setup options\n\nOption 1: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: https://posit.cloud/spaces/704423/join?access_code=fDGrujjY7mb1j-9bq-dlKl7JZw5XkLdq5sm3cFoE\nClick “Yes” to join the space.\nClick Content and select one of these (depending on which activity we’re doing):\n\nquarto-websites-exercise-intro_2025-10\nquarto-websites-exercise-site_2025-10\n\nTo save a copy of the project to your workspace, click “Save a permanent copy”.\n\n\n\nOption 2: Local installation\nChoose one editor and follow the steps:\n\nRStudioPositronVS Code\n\n\n\nDownload and install RStudio: https://posit.co/downloads/\n\nMake sure RStudio is version 2022.07+.\n\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install Positron: https://positron.posit.co/download.html\nQuarto comes pre-installed.\n\nMake sure Quarto is version 1.8+.\n\n\n\n\n\nDownload and install VS Code: https://code.visualstudio.com/download/\nDownload and install Quarto: https://quarto.org/docs/get-started/\nInstall the following extensions:\n\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto/\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter/",
-    "crumbs": [
-      "Setup"
-    ]
-  },
-  {
-    "objectID": "materials/00-setup/index.html#accessing-the-course-materials",
-    "href": "materials/00-setup/index.html#accessing-the-course-materials",
-    "title": "Setup",
-    "section": "Accessing the course materials",
-    "text": "Accessing the course materials\nIf you are using a cloud-based option, the files will be included in the respecitve project folders.\nIf you are not using a cloud-based option:\nIf you don’t use Git/GitHub:\n\nGo to the GitHub repos for each example project:\n\nhttps://github.com/andrewheiss/quarto-websites-exercise-intro_2025-10\nhttps://github.com/andrewheiss/quarto-websites-exercise-site_2025-10\n\nClick the green “Code” button → “Download ZIP”.\nUnzip the folder and open it in your chosen editor.\n\nIf you use Git/GitHub:\n\nExercises are available here:\n\nhttps://github.com/andrewheiss/quarto-websites-exercise-intro_2025-10\nhttps://github.com/andrewheiss/quarto-websites-exercise-site_2025-10\n\nClone each repository with Git:\ngit clone https://github.com/andrewheiss/quarto-websites-exercise-intro_2025-10.git\ngit clone https://github.com/andrewheiss/quarto-websites-exercise-site_2025-10.git",
-    "crumbs": [
-      "Setup"
-    ]
-  },
-  {
-    "objectID": "materials/00-setup/index.html#install-the-necessary-r-packages",
-    "href": "materials/00-setup/index.html#install-the-necessary-r-packages",
-    "title": "Setup",
-    "section": "Install the necessary R packages",
-    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed.\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(\n  c(\"tidyverse\", \"quarto\", \"patchwork\", \"ggridges\", \"tinytable\", \"brand.yml\"),\n  repos = c('https://posit-dev.r-universe.dev', 'https://cloud.r-project.org')\n)",
-    "crumbs": [
-      "Setup"
-    ]
-  },
-  {
-    "objectID": "materials/00-setup/index.html#create-publishing-accounts",
-    "href": "materials/00-setup/index.html#create-publishing-accounts",
-    "title": "Setup",
-    "section": "Create publishing accounts",
-    "text": "Create publishing accounts\nFor the section on publishing, you’ll neeed to create two free accounts (if you don’t have them already):\n\nQuarto Pub\nGitHub",
-    "crumbs": [
-      "Setup"
-    ]
-  },
-  {
-    "objectID": "materials/00-setup/index.html#credits",
-    "href": "materials/00-setup/index.html#credits",
-    "title": "Setup",
-    "section": "Credits",
-    "text": "Credits\n\nThese instructions were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
-    "crumbs": [
-      "Setup"
-    ]
-  },
-  {
-    "objectID": "colophon.html",
-    "href": "colophon.html",
-    "title": "Colophon",
+    "objectID": "materials/advanced-websites/slides.html#section-1",
+    "href": "materials/advanced-websites/slides.html#section-1",
+    "title": "Advancedwebsite features",
     "section": "",
-    "text": "colophon (noun)\ncol • o • phon /ˈkä-lə-fən, -fän/ /ˈkɒləfən, -fɒn/\n\nan inscription at the end of a book or manuscript containing information about its production\nthis page",
-    "crumbs": [
-      "Colophon"
-    ]
+    "text": "Use in YAML:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - text: \"{{&lt; fa person-chalkboard &gt;}} Teaching\"\n        href: teaching.qmd\n      - text: \"{{&lt; fa flask &gt;}} Research\"\n        href: research.qmd\n    right:\n      - text: \"{{&lt; fa brands google-scholar &gt;}}\"\n        href: \"https://example.com\"\n\n\n\n↓"
   },
   {
-    "objectID": "colophon.html#technology",
-    "href": "colophon.html#technology",
-    "title": "Colophon",
-    "section": "Technology",
-    "text": "Technology\n\nLast built: 2025-10-17 at 10:18:53 US Eastern\nSoftware: Quarto version 1.8.25 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
-    "crumbs": [
-      "Colophon"
-    ]
+    "objectID": "materials/advanced-websites/slides.html#filter-extensions",
+    "href": "materials/advanced-websites/slides.html#filter-extensions",
+    "title": "Advancedwebsite features",
+    "section": "Filter extensions",
+    "text": "Filter extensions\nPreview Color (extension)\n\n\nTerminal\n\nquarto add mcanouil/quarto-preview-colour\n\nEnable in YAML, either for one page or site-wide:\nfilters:\n  - preview-colour\n\n \n\nWe use #1696d2 for Democrats and and #db2b27 for Republicans.\n\n\n\n\n↓\n\n\nWe use #1696d2◉ for Democrats and and #db2b27◉ for Republicans."
   },
   {
-    "objectID": "colophon.html#design",
-    "href": "colophon.html#design",
-    "title": "Colophon",
-    "section": "Design",
-    "text": "Design\nThe typography, colors, and custom CSS settings are all controlled with this _brand.yml file:\n\n\nShow _brand.yml for this site\n\n\n\n_brand.yml\n\n#\n# _brand.yml for Quarto websites mini course\n#\n\nmeta:\n  name: Quarto website course\n  license: CC BY-SA 4.0\n  link:\n    home: https://www.andrewheiss.com/\n\ncolor:\n  # Colors from MoMAColors::moma.colors(\"ustwo\"), supplemented with CARTOColors (Prism)\n  palette:\n    blue: \"#008d98\"    # ustwo\n    indigo: \"#5F4690\"  # Prism\n    purple: \"#994E95\"  # Prism\n    pink: \"#f06a63\"    # ustwo\n    red: \"#d7433b\"     # ustwo\n    orange: \"#ff8e5e\"  # ustwo\n    yellow: \"#ffcc3d\"  # ustwo\n    green: \"#0F8554\"   # Prism\n    teal: \"#38A6A5\"    # Prism\n    cyan: \"#95caa6\"    # ustwo\n\n    gray-100: \"#f8f9fa\"\n    gray-200: \"#e9ecef\"\n    gray-300: \"#dddddd\"\n    gray-400: \"#ced4da\"\n    gray-500: \"#adb5bd\"\n    gray-600: \"#868e96\"\n    gray-700: \"#495057\"\n    gray-800: \"#343a40\"\n    gray-900: \"#212529\"\n\n    off-white: \"#F5F5F5\"\n    black: \"#111111\"\n    light-gray: \"#cdcdcd\"\n\n  foreground: black\n  background: off-white\n  primary: red\n  secondary: blue\n  tertiary: teal\n  dark: black\n\ntypography:\n  fonts:\n    - family: Open Sans\n      source: google\n      weight: [400, 700]\n    - family: Alan Sans\n      source: google\n      weight: [400, 500, 700]\n\n  base:\n    family: Open Sans\n    weight: 400\n\n  headings:\n    family: Alan Sans\n    weight: 700\n    color: red\n\n  link:\n    weight: 700\n    color: orange\n    decoration: none\n\ndefaults:\n  bootstrap:\n    functions: # string with SCSS functions\n    defaults:  # list of Bootstrap Sass variables to override\n      link-hover-color: $brand-pink\n      font-family-headings: Alan Sans\n      navbar-font-family: Alan Sans\n      code-color: $brand-indigo\n\n      font-size-base: 1rem\n      h1-font-size: $font-size-base * 2.45\n      h2-font-size: $font-size-base * 1.85\n      h3-font-size: $font-size-base * 1.45\n      h4-font-size: $font-size-base * 1.2\n      h5-font-size: $font-size-base * 1\n      h6-font-size: $font-size-base * 0.8\n\n      # code-bg: lighten($brand-orange, 25%)  # Sass functions work here!\n      code-bg: rgba(233, 236, 239, 0.65)  # Same color as github div background\n    mixins:    # string with SCSS mixins\n    rules: |   # string with SCSS rules\n      #quarto-document-content h3 {\n          color: $brand-blue;\n          font-weight: 500;\n      }\n\n      .navbar-title {\n          font-size: 1.3em;\n      }\n\n\n(See more about brand.yml here).\n\nTypefaces\nI use Open Sans (Google Fonts) as the main body font throughout the site, and I use Alan Sans (Google Fonts) for all headings.\n\nA heading\nWhereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world…\n\n\n\nColors\nThe colors for this course website come primarily from the “ustwo” palette from the {MoMAColors} R package. The colors come from the video game Monument Valley, developed and produced by ustwo, and is one of only a few pieces of software-based art in the MoMA (see its MoMA page).\n\n\n\n\n\nMonument Valley, 2014, ustwo, video game software, MoMA link.\n\n\n\n\n\n\n\n\n\n\n\nSince this palette only has 6 colors, I supplement it with a few colors from the qualitative Prism palette from CARTOColors:",
-    "crumbs": [
-      "Colophon"
-    ]
+    "objectID": "materials/advanced-websites/slides.html#lots-of-others",
+    "href": "materials/advanced-websites/slides.html#lots-of-others",
+    "title": "Advancedwebsite features",
+    "section": "Lots of others!",
+    "text": "Lots of others!\nThere are hundreds of extensions: find them all at Quarto.org &gt; Extensions or at the Quarto Extensions directory.\nHere are some common extensions for websites specifically:\n\n\n\n\n\n\n\nExtension\nDescription\n\n\n\n\nFont Awesome\nInclude Font Awesome icons\n\n\nAcademicons\nInclude academicons icons\n\n\nCustom Callouts\nGo beyond Quarto’s default note, warning, important, tip, and caution callouts\n\n\nPreview Color\nAdd little circles to show hex colors\n\n\nEmbed PDFs\nEasily embed PDF files in HTML documents\n\n\nDownloadthis\nCreate download buttons"
   },
   {
-    "objectID": "colophon.html#license-and-credits",
-    "href": "colophon.html#license-and-credits",
-    "title": "Colophon",
-    "section": "License and credits",
-    "text": "License and credits\nAll the materials and content for this course are licensed under  Creative Commons CC-BY-SA  .\nSome of the materials in the course were adapted from Isabella Velásquez and Sara Altman’s posit::conf(2025) workshop on branded Quarto documents ( GitHub repository). They graciously licensed their content under  Creative Commons CC-BY-SA  .",
-    "crumbs": [
-      "Colophon"
-    ]
+    "objectID": "materials/advanced-websites/slides.html#your-turn-7",
+    "href": "materials/advanced-websites/slides.html#your-turn-7",
+    "title": "Advancedwebsite features",
+    "section": "Your turn",
+    "text": "Your turn\n\nInstall the Font Awesome extension in your website project.\nUse Font Awesome shortcodes:\n\nInclude a Font Awesome icon in your navigation bar\nInclude a Font Awesome icon in the text of one of your pages\n\nInstall another Quarto extension and play around with it.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at the Font Awesome extension page and Quarto.org &gt; Extensions.\n\n\n\n\n−+\n10:00"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Create an Online Presence with Quarto Websites",
+    "objectID": "materials/advanced-websites/slides.html#start-building-a-real-website",
+    "href": "materials/advanced-websites/slides.html#start-building-a-real-website",
+    "title": "Advancedwebsite features",
+    "section": "Start building a real website",
+    "text": "Start building a real website\nAt some point today you’ve (hopefully!) thought “I could use these tools to make something really cool!” A new personal website with a portfolio and blog. A website for an upcoming event. A notebook to accompany a research project. A course website. Something!\n \nStart building it!\n\nCreate a new website project skeleton\nStart building your idea\n\nDo this gradually! Remember the worflow: edit, save, preview, repeat\nPore over the Quarto documentation and these slides for tips and tricks\n\nAsk for help.\n\nWe’ll work on it now and tomorrow (and maybe on your own tonight)"
+  },
+  {
+    "objectID": "materials/advanced-websites/slides.html#course-outline",
+    "href": "materials/advanced-websites/slides.html#course-outline",
+    "title": "Advancedwebsite features",
+    "section": "Course outline",
+    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\n✅ Advanced website features\nPublishing\nCustomization and branding\nInteractivity"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#page-structure",
+    "href": "materials/basic-websites/slides.html#page-structure",
+    "title": "Creatingbasic websites",
+    "section": "Page Structure",
+    "text": "Page Structure\n\n\n\n\nindex.qmd\n\n---\ntitle: \"My Cool Document\"\nformat: html\n---\n\nThe `gapminder.csv` dataset contains data from the [**Gapminder foundation**](https://www.gapminder.org/).\n\n```{r}\n#| label: fig-neat-plot\nlibrary(tidyverse)\nlibrary(brand.yml)\n\ndf &lt;- read_csv(\"data/gapminder.csv\")\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nggplot(df, aes(x = gdpPercap, y = lifeExp)) +\n  geom_point(aes(size = pop, color = continent)) +\n  scale_x_log10() +\n  theme_brand_ggplot2(\"_brand.yml\")\n```\n\n\n\n\nWebpages are like any other Quarto document:\n\nStart with a YAML header\nCan include code cells\nEverything else is markdown content"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#website-structure",
+    "href": "materials/basic-websites/slides.html#website-structure",
+    "title": "Creatingbasic websites",
+    "section": "Website Structure",
+    "text": "Website Structure\nA minimal website has two files: index.qmd and _quarto.yml\n\nindex.qmd: Renders to index.html, your home page.\n_quarto.yml: Controls project and website properties.\n\nWhen rendered you will get a _site/ folder. This contains everything needed to serve the site."
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto.yml",
+    "href": "materials/basic-websites/slides.html#quarto.yml",
+    "title": "Creatingbasic websites",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto-projects",
+    "href": "materials/basic-websites/slides.html#quarto-projects",
+    "title": "Creatingbasic websites",
+    "section": "Quarto projects",
+    "text": "Quarto projects\nWebsites are Quarto projects.\nAll Quarto projects include a _quarto.yml file.\n\n\nThis is a Quarto Project.\nmy-folder/\n├── _quarto.yml\n└── my-document.qmd\n\nThis is not.\nmy-folder/\n└── my-document.qmd"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto-projects-1",
+    "href": "materials/basic-websites/slides.html#quarto-projects-1",
+    "title": "Creatingbasic websites",
+    "section": "Quarto projects",
+    "text": "Quarto projects\nA Quarto project is a directory that provides:\n\nA way to render all or some of the files in a directory with a single command (e.g. quarto render myproject).\nA way to share YAML configuration across multiple documents."
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto-projects-2",
+    "href": "materials/basic-websites/slides.html#quarto-projects-2",
+    "title": "Creatingbasic websites",
+    "section": "Quarto projects",
+    "text": "Quarto projects\nNot all Quarto projects are websites (though they’re typically website-like).\n\n\nTerminal\n\n❯ quarto create project\n# ? Type\n#   default\n# ❯ website\n#   blog\n#   manuscript\n#   book\n#   confluence"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#creating-a-project-skeleton",
+    "href": "materials/basic-websites/slides.html#creating-a-project-skeleton",
+    "title": "Creatingbasic websites",
+    "section": "Creating a project skeleton",
+    "text": "Creating a project skeleton\n\nRStudioPositron / VS CodeTerminal\n\n\n\nFile &gt; New Project &gt; New Directory &gt; Quarto Website\n\n\n\n\n\n\n\n\n\n\nOpen the Command Palette ( ⌘⇧P |  Ctrl + Shift + P)and start typing “create project”\n\n\n\n\n\n\n\n\n\n\n\nTerminal\n\n❯ quarto create project website my-site\n# ? Title (my-site) › My site\n# Creating project at /Users/andrew/Desktop/my-site:\n#   - Created _quarto.yml\n#   - Created index.qmd\n#   - Created about.qmd\n#   - Created styles.css\n# ? Open With › (don't open)"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#creating-a-project-skeleton-1",
+    "href": "materials/basic-websites/slides.html#creating-a-project-skeleton-1",
+    "title": "Creatingbasic websites",
+    "section": "Creating a project skeleton",
+    "text": "Creating a project skeleton\nmy-site/\n├── _quarto.yml\n├── about.qmd\n├── index.qmd\n├── styles.css\n└── testing.Rproj  ← if made with RStudio"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn",
+    "href": "materials/basic-websites/slides.html#your-turn",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate a new website project somewhere on your computer.\nYou’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#preview",
+    "href": "materials/basic-websites/slides.html#preview",
+    "title": "Creatingbasic websites",
+    "section": "Preview",
+    "text": "Preview\n\nRStudioPositron / VS CodeTerminal\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\n  ⌘⇧K\n Ctrl + Shift + K\n\nWhole site\nUse Terminal:\n\n\nTerminal\n\nquarto preview \n\n\nRequires Quarto Extension for VS Code\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-1",
+    "href": "materials/basic-websites/slides.html#your-turn-1",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nOpen your playground website.\nOpen index.qmd and click Render/Preview.\nEdit the title entry in index.qmd’s YAML metadata to something different and add a subtitle entry. Preview.\nAdd some text to index.qmd. Preview.\nAdd an R code chunk to about.qmd. Preview.\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#quarto.yml-2",
+    "href": "materials/basic-websites/slides.html#quarto.yml-2",
+    "title": "Creatingbasic websites",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\nConfigure all site-level settings with _quarto.yml:\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#project-settings",
+    "href": "materials/basic-websites/slides.html#project-settings",
+    "title": "Creatingbasic websites",
+    "section": "Project settings",
+    "text": "Project settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: _output\n  preview:\n    port: 5555"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#project-settings-1",
+    "href": "materials/basic-websites/slides.html#project-settings-1",
+    "title": "Creatingbasic websites",
+    "section": "Project settings",
+    "text": "Project settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: _output\n  preview:\n    port: 5555"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#site-settings",
+    "href": "materials/basic-websites/slides.html#site-settings",
+    "title": "Creatingbasic websites",
+    "section": "Site settings",
+    "text": "Site settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  description: \"Some neat stuff\"\n  cookie-consent: true\n  search: false\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#navigation-settings",
+    "href": "materials/basic-websites/slides.html#navigation-settings",
+    "title": "Creatingbasic websites",
+    "section": "Navigation settings",
+    "text": "Navigation settings\nMore on this in a bit!\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n  sidebar: \n    style: \"docked\"\n    contents: \n      - about.qmd\n\nformat:\n  html:\n    toc: true"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#format-settings",
+    "href": "materials/basic-websites/slides.html#format-settings",
+    "title": "Creatingbasic websites",
+    "section": "Format settings",
+    "text": "Format settings\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true\n    number-sections: true\n    cap-location: margin"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff",
+    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff",
+    "title": "Creatingbasic websites",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Reference &gt; Websites"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-2",
+    "href": "materials/basic-websites/slides.html#your-turn-2",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nEdit your _quarto.yml to make the following changes:\n\nChange the preview port to 5555\nEnable a cookie consent dialog\nAdd a site description\n\nBonus tasks!\n\nAdd a footer that says “© 2025, Myself”\nAdd an announcement bar that says something\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Reference &gt; Websites\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer",
+    "href": "materials/basic-websites/slides.html#answer",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer\n\n\n_quarto.yml\n\nproject:\n  type: website\n  preview:\n    port: 5555\n\nwebsite:\n  title: \"My site\"\n  description: \"Something\"\n  cookie-consent: true\n  page-footer: \"© 2025, Myself\"\n  announcement:\n    content: \"**Fun!** This is my playground site.\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-1",
+    "href": "materials/basic-websites/slides.html#answer-1",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#top-navigation",
+    "href": "materials/basic-websites/slides.html#top-navigation",
+    "title": "Creatingbasic websites",
+    "section": "Top navigation",
+    "text": "Top navigation\n\n\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n\nformat:\n  html:\n    toc: true\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#add-new-page",
+    "href": "materials/basic-websites/slides.html#add-new-page",
+    "title": "Creatingbasic websites",
+    "section": "Add new page",
+    "text": "Add new page\n\n\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"My site\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n\nformat:\n  html:\n    toc: true\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#entry-titles",
+    "href": "materials/basic-websites/slides.html#entry-titles",
+    "title": "Creatingbasic websites",
+    "section": "Entry titles",
+    "text": "Entry titles\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n\n\n\nUse href + text to control the link title\nUse the .qmd filename to use that page’s title as the link title\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#icons",
+    "href": "materials/basic-websites/slides.html#icons",
+    "title": "Creatingbasic websites",
+    "section": "Icons",
+    "text": "Icons\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - href: https://www.github.com\n        icon: github\n\n\n\n\nicons.getbootstrap.com\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dropdowns",
+    "href": "materials/basic-websites/slides.html#dropdowns",
+    "title": "Creatingbasic websites",
+    "section": "Dropdowns",
+    "text": "Dropdowns\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - href: https://www.github.com\n        icon: github\n      - icon: share\n        menu: \n          - href: https://bsky.app/\n            icon: bluesky\n            text: Bluesky\n          - href: https://www.linkedin.com/\n            icon: linkedin\n            text: LinkedIn\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff-1",
+    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff-1",
+    "title": "Creatingbasic websites",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Websites &gt; Website Navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-3",
+    "href": "materials/basic-websites/slides.html#your-turn-3",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate a new file named contact.qmd and paste the content from about.qmd into it. Then change it to something else.\nAdd contact.qmd to the left section of your top navigation bar.\nAdd a right section to the navigation bar with icon-based links to a few other websites.\nBonus task! Create a dropdown menu in the top navigation bar, either with links to other websites or links to some new .qmd pages that you create.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-2",
+    "href": "materials/basic-websites/slides.html#answer-2",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - contact.qmd\n    right:\n      - href: https://www.github.com\n        icon: github\n      - icon: share\n        text: Share!\n        menu: \n          - href: https://bsky.app/\n            icon: bluesky\n            text: Bluesky\n          - href: https://www.linkedin.com/\n            icon: linkedin\n            text: LinkedIn"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-3",
+    "href": "materials/basic-websites/slides.html#answer-3",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#side-navigation",
+    "href": "materials/basic-websites/slides.html#side-navigation",
+    "title": "Creatingbasic websites",
+    "section": "Side navigation",
+    "text": "Side navigation\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - contact.qmd\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#side-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#side-navigation-and-sections",
+    "href": "materials/basic-websites/slides.html#side-navigation-and-sections",
+    "title": "Creatingbasic websites",
+    "section": "Side navigation and sections",
+    "text": "Side navigation and sections\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: About me\n        contents:\n          - about.qmd\n          - contact.qmd\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#side-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#side-navigation-and-other-settings",
+    "href": "materials/basic-websites/slides.html#side-navigation-and-other-settings",
+    "title": "Creatingbasic websites",
+    "section": "Side navigation and other settings",
+    "text": "Side navigation and other settings\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    style: \"docked\"  # Default is \"floating\"\n    background: \"#dddddd\"\n    logo: img/logo.png\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: About me\n        contents:\n          - about.qmd\n          - contact.qmd\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#side-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#automatic-sidebar",
+    "href": "materials/basic-websites/slides.html#automatic-sidebar",
+    "title": "Creatingbasic websites",
+    "section": "Automatic sidebar",
+    "text": "Automatic sidebar\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents:\n          - research/project1.qmd\n          - research/project2.qmd\n          - research/project3.qmd\n\n\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - href: index.qmd\n        text: Home\n      - section: Research\n        contents: research/*\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#auto-generation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#hybrid-navigation",
+    "href": "materials/basic-websites/slides.html#hybrid-navigation",
+    "title": "Creatingbasic websites",
+    "section": "Hybrid navigation",
+    "text": "Hybrid navigation\nHave a different sidebar for different sections!\n\n\n_quarto.yml\n\nwebsite:\n  navbar: \n    left: \n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - text: \"Research\"\n        href: research/index.qmd\n  sidebar:\n    - title: \"Research\"\n      contents:\n        - research/index.qmd\n        - research/project1.qmd\n        - research/project2.qmd\n        - research/project3.qmd\n\n\nDocumentation: https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff-2",
+    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff-2",
+    "title": "Creatingbasic websites",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Websites &gt; Website Navigation"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-4",
+    "href": "materials/basic-websites/slides.html#your-turn-4",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research/index.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-4",
+    "href": "materials/basic-websites/slides.html#answer-4",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer\n\n\n_quarto.yml\n\n# Excerpt!\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - text: \"Research\"\n        href: research/index.qmd\n\n  sidebar:\n    - title: \"Research\"\n      contents:\n        - research/index.qmd\n        - research/project1.qmd\n        - research/project2.qmd\n        - research/project3.qmd"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#answer-5",
+    "href": "materials/basic-websites/slides.html#answer-5",
+    "title": "Creatingbasic websites",
+    "section": "Answer",
+    "text": "Answer"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#yaml-based-page-settings",
+    "href": "materials/basic-websites/slides.html#yaml-based-page-settings",
+    "title": "Creatingbasic websites",
+    "section": "YAML-based page settings",
+    "text": "YAML-based page settings\nSome page types are based on special templates that use information from the YAML metadata.\nTwo main built-in special page types:\n\nListing pages\nAbout pages\n\n\n(you can make your own special templates too!)"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#listing-pages",
+    "href": "materials/basic-websites/slides.html#listing-pages",
+    "title": "Creatingbasic websites",
+    "section": "Listing pages",
+    "text": "Listing pages\n\n\nMore about these in the advanced section!\n\n\nresearch.qmd\n\n---\ntitle: \"Research\"\nlisting:\n  contents: \"*.qmd\"\n  type: table\n---\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-listings.html"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#about-pages",
+    "href": "materials/basic-websites/slides.html#about-pages",
+    "title": "Creatingbasic websites",
+    "section": "About pages",
+    "text": "About pages\n\n\n\n\nabout.qmd\n\n---\ntitle: \"Ada Lovelace\"\nabout:\n  template: solana\n  image: img/ada-lovelace.jpg\n  links: \n    - icon: wikipedia\n      text: Wikipedia\n      href: https://en.wikipedia.org/wiki/Ada_Lovelace\ntoc: false\n---\n\n## Background\n\nAugusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852), also known as Ada Lovelace, was an English mathematician and writer chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. Ada Lovelace is sometimes considered to be the first computer programmer.\n\n\n\n\n\nDocumentation: https://quarto.org/docs/websites/website-about.html"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#dont-memorize-this-stuff-3",
+    "href": "materials/basic-websites/slides.html#dont-memorize-this-stuff-3",
+    "title": "Creatingbasic websites",
+    "section": "Don’t memorize this stuff!",
+    "text": "Don’t memorize this stuff!\n\n\nQuarto.org &gt; Guide &gt; Websites &gt; About Pages"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#your-turn-5",
+    "href": "materials/basic-websites/slides.html#your-turn-5",
+    "title": "Creatingbasic websites",
+    "section": "Your turn",
+    "text": "Your turn\n\nCreate a basic About page for either yourself or some fictional person.\n\nFind an image on your computer or from the internet and add it to your project, either in the root of project, or (better!) in a folder just for images, like img/\nAdd links to different websites (with icons!)\nTry different template options\nTry different image-shape options\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; About Pages\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/basic-websites/slides.html#course-outline",
+    "href": "materials/basic-websites/slides.html#course-outline",
+    "title": "Creatingbasic websites",
+    "section": "Course outline",
+    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\nAdvanced website features\nPublishing\nCustomization and branding\nInteractivity"
+  },
+  {
+    "objectID": "materials/brand/slides.html#your-turn",
+    "href": "materials/brand/slides.html#your-turn",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\nTo keep everyone on the same page, we’ll play with quarto-websites-exercise-site_2025-10\n\n\nandhs.co/quarto-websites-2025\n\n\nBut keep your playground site from yesterday handy!\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/brand/slides.html#bootstrap",
+    "href": "materials/brand/slides.html#bootstrap",
+    "title": "Customizationand branding",
+    "section": "Bootstrap",
+    "text": "Bootstrap\nQuarto uses the popular Bootstrap library for HTML structure and CSS styles."
+  },
+  {
+    "objectID": "materials/brand/slides.html#bootstrap-1",
+    "href": "materials/brand/slides.html#bootstrap-1",
+    "title": "Customizationand branding",
+    "section": "Bootstrap",
+    "text": "Bootstrap\nYou can use Bootstrap components and classes for special styling\n\n \n[Here's a button](thing.pdf){.btn .btn-primary role=\"button\"}\n\n[Here's another button](thing.pdf){.btn .btn-warning role=\"button\"}\n\n\n\n↓"
+  },
+  {
+    "objectID": "materials/brand/slides.html#bootswatch-themes",
+    "href": "materials/brand/slides.html#bootswatch-themes",
+    "title": "Customizationand branding",
+    "section": "Bootswatch themes",
+    "text": "Bootswatch themes\nQuarto includes 25 themes from Bootswatch:\n\n\n\ndefault\ncerulean\ncosmo\ncyborg\ndarkly\nflatly\njournal\nlitera\nlumen\n\n\n\nlux\nmateria\nminty\nmorph\npulse\nquartz\nsandstone\nsimplex\nsketchy\n\n\n\nslate\nsolar\nspacelab\nsuperhero\nunited\nvapor\nyeti\nzephyr"
+  },
+  {
+    "objectID": "materials/brand/slides.html#changing-themes",
+    "href": "materials/brand/slides.html#changing-themes",
+    "title": "Customizationand branding",
+    "section": "Changing themes",
+    "text": "Changing themes\nSpecify the custom theme under theme in the YAML settings:\n\n\n_quarto.yml\n\nformat:\n  html:\n    theme:\n      - zephyr"
+  },
+  {
+    "objectID": "materials/brand/slides.html#your-turn-1",
+    "href": "materials/brand/slides.html#your-turn-1",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n−+\n07:00"
+  },
+  {
+    "objectID": "materials/brand/slides.html#theme-options",
+    "href": "materials/brand/slides.html#theme-options",
+    "title": "Customizationand branding",
+    "section": "Theme options",
+    "text": "Theme options\nSometimes we want to change theme settings:\n\nFonts\nColors\nAligment\nSpacing"
+  },
+  {
+    "objectID": "materials/brand/slides.html#basic-theme-options",
+    "href": "materials/brand/slides.html#basic-theme-options",
+    "title": "Customizationand branding",
+    "section": "Basic theme options",
+    "text": "Basic theme options\nQuarto automatically supports some common Bootstrap theme options\nformat:\n  html: \n    theme: zephyr\n    fontsize: 1.2em\n    linestretch: 1.2\n    linkcolor: \"#32a852\"\n    backgroundcolor: \"#f8f8c4\"\n    mainfont: Comic Sans"
+  },
+  {
+    "objectID": "materials/brand/slides.html#total-control-with-css",
+    "href": "materials/brand/slides.html#total-control-with-css",
+    "title": "Customizationand branding",
+    "section": "Total control with CSS",
+    "text": "Total control with CSS"
+  },
+  {
+    "objectID": "materials/brand/slides.html#crash-course-in-css",
+    "href": "materials/brand/slides.html#crash-course-in-css",
+    "title": "Customizationand branding",
+    "section": "Crash course in CSS",
+    "text": "Crash course in CSS\n\n\nHTML elements can have IDs and classes:\n&lt;h2 id=\"my-section\" class=\"special\"&gt;A heading&lt;/h2&gt;\n\nIDs are unique on the page\n\nShorthand: #my-section\n\nClasses aren’t unique and can be repeated\n\nShorthand: .special\n\n\n\n/* All H2s */\nh2 {\n  color: red;\n}\n\n/* All elements with id my-section */\n/* This includes non H2s */\n#my-section {\n  color: red;\n}\n\n/* All H2s with id my-section */\nh2#mysection {\n  color: red;\n}\n\n/* All elements with class .special */\n.special {\n  font-style: italic;\n}\n\n/* All H2s with class .special */\nh2.special {\n  font-style: italic;\n}"
+  },
+  {
+    "objectID": "materials/brand/slides.html#nesting",
+    "href": "materials/brand/slides.html#nesting",
+    "title": "Customizationand branding",
+    "section": "Nesting",
+    "text": "Nesting\n\n\nHTML elements can be nested inside each other\n&lt;div id=\"part1\"&gt;\n  &lt;h2 id=\"my-section\" class=\"special\"&gt;A heading&lt;/h2&gt;\n&lt;/div&gt;\n\n&lt;div id=\"part2\"&gt;\n  &lt;h2 id=\"blah\" class=\"special\"&gt;Another heading&lt;/h2&gt;\n&lt;/div&gt;\n\n/* All H2s in #part1 */\n#part1 h2 {\n  color: red;\n}\n\n/* All H2s in #part2 */\n#part2 h2 {\n  color: blue;\n}"
+  },
+  {
+    "objectID": "materials/brand/slides.html#browser-inpsector",
+    "href": "materials/brand/slides.html#browser-inpsector",
+    "title": "Customizationand branding",
+    "section": "Browser inpsector",
+    "text": "Browser inpsector\nExplore HTML and CSS right from your browser!"
+  },
+  {
+    "objectID": "materials/brand/slides.html#browser-inpsector-1",
+    "href": "materials/brand/slides.html#browser-inpsector-1",
+    "title": "Customizationand branding",
+    "section": "Browser inpsector",
+    "text": "Browser inpsector\nEdit and tinker with styles"
+  },
+  {
+    "objectID": "materials/brand/slides.html#browser-inpsector-2",
+    "href": "materials/brand/slides.html#browser-inpsector-2",
+    "title": "Customizationand branding",
+    "section": "Browser inpsector",
+    "text": "Browser inpsector\nSee which rule applies"
+  },
+  {
+    "objectID": "materials/brand/slides.html#your-turn-2",
+    "href": "materials/brand/slides.html#your-turn-2",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nBonus: Those in-browser edits will disappear if you refresh the page. See if you can figure out how to put them in your website. (Hint!)\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/brand/slides.html#sass-css-but-fancier",
+    "href": "materials/brand/slides.html#sass-css-but-fancier",
+    "title": "Customizationand branding",
+    "section": "Sass: CSS, but fancier",
+    "text": "Sass: CSS, but fancier\n@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');\n\n\n/*-- scss:defaults --*/\n\n/* Built-in Bootstrap variables */\n$h2-font-size:          1.6rem !default;\n$headings-font-weight:  500 !default;\n$font-family-sans-serif:  Roboto;\n\n/* Your own variables */\n$my-neat-red: #e21818;\n\n\n/*-- scss:rules --*/\n#quarto-sidebar h2 {\n  font-family: Roboto;\n  color: $my-neat-red;\n\n  /* Magically compiles to #quarto-sidebar h2 a:hover */\n  a:hover {\n    color: #d1c81d;\n  }\n}"
+  },
+  {
+    "objectID": "materials/brand/slides.html#bootstrap-sass-variables",
+    "href": "materials/brand/slides.html#bootstrap-sass-variables",
+    "title": "Customizationand branding",
+    "section": "Bootstrap Sass variables",
+    "text": "Bootstrap Sass variables\nThere are so many!\n\nQuarto lists these as the most typical\nBootstrap technically has all these\nHere’s a filterable table of everything"
+  },
+  {
+    "objectID": "materials/brand/slides.html#using-csssass-with-quarto",
+    "href": "materials/brand/slides.html#using-csssass-with-quarto",
+    "title": "Customizationand branding",
+    "section": "Using CSS/Sass with Quarto",
+    "text": "Using CSS/Sass with Quarto\n\n\nUse vanilla CSS\nformat:\n  html:\n    css: custom.css\n\nUse Sass\nformat:\n  html:\n    theme:\n      - zephyr\n      - custom.scss\n\nSome examples:\n\nThis simple one\nThis slightly more complex one\nThis even more complex one\nheck yeah this one is wild"
+  },
+  {
+    "objectID": "materials/brand/slides.html#our-turn",
+    "href": "materials/brand/slides.html#our-turn",
+    "title": "Customizationand branding",
+    "section": "Our turn",
+    "text": "Our turn\nCreate a SCSS file and make a bunch of rules!\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/brand/slides.html#css-is-a-little-inconvenient",
+    "href": "materials/brand/slides.html#css-is-a-little-inconvenient",
+    "title": "Customizationand branding",
+    "section": "CSS is a little inconvenient",
+    "text": "CSS is a little inconvenient\n\nHTML, slides, and dashboards all use slightly different underlying HTML\nNo easy way to reuse the colors and typography from your CSS customizations in R and Python plots or in PDF documents\nHard to share consistent, resusable themes with others in your organization (or with the world)"
+  },
+  {
+    "objectID": "materials/brand/slides.html#style-guides",
+    "href": "materials/brand/slides.html#style-guides",
+    "title": "Customizationand branding",
+    "section": "Style guides",
+    "text": "Style guides\n\n\nUrban Institute Data Visualization Style Guide"
+  },
+  {
+    "objectID": "materials/brand/slides.html#style-guides-1",
+    "href": "materials/brand/slides.html#style-guides-1",
+    "title": "Customizationand branding",
+    "section": "Style guides",
+    "text": "Style guides\n\n\nUniversity of Georgia Brand Style Guide"
+  },
+  {
+    "objectID": "materials/brand/slides.html#style-guides-2",
+    "href": "materials/brand/slides.html#style-guides-2",
+    "title": "Customizationand branding",
+    "section": "Style guides",
+    "text": "Style guides\n\n\nGeorgia State University Web Color Guidelines"
+  },
+  {
+    "objectID": "materials/brand/slides.html#matching-style-with-css",
+    "href": "materials/brand/slides.html#matching-style-with-css",
+    "title": "Customizationand branding",
+    "section": "Matching style with CSS",
+    "text": "Matching style with CSS\nYou can recreate styles with CSS (site; custom.scss)"
+  },
+  {
+    "objectID": "materials/brand/slides.html#section",
+    "href": "materials/brand/slides.html#section",
+    "title": "Customizationand branding",
     "section": "",
-    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
-    "crumbs": [
-      "Home"
-    ]
+    "text": "Unified branding with a simple YAML file\n\n\n\nCreate reports, apps, dashboards, plots and more that match your organization’s brand guidelines with a single _brand.yml file.\n\n\nLearn more: https://posit-dev.github.io/brand-yml/"
   },
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Create an Online Presence with Quarto Websites",
+    "objectID": "materials/brand/slides.html#section-1",
+    "href": "materials/brand/slides.html#section-1",
+    "title": "Customizationand branding",
     "section": "",
-    "text": "Creating and maintaining an online presence is essential for anyone who works with data. Whether you’re a researcher, educator, or analyst, a well-crafted website can serve as your digital calling card, allowing you to showcase your work, share your insights and discoveries, and engage with the broader data analysis community. But building a website from scratch can feel overwhelming, especially if you lack web development experience. Enter Quarto: an open-source publishing tool that makes it easy to create beautiful, accessible, and feature-rich websites using just a few lines of Markdown—no HTML or CSS expertise required!\nIn this course, you’ll learn how to use Quarto to build a variety of data-focused websites, from personal portfolios and blogs to project-specific sites, research compendiums, and interactive dashboards. You’ll also discover how to customize your site’s design, incorporate computational content from R, Python, and Observable JS, and create interactive elements like live code and data visualizations.",
-    "crumbs": [
-      "Home"
-    ]
+    "text": "1. Define branding in a single _brand.yml file.\n2. Apply that branding across almost all Quarto formats."
   },
   {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "Schedule",
-    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (October 16)\n                  Day 1 (October 16)\n                \n                \n                  10:30–11:30\n                  Welcome + Intro to Quarto\n                \n                \n                  11:30–12:30\n                  Creating basic websites\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Advanced website features\n                \n                \n                  Day 2 (October 17)\n                  Day 2 (October 17)\n                \n                \n                  10:30–11:00\n                  Publishing\n                \n                \n                  11:00–12:30\n                  Customization and branding\n                \n                \n                  12:30–13:00\n                  Break\n                \n                \n                  13:00–15:00\n                  Interactivity",
-    "crumbs": [
-      "Home"
-    ]
+    "objectID": "materials/brand/slides.html#brand.yml-elements",
+    "href": "materials/brand/slides.html#brand.yml-elements",
+    "title": "Customizationand branding",
+    "section": "_brand.yml elements",
+    "text": "_brand.yml elements\n\nmeta: Identifying information, name of the company, URLs, etc.\nlogo: Files or links to the brand’s logos\ncolor: Colors in the brand’s color palette\ntypography: Fonts for different elements\ndefaults: Additional context-specific settings"
   },
   {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "Create an Online Presence with Quarto Websites",
-    "section": "Instructor",
-    "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions.",
-    "crumbs": [
-      "Home"
-    ]
+    "objectID": "materials/brand/slides.html#brand.yml-structure",
+    "href": "materials/brand/slides.html#brand.yml-structure",
+    "title": "Customizationand branding",
+    "section": "_brand.yml structure",
+    "text": "_brand.yml structure\n\n\n_brand.yml\n\nmeta:\n  name: Urban Institute\n  link:\n    home: https://urbaninstitute.github.io/graphics-styleguide/\n\nlogo:\n  images:\n    icon:\n      path: img/urban.png\n      alt: Urban Institute logo\n  small: img/urban-sm.png\n\ncolor:\n  palette:\n    blue: \"#1696d2\"\n    gray-light: \"#d2d2d2\"\n    black: \"#000000\"\n    yellow: \"#fdbf11\"\n    magenta: \"#ec008b\"\n    green: \"#55b748\"\n    gray-dark: \"#5c5859\"\n    red: \"#db2b27\"\n    orange: \"#e88e2d\"\n    white: \"#ffffff\"\n\n  background: white\n  foreground: gray-dark\n  primary: blue\n  secondary: yellow\n  dark: black\n\ntypography:\n  fonts:\n    - family: Lato\n      source: google\n      weight: [400, 700]\n    - family: Jost\n      source: google\n      weight: [400, 700]\n\n  base:\n    family: Lato\n    weight: 400\n\n  headings:\n    family: Jost\n    weight: 700\n\n  link:\n    color: primary\n    decoration: none\n\ndefaults:\n  bootstrap:\n    functions: # string with SCSS functions\n    defaults:  # list of Bootstrap Sass variables to override\n      link-hover-color: $brand-magenta\n    mixins:    # string with SCSS mixins\n    rules: |   # string with SCSS rules\n      #quarto-content h2, #quarto-content h3 {\n          text-transform: uppercase;\n          letter-spacing: 1px;\n      }\n\n      .content .highlight {\n          color: $brand-yellow;\n      }\n\n      .navbar-title {\n          font-family: Jost;\n          font-weight: 700;\n      }"
   },
   {
-    "objectID": "materials/01-intro/index.html",
-    "href": "materials/01-intro/index.html",
-    "title": "Introduction to Quarto",
+    "objectID": "materials/brand/slides.html#enabling-_brand.yml-in-quarto",
+    "href": "materials/brand/slides.html#enabling-_brand.yml-in-quarto",
+    "title": "Customizationand branding",
+    "section": "Enabling _brand.yml in Quarto",
+    "text": "Enabling _brand.yml in Quarto\n\nDefine branding in _brand.yml.\nSave in the root directory of your Quarto project.\n\nQuarto will detect the presence of _brand.yml and automatically apply the brand to all documents of the supported formats in the project."
+  },
+  {
+    "objectID": "materials/brand/slides.html#section-2",
+    "href": "materials/brand/slides.html#section-2",
+    "title": "Customizationand branding",
     "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Intro to Quarto"
-    ]
+    "text": "If your brand file has a different name or lives in a subdirectory, use the brand key.\n\n\nmy-document.qmd\n\n---\ntitle: \"My neat report\"\nformat: html\nbrand: org_theme.yml\n---"
   },
   {
-    "objectID": "materials/01-intro/index.html#slides",
-    "href": "materials/01-intro/index.html#slides",
-    "title": "Introduction to Quarto",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Intro to Quarto"
-    ]
+    "objectID": "materials/brand/slides.html#disable-_brand.yml",
+    "href": "materials/brand/slides.html#disable-_brand.yml",
+    "title": "Customizationand branding",
+    "section": "Disable _brand.yml",
+    "text": "Disable _brand.yml\nTo turn off _brand.yml for a document, use brand: false.\n\n\nmy-document.qmd\n\n---\ntitle: \"My neat report\"\nformat: html\nbrand: false\n---"
   },
   {
-    "objectID": "materials/01-intro/index.html#exercises",
-    "href": "materials/01-intro/index.html#exercises",
-    "title": "Introduction to Quarto",
-    "section": "Exercises",
-    "text": "Exercises\n\nWelcome\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\nIntroduce yourself:\n\nName\nProfessional affiliation\nOn a scale of 1–10, how well do you know…\n\nQuarto?\nR?\nPython?\nHTML and CSS?\n\nWhat do you hope to get out of this course?\n\n\n\n\n\n\nIntroduction to Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd\nPreview/render the document\n\nIf you’re using Posit Cloud, you might be asked to allow pop-ups\n\nEdit the title and preview the document again.\n\n\n\n\n\n\nQuarto documents\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen 01-exercise.qmd and run some of the code chunks (in order!).\nAdd #| include: false to the second chunk and preview again. Switch it back to true or remove it. Preview again.\nIn the YAML area, add an author field and add your name. Preview again.\nChange code-fold to be true. Preview again.\nEdit the first paragraph to:\n\nMake something bold\nMake “the Gapminder foundation” link to https://www.gapminder.org\nReplace XXXX and YYYY with inline code instead of hardcoded values. The first code chunk creates R objects named first_year and last_year—use those.\n\n\n\n\n\n\n\nAuthoring Quarto\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nAdd an important callout box to the introduction summarizing the report’s findings. Preview the file.\nChange the caption for the first plot. Preview again.\nChange some text color to #ec008b. Preview again.\nEdit the “Average life expectancy increased…” paragraph to say “According to Figure 1, average life expectancy increased…”, BUT do it without typing “Figure 1”. Preview again.\nIn the first paragraph, add a citation to something in bib/references.bib. Preview again.\nChange the bibliography style to APA. Preview again.",
-    "crumbs": [
-      "Materials",
-      "Intro to Quarto"
-    ]
+    "objectID": "materials/brand/slides.html#your-turn-3",
+    "href": "materials/brand/slides.html#your-turn-3",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\n\nThere is a file named urban_institute.yml. Make a copy of it, rename it to _brand.yml, and rerender your site. What changes?\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nYou can reset the file by copying and pasting it from here.\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "materials/advanced-websites/index.html",
-    "href": "materials/advanced-websites/index.html",
-    "title": "Advanced website features",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Advanced website features"
-    ]
+    "objectID": "materials/brand/slides.html#use-_brand.yml-in-markdown",
+    "href": "materials/brand/slides.html#use-_brand.yml-in-markdown",
+    "title": "Customizationand branding",
+    "section": "Use _brand.yml in Markdown",
+    "text": "Use _brand.yml in Markdown\nAccess some _brand.yml values in Quarto documents with a shortcode\n\n\nmy_document.qmd\n\nThe site's main color is {{&lt; brand color primary &gt;}}\n\n\n\n↓\n\nThe site’s main color is #d7433b\n\nLearn more: https://quarto.org/docs/authoring/brand.html#using-brand-values"
   },
   {
-    "objectID": "materials/advanced-websites/index.html#slides",
-    "href": "materials/advanced-websites/index.html#slides",
-    "title": "Advanced website features",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Advanced website features"
-    ]
+    "objectID": "materials/brand/slides.html#use-_brand.yml-in-sass",
+    "href": "materials/brand/slides.html#use-_brand.yml-in-sass",
+    "title": "Customizationand branding",
+    "section": "Use _brand.yml in Sass",
+    "text": "Use _brand.yml in Sass\nAccess some _brand.yml values with the $brand-* prefix\n\n\ncustom-styles.scss\n\n/*-- scss:rules --*/\n\nh3 {\n  color: $brand-magenta;\n}\n\n\nLearn more: https://quarto.org/docs/authoring/brand.html#in-scss"
   },
   {
-    "objectID": "materials/advanced-websites/index.html#exercises",
-    "href": "materials/advanced-websites/index.html#exercises",
-    "title": "Advanced website features",
-    "section": "Exercises",
-    "text": "Exercises\n\nOther common features\n\n\n\n\n\n\nTipYour turn: URLs\n\n\n\n\n\n\nMake your about.qmd page appear at about/\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Page layout\n\n\n\n\n\n\nChange the page layout settings for one of your page\nBonus task! Try using the Bootstrap CSS Grid layout system with page-layout: custom.\n\nSee the documentation here\nSee an IRL example here (and code here)\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Advanced &gt; Page Layout.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Article layout\n\n\n\n\n\n\nAdd an image that spans across the whole page\nAdd some text to the margin\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Authoring &gt; Article Layout.\n\n\n\n\n\n\nListings\n\n\n\n\n\n\nTipYour turn: Listings\n\n\n\n\n\n\nEdit research/index.qmd to be a listing page, showing all the pages in the research folder.\nExperiment with changing the listing type to default, then table, then grid.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Listing Pages.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Metadata\n\n\n\n\n\n\nAdd metadata to your different research .qmd files, including images (find some at Unsplash). See how those are reflected in the listing page.\nBonus task! Modify how the listing page is sorted. Sort it by descending title.\n\nSee the documentation here\n\nBonus task! Change how the dates are shown in the listing page with the date-format option.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Categories\n\n\n\n\n\n\nAdd categories to your different research .qmd files. See how those are reflected in the listing page after rendering.\nBonus task! Change the category list on the listing page to appear as a word cloud.\n\nSee the documentation here\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings &gt; Categories.\n\n\n\n\n\n\n\n\n\n\nTipYour turn: Make a blog\n\n\n\n\n\nMake a blog!\n\nCreate a new folder named blog with a file named index.qmd in it.\nMake a few folders and files named blog/2025/10/16/thing/index.qmd, etc.\nAdd some fake content in the blog posts. Add images, titles, descriptions, etc.\nMake the blog posts appear as a listing page at blog/index.qmd.\nAdd blog/index.qmd to your top navigation bar.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Document Listings.\n\n\n\n\n\n\nExtensions\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nInstall the Font Awesome extension in your website project.\nUse Font Awesome shortcodes:\n\nInclude a Font Awesome icon in your navigation bar\nInclude a Font Awesome icon in the text of one of your pages\n\nInstall another Quarto extension and play around with it.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at the Font Awesome extension page and Quarto.org &gt; Extensions.\n\n\n\n\n\n\nStart building a real website\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\nAt some point today you’ve (hopefully!) thought “I could use these tools to make something really cool!” A new personal website with a portfolio and blog. A website for an upcoming event. A notebook to accompany a research project. A course website. Something!\n \nStart building it!\n\nCreate a new website project skeleton\nStart building your idea\n\nDo this gradually! Remember the worflow: edit, save, preview, repeat\nPore over the Quarto documentation and these slides for tips and tricks\n\nAsk for help.\n\nWe’ll work on it now and tomorrow (and maybe on your own tonight)",
-    "crumbs": [
-      "Materials",
-      "Advanced website features"
-    ]
+    "objectID": "materials/brand/slides.html#use-_brand.yml-in-r-and-python",
+    "href": "materials/brand/slides.html#use-_brand.yml-in-r-and-python",
+    "title": "Customizationand branding",
+    "section": "Use _brand.yml in R and Python",
+    "text": "Use _brand.yml in R and Python\nAccess and apply specific brand elements\n\nRPython\n\n\nlibrary(brand.yml)\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nbrand$color$primary\n#&gt; [1] \"#1696d2\"\n\nbrand$color$palette$yellow\n#&gt; [1] \"#fdbf11\"\n\nbrand$typography$fonts[[1]]$family\n#&gt; [1] \"Lato\"\n\n\nfrom brand_yml import Brand\n\nbrand = Brand.from_yaml(\"_brand.yml\")\n\nbrand.color.primary"
   },
   {
-    "objectID": "materials/basic-websites/index.html",
-    "href": "materials/basic-websites/index.html",
-    "title": "Creating basic websites",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Creating basic websites"
-    ]
+    "objectID": "materials/brand/slides.html#theme-helpers",
+    "href": "materials/brand/slides.html#theme-helpers",
+    "title": "Customizationand branding",
+    "section": "Theme helpers",
+    "text": "Theme helpers\nThe {quarto} package contains theme helpers that apply branding to plots\n\nRPython\n\n\nlibrary(quarto)\n\nmy_theme &lt;- theme_brand_ggplot2(\"_brand.yml\")\n\n\nfrom quarto import theme_brand_plotnine\n\nmy_theme = theme_brand_plotnine('_brand.yml')\n\n\n\n\n\nR + {ggplot2} and Python + plotnine documentation\n\n\nDoesn’t do much (yet) beyond using the brand’s background and foreground colors in the plot"
   },
   {
-    "objectID": "materials/basic-websites/index.html#slides",
-    "href": "materials/basic-websites/index.html#slides",
-    "title": "Creating basic websites",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Creating basic websites"
-    ]
+    "objectID": "materials/brand/slides.html#example-plot",
+    "href": "materials/brand/slides.html#example-plot",
+    "title": "Customizationand branding",
+    "section": "Example plot",
+    "text": "Example plot\nlibrary(tidyverse)\nlibrary(brand.yml)\n\nbrand &lt;- read_brand_yml(\"_brand.yml\")\n\nbrand_theme &lt;- quarto::theme_brand_ggplot2(\"_brand.yml\") +\n  theme(\n    text = element_text(family = brand$typography$fonts[[1]]$family, size = 11)\n  )\n\nggplot(mpg, aes(x = displ, y = hwy, color = drv)) +\n  geom_point() +\n  labs(title = \"A plot\") +\n  scale_color_manual(\n    values = c(\n      brand$color$palette$blue,\n      brand$color$palette$black,\n      brand$color$palette$yellow\n    )\n  ) +\n  brand_theme"
   },
   {
-    "objectID": "materials/basic-websites/index.html#exercises",
-    "href": "materials/basic-websites/index.html#exercises",
-    "title": "Creating basic websites",
-    "section": "Exercises",
-    "text": "Exercises\n\nAnatomy of a Quarto website\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a new website project somewhere on your computer.\nYou’ll use this as a playground throughout the course.\nOpen the project in RStudio and explore what the different files look like.\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nOpen your playground website.\nOpen index.qmd and click Render/Preview.\nEdit the title entry in index.qmd’s YAML metadata to something different and add a subtitle entry. Preview.\nAdd some text to index.qmd. Preview.\nAdd an R code chunk to about.qmd. Preview.\n\n\n\n\n\n\n_quarto.yml\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nEdit your _quarto.yml to make the following changes:\n\nChange the preview port to 5555\nEnable a cookie consent dialog\nAdd a site description\n\nBonus tasks!\n\nAdd a footer that says “© 2025, Myself”\nAdd an announcement bar that says something\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Reference &gt; Websites\n\n\n\n\n\n\nNavigation\n\n\n\n\n\n\nTipYour turn 1\n\n\n\n\n\n\nCreate a new file named contact.qmd and paste the content from about.qmd into it. Then change it to something else.\nAdd contact.qmd to the left section of your top navigation bar.\nAdd a right section to the navigation bar with icon-based links to a few other websites.\nBonus task! Create a dropdown menu in the top navigation bar, either with links to other websites or links to some new .qmd pages that you create.\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\n\n\n\n\nTipYour turn 2\n\n\n\n\n\n\nCreate a folder named research and create these files in there: index.qmd, project1.qmd, project2.qmd, and project3.qmd\nAdd an entry for research/index.qmd in your top navigation bar\nMake a sidebar that only appears on the research page that contains links to index.qmd, project1.qmd, project2.qmd, and project3.qmd\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; Website Navigation\n\n\n\n\n\n\nSpecial pages\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nCreate a basic About page for either yourself or some fictional person.\n\nFind an image on your computer or from the internet and add it to your project, either in the root of project, or (better!) in a folder just for images, like img/\nAdd links to different websites (with icons!)\nTry different template options\nTry different image-shape options\n\n\nAdvice:\n\nDon’t try to make all these changes at once! Remember the workflow: edit, save, preview, repeat.\nUse the documentation at Quarto.org &gt; Guide &gt; Websites &gt; About Pages",
-    "crumbs": [
-      "Materials",
-      "Creating basic websites"
-    ]
+    "objectID": "materials/brand/slides.html#your-turn-4",
+    "href": "materials/brand/slides.html#your-turn-4",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\").\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "materials/brand/index.html",
-    "href": "materials/brand/index.html",
-    "title": "Customization and branding",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Customization and branding"
-    ]
+    "objectID": "materials/brand/slides.html#your-turn-5",
+    "href": "materials/brand/slides.html#your-turn-5",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand.\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "materials/brand/index.html#slides",
-    "href": "materials/brand/index.html#slides",
-    "title": "Customization and branding",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Customization and branding"
-    ]
+    "objectID": "materials/brand/slides.html#make-your-own-_brand.yml",
+    "href": "materials/brand/slides.html#make-your-own-_brand.yml",
+    "title": "Customizationand branding",
+    "section": "Make your own _brand.yml",
+    "text": "Make your own _brand.yml\n\nIn RStudio, go to File &gt; New File &gt; Text file\nIn Positron or VS Code, use the Explorer panel to add a new file.\n\nSave the file as _brand.yml\n\n \nOr create a Brand Extension for sharing and distributing your brand"
   },
   {
-    "objectID": "materials/brand/index.html#exercises",
-    "href": "materials/brand/index.html#exercises",
-    "title": "Customization and branding",
-    "section": "Exercises",
-    "text": "Exercises\n\nThemes\n\n\n\n\n\n\nTipYour turn\n\n\n\n\n\n\nGo to bootswatch.com and explore the different themes there (use the top navigation bar).\nPreview your site, then try changing different Bootswatch themes in _quarto.yml.\n\n\n\n\n\n\nCSS and Sass\n\n\n\n\n\n\nTipBrowser inspector\n\n\n\n\n\n\nPreview your site\nUse the browser inspector to select a heading\nCreate a CSS style that targets that heading and makes it\n\nred (color) and\nitalic (font-style) and\n30px (font-size)\n\nBonus: Those in-browser edits will disappear if you refresh the page. See if you can figure out how to put them in your website. (Hint!)\n\n\n\n\n\n\n\n\n\n\nTipOur turn: SCSS\n\n\n\n\n\nCreate a SCSS file and make a bunch of rules!\n\n\n\n\n\nBranding\n\n\n\n\n\n\nTip_brand.yml tinkering\n\n\n\n\n\n\nThere is a file named urban_institute.yml. Make a copy of it, rename it to _brand.yml, and rerender your site. What changes?\nModify some of the variables in the _brand.yml file and rerender to see how your site changes. Explore the brand.yml documentation and see what other settings you can adjust.\nYou can reset the file by copying and pasting it from here.\n\n\n\n\n\n\n\n\n\n\nTiptheme_brand_ggplot()\n\n\n\n\n\n\nIn the first code chunk of 01-exercise.qmd, replace theme_minimal() with theme_brand_ggplot2(). You will need to supply a brand file path (\"_brand.yml\").\nRe-render and see what changes.\nChange the foreground and background colors in _brand.yml and rerun the code to create the plot. What changes?\n\n\n\n\n\n\n\n\n\n\nTipread_brand_yaml() tinkering\n\n\n\n\n\n\nIn 01-exercise.qmd, read in _brand.yml with read_brand_yml() from the {brand.yml} package. Store it as a variable named brand.\nChange the color of the points to the brand’s blue color and the line to the brand’s magenta color. You’ll use code that looks something like this:\ngeom_line(color = brand$color$palette$black)\nBonus task! Map a variable from the dataset to the color aesthetic and change the legend to use colors from the brand.\n\n\n\n\n\n\n\n\n\n\nTipMake your own _brand.yml\n\n\n\n\n\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml",
-    "crumbs": [
-      "Materials",
-      "Customization and branding"
-    ]
+    "objectID": "materials/brand/slides.html#dont-reinvent-the-wheel",
+    "href": "materials/brand/slides.html#dont-reinvent-the-wheel",
+    "title": "Customizationand branding",
+    "section": "Don’t reinvent the wheel!",
+    "text": "Don’t reinvent the wheel!\nDO NOT try to write a _brand.yml from scratch!\nLook at the “Inspiration” page!\n\n\nLearn more: https://posit-dev.github.io/brand-yml/inspiration/"
+  },
+  {
+    "objectID": "materials/brand/slides.html#your-turn-6",
+    "href": "materials/brand/slides.html#your-turn-6",
+    "title": "Customizationand branding",
+    "section": "Your turn",
+    "text": "Your turn\nCreate a brand file for yourself, your project, or your organization.\nDon’t try to do this from scratch! Use these resources:\n\nThe brand.yml documentation\nThe brand.yml inspiration page\nThis site’s _brand.yml\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "materials/brand/slides.html#course-outline",
+    "href": "materials/brand/slides.html#course-outline",
+    "title": "Customizationand branding",
+    "section": "Course outline",
+    "text": "Course outline\n\n✅ Intro to Quarto\n✅ Creating basic websites\n✅ Advanced website features\n✅ Publishing\n✅ Customization and branding\nInteractivity"
   },
   {
     "objectID": "materials/interactivity/index.html",
@@ -2024,7 +2024,7 @@
     "href": "materials/interactivity/index.html#code-examples",
     "title": "Interactivity",
     "section": "Code examples",
-    "text": "Code examples\n\n{plotly} and {ggiraph}\nFinished “our turn” code will go here\n\n\nDashboards\nFinished “our turn” code will go here\n\n\nQuarto Live\nShiny k-means example\nFinished “our turn” code will go here",
+    "text": "Code examples\n\n{plotly} and {ggiraph}\nPlotly:\n\n\nCode\nlibrary(tidyverse)\nlibrary(plotly)\n\np1 &lt;- ggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point(aes(color = drv))\n\nggplotly(p1)\n\n\n\n\n\n\n{ggiraph}:\n\n\nCode\nlibrary(ggiraph)\n\nmpg_fancy &lt;- mpg |&gt;\n  mutate(\n    carname = glue::glue(\n      \"{str_to_title(manufacturer)} {str_to_title(model)}\"\n    )\n  )\n\np2 &lt;- ggplot(mpg_fancy, aes(x = displ, y = hwy, color = drv)) +\n  geom_point_interactive(aes(tooltip = carname, data_id = carname), size = 2) +\n  theme_minimal()\n\ngirafe(ggobj = p2)\n\n\n\n\n\n\n\n\nDashboards\nSee here for the code for this dashboard (and click here to open the dashboard in a new tab):\n\n\n  \n\n\n\n\nQuarto Live\nLive rnorm() (see code here):\n\n\n\n\n\n\n\n\n\n\nCode\nviewof n = Inputs.range([0, 501], {step: 1, label: \"n\"})\n\n\n\n\n\n\n\n \nOriginal Shiny k-means example\nRecreation with webR and OJS inputs (see code here):\n\n\nCode\nvars = [\"Sepal.Length\", \"Sepal.Width\", \"Petal.Length\", \"Petal.Width\"]\n\nviewof xcol = Inputs.select(vars, {\n  label: \"X variable\",\n  value: \"Sepal.Length\"\n})\n\nviewof ycol = Inputs.select(vars, {\n  label: \"Y variable\", \n  value: \"Sepal.Width\"\n})\n\nviewof clusters = Inputs.range([1, 9], {\n  label: \"Clusters\",\n  step: 1,\n  value: 3\n})",
     "crumbs": [
       "Materials",
       "Interactivity"
